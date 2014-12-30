@@ -136,7 +136,7 @@ END
 
 IF ~NumTimesTalkedTo(3)~ THEN BEGIN 19
 SAY @50
-++ @51 EXIT
+++ @51 DO ~SetNumTimesTalkedTo(3)~ EXIT
 ++ @52 + 20
 IF ~PartyHasItem("ACQ18001")~ THEN REPLY @53 + 21
 END

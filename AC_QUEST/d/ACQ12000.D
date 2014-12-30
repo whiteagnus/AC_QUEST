@@ -180,7 +180,7 @@ END
 
 IF ~~ THEN BEGIN 9
 SAY @64
-IF ~~ THEN DO ~AddJournalEntry(@10025,QUEST)ClearAllActions()StartCutSceneMode()SetGlobal("ACQ12","GLOBAL",2)Wait(1)FadeToColor([40.0],0)Wait(1)JumpToPoint([5031.2709])FadeFromColor([40.0],0)EndCutSceneMode()~ EXIT
+IF ~~ THEN DO ~AddJournalEntry(@10025,QUEST)ClearAllActions()StartCutSceneMode()SetGlobal("ACQ12","GLOBAL",2)Wait(1)FadeToColor([40.0],0)Wait(1)JumpToPoint([5031.2709])MakeGlobal()FadeFromColor([40.0],0)EndCutSceneMode()~ EXIT
 END
 
 IF ~Global("ACQ12","GLOBAL",2)~ THEN BEGIN 10
@@ -211,7 +211,8 @@ END
 
 IF ~~ THEN BEGIN 14
 SAY @77
-IF ~~ THEN DO ~ClearAllActions()StartCutSceneMode()StartCutScene("ACQ12CUT")~ EXIT
+IF ~HasItem("ACQ12000","ACQ12002")~ THEN DO ~ClearAllActions()StartCutSceneMode()StartCutScene("ACQ12CUT")~ EXIT
+IF ~!HasItem("ACQ12000","ACQ12002")~ THEN DO ~ClearAllActions()StartCutSceneMode()StartCutScene("ACQ12CUT2")~ EXIT
 END
 
 IF ~~ THEN BEGIN 15
