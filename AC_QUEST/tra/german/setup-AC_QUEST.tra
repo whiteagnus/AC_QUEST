@@ -395,3 +395,50 @@ Bunger Wiesner ist zu seiner Mutter zurückgekehrt. Die alte Dame wird uns bestim
 @20023 = ~Ein geheimnisvolles Angebot
 
 Ein Bote hat mir eine Einladung seines Herrn überbracht. Auch wenn dieser seinen Namen geheimhalten will, so hat er doch aus irgendeinem Grund Interesse an mir. Wenn ich mich auf ein Treffen einlassen will dann finde ich den Boten in der Kupferkrone.~
+
+
+
+//BG:EE Compatibility
+
+//Strings from BG2
+@80001 = ~Hilfe! So helft mir doch!~ [PEASF09] //#61667
+@80002 = ~~ [PEASF07] //#61665
+@80003 = ~~ [PEASF08] //#61666
+@80004 = ~Ich danke den Göttern jeden Tag für all die guten Dinge in meinem Leben.~ [PEASF02] //##61660
+@80005 = ~Aaah! Lauft!~ [PEASM09] //#61823
+@80006 = ~~ [PEASM07] //#61821
+@80007 = ~~ [PEASM08] //#61822
+@80008 = ~Klar, ich rede gerne ein paar Worte mit Euch.~ [PEASM03] //#61817
+@80009 = ~~ [WWOLF07] //#11393
+@80010 = ~Ich grüße Euch. Eure Macht ist beeindruckend.~ [EPRIM01] //#61614
+@80011 = ~~ [EPRIM06] //#61619
+@80012 = ~~ [EPRIM07] //#61620
+@80013 = ~Die Götter vergeben niemals!~ [EPRIM04] //#61617
+@80014 = ~Verneigt Euch vor den Göttern und bettelt um Gnade!~ [EPRIM03] //#61616
+@80015 = ~Was wollt Ihr bei den wahren Gläubigen?~ [EPRIM02] //#61615
+@80016 = ~Ich... darf nicht mit Fremden reden.~ [CHILF04] //#61556
+@80017 = ~~ [CHILF06] //#61558
+@80018 = ~Ähm... Hallo.~ [CHILF03] //#61555
+@80019 = ~Nun, nun, Ihr seht mir wie Leute aus, in deren Geldbörsen nicht nur zwei einsame Goldmünzen traurig klimpern.~ [MALMER03] //#38784
+@80020 = ~~ [MALMER06] //#38847
+@80021 = ~~ [MALMER05] //#38786
+@80022 = ~Seht Euch nur um und begutachtet die Waren. Ich bin mir sicher, dass sie Euren hohen Ansprüchen gerecht werden.~ [MALMER02] //#38783
+@80023 = ~Tut mir bitte nicht weh!~ [CHILM07] //#61567
+@80024 = ~~ [CHILM05] //#61565
+@80025 = ~~ [CHILM06] //#61566
+@80026 = ~Boah! Abenteurer!~ [CHILM03] //#61563
+@80027 = ~Ich seid nicht von hier, das wüsste ich nämlich.~ [CHILM02] //#61562
+@80028 = ~Mir gefällt überhaupt nicht, wie Ihr ausseht!~ [PEASF306] //#61683
+@80029 = ~~ [PEASF307] //#61684
+@80030 = ~~ [PEASF308] //#61685
+@80031 = ~Sprecht.~ [FEMALE4H] //#16255
+@80032 = ~Hmmm, ja?~ [GNOMEM03] //#61703
+@80033 = ~~ [GNOMEM06] //#61706
+@80034 = ~~ [GNOMEM07] //#61707
+@80035 = ~Balor~ //#8449
+@80036 = ~Ich mag Leute wie Euch eigentlich nicht, aber... guten Tag trotzdem.~ [NOBFE03] //#61643
+@80037 = ~~ [NOBFE07] //#61647
+@80038 = ~~ [NOBFE08] //#61648
+@80039 = ~Beschlagenes Lederwams +3~ //#6365
+@80040 = ~Mutierter Kreischling~ //#2286
+@80041 = ~Skelett-Bogenschütze~ //#73272
