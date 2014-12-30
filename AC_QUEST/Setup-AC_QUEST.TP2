@@ -885,11 +885,31 @@ END
 
 COMPILE ~AC_QUEST/BAF/ACQ18002.BAF~
 COMPILE ~AC_QUEST/D/ACQ18000.D~
+
+ACTION_IF GAME_IS ~tutu_totsc~ THEN BEGIN
+COPY_EXISTING ~%CentralBaldursGate_House1_L1%.are~ ~override~
+  READ_ASCII 0x94 area_script
+  PATCH_IF (("%area_script%" STRING_COMPARE_CASE "None")=0) BEGIN
+  	WRITE_EVALUATED_ASCII 0x94 ~%CentralBaldursGate_House1_L1_BCS%~ (8)
+  END
+BUT_ONLY
+END
+
 EXTEND_TOP ~%CentralBaldursGate_House1_L1_BCS%.bcs~ ~AC_QUEST/baf/AR7711.baf~
 EXTEND_TOP ~%WSewers_BCS%.bcs~ ~AC_QUEST/baf/AR7324.baf~
 EVALUATE_BUFFER
 EXTEND_TOP ~%CentralSewers_BCS%.bcs~ ~AC_QUEST/baf/AR7325.baf~
 EVALUATE_BUFFER
+
+ACTION_IF GAME_IS ~tutu_totsc~ THEN BEGIN
+COPY_EXISTING ~%BaldursGateDocks_IronThrone_Cellar%.are~ ~override~
+  READ_ASCII 0x94 area_script
+  PATCH_IF (("%area_script%" STRING_COMPARE_CASE "None")=0) BEGIN
+  	WRITE_EVALUATED_ASCII 0x94 ~%BaldursGateDocks_IronThrone_Cellar_BCS%~ (8)
+  END
+BUT_ONLY
+END
+
 EXTEND_TOP ~%BaldursGateDocks_IronThrone_Cellar_BCS%.bcs~ ~AC_QUEST/baf/AR7611.baf~
 EVALUATE_BUFFER
 
@@ -1150,9 +1170,39 @@ EXTEND_TOP ~%NashkelMines_BCS%.bcs~ ~AC_QUEST/baf/AR4400.baf~
 EXTEND_TOP ~%NashkelMines_MulaheysCave_BCS%.bcs~ ~AC_QUEST/baf/AR4405.baf~
 EXTEND_TOP ~%NEBaldursGate_BCS%.bcs~ ~AC_QUEST/baf/AR7400.baf~
 EXTEND_TOP ~%ESewers_BCS%.bcs~ ~AC_QUEST/baf/AR7326.baf~
+
+ACTION_IF GAME_IS ~tutu_totsc~ THEN BEGIN
+COPY_EXISTING ~%NWBaldursGate_Tavern_L2%.are~ ~override~
+  READ_ASCII 0x94 area_script
+  PATCH_IF (("%area_script%" STRING_COMPARE_CASE "None")=0) BEGIN
+  	WRITE_EVALUATED_ASCII 0x94 ~%NWBaldursGate_Tavern_L2_BCS%~ (8)
+  END
+BUT_ONLY
+END
+
 EXTEND_TOP ~%NWBaldursGate_Tavern_L2_BCS%.bcs~ ~AC_QUEST/baf/AR7266.baf~
 EVALUATE_BUFFER
+
+ACTION_IF GAME_IS ~tutu_totsc~ THEN BEGIN
+COPY_EXISTING ~%NWBaldursGate_House4_L2%.are~ ~override~
+  READ_ASCII 0x94 area_script
+  PATCH_IF (("%area_script%" STRING_COMPARE_CASE "None")=0) BEGIN
+  	WRITE_EVALUATED_ASCII 0x94 ~%NWBaldursGate_House4_L2_BCS%~ (8)
+  END
+BUT_ONLY
+END
+
 EXTEND_TOP ~%NWBaldursGate_House4_L2_BCS%.bcs~ ~AC_QUEST/baf/AR7200.baf~
+
+ACTION_IF GAME_IS ~tutu_totsc~ THEN BEGIN
+COPY_EXISTING ~%NBaldursGate_TempleofHelm%.are~ ~override~
+  READ_ASCII 0x94 area_script
+  PATCH_IF (("%area_script%" STRING_COMPARE_CASE "None")=0) BEGIN
+  	WRITE_EVALUATED_ASCII 0x94 ~%NBaldursGate_TempleofHelm_BCS%~ (8)
+  END
+BUT_ONLY
+END
+
 EXTEND_TOP ~%NBaldursGate_TempleofHelm_BCS%.bcs~ ~AC_QUEST/baf/ARA002.baf~
 COMPILE ~AC_QUEST/BAF/ACQ10102.BAF~
 EVALUATE_BUFFER
