@@ -3,7 +3,7 @@ AUTHOR ~jastey@web.de~ //This is Ascalon's Questpack, but any bugreports about t
 
 VERSION ~1.02_141218~
 
-AUTO_TRA ~AC_QUEST/TRA/%s~
+AUTO_TRA "AC_QUEST/TRA/autotra/%s"//%"
 
 ALWAYS
 
@@ -12,6 +12,22 @@ INCLUDE ~AC_QUEST/lib/g3_bgt_cpmvars.tpa~
 INCLUDE ~AC_QUEST/lib/liam_bgee_vars.tpa~
 INCLUDE ~AC_QUEST/lib/eet_cpmvars.tpa~
 INCLUDE ~AC_QUEST/lib/ac_quest_cpmvars.tpa~
+
+
+/* Handling of correctly formatted tra-files!! ---------------------- */
+
+/*
+* Copies tra files into the autotra-folder (to leave the originals untouched)
+*/
+	DEFINE_ACTION_FUNCTION autotra_workaround BEGIN
+		COPY ~AC_QUEST/tra/german~ ~AC_QUEST/tra/autotra/%LANGUAGE%~
+		COPY ~AC_QUEST/tra/%LANGUAGE%~ ~AC_QUEST/tra/autotra/%LANGUAGE%~
+	END
+
+	LAF autotra_workaround END
+
+	ACTION_DEFINE_ARRAY tra#reload BEGIN setup-AC_QUEST END
+	ACTION_DEFINE_ARRAY tra#noconvert BEGIN END
 
 	LAF HANDLE_CHARSETS
 		INT_VAR
@@ -22,6 +38,10 @@ INCLUDE ~AC_QUEST/lib/ac_quest_cpmvars.tpa~
 			reload_array = tra#reload
 			iconv_path = ~AC_QUEST/tools/iconv~
 	END
+		
+		LOAD_TRA ~AC_QUEST/tra/autotra/german/Setup.tra~	
+		LOAD_TRA ~AC_QUEST/tra/autotra/%LANGUAGE%/Setup.tra~
+
 //CamDawgs CD_STATE_NOTVALID zum Checken der Dialogfähigkeit eines Char
 //Thank you very much, CamDawg!
 APPEND ~STATE.IDS~ // adds custom IsValidForPartyDialogue state
@@ -32,9 +52,11 @@ APPEND ~shoutids.ids~ ~99 HELPME~ UNLESS ~^99~
 
 END
 
-LANGUAGE ~Deutsch~ ~german~ ~AC_QUEST/TRA/german/setup-AC_QUEST.tra~
 
-LANGUAGE ~English~ ~english~ ~AC_QUEST/TRA/english/setup-AC_QUEST.tra~
+
+LANGUAGE ~german~ ~german~ ~AC_QUEST/TRA/autotra/german/setup-AC_QUEST.tra~
+
+LANGUAGE ~English~ ~english~ ~AC_QUEST/TRA/autotra/english/setup-AC_QUEST.tra~
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
