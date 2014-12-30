@@ -1,7 +1,7 @@
 BACKUP ~AC_QUEST/backup~
 AUTHOR ~jastey@web.de~ //This is Ascalon's Questpack, but any bugreports about this version should go to jastey
 
-VERSION ~1.02_141218~
+VERSION ~2.00b_141230~
 
 AUTO_TRA "AC_QUEST/TRA/autotra/%s"//%"
 

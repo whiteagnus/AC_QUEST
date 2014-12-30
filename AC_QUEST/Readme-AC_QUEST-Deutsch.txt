@@ -2,7 +2,7 @@
                               Eine Modifikation für BGT-WeiDU
                             Ascalon (geheimer.herrscher@gmx.de)
 
-                                      Version: 1.01
+                                      Version: 2.00 (Beta)
 
 ***************************************************************************************************************
 
@@ -114,12 +114,21 @@ Ein mysteriöser Zwergenkult macht sich an der Schwertküste breit. Es werden Held
 
 VII. Versions-History:
 
-0.1 (Alpha) 	- Erste Version (zum Test freigegeben)
-0.2 (Alpha)	- Korrekturen und Fertigstellung der Inhalte
-0.3 (Alpha)	- Neues Balancing der Gegner und Kreaturen
-0.5 (Beta)	- Freigegebene Betafassung mit mehr Interjections, Korrigierten Tagebucheinträgen und XP-Vergabe
-1.0		- Vollständige Neuprogrammierung
-1.01		- kleinere Bugfixes
+0.1 (Alpha) 	
+- Erste Version (zum Test freigegeben)
+0.2 (Alpha)
+- Korrekturen und Fertigstellung der Inhalte
+0.3 (Alpha)	
+- Neues Balancing der Gegner und Kreaturen
+0.5 (Beta)
+- Freigegebene Betafassung mit mehr Interjections, Korrigierten Tagebucheinträgen und XP-Vergabe
+1.0		
+- Vollständige Neuprogrammierung
+1.01		
+- kleinere Bugfixes
+2.00 (Beta)
+- Kompatiblität für Tutu (mit LdSK), BG:EE, BG2 TdB, BG2:EE und EET (ungetestet) hergestellt
+- mehrere kleine Bugfixes
 
 
 ***************************************************************************************************************
