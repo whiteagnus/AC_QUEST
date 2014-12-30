@@ -7,7 +7,21 @@ AUTO_TRA ~AC_QUEST/TRA/%s~
 
 ALWAYS
 
+INCLUDE ~AC_QUEST/lib/g3_tutu_cpmvars.tpa~
+INCLUDE ~AC_QUEST/lib/g3_bgt_cpmvars.tpa~
+INCLUDE ~AC_QUEST/lib/liam_bgee_vars.tpa~
+INCLUDE ~AC_QUEST/lib/eet_cpmvars.tpa~
+INCLUDE ~AC_QUEST/lib/ac_quest_cpmvars.tpa~
 
+	LAF HANDLE_CHARSETS
+		INT_VAR
+			infer_charset = 1
+		STR_VAR
+			tra_path = EVAL ~AC_QUEST/tra/autotra~
+			noconvert_array = tra#noconvert
+			reload_array = tra#reload
+			iconv_path = ~AC_QUEST/tools/iconv~
+	END
 //CamDawgs CD_STATE_NOTVALID zum Checken der Dialogfähigkeit eines Char
 //Thank you very much, CamDawg!
 APPEND ~STATE.IDS~ // adds custom IsValidForPartyDialogue state
