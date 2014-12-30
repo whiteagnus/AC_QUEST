@@ -1,20 +1,20 @@
 IF
 	Global("ACQSNAKEWORK","GLOBAL",2)
-	Global("ACPREP","AR7266",0)
+	Global("ACPREP","%NWBaldursGate_Tavern_L2%",0)
 THEN
 	RESPONSE #100
-		SetGlobal("ACPREP","AR7266",1)
+		SetGlobal("ACPREP","%NWBaldursGate_Tavern_L2%",1)
 		CreateCreature("ACQ10117",[713.297],7)
 		CreateCreature("ACQ10118",[744.270],3)
 END
 
 IF
 	Global("ACQWOSTOK","GLOBAL",3)
-	Global("ACPREP","AR7266",0)
+	Global("ACPREP","%NWBaldursGate_Tavern_L2%",0)
 THEN
 	RESPONSE #100
 		SetGlobal("ACQWOSTOK","GLOBAL",4)
-		SetGlobal("ACPREP","AR7266",1)
+		SetGlobal("ACPREP","%NWBaldursGate_Tavern_L2%",1)
 		CreateCreature("ACQ10125",[713.297],7)
 		CreateCreature("ACQ10126",[744.270],3)
 		CreateCreature("ACQ10110",[627.234],3)

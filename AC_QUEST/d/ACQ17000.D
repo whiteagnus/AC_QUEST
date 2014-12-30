@@ -101,7 +101,7 @@ END
 
 IF ~~ THEN BEGIN 14
 SAY @47
-IF ~~ THEN DO ~RevealAreaOnMap("AR9799")~ EXIT
+IF ~~ THEN DO ~RevealAreaOnMap("%Ulcaster%")~ EXIT
 END
 
 IF ~~ THEN BEGIN 15
@@ -184,7 +184,7 @@ END
 
 IF ~~ THEN BEGIN 27
 SAY @81
-IF ~~ THEN DO ~SetNumTimesTalkedTo(2)EscapeAreaMove("AR6600",2470,1537,0)~ EXIT
+IF ~~ THEN DO ~SetNumTimesTalkedTo(2)EscapeAreaMove("%LionsWay%",2470,1537,0)~ EXIT
 END
 
 IF ~NumTimesTalkedToGT(1)~ THEN BEGIN 28

@@ -1,7 +1,7 @@
 IF
 	OR(2)
-	GlobalLT("CHAPTER","GLOBAL",4)
-	GlobalGT("CHAPTER","GLOBAL",5)
+	GlobalLT("CHAPTER","GLOBAL",%tutu_chapter_3%)
+	GlobalGT("CHAPTER","GLOBAL",%tutu_chapter_4%)
 	IsActive(MYSELF)
 THEN
 	RESPONSE #100
@@ -9,8 +9,8 @@ THEN
 END
 
 IF
-	GlobalGT("CHAPTER","GLOBAL",3)
-	GlobalLT("CHAPTER","GLOBAL",6)
+	GlobalGT("CHAPTER","GLOBAL",%tutu_chapter_2%)
+	GlobalLT("CHAPTER","GLOBAL",%tutu_chapter_5%)
 	!IsActive(MYSELF)
 THEN
 	RESPONSE #100

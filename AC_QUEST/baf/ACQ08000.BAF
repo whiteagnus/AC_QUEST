@@ -16,7 +16,7 @@ THEN
 END
 
 IF
-	!Global("ENDOFBG1","GLOBAL",2)
+	%BGT_VAR%
 	See(player1)
 	Race(player1,DWARF)
 THEN
@@ -25,7 +25,7 @@ THEN
 END
 
 IF
-	!Global("ENDOFBG1","GLOBAL",2)
+	%BGT_VAR%
 	See(player2)
 	Race(player2,DWARF)
 	Global("ACQLEAFLET","GLOBAL",0)
@@ -36,7 +36,7 @@ THEN
 END
 
 IF
-	!Global("ENDOFBG1","GLOBAL",2)
+	%BGT_VAR%
 	See(player3)
 	Race(player3,DWARF)
 THEN
@@ -45,7 +45,7 @@ THEN
 END
 
 IF
-	!Global("ENDOFBG1","GLOBAL",2)
+	%BGT_VAR%
 	See(player4)
 	Race(player4,DWARF)
 THEN
@@ -54,7 +54,7 @@ THEN
 END
 
 IF
-	!Global("ENDOFBG1","GLOBAL",2)
+	%BGT_VAR%
 	See(player5)
 	Race(player5,DWARF)
 THEN
@@ -63,7 +63,7 @@ THEN
 END
 
 IF
-	!Global("ENDOFBG1","GLOBAL",2)
+	%BGT_VAR%
 	See(player6)
 	Race(player6,DWARF)
 THEN

@@ -1,5 +1,5 @@
 IF
-	Global("ENDOFBG1","GLOBAL",2)
+	%BGT2_VAR%
 THEN
 	RESPONSE #100
 		Continue()

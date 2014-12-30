@@ -1,5 +1,5 @@
 IF
-	AreaCheck("AR4100")
+	AreaCheck("%GnollStronghold%")
 	Global("ACQ12","GLOBAL",1)
 	Detect([PC])
 THEN
@@ -8,7 +8,7 @@ THEN
 END
 
 IF
-	AreaCheck("AR4100")
+	AreaCheck("%GnollStronghold%")
 	Global("ACQ12","GLOBAL",2)
 	Global("ACQ12","LOCALS",0)
 	Detect([PC])

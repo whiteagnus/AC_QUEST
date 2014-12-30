@@ -151,7 +151,7 @@ ADD_CRE_ITEM ~SW1H07~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP
 ADD_CRE_ITEM ~LEAT04~ #0 #0 #0 ~NONE~ ~ARMOR~
 ADD_CRE_ITEM ~potn10~ #3 #0 #0 ~NONE~ ~INV1~
 
-COPY_EXISTING ~AR6700.are~ ~OVERRIDE~
+COPY_EXISTING ~%Beregost%.are~ ~OVERRIDE~
 LPF fj_are_structure
     INT_VAR
     fj_loc_x          = 2608
@@ -192,6 +192,7 @@ LPF fj_are_structure
   END
   
 COMPILE ~AC_QUEST/D/ACQ11000.D~
+EVALUATE_BUFFER
 COMPILE ~AC_QUEST/BAF/ACQ11002.BAF~
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -305,7 +306,7 @@ ADD_CRE_ITEM ~RNDTRE08~ #1 #0 #0 ~NONE~ ~INV~
 ADD_CRE_ITEM ~RNDTRE08~ #1 #0 #0 ~NONE~ ~INV~
 ADD_CRE_ITEM ~RNDTRE08~ #1 #0 #0 ~NONE~ ~INV~
 
-COPY_EXISTING ~AR3702.are~ ~OVERRIDE~
+COPY_EXISTING ~%Nashkel_TempleofHelm%.are~ ~OVERRIDE~
 LPF fj_are_structure
     INT_VAR
     fj_loc_x          = 324
@@ -319,7 +320,7 @@ LPF fj_are_structure
     fj_cre_resref     = ACQ12004
   END
   
-COPY_EXISTING ~AR4200.are~ ~OVERRIDE~
+COPY_EXISTING ~%DryadFalls%.are~ ~OVERRIDE~
 LPF fj_are_structure
     INT_VAR
     fj_loc_x          = 1749
@@ -334,7 +335,7 @@ LPF fj_are_structure
     fj_cre_resref     = ACQ12003
   END
   
-COPY_EXISTING ~AR3700.are~ ~OVERRIDE~
+COPY_EXISTING ~%Nashkel%.are~ ~OVERRIDE~
 LPF fj_are_structure
     INT_VAR
     fj_loc_x          = 1817
@@ -349,13 +350,18 @@ LPF fj_are_structure
   END
 
 COMPILE ~AC_QUEST/D/ACQ12000.D~
+EVALUATE_BUFFER
 COMPILE ~AC_QUEST/BAF/ACQ12001.BAF~
 COMPILE ~AC_QUEST/BAF/ACQ12002.BAF~
+EVALUATE_BUFFER
 COMPILE ~AC_QUEST/BAF/ACQ12004.BAF~
 COMPILE ~AC_QUEST/BAF/ACQ12CUT.BAF~
+EVALUATE_BUFFER
 COMPILE ~AC_QUEST/BAF/ACQ12CUT2.BAF~
+EVALUATE_BUFFER
 
-EXTEND_TOP ~AR4100.bcs~ ~AC_QUEST/baf/AC4100.baf~
+EXTEND_TOP ~%GnollStronghold_BCS%.bcs~ ~AC_QUEST/baf/AC4100.baf~
+EVALUATE_BUFFER
 
 COPY ~AC_QUEST/ITM/ACQ12000.ITM~ ~Override/ACQ12000.ITM~
 SAY NAME1 #6348
@@ -420,7 +426,7 @@ WRITE_ASCII 0x248 ~ACQ13004~
 WRITE_ASCII 0x250 ~SHOUT~
 WRITE_ASCII 0x258 ~RUNENEMY~
 
-COPY_EXISTING ~AR9700.are~ ~OVERRIDE~
+COPY_EXISTING ~%SouthBeregostRoad%.are~ ~OVERRIDE~
 LPF fj_are_structure
 	INT_VAR
 	fj_loc_x          = 3676
@@ -434,7 +440,7 @@ LPF fj_are_structure
 	fj_cre_resref     = ACQ13001
 END
 
-COPY_EXISTING ~AR9702.are~ ~OVERRIDE~
+COPY_EXISTING ~%SouthBeregostRoad_Cave%.are~ ~OVERRIDE~
 LPF fj_are_structure
 	INT_VAR
 	fj_loc_x          = 484
@@ -460,7 +466,7 @@ LPF fj_are_structure
 	fj_cre_resref     = ACQ13003
 END
 
-COPY_EXISTING ~AR3800.are~ ~OVERRIDE~
+COPY_EXISTING ~%NashkelCarnival%.are~ ~OVERRIDE~
 LPF fj_are_structure
 	INT_VAR
 	fj_loc_x          = 1352
@@ -506,9 +512,11 @@ COMPILE ~AC_QUEST/BAF/ACQ13002.BAF~
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 COMPILE ~AC_QUEST/D/ACQ15000.D~
+EVALUATE_BUFFER
 COMPILE ~AC_QUEST/BAF/ACQ15001.BAF~
 COMPILE ~AC_QUEST/BAF/ACQ15002.BAF~
-EXTEND_BOTTOM ~AR8600.bcs~ ~AC_QUEST/BAF/AC8600.BAF~
+EVALUATE_BUFFER
+EXTEND_BOTTOM ~%CloakwoodMines_BCS%.bcs~ ~AC_QUEST/BAF/AC8600.BAF~
 EXTEND_TOP ~BALDUR.bcs~ ~AC_QUEST/BAF/ACBALDUR.BAF~
 
 COPY_EXISTING ~MISC54.ITM~ ~Override/ACQ15002.ITM~
@@ -561,7 +569,7 @@ WRITE_ASCII 0x248 ~ACQ15002~
 WRITE_ASCII 0x2cc ~ACQ15002~
 ADD_CRE_ITEM ~MINHP1~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~AMULET~
 
-COPY_EXISTING ~AR8604.are~ ~OVERRIDE~
+COPY_EXISTING ~%CloakwoodMines_L2%.are~ ~OVERRIDE~
 LPF fj_are_structure
 	INT_VAR
 	fj_loc_x          = 628
@@ -575,7 +583,7 @@ LPF fj_are_structure
 	fj_cre_resref     = ACQ15002
 END
 
-COPY_EXISTING ~AR7000.are~ ~OVERRIDE~
+COPY_EXISTING ~%CloakwoodLodge%.are~ ~OVERRIDE~
 LPF fj_are_structure
 	INT_VAR
 	fj_loc_x          = 4810
@@ -655,7 +663,7 @@ ADD_CRE_ITEM ~LEAT01~ #0 #0 #0 ~NONE~ ~ARMOR~
 ADD_CRE_ITEM ~RNDTRE02~ #0 #0 #0 ~NONE~ ~INV1~
 ADD_CRE_ITEM ~RNDTRE04~ #0 #0 #0 ~NONE~ ~INV2~
 
-COPY_EXISTING ~AR7100.are~ ~OVERRIDE~
+COPY_EXISTING ~%HighHedge%.are~ ~OVERRIDE~
 LPF fj_are_structure
 	INT_VAR
 	fj_loc_x          = 2881
@@ -669,7 +677,7 @@ LPF fj_are_structure
 	fj_cre_resref     = ACQ16001
 END
 
-COPY_EXISTING ~AR7101.are~ ~OVERRIDE~
+COPY_EXISTING ~%HighHedge_House%.are~ ~OVERRIDE~
 LPF fj_are_structure
 	INT_VAR
 	fj_loc_x          = 283
@@ -697,6 +705,7 @@ LPF fj_are_structure
 END
 
 COMPILE ~AC_QUEST/D/ACQ16000.D~
+EVALUATE_BUFFER
 COMPILE ~AC_QUEST/BAF/ACQ161.BAF~
 COMPILE ~AC_QUEST/BAF/ACQ162.BAF~
 COMPILE ~AC_QUEST/BAF/ACQ163.BAF~
@@ -704,6 +713,7 @@ COMPILE ~AC_QUEST/BAF/ACQ164.BAF~
 COMPILE ~AC_QUEST/BAF/ACQ16001.BAF~
 COMPILE ~AC_QUEST/BAF/ACQ16002.BAF~
 COMPILE ~AC_QUEST/VIRGI/ACQ7101.BAF~
+EVALUATE_BUFFER
 
 COPY_EXISTING ~MISC65.ITM~ ~Override/ACQ16002.ITM~
 SAY NAME1 @37
@@ -711,7 +721,7 @@ SAY NAME2 @37
 SAY UNIDENTIFIED_DESC @38
 SAY DESC @38
 
-COPY_EXISTING ~Inn3351.sto~ ~override/Inn3351.sto~
+COPY_EXISTING ~%Feldeposts_Store%.sto~ ~override~
 ADD_STORE_ITEM ~ACQ16001~ #10 #0 #0 ~IDENTIFIED~ #1 ~UNLIMITED~
 
 COPY ~AC_QUEST/ITM/ACQ16001.ITM~ ~OVERRIDE/ACQ16001.ITM~
@@ -758,6 +768,7 @@ SAY UNIDENTIFIED_DESC #6819
 SAY DESC @48
 
 COMPILE ~AC_QUEST/D/ACQ17000.D~
+EVALUATE_BUFFER
 COMPILE ~AC_QUEST/BAF/ACQ17001.BAF~
 COMPILE ~AC_QUEST/BAF/ACQCUT03.BAF~
 
@@ -815,7 +826,7 @@ ADD_CRE_ITEM ~IMMUNE3~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~RING~
 ADD_CRE_ITEM ~B1-12M4~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~WEAPON~ EQUIP
 ADD_CRE_ITEM ~ACQ17003~ #0 #0 #0 ~NONE~ ~INV~
 
-COPY_EXISTING ~AR6801.are~ ~OVERRIDE~
+COPY_EXISTING ~%FriendlyArmInn_L1%.are~ ~OVERRIDE~
 LPF fj_are_structure
 	INT_VAR
 	fj_loc_x          = 917
@@ -829,7 +840,7 @@ LPF fj_are_structure
 	fj_cre_resref     = ACQ17001
 END
 
-COPY_EXISTING ~AR9798.are~ ~OVERRIDE~
+COPY_EXISTING ~%UlcasterRuins%.are~ ~OVERRIDE~
 LPF fj_are_structure
 INT_VAR
 	fj_con_itm_idx    = 0
@@ -849,10 +860,13 @@ END
 
 COMPILE ~AC_QUEST/BAF/ACQ18002.BAF~
 COMPILE ~AC_QUEST/D/ACQ18000.D~
-EXTEND_TOP ~AR7711.bcs~ ~AC_QUEST/baf/AR7711.baf~
-EXTEND_TOP ~AR7324.bcs~ ~AC_QUEST/baf/AR7324.baf~
-EXTEND_TOP ~AR7325.bcs~ ~AC_QUEST/baf/AR7325.baf~
-EXTEND_TOP ~AR7611.bcs~ ~AC_QUEST/baf/AR7611.baf~
+EXTEND_TOP ~%CentralBaldursGate_House1_L1_BCS%.bcs~ ~AC_QUEST/baf/AR7711.baf~
+EXTEND_TOP ~%WSewers_BCS%.bcs~ ~AC_QUEST/baf/AR7324.baf~
+EVALUATE_BUFFER
+EXTEND_TOP ~%CentralSewers_BCS%.bcs~ ~AC_QUEST/baf/AR7325.baf~
+EVALUATE_BUFFER
+EXTEND_TOP ~%BaldursGateDocks_IronThrone_Cellar_BCS%.bcs~ ~AC_QUEST/baf/AR7611.baf~
+EVALUATE_BUFFER
 
 COPY ~AC_QUEST/ARE/AC7711.ARE~ ~OVERRIDE/AC7711.ARE~
 COPY ~AC_QUEST/ARE/AC7712.ARE~ ~OVERRIDE/AC7712.ARE~
@@ -963,7 +977,7 @@ ADD_CRE_ITEM ~BOLT01~ #10 #0 #0 ~NONE~ ~QUIVER2~
 ADD_CRE_ITEM ~RNDTRE02~ #0 #0 #0 ~NONE~ ~INV~
 ADD_CRE_ITEM ~RNDTRE03~ #0 #0 #0 ~NONE~ ~INV~
 
-COPY_EXISTING ~AR7700.are~ ~OVERRIDE~
+COPY_EXISTING ~%CentralBaldursGate%.are~ ~OVERRIDE~
 LPF fj_are_structure
     INT_VAR
     fj_loc_x          = 1354
@@ -997,6 +1011,7 @@ END
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 COMPILE ~AC_QUEST/D/ACQ19000.D~
+EVALUATE_BUFFER
 
 COPY ~AC_QUEST/cre/ACQ19001.cre~ ~OVERRIDE/ACQ19001.cre~
 SAY NAME1 @63
@@ -1040,7 +1055,7 @@ WRITE_ASCII 0x258 ~RUNENEMY~
 WRITE_ASCII 0x268 ~WTHSTLBE~
 WRITE_ASCII 0x2cc ~ACQ19003~
 
-COPY_EXISTING ~AR7200.are~ ~OVERRIDE~
+COPY_EXISTING ~%NWBaldursGate%.are~ ~OVERRIDE~
 LPF fj_are_structure
     INT_VAR
     fj_loc_x          = 2834
@@ -1089,24 +1104,31 @@ LPF fj_are_structure
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 COMPILE ~AC_QUEST/D/ACQ10100.D~
+EVALUATE_BUFFER
 COMPILE ~AC_QUEST/BAF/ACQ6900.BAF~
 COMPILE ~AC_QUEST/BAF/ACQCUT01.BAF~
 COMPILE ~AC_QUEST/BAF/ACQCUT02.BAF~
 COMPILE ~AC_QUEST/BAF/AC8201.BAF~
 COMPILE ~AC_QUEST/BAF/AC4400.BAF~
 COMPILE ~AC_QUEST/BAF/AC4401.BAF~
-EXTEND_TOP ~AR8200.bcs~ ~AC_QUEST/baf/AR8200.baf~
-EXTEND_TOP ~AR4400.bcs~ ~AC_QUEST/baf/AR4400.baf~
-EXTEND_TOP ~AR4405.bcs~ ~AC_QUEST/baf/AR4405.baf~
-EXTEND_TOP ~AR7400.bcs~ ~AC_QUEST/baf/AR7400.baf~
-EXTEND_TOP ~AR7326.bcs~ ~AC_QUEST/baf/AR7326.baf~
-EXTEND_TOP ~AR7266.bcs~ ~AC_QUEST/baf/AR7266.baf~
-EXTEND_TOP ~AR7200.bcs~ ~AC_QUEST/baf/AR7200.baf~
-EXTEND_TOP ~ARA002.bcs~ ~AC_QUEST/baf/ARA002.baf~
+EXTEND_TOP ~%SEBaldursGate_BCS%.bcs~ ~AC_QUEST/baf/AR8200.baf~
+EVALUATE_BUFFER
+EXTEND_TOP ~%NashkelMines_BCS%.bcs~ ~AC_QUEST/baf/AR4400.baf~
+
+EXTEND_TOP ~%NashkelMines_MulaheysCave_BCS%.bcs~ ~AC_QUEST/baf/AR4405.baf~
+EXTEND_TOP ~%NEBaldursGate_BCS%.bcs~ ~AC_QUEST/baf/AR7400.baf~
+EXTEND_TOP ~%ESewers_BCS%.bcs~ ~AC_QUEST/baf/AR7326.baf~
+EXTEND_TOP ~%NWBaldursGate_Tavern_L2_BCS%.bcs~ ~AC_QUEST/baf/AR7266.baf~
+EVALUATE_BUFFER
+EXTEND_TOP ~%NWBaldursGate_House4_L2_BCS%.bcs~ ~AC_QUEST/baf/AR7200.baf~
+EXTEND_TOP ~%NBaldursGate_TempleofHelm_BCS%.bcs~ ~AC_QUEST/baf/ARA002.baf~
 COMPILE ~AC_QUEST/BAF/ACQ10102.BAF~
+EVALUATE_BUFFER
 COMPILE ~AC_QUEST/BAF/ACQ10103.BAF~
+EVALUATE_BUFFER
 COMPILE ~AC_QUEST/BAF/ACQ10106.BAF~
 COMPILE ~AC_QUEST/BAF/ACQ10116.BAF~
+EVALUATE_BUFFER
 COMPILE ~AC_QUEST/BAF/ACQ10117.BAF~
 COMPILE ~AC_QUEST/BAF/ACQ10100.BAF~
 COMPILE ~AC_QUEST/BAF/ACQ10118.BAF~
@@ -1201,7 +1223,7 @@ COPY ~AC_QUEST/cre/ACQ10101.CRE~ ~OVERRIDE/ACQ10101.CRE~
 SAY NAME1 ~~
 SAY NAME2 ~~
 
-COPY_EXISTING ~AR4405.are~ ~OVERRIDE~
+COPY_EXISTING ~%NashkelMines_MulaheysCave%.are~ ~OVERRIDE~
 LPF fj_are_structure
     INT_VAR
     fj_loc_x          = 583
@@ -1267,7 +1289,7 @@ ADD_CRE_ITEM ~RNDTRE04~ #0 #0 #0 ~NONE~ ~INV~
 ADD_CRE_ITEM ~CHAN01~ #0 #0 #0 ~NONE~ ~INV~
 ADD_CRE_ITEM ~ACQLET02~ #0 #0 #0 ~NONE~ ~INV~
 
-COPY_EXISTING ~AR6700.are~ ~OVERRIDE~
+COPY_EXISTING ~%Beregost%.are~ ~OVERRIDE~
 LPF fj_are_structure
     INT_VAR
     fj_loc_x          = 2124
@@ -1310,7 +1332,7 @@ ADD_CRE_ITEM ~LEAT04~ #0 #0 #0 ~NONE~ ~INV~
 ADD_CRE_ITEM ~XBOW04~ #0 #0 #0 ~NONE~ ~INV~
 ADD_CRE_ITEM ~SW1H07~ #0 #0 #0 ~NONE~ ~INV~
 
-COPY_EXISTING ~AR6900.are~ ~OVERRIDE~
+COPY_EXISTING ~%CoastWay%.are~ ~OVERRIDE~
 LPF fj_are_structure
 	INT_VAR
 	fj_loc_x          = 0
@@ -1410,7 +1432,7 @@ ADD_CRE_ITEM ~RNDTRE02~ #0 #0 #0 ~NONE~ ~INV~
 ADD_CRE_ITEM ~RNDTRE04~ #0 #0 #0 ~NONE~ ~INV~
 ADD_CRE_ITEM ~ACQLET03~ #0 #0 #0 ~UNSTEALABLE~ ~INV~
 
-COPY_EXISTING ~AR8000.are~ ~OVERRIDE~
+COPY_EXISTING ~%SWBaldursGate%.are~ ~OVERRIDE~
 LPF fj_are_structure
     INT_VAR
     fj_loc_x         	= 1298
@@ -1426,7 +1448,7 @@ LPF fj_are_structure
     fj_cre_resref    	= ACQ10112
   END
 
-COPY_EXISTING ~AR7212.are~ ~OVERRIDE~
+COPY_EXISTING ~%BaldursGate_Undercellars%.are~ ~OVERRIDE~
 LPF fj_are_structure
     INT_VAR
     fj_loc_x         	= 1132
@@ -1657,7 +1679,7 @@ ADD_CRE_ITEM ~RNDTRE03~ #0 #0 #0 ~NONE~ ~INV~
 ADD_CRE_ITEM ~RNDTRE04~ #0 #0 #0 ~NONE~ ~INV~
 ADD_CRE_ITEM ~HAMM02~ #0 #0 #0 ~NONE~ ~INV~
 
-COPY_EXISTING ~AR7325.are~ ~OVERRIDE~
+COPY_EXISTING ~%CentralSewers%.are~ ~OVERRIDE~
 LPF fj_are_structure
     INT_VAR
     fj_loc_x          = 3657
@@ -1750,7 +1772,7 @@ ADD_CRE_ITEM ~RNDTRE02~ #0 #0 #0 ~NONE~ ~INV~
 ADD_CRE_ITEM ~RNDTRE04~ #0 #0 #0 ~NONE~ ~INV~
 ADD_CRE_ITEM ~ACQKEY01~ #0 #0 #0 ~NONE~ ~INV~
 
-COPY_EXISTING ~AR7266.are~ ~OVERRIDE~
+COPY_EXISTING ~%NWBaldursGate_Tavern_L2%.are~ ~OVERRIDE~
   LPF fj_are_structure
     INT_VAR
     fj_type        		= 6
@@ -1787,7 +1809,7 @@ LPF fj_are_structure
     fj_structure_type = itm
 END
 
-COPY_EXISTING ~AR8200.are~ ~override~
+COPY_EXISTING ~%SEBaldursGate%.are~ ~override~
  READ_LONG  0xa4  "doors_num"
  READ_LONG  0xa8  "doors_offset"
     FOR( cnt=0; cnt<"%doors_num%"; cnt=cnt+1 ) BEGIN
@@ -1915,7 +1937,7 @@ COPY ~AC_QUEST/2da/ACHP01.2da~ ~override/ACHP01.2da~
 REPLACE 99998 @118
 REPLACE 99999 @119
 
-COPY_EXISTING ~ARA002.are~ ~OVERRIDE~
+COPY_EXISTING ~%NBaldursGate_TempleofHelm%.are~ ~OVERRIDE~
 LPF fj_are_structure
     INT_VAR
     fj_loc_x          = 448

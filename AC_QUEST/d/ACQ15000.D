@@ -108,12 +108,12 @@ END
 
 IF ~~ THEN BEGIN 13
 SAY @33
-IF ~~ THEN DO ~AddJournalEntry(@10028,QUEST)SetGlobal("ACQ15","GLOBAL",1)EscapeAreaMove("AR6800",1534,1953,12)~ EXIT
+IF ~~ THEN DO ~AddJournalEntry(@10028,QUEST)SetGlobal("ACQ15","GLOBAL",1)EscapeAreaMove("%FriendlyArmInn%",1534,1953,12)~ EXIT
 END
 
 IF ~~ THEN BEGIN 14
 SAY @34
-IF ~~ THEN DO ~AddJournalEntry(@10028,QUEST)SetGlobal("ACQ15","GLOBAL",1)EscapeAreaMove("AR6800",1634,3338,2)~ EXIT
+IF ~~ THEN DO ~AddJournalEntry(@10028,QUEST)SetGlobal("ACQ15","GLOBAL",1)EscapeAreaMove("%FriendlyArmInn%",1634,3338,2)~ EXIT
 END
 
 IF ~NumTimesTalkedToGT(0)PartyHasItem("ACQ15002")~ THEN BEGIN 15
@@ -283,7 +283,7 @@ END
 
 IF ~~ THEN BEGIN 8
 SAY @104 = @105
-IF ~~ THEN DO ~AddexperienceParty(1200)EraseJournalEntry(@10028)AddJournalEntry(@10029,QUEST)SetNumTimesTalkedTo(1)SetGlobal("ACQ15","GLOBAL",3)EscapeAreaMove("AR8600",1534,1953,12)~ EXIT
+IF ~~ THEN DO ~AddexperienceParty(1200)EraseJournalEntry(@10028)AddJournalEntry(@10029,QUEST)SetNumTimesTalkedTo(1)SetGlobal("ACQ15","GLOBAL",3)EscapeAreaMove("%CloakwoodMines%",1534,1953,12)~ EXIT
 END
 
 IF ~~ THEN BEGIN 9

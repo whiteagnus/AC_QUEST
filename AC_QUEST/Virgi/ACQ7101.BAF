@@ -12,7 +12,7 @@ IF
 	Global("ACQ16VIRGI","GLOBAL",1)
 THEN
 	RESPONSE #100
-		ActionOverride(Player1,LeaveAreaLUA("AR7100","",[1732.1583],4))
+		ActionOverride(Player1,LeaveAreaLUA("%HighHedge%","",[1732.1583],4))
 		Continue()
 END
 
@@ -21,7 +21,7 @@ IF
 	Global("ACQ16VIRGI","GLOBAL",1)
 THEN
 	RESPONSE #100
-		ActionOverride(Player2,LeaveAreaLUA("AR7100","",[1732.1583],4))
+		ActionOverride(Player2,LeaveAreaLUA("%HighHedge%","",[1732.1583],4))
 		Continue()
 END
 		
@@ -30,7 +30,7 @@ IF
 	Global("ACQ16VIRGI","GLOBAL",1)
 THEN
 	RESPONSE #100
-		ActionOverride(Player3,LeaveAreaLUA("AR7100","",[1732.1583],4))
+		ActionOverride(Player3,LeaveAreaLUA("%HighHedge%","",[1732.1583],4))
 		Continue()
 END
 		
@@ -39,7 +39,7 @@ IF
 	Global("ACQ16VIRGI","GLOBAL",1)
 THEN
 	RESPONSE #100
-		ActionOverride(Player4,LeaveAreaLUA("AR7100","",[1732.1583],4))
+		ActionOverride(Player4,LeaveAreaLUA("%HighHedge%","",[1732.1583],4))
 		Continue()
 END
 
@@ -48,7 +48,7 @@ IF
 	Global("ACQ16VIRGI","GLOBAL",1)
 THEN
 	RESPONSE #100
-		ActionOverride(Player5,LeaveAreaLUA("AR7100","",[1732.1583],4))
+		ActionOverride(Player5,LeaveAreaLUA("%HighHedge%","",[1732.1583],4))
 		Continue()
 END
 
@@ -57,7 +57,7 @@ IF
 	Global("ACQ16VIRGI","GLOBAL",1)
 THEN
 	RESPONSE #100
-		ActionOverride(Player6,LeaveAreaLUA("AR7100","",[1732.1583],4))
+		ActionOverride(Player6,LeaveAreaLUA("%HighHedge%","",[1732.1583],4))
 		Continue()
 END
 

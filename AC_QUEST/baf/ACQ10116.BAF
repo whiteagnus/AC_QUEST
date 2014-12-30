@@ -28,7 +28,7 @@ END
 
 IF
 	Global("ACQWOSTOK","GLOBAL",1)
-	!AreaCheck("ARA002")
+	!AreaCheck("%NBaldursGate_TempleofHelm%")
 	!IsActive(MYSELF)
 THEN
 	RESPONSE #100

@@ -489,13 +489,13 @@ END
 ++ @143 + 24
 ++ @113 + 23
 
-EXTEND_TOP PRIHEL 0 #1
+EXTEND_TOP %Prihel_Dialog% 0 #1
 IF ~Global("ACQWOSTOK","GLOBAL",0)Global("ACQSNAKEWORK","GLOBAL",1)~ THEN REPLY @144 DO ~SetGlobal("ACQWOSTOK","GLOBAL",1)~ GOTO AC.1
 IF ~Global("ACQWOSTOK","GLOBAL",0)PartyHasItem("ACQBOOK1")~ THEN REPLY @145 DO ~SetGlobal("ACQWOSTOK","GLOBAL",1)~ GOTO AC.2
 IF ~Global("ACQWOSTOK","GLOBAL",0)PartyHasItem("ACQLET03")~ THEN REPLY @146 DO ~SetGlobal("ACQWOSTOK","GLOBAL",1)~ GOTO AC.3
 END
 
-APPEND PRIHEL
+APPEND %Prihel_Dialog%
 
 IF ~~ THEN BEGIN AC.1
 SAY @147
@@ -515,7 +515,7 @@ END
 IF ~~ THEN BEGIN AC.4
 SAY @150
 ++ @151 EXIT
-++ @152 DO ~StartStore("tem0002",LastTalkedToBy(Myself))~ EXIT
+++ @152 DO ~StartStore("%Prihel_Store%",LastTalkedToBy(Myself))~ EXIT
 END
 END
 
@@ -706,7 +706,7 @@ END
 CHAIN 
 IF ~~ THEN ACQ10116 3a
 @221 DO ~Enemy()~
-==BYESLI IF ~InParty("YESLICK")InMyArea("YESLICK")!StateCheck("YESLICK",CD_STATE_NOTVALID)~ THEN @222 DO ~LeaveParty()Enemy()~
+==%YESLICK_BANTER% IF ~InParty("YESLICK")InMyArea("YESLICK")!StateCheck("YESLICK",CD_STATE_NOTVALID)~ THEN @222 DO ~LeaveParty()Enemy()~
 ==ACQ10114 @223 DO ~Enemy()~
 ==ACQ10113 @224 DO ~Enemy()~
 ==ACQ10115 @225 DO ~Enemy()~

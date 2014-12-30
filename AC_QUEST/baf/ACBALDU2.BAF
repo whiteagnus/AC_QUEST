@@ -1,5 +1,5 @@
 IF
-	Global("ENDOFBG1","GLOBAL",2)
+	%BGT2_VAR%
 	Global("ACQ2SNAKESTART","GLOBAL",1)
 	GlobalTimerExpired("ACQSNAKESTARTER","GLOBAL")
 OR(8)

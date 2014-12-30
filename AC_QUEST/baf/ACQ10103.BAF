@@ -11,7 +11,7 @@ IF
 	Dead("ACQ10104")
 	Dead("ACQ10105")
 	GlobalLT("ACSNAKEPLOT","GLOBAL",4)
-	AreaCheck("AR6900")
+	AreaCheck("%CoastWay%")
 THEN
 	RESPONSE #100
 		UseItem("potn10",Myself)

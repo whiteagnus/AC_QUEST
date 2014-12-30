@@ -10,7 +10,7 @@ THEN
 END
 
 IF
-	AreaCheck("AR6800")
+	AreaCheck("%FriendlyArmInn%")
 	Global("ACQ15","GLOBAL",4)
 THEN
 	RESPONSE #100
@@ -30,7 +30,7 @@ END
 
 IF	
 	Global("ACQ15","GLOBAL",4)
-	!AreaCheck("AR6800")
+	!AreaCheck("%FriendlyArmInn%")
 	!See([ENEMY])
 THEN
 	RESPONSE #100
@@ -45,7 +45,7 @@ THEN
 END
 
 IF
-	AreaCheck("AR8600")
+	AreaCheck("%FriendlyArmInn%")
 	Global("ACQ15","GLOBAL",7)
 THEN
 	RESPONSE #100
