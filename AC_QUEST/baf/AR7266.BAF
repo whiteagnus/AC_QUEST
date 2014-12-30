@@ -1,0 +1,27 @@
+IF
+	Global("ACQSNAKEWORK","GLOBAL",2)
+	Global("ACPREP","AR7266",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ACPREP","AR7266",1)
+		CreateCreature("ACQ10117",[713.297],7)
+		CreateCreature("ACQ10118",[744.270],3)
+END
+
+IF
+	Global("ACQWOSTOK","GLOBAL",3)
+	Global("ACPREP","AR7266",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ACQWOSTOK","GLOBAL",4)
+		SetGlobal("ACPREP","AR7266",1)
+		CreateCreature("ACQ10125",[713.297],7)
+		CreateCreature("ACQ10126",[744.270],3)
+		CreateCreature("ACQ10110",[627.234],3)
+		CreateCreature("ACQ10109",[596.258],3)
+		ActionOverride("ACSecret",DestroyItem("ACQ10101")
+		ActionOverride("ACQ10109",Enemy())
+		ActionOverride("ACQ10110",CreateItem("ACQKEY02",0,0,0)
+		ActionOverride("ACQ10110",CreateItem("ACQLET06",0,0,0)
+		ActionOverride("ACQ10110",Enemy())
+END

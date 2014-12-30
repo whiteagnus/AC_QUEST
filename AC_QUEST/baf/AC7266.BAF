@@ -1,0 +1,7 @@
+IF
+	Global("ACQTEST","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ACQTEST","GLOBAL",1)	
+		TriggerActivation("CONTAINER 3",FALSE)
+END

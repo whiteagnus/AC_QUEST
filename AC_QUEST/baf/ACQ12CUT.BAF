@@ -1,0 +1,50 @@
+IF
+	HasItem("ACQ12000","ACQ12002")
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		SetGlobal("ACQ12","GLOBAL",3)
+		Wait(1)
+		FadeToColor([40.0],0)
+		Wait(2)
+		ActionOverride("ACQ12002",DestroySelf())
+		LeaveAreaLUAPanic("AR3700","",[1736.1001],10)
+		LeaveAreaLUA("AR3700","",[1736.1001],10)
+		ActionOverride(Player2,LeaveAreaLUA("AR3700","",[1736.1062],10))
+		ActionOverride(Player3,LeaveAreaLUA("AR3700","",[1783.1026],10))
+		ActionOverride(Player4,LeaveAreaLUA("AR3700","",[1688.1038],10))
+		ActionOverride(Player5,LeaveAreaLUA("AR3700","",[1656.1063],10))
+		ActionOverride(Player6,LeaveAreaLUA("AR3700","",[1708.1073],10))
+		Wait(1)
+		CreateCreature("ACQ12002",[1817.959],0)
+		ActionOverride("ACQ12002",CreateItem("ACQ12000",0,0,0))
+		MultiPlayerSync()
+		FadeFromColor([40.0],0)
+		Wait(2)
+		ActionOverride("ACQ12001",StartDialogNoSet(PLAYER1))
+END
+
+IF
+	!HasItem("ACQ12000","ACQ12002")
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		SetGlobal("ACQ12","GLOBAL",3)
+		Wait(1)
+		FadeToColor([40.0],0)
+		Wait(2)
+		ActionOverride("ACQ12002",DestroySelf())
+		LeaveAreaLUAPanic("AR3700","",[1736.1001],10)
+		LeaveAreaLUA("AR3700","",[1736.1001],10)
+		ActionOverride(Player2,LeaveAreaLUA("AR3700","",[1736.1062],10))
+		ActionOverride(Player3,LeaveAreaLUA("AR3700","",[1783.1026],10))
+		ActionOverride(Player4,LeaveAreaLUA("AR3700","",[1688.1038],10))
+		ActionOverride(Player5,LeaveAreaLUA("AR3700","",[1656.1063],10))
+		ActionOverride(Player6,LeaveAreaLUA("AR3700","",[1708.1073],10))
+		Wait(1)
+		CreateCreature("ACQ12002",[1817.959],0)
+		MultiPlayerSync()
+		FadeFromColor([40.0],0)
+		Wait(2)
+		ActionOverride("ACQ12001",StartDialogNoSet(PLAYER1))
+END

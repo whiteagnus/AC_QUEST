@@ -1,0 +1,6 @@
+IF
+	Global("ENDOFBG1","GLOBAL",2)
+THEN
+	RESPONSE #100
+		Continue()
+END	

@@ -1,0 +1,9 @@
+IF
+	!Global("ACQ1NASHKELL","GLOBAL",1)
+	PartyHasItem("ACQLET05")
+THEN
+	RESPONSE #100
+		SetGlobal("ACQ1NASHKELL","GLOBAL",1)
+		AddJournalEntry(@10011,QUEST)
+		Continue()
+END

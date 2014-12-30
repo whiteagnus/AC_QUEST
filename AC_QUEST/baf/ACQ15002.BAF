@@ -1,0 +1,65 @@
+IF
+	HPLT(MYSELF,2)
+	!Global("ACQ15","GLOBAL",5)
+THEN
+	RESPONSE #100
+		SetGlobal("ACQ15","GLOBAL",5)
+		CreateItem("ACQ15002",0,0,0)
+		DestroyItem("MINHP1")
+		StartDialogNoSet([PC])
+END
+
+IF
+	AreaCheck("AR6800")
+	Global("ACQ15","GLOBAL",4)
+THEN
+	RESPONSE #100
+		SetGlobal("ACQ15","GLOBAL",6)
+		ChangeEnemyAlly(Myself,NEUTRAL)
+		DisplayStringHead(Myself,@5017)
+		MoveToObject("ACQ15001")
+END
+
+IF	
+	Global("ACQ15","GLOBAL",4)
+	See([ENEMY])
+THEN
+	RESPONSE #100
+	RunAwayFrom([ENEMY],75)
+END
+
+IF	
+	Global("ACQ15","GLOBAL",4)
+	!AreaCheck("AR6800")
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		MoveToObject(PLAYER1)
+END
+
+IF
+	Global("ACQ15","GLOBAL",0)
+THEN
+	RESPONSE #100
+		DestroySelf()
+END
+
+IF
+	AreaCheck("AR8600")
+	Global("ACQ15","GLOBAL",7)
+THEN
+	RESPONSE #100
+		DestroySelf()
+END
+
+IF
+	See([PC])
+	NumTimesTalkedTo(0)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck([PC],CD_STATE_NOTVALID)
+THEN
+	RESPONSE #100
+		MakeGlobal()
+		StartDialogNoSet([PC])
+END

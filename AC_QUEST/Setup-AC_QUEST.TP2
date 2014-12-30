@@ -1,0 +1,2036 @@
+BACKUP ~AC_QUEST/backup~
+AUTHOR ~jastey@web.de~ //This is Ascalon's Questpack, but any bugreports about this version should go to jastey
+
+VERSION ~1.02_141218~
+
+AUTO_TRA ~AC_QUEST/TRA/%s~
+
+ALWAYS
+
+
+//CamDawgs CD_STATE_NOTVALID zum Checken der Dialogfähigkeit eines Char
+//Thank you very much, CamDawg!
+APPEND ~STATE.IDS~ // adds custom IsValidForPartyDialogue state
+ ~0x80101FEF CD_STATE_NOTVALID~
+ UNLESS ~CD_STATE_NOTVALID~
+
+APPEND ~shoutids.ids~ ~99 HELPME~ UNLESS ~^99~
+
+END
+
+LANGUAGE ~Deutsch~ ~german~ ~AC_QUEST/TRA/german/setup-AC_QUEST.tra~
+
+LANGUAGE ~English~ ~english~ ~AC_QUEST/TRA/english/setup-AC_QUEST.tra~
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////																			////////////
+////////////									BEGIN PART 1							////////////
+////////////																			////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+         
+BEGIN @1
+
+REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~beltbrd.CRE~ @2
+
+
+
+ACTION_IF FILE_EXISTS_IN_GAME ~ACVIRGI.CRE~
+THEN BEGIN
+PRINT @3
+COMPILE ~AC_QUEST/Virgi/ACVIRGI2.D~
+EXTEND_TOP ~ACVIRGI.bcs~ ~AC_QUEST/Virgi/ACVIRGI.BAF~
+END ELSE BEGIN 
+PRINT @4
+COPY ~AC_QUEST/cre/ACVIRGI.CRE~ ~OVERRIDE/ACVIRGI.CRE~
+SAY NAME1 ~~
+SAY NAME2 ~~
+WRITE_ASCII 0x280 ~ACVIRGI~
+WRITE_ASCII 0x2cc ~ACVIRGI~
+WRITE_ASCII 0x248 ~ACVIRGI~
+COMPILE ~AC_QUEST/Virgi/ACVIRGI.D~
+COMPILE ~AC_QUEST/Virgi/ACVIRGI.BAF~
+END
+
+EXTEND_BOTTOM ~AR0602.bcs~ ~AC_QUEST/BAF/AC0602.BAF~
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////																			////////////
+////////////						1.	Der Lohn für die Mühe							////////////
+////////////																			////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+COPY ~AC_QUEST/cre/ACQ11001.CRE~ ~OVERRIDE/ACQ11001.CRE~
+SAY NAME1 @6
+SAY NAME2 @7
+SAY INITIAL_MEETING #4936
+SAY DAMAGE #12584
+SAY DYING #12585
+SAY SELECT_COMMON1 #4936
+SAY SELECT_COMMON2 #4939
+SAY SELECT_COMMON3 #4940
+WRITE_ASCII 0x280 ~ACQ11001~
+WRITE_ASCII 0x2cc ~ACQ11001~
+WRITE_ASCII 0x248 ~ACQ11001~
+WRITE_ASCII 0x250 ~USEITEM~
+WRITE_ASCII 0x258 ~WTASIGHT~
+ADD_CRE_ITEM ~AX1H01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP
+ADD_CRE_ITEM ~CHAN04~ #0 #0 #0 ~NONE~ ~ARMOR~
+ADD_CRE_ITEM ~SHLD03~ #0 #0 #0 ~NONE~ ~SHIELD~
+ADD_CRE_ITEM ~HELM12~ #0 #0 #0 ~NONE~ ~HELMET~
+ADD_CRE_ITEM ~potn14~ #1 #0 #0 ~NONE~ ~INV1~
+ADD_CRE_ITEM ~potn52~ #1 #0 #0 ~NONE~ ~INV2~
+
+COPY ~AC_QUEST/cre/ACQ11002.CRE~ ~OVERRIDE/ACQ11002.CRE~
+SAY NAME1 @8
+SAY NAME2 @9
+SAY INITIAL_MEETING #4942
+SAY DAMAGE #12586
+SAY DYING #12587
+SAY SELECT_COMMON1 #4942
+SAY SELECT_COMMON2 #4941
+SAY SELECT_COMMON3 #4943
+WRITE_ASCII 0x280 ~ACQ11002~
+WRITE_ASCII 0x2cc ~ACQ11002~
+WRITE_ASCII 0x248 ~ACQ11002~
+WRITE_ASCII 0x250 ~USEITEM~
+WRITE_ASCII 0x258 ~MAGE2~
+ADD_CRE_ITEM ~STAF01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP TWOHANDED
+ADD_CRE_ITEM ~CLCK12~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~ARMOR~
+ADD_CRE_ITEM ~potn52~ #1 #0 #0 ~NONE~ ~INV1~
+ADD_CRE_ITEM ~misc07~ #80 #0 #0 ~NONE~ ~INV2~
+
+COPY ~AC_QUEST/cre/ACQ11003.CRE~ ~OVERRIDE/ACQ11003.CRE~
+SAY NAME1 @10
+SAY NAME2 @11
+SAY INITIAL_MEETING #4926
+SAY DAMAGE #12580
+SAY DYING #12581
+SAY SELECT_COMMON1 #4926
+SAY SELECT_COMMON2 #4925
+SAY SELECT_COMMON3 #4928
+WRITE_ASCII 0x280 ~ACQ11003~
+WRITE_ASCII 0x2cc ~ACQ11003~
+WRITE_ASCII 0x248 ~ACQ11003~
+WRITE_ASCII 0x250 ~USEITEM~
+WRITE_ASCII 0x258 ~WTASIGHT~
+ADD_CRE_ITEM ~SW1H07~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP
+ADD_CRE_ITEM ~LEAT04~ #0 #0 #0 ~NONE~ ~ARMOR~
+ADD_CRE_ITEM ~potn10~ #3 #0 #0 ~NONE~ ~INV1~
+
+COPY_EXISTING ~AR6700.are~ ~OVERRIDE~
+LPF fj_are_structure
+    INT_VAR
+    fj_loc_x          = 2608
+    fj_loc_y          = 830
+    fj_dest_x         = 2608
+    fj_dest_y         = 830
+    fj_orientation    = 12
+    STR_VAR
+    fj_structure_type = actor
+    fj_name           = Agnus
+    fj_cre_resref     = ACQ11001
+  END
+
+LPF fj_are_structure
+    INT_VAR
+    fj_loc_x          = 2657
+    fj_loc_y          = 812
+    fj_dest_x         = 2657
+    fj_dest_y         = 812
+    fj_orientation    = 0
+    STR_VAR
+    fj_structure_type = actor
+    fj_name           = Theliel
+    fj_cre_resref     = ACQ11002
+  END
+  
+LPF fj_are_structure
+    INT_VAR
+    fj_loc_x          = 2682
+    fj_loc_y          = 865
+    fj_dest_x         = 2682
+    fj_dest_y         = 865
+    fj_orientation    = 7
+    STR_VAR
+    fj_structure_type = actor
+    fj_name           = Udolf
+    fj_cre_resref     = ACQ11003
+  END
+  
+COMPILE ~AC_QUEST/D/ACQ11000.D~
+COMPILE ~AC_QUEST/BAF/ACQ11002.BAF~
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////																			////////////
+////////////							2.	EIN FRESSEN FÜR DIE GNOLLE					////////////
+////////////																			////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+COPY ~AC_QUEST/cre/ACQ12001.CRE~ ~OVERRIDE/ACQ12001.CRE~
+SAY NAME1 @12
+SAY NAME2 @12
+SAY INITIAL_MEETING #61667
+SAY DAMAGE #61665
+SAY DYING #61666
+SAY SELECT_COMMON1 #61660
+WRITE_ASCII 0x280 ~ACQ12001~
+WRITE_ASCII 0x2cc ~ACQ12001~
+WRITE_ASCII 0x248 ~ACQ12001~
+WRITE_ASCII 0x250 ~SHOUT~
+WRITE_ASCII 0x258 ~RUNENEMY~
+ADD_CRE_ITEM ~RNDTRE01~ #0 #0 #0 ~NONE~ ~INV1~
+
+COPY ~AC_QUEST/cre/ACQ12002.CRE~ ~OVERRIDE/ACQ12002.CRE~
+SAY NAME1 @13
+SAY NAME2 @14
+SAY INITIAL_MEETING #61823
+SAY DAMAGE #61821
+SAY DYING #61822
+SAY SELECT_COMMON1 #61817
+WRITE_ASCII 0x280 ~ACQ12002~
+WRITE_ASCII 0x2cc ~ACQ12002~
+WRITE_ASCII 0x248 ~ACQ12002~
+ADD_CRE_ITEM ~RNDTRE01~ #0 #0 #0 ~NONE~ ~INV1~
+
+COPY ~AC_QUEST/cre/ACQ12003.CRE~ ~OVERRIDE/ACQ12003.CRE~
+SAY NAME1 @15
+SAY NAME2 @15
+SAY INITIAL_MEETING #11393
+SAY SELECT_COMMON1 #11393
+WRITE_ASCII 0x280 ~ACQ12003~
+WRITE_ASCII 0x2cc ~ACQ12003~
+WRITE_ASCII 0x248 ~ACQ12003~
+ADD_CRE_ITEM ~SPECTR~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~WEAPON1~ EQUIP
+ADD_CRE_ITEM ~KIEL2~ #1 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~RRING~
+
+COPY ~AC_QUEST/cre/ACQ12004.CRE~ ~OVERRIDE/ACQ12004.CRE~
+SAY NAME1 @16
+SAY NAME2 @17
+SAY INITIAL_MEETING #61614
+SAY DAMAGE #61619
+SAY DYING #61620
+SAY SELECT_COMMON1 #61617
+SAY SELECT_COMMON2 #61616
+SAY SELECT_COMMON3 #61615
+WRITE_ASCII 0x280 ~ACQ12004~
+WRITE_ASCII 0x2cc ~ACQ12004~
+WRITE_ASCII 0x248 ~ACQ12004~
+WRITE_ASCII 0x250 ~USEITEM~
+WRITE_ASCII 0x258 ~WTARSGT~
+ADD_CRE_ITEM ~BOW03~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP TWOHANDED
+ADD_CRE_ITEM ~PLAT06~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~ARMOR~
+ADD_CRE_ITEM ~AROW01~ #20 #0 #0 ~NONE~ ~QUIVER1~
+ADD_CRE_ITEM ~AROW01~ #20 #0 #0 ~NONE~ ~QUIVER2~
+ADD_CRE_ITEM ~potn14~ #1 #0 #0 ~NONE~ ~QITEM1~
+ADD_CRE_ITEM ~potn52~ #3 #0 #0 ~NONE~ ~QITEM2~
+ADD_CRE_ITEM ~RNDTRE01~ #1 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~RNDTRE02~ #1 #0 #0 ~NONE~ ~INV~
+
+COPY ~AC_QUEST/cre/ACGNOLL1.CRE~ ~OVERRIDE/ACGNOLL1.CRE~
+SAY NAME1 @18
+SAY NAME2 @18
+SAY INITIAL_MEETING #5511
+SAY BATTLE_CRY1 #5139
+SAY BATTLE_CRY2 #5512
+SAY DAMAGE #5517
+SAY DYING #5518
+WRITE_ASCII 0x280 ~ACGNOLL1~
+WRITE_ASCII 0x2cc ~ACGNOLL1~
+WRITE_ASCII 0x248 ~ACGNOLL1~
+WRITE_ASCII 0x250 ~USEITEM~
+WRITE_ASCII 0x258 ~WTASIGHT~
+ADD_CRE_ITEM ~HALB01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP TWOHANDED
+ADD_CRE_ITEM ~LEAT10~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~ARMOR~
+ADD_CRE_ITEM ~potn14~ #1 #0 #0 ~NONE~ ~QITEM1~
+ADD_CRE_ITEM ~potn52~ #1 #0 #0 ~NONE~ ~QITEM2~
+ADD_CRE_ITEM ~ACQ12000~ #0 #0 #0 ~NONE~ ~RING~
+ADD_CRE_ITEM ~RNDTRE08~ #1 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~RNDTRE08~ #1 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~RNDTRE08~ #1 #0 #0 ~NONE~ ~INV~
+
+COPY ~AC_QUEST/cre/ACGNOLL2.CRE~ ~OVERRIDE/ACGNOLL2.CRE~
+SAY NAME1 @19
+SAY NAME2 @19
+SAY INITIAL_MEETING #5511
+SAY BATTLE_CRY1 #5139
+SAY BATTLE_CRY2 #5512
+SAY DAMAGE #5517
+SAY DYING #5518
+WRITE_ASCII 0x280 ~ACGNOLL1~
+WRITE_ASCII 0x2cc ~ACGNOLL1~
+WRITE_ASCII 0x248 ~ACGNOLL1~
+WRITE_ASCII 0x250 ~USEITEM~
+WRITE_ASCII 0x258 ~WTASIGHT~
+ADD_CRE_ITEM ~HALB01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP TWOHANDED
+ADD_CRE_ITEM ~LEAT10~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~ARMOR~
+ADD_CRE_ITEM ~potn14~ #1 #0 #0 ~NONE~ ~QITEM1~
+ADD_CRE_ITEM ~potn52~ #1 #0 #0 ~NONE~ ~QITEM2~
+ADD_CRE_ITEM ~RNDTRE08~ #1 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~RNDTRE08~ #1 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~RNDTRE08~ #1 #0 #0 ~NONE~ ~INV~
+
+COPY_EXISTING ~AR3702.are~ ~OVERRIDE~
+LPF fj_are_structure
+    INT_VAR
+    fj_loc_x          = 324
+    fj_loc_y          = 312
+    fj_dest_x         = 324
+    fj_dest_y         = 312
+    fj_orientation    = 0
+    STR_VAR
+    fj_structure_type = actor
+    fj_name           = Barin
+    fj_cre_resref     = ACQ12004
+  END
+  
+COPY_EXISTING ~AR4200.are~ ~OVERRIDE~
+LPF fj_are_structure
+    INT_VAR
+    fj_loc_x          = 1749
+    fj_loc_y          = 3386
+    fj_dest_x         = 1749
+    fj_dest_y         = 3386
+    fj_orientation    = 15
+    fj_schedule		  = 0xfff0003f
+    STR_VAR
+    fj_structure_type = actor
+    fj_name           = Marina
+    fj_cre_resref     = ACQ12003
+  END
+  
+COPY_EXISTING ~AR3700.are~ ~OVERRIDE~
+LPF fj_are_structure
+    INT_VAR
+    fj_loc_x          = 1817
+    fj_loc_y          = 959
+    fj_dest_x         = 1817
+    fj_dest_y         = 959
+    fj_orientation    = 2
+    STR_VAR
+    fj_structure_type = actor
+    fj_name           = Frau B
+    fj_cre_resref     = ACQ12001
+  END
+
+COMPILE ~AC_QUEST/D/ACQ12000.D~
+COMPILE ~AC_QUEST/BAF/ACQ12001.BAF~
+COMPILE ~AC_QUEST/BAF/ACQ12002.BAF~
+COMPILE ~AC_QUEST/BAF/ACQ12004.BAF~
+COMPILE ~AC_QUEST/BAF/ACQ12CUT.BAF~
+
+EXTEND_TOP ~AR4100.bcs~ ~AC_QUEST/baf/AC4100.baf~
+
+COPY ~AC_QUEST/ITM/ACQ12000.ITM~ ~Override/ACQ12000.ITM~
+SAY NAME1 #6348
+SAY NAME2 @20
+SAY UNIDENTIFIED_DESC #17054
+SAY DESC @21
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////																			////////////
+////////////								3.	Hopsi									////////////
+////////////																			////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+COPY ~AC_QUEST/cre/ACQ13001.CRE~ ~OVERRIDE/ACQ13001.CRE~
+SAY NAME1 @22
+SAY NAME2 @22
+SAY INITIAL_MEETING #61556
+SAY DAMAGE #61558
+SAY DYING #61558
+SAY SELECT_COMMON1 #61555
+WRITE_ASCII 0x280 ~ACQ13001~
+WRITE_ASCII 0x2cc ~ACQ13001~
+WRITE_ASCII 0x248 ~ACQ13001~
+WRITE_ASCII 0x250 ~SHOUT~
+WRITE_ASCII 0x258 ~RUNENEMY~
+
+COPY ~AC_QUEST/cre/ACQ13002.CRE~ ~OVERRIDE/ACQ13002.CRE~
+SAY NAME1 @23
+SAY NAME2 @23
+SAY INITIAL_MEETING #5150
+SAY BATTLE_CRY1 #5148
+SAY BATTLE_CRY2 #5149
+SAY DAMAGE #5855
+SAY DYING #5856
+SAY SELECT_COMMON1 #5150
+WRITE_ASCII 0x280 ~ACQ13002~
+WRITE_ASCII 0x2cc ~ACQ13002~
+WRITE_ASCII 0x248 ~ACQ13002~
+WRITE_ASCII 0x250 ~WTASIGHT~
+ADD_CRE_ITEM ~SW2H01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP TWOHANDED
+ADD_CRE_ITEM ~RNDTRE08~ #0 #0 #0 ~NONE~ ~INV~
+
+COPY ~AC_QUEST/cre/ACQ13003.CRE~ ~OVERRIDE/ACQ13003.CRE~
+SAY NAME1 @24
+SAY NAME2 @24
+WRITE_ASCII 0x280 ~ACQ13003~
+WRITE_ASCII 0x2cc ~ACQ13003~
+WRITE_ASCII 0x248 ~ACQ13003~
+
+COPY ~AC_QUEST/cre/ACQ13004.CRE~ ~OVERRIDE/ACQ13004.CRE~
+SAY NAME1 @25
+SAY NAME2 @25
+SAY INITIAL_MEETING #38784
+SAY DAMAGE #38847
+SAY DYING #38786
+SAY SELECT_COMMON1 #38783
+WRITE_ASCII 0x280 ~ACQ13004~
+WRITE_ASCII 0x2cc ~ACQ13004~
+WRITE_ASCII 0x248 ~ACQ13004~
+WRITE_ASCII 0x250 ~SHOUT~
+WRITE_ASCII 0x258 ~RUNENEMY~
+
+COPY_EXISTING ~AR9700.are~ ~OVERRIDE~
+LPF fj_are_structure
+	INT_VAR
+	fj_loc_x          = 3676
+	fj_loc_y          = 2217
+	fj_dest_x         = 3676
+	fj_dest_y         = 2217
+	fj_orientation    = 13
+	STR_VAR
+	fj_structure_type = actor
+	fj_name           = Kessy
+	fj_cre_resref     = ACQ13001
+END
+
+COPY_EXISTING ~AR9702.are~ ~OVERRIDE~
+LPF fj_are_structure
+	INT_VAR
+	fj_loc_x          = 484
+	fj_loc_y          = 294
+	fj_dest_x         = 484
+	fj_dest_y         = 294
+	fj_orientation    = 4
+	STR_VAR
+	fj_structure_type = actor
+	fj_name           = Ugh
+	fj_cre_resref     = ACQ13002
+END
+LPF fj_are_structure
+	INT_VAR
+	fj_loc_x          = 444
+	fj_loc_y          = 293
+	fj_dest_x         = 444
+	fj_dest_y         = 293
+	fj_orientation    = 11
+	STR_VAR
+	fj_structure_type = actor
+	fj_name           = Hopsi
+	fj_cre_resref     = ACQ13003
+END
+
+COPY_EXISTING ~AR3800.are~ ~OVERRIDE~
+LPF fj_are_structure
+	INT_VAR
+	fj_loc_x          = 1352
+	fj_loc_y          = 3642
+	fj_dest_x         = 1352
+	fj_dest_y         = 3642
+	fj_orientation    = 13
+	STR_VAR
+	fj_structure_type = actor
+	fj_name           = Rabbitdealer
+	fj_cre_resref     = ACQ13004
+END
+
+COPY ~AC_QUEST/BAM/ACQ13003.BAM~ ~OVERRIDE~
+COPY ~AC_QUEST/BAM/ACQ13004.BAM~ ~OVERRIDE~
+COPY ~AC_QUEST/ITM/ACQ13003.ITM~ ~OVERRIDE~
+SAY NAME1 @26
+SAY NAME2 @26
+SAY DESC @27
+COPY ~AC_QUEST/ITM/ACQ13003.ITM~ ~OVERRIDE/ACQ13004.ITM~
+SAY NAME1 @26
+SAY NAME2 @26
+SAY DESC @28
+
+COMPILE ~AC_QUEST/D/ACQ13000.D~
+COMPILE ~AC_QUEST/BAF/ACQ13001.BAF~
+COMPILE ~AC_QUEST/BAF/ACQ13002.BAF~
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////																			////////////
+////////////							4.	Schmuggelnde Halblinge						////////////
+////////////																			////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////																			////////////
+////////////							5.	Der verlorene Sohn							////////////
+////////////																			////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+COMPILE ~AC_QUEST/D/ACQ15000.D~
+COMPILE ~AC_QUEST/BAF/ACQ15001.BAF~
+COMPILE ~AC_QUEST/BAF/ACQ15002.BAF~
+EXTEND_BOTTOM ~AR8600.bcs~ ~AC_QUEST/BAF/AC8600.BAF~
+EXTEND_TOP ~BALDUR.bcs~ ~AC_QUEST/BAF/ACBALDUR.BAF~
+
+COPY_EXISTING ~MISC54.ITM~ ~Override/ACQ15002.ITM~
+SAY NAME1 @29
+SAY NAME2 @29
+SAY UNIDENTIFIED_DESC @30
+SAY DESC @30
+
+COPY_EXISTING ~BOW07.ITM~ ~Override/ACQ15001.ITM~
+SAY NAME1 #6860
+SAY NAME2 @31
+SAY UNIDENTIFIED_DESC #6862
+SAY DESC @32
+
+COPY ~AC_QUEST/cre/ACQ15001.CRE~ ~OVERRIDE/ACQ15001.CRE~
+SAY NAME1 @33
+SAY NAME2 @33
+SAY INITIAL_MEETING #11065
+SAY DAMAGE #11075
+SAY DYING #11076
+SAY SELECT_COMMON1 #11065
+SAY SELECT_COMMON2 #11070
+SAY SELECT_COMMON3 #11063
+WRITE_ASCII 0x280 ~ACQ15001~
+WRITE_ASCII 0x2cc ~ACQ15001~
+WRITE_ASCII 0x248 ~ACQ15001~
+WRITE_ASCII 0x250 ~INITDLG~
+WRITE_ASCII 0x258 ~USEITEM~
+WRITE_ASCII 0x268 ~WTARSGT~
+ADD_CRE_ITEM ~ACQ15001~ #0 #0 #0 ~NONE~ ~WEAPON~ EQUIP TWOHANDED
+ADD_CRE_ITEM ~SW1H20~ #0 #0 #0 ~NONE~ ~WEAPON~
+ADD_CRE_ITEM ~HELMNOAN~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~HELMET~
+ADD_CRE_ITEM ~AROW02~ #10 #0 #0 ~NONE~ ~QUIVER1~
+ADD_CRE_ITEM ~AROW02~ #10 #0 #0 ~NONE~ ~QUIVER2~
+ADD_CRE_ITEM ~LEAT02~ #0 #0 #0 ~NONE~ ~ARMOR~
+ADD_CRE_ITEM ~potn52~ #1 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~RNDTRE01~ #0 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~RNDTRE02~ #0 #0 #0 ~NONE~ ~INV~
+
+COPY ~AC_QUEST/cre/ACQ15002.cre~ ~OVERRIDE/ACQ15002.cre~
+SAY NAME1 @29
+SAY NAME2 @29
+SAY INITIAL_MEETING #61567
+SAY DAMAGE #61565
+SAY DYING #61566
+SAY SELECT_COMMON1 #61563
+SAY SELECT_COMMON2 #61562
+WRITE_ASCII 0x280 ~ACQ15002~
+WRITE_ASCII 0x248 ~ACQ15002~
+WRITE_ASCII 0x2cc ~ACQ15002~
+ADD_CRE_ITEM ~MINHP1~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~AMULET~
+
+COPY_EXISTING ~AR8604.are~ ~OVERRIDE~
+LPF fj_are_structure
+	INT_VAR
+	fj_loc_x          = 628
+	fj_loc_y          = 400
+	fj_dest_x         = 628
+	fj_dest_y         = 400
+	fj_orientation    = 10
+	STR_VAR
+	fj_structure_type = actor
+	fj_name           = Perwell
+	fj_cre_resref     = ACQ15002
+END
+
+COPY_EXISTING ~AR7000.are~ ~OVERRIDE~
+LPF fj_are_structure
+	INT_VAR
+	fj_loc_x          = 4810
+	fj_loc_y          = 2067
+	fj_dest_x         = 4810
+	fj_dest_y         = 2067
+	fj_orientation    = 14
+	STR_VAR
+	fj_structure_type = actor
+	fj_name           = Aphriel
+	fj_cre_resref     = ACQ15001
+END
+
+COMPILE ~AC_QUEST/D/ACQ15000.D~
+COMPILE ~AC_QUEST/BAF/ACQ15002.BAF~
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////																			////////////
+////////////							6.	Von Wölfen und Männern						////////////
+////////////																			////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+COPY ~AC_QUEST/cre/ACQ16001.CRE~ ~OVERRIDE/ACQ16001.CRE~
+SAY NAME1 @34
+SAY NAME2 @34
+SAY INITIAL_MEETING #61683
+SAY DAMAGE #61684
+SAY DYING #61685
+SAY SELECT_COMMON1 #16255
+WRITE_ASCII 0x280 ~ACQ16001~
+WRITE_ASCII 0x2cc ~ACQ16001~
+WRITE_ASCII 0x248 ~ACQ16001~
+WRITE_ASCII 0x250 ~USEITEM~
+WRITE_ASCII 0x258 ~MAGE2~
+ADD_CRE_ITEM ~DAGG01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP
+ADD_CRE_ITEM ~CLCK29~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~ARMOR~
+ADD_CRE_ITEM ~BRAC02~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~GLOVES~
+ADD_CRE_ITEM ~DART01~ #5 #0 #0 ~NONE~ ~WEAPON2~
+ADD_CRE_ITEM ~RNDTRE08~ #0 #0 #0 ~NONE~ ~INV1~
+ADD_CRE_ITEM ~RNDTRE04~ #0 #0 #0 ~NONE~ ~INV2~
+
+COPY ~AC_QUEST/cre/ACQ16002.CRE~ ~OVERRIDE/ACQ16002.CRE~
+SAY NAME1 @35
+SAY NAME2 @35
+SAY INITIAL_MEETING #23816
+SAY MORALE #23815
+SAY BATTLE_CRY1 #23820
+SAY BATTLE_CRY2 #23819
+SAY BATTLE_CRY3 #23816
+SAY DAMAGE #23818
+SAY DYING #23817
+SAY SELECT_COMMON1 #23819
+WRITE_ASCII 0x280 ~ACQ16002~
+WRITE_ASCII 0x2cc ~ACQ16002~
+WRITE_ASCII 0x248 ~ACQ16002~
+WRITE_ASCII 0x250 ~WTASIGHT~
+ADD_CRE_ITEM ~S1-12~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~WEAPON1~ EQUIP
+ADD_CRE_ITEM ~IMMUNE1~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~LRING~
+ADD_CRE_ITEM ~ACQ16002~ #0 #0 #0 ~UNSTEALABLE~ ~INV1~
+
+COPY ~AC_QUEST/cre/ACQ16003.CRE~ ~OVERRIDE/ACQ16003.CRE~
+SAY NAME1 @36
+SAY NAME2 @36
+SAY INITIAL_MEETING #11148
+SAY DAMAGE #11150
+SAY DYING #11151
+SAY SELECT_COMMON1 #11148
+WRITE_ASCII 0x280 ~ACQ16003~
+WRITE_ASCII 0x2cc ~ACQ16003~
+WRITE_ASCII 0x248 ~ACQ16003~
+WRITE_ASCII 0x250 ~USEITEM~
+WRITE_ASCII 0x258 ~WTASIGHT~
+ADD_CRE_ITEM ~DAGG01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP
+ADD_CRE_ITEM ~LEAT01~ #0 #0 #0 ~NONE~ ~ARMOR~
+ADD_CRE_ITEM ~RNDTRE02~ #0 #0 #0 ~NONE~ ~INV1~
+ADD_CRE_ITEM ~RNDTRE04~ #0 #0 #0 ~NONE~ ~INV2~
+
+COPY_EXISTING ~AR7100.are~ ~OVERRIDE~
+LPF fj_are_structure
+	INT_VAR
+	fj_loc_x          = 2881
+	fj_loc_y          = 2677
+	fj_dest_x         = 2881
+	fj_dest_y         = 2677
+	fj_orientation    = 10
+	STR_VAR
+	fj_structure_type = actor
+	fj_name           = Aiwell
+	fj_cre_resref     = ACQ16001
+END
+
+COPY_EXISTING ~AR7101.are~ ~OVERRIDE~
+LPF fj_are_structure
+	INT_VAR
+	fj_loc_x          = 283
+	fj_loc_y          = 197
+	fj_dest_x         = 283
+	fj_dest_y         = 197
+	fj_orientation    = 15
+	STR_VAR
+	fj_structure_type = actor
+	fj_name           = Tonder
+	fj_cre_resref     = ACQ16002
+END
+LPF fj_are_structure
+	INT_VAR
+	fj_loc_x          = 280
+	fj_loc_y          = 197
+	fj_dest_x         = 280
+	fj_dest_y         = 197
+	fj_orientation    = 0
+	STR_VAR
+	fj_structure_type = actor
+	fj_name           = Wonderbunny Virginie
+	fj_cre_resref     = ACVIRGI
+	fj_bcs_override   = ACQ7101
+END
+
+COMPILE ~AC_QUEST/D/ACQ16000.D~
+COMPILE ~AC_QUEST/BAF/ACQ161.BAF~
+COMPILE ~AC_QUEST/BAF/ACQ162.BAF~
+COMPILE ~AC_QUEST/BAF/ACQ163.BAF~
+COMPILE ~AC_QUEST/BAF/ACQ164.BAF~
+COMPILE ~AC_QUEST/BAF/ACQ16001.BAF~
+COMPILE ~AC_QUEST/BAF/ACQ16002.BAF~
+COMPILE ~AC_QUEST/VIRGI/ACQ7101.BAF~
+
+COPY_EXISTING ~MISC65.ITM~ ~Override/ACQ16002.ITM~
+SAY NAME1 @37
+SAY NAME2 @37
+SAY UNIDENTIFIED_DESC @38
+SAY DESC @38
+
+COPY_EXISTING ~Inn3351.sto~ ~override/Inn3351.sto~
+ADD_STORE_ITEM ~ACQ16001~ #10 #0 #0 ~IDENTIFIED~ #1 ~UNLIMITED~
+
+COPY ~AC_QUEST/ITM/ACQ16001.ITM~ ~OVERRIDE/ACQ16001.ITM~
+SAY NAME1 @39
+SAY NAME2 @39
+SAY DESC @40
+
+COPY_EXISTING ~MISCAS.ITM~ ~Override/ACQ16003.ITM~
+SAY NAME1 @41
+SAY NAME2 @41
+SAY UNIDENTIFIED_DESC @42
+SAY DESC @42
+
+COPY_EXISTING ~MISCAS.ITM~ ~Override/ACQ16004.ITM~
+SAY NAME1 @43
+SAY NAME2 @43
+SAY UNIDENTIFIED_DESC @44
+SAY DESC @44
+
+COPY_EXISTING ~MISCAS.ITM~ ~Override/ACQ16005.ITM~
+SAY NAME1 @43
+SAY NAME2 @43
+SAY UNIDENTIFIED_DESC @45
+SAY DESC @45
+
+COPY_EXISTING ~MISC5Q.ITM~ ~Override/ACQ16006.ITM~
+SAY NAME1 @43
+SAY NAME2 @43
+SAY UNIDENTIFIED_DESC @46
+SAY DESC @46
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////																			////////////
+////////////							7.	Der große Karlini							////////////
+////////////																			////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+COPY ~AC_QUEST/ITM/ACQ17003.ITM~ ~OVERRIDE/ACQ17003.ITM~
+SAY NAME1 #215
+SAY NAME2 @47
+SAY UNIDENTIFIED_DESC #6819
+SAY DESC @48
+
+COMPILE ~AC_QUEST/D/ACQ17000.D~
+COMPILE ~AC_QUEST/BAF/ACQ17001.BAF~
+COMPILE ~AC_QUEST/BAF/ACQCUT03.BAF~
+
+COPY_EXISTING ~BOOK90.ITM~ ~OVERRIDE/ACQBOOK2.ITM~ 
+SAY NAME1 @49
+SAY NAME2 @49
+SAY DESC @50
+
+COPY ~AC_QUEST/cre/ACQ17001.CRE~ ~OVERRIDE/ACQ17001.CRE~
+SAY NAME1 @51
+SAY NAME2 @52
+SAY INITIAL_MEETING #61703
+SAY DAMAGE #61706
+SAY DYING #61707
+SAY SELECT_COMMON1 #61703
+WRITE_ASCII 0x280 ~ACQ17001~
+WRITE_ASCII 0x2cc ~ACQ17001~
+WRITE_ASCII 0x248 ~ACQ17001~
+WRITE_ASCII 0x250 ~USEITEM~
+WRITE_ASCII 0x258 ~MAGE6~
+ADD_CRE_ITEM ~STAF02~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP TWOHANDED
+ADD_CRE_ITEM ~CLCK14~ #0 #0 #0 ~NONE~ ~ARMOR~
+ADD_CRE_ITEM ~BRAC03~ #0 #0 #0 ~NONE~ ~GLOVES~
+ADD_CRE_ITEM ~RNDTRE02~ #0 #0 #0 ~NONE~ ~INV1~
+ADD_CRE_ITEM ~RNDTRE04~ #0 #0 #0 ~NONE~ ~INV2~
+
+COPY ~AC_QUEST/cre/ACQ17002.CRE~ ~OVERRIDE/ACQ17002.CRE~
+SAY NAME1 @53
+SAY NAME2 @53
+SAY INITIAL_MEETING #61703
+SAY DAMAGE #61706
+SAY DYING #61707
+SAY SELECT_COMMON1 #61703
+WRITE_ASCII 0x280 ~ACQ17002~
+WRITE_ASCII 0x2cc ~ACQ17002~
+WRITE_ASCII 0x248 ~INIT1~
+WRITE_ASCII 0x250 ~USEITEM~
+WRITE_ASCII 0x258 ~MAGE7~
+ADD_CRE_ITEM ~STAF02~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP TWOHANDED
+ADD_CRE_ITEM ~CLCK16~ #0 #0 #0 ~NONE~ ~ARMOR~
+ADD_CRE_ITEM ~BRAC03~ #0 #0 #0 ~NONE~ ~GLOVES~
+ADD_CRE_ITEM ~RNDTRE02~ #0 #0 #0 ~NONE~ ~INV1~
+ADD_CRE_ITEM ~RNDTRE04~ #0 #0 #0 ~NONE~ ~INV2~
+
+COPY ~AC_QUEST/cre/ACQ17003.CRE~ ~OVERRIDE/ACQ17003.CRE~
+SAY NAME1 #8449
+SAY NAME2 #8449
+WRITE_ASCII 0x280 ~ACQ17003~
+WRITE_ASCII 0x2cc ~ACQ17003~
+WRITE_ASCII 0x248 ~ACQ17003~
+WRITE_ASCII 0x250 ~DEMBAL01~
+WRITE_ASCII 0x268 ~WTASIGHT~
+ADD_CRE_ITEM ~RINGDEMN~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~RING~
+ADD_CRE_ITEM ~IMMUNE3~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~RING~
+ADD_CRE_ITEM ~B1-12M4~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~WEAPON~ EQUIP
+ADD_CRE_ITEM ~ACQ17003~ #0 #0 #0 ~NONE~ ~INV~
+
+COPY_EXISTING ~AR6801.are~ ~OVERRIDE~
+LPF fj_are_structure
+	INT_VAR
+	fj_loc_x          = 917
+	fj_loc_y          = 682
+	fj_dest_x         = 917
+	fj_dest_y         = 682
+	fj_orientation    = 4
+	STR_VAR
+	fj_structure_type = actor
+	fj_name           = Ygnatz
+	fj_cre_resref     = ACQ17001
+END
+
+COPY_EXISTING ~AR9798.are~ ~OVERRIDE~
+LPF fj_are_structure
+INT_VAR
+	fj_con_itm_idx    = 0
+	fj_flags          = 1
+STR_VAR
+	fj_name           = ACQBOOK2
+	fj_structure_type = itm
+END
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////																			////////////
+////////////							8.	Die Kreischlingszucht						////////////
+////////////																			////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+COMPILE ~AC_QUEST/BAF/ACQ18002.BAF~
+COMPILE ~AC_QUEST/D/ACQ18000.D~
+EXTEND_TOP ~AR7711.bcs~ ~AC_QUEST/baf/AR7711.baf~
+EXTEND_TOP ~AR7324.bcs~ ~AC_QUEST/baf/AR7324.baf~
+EXTEND_TOP ~AR7325.bcs~ ~AC_QUEST/baf/AR7325.baf~
+EXTEND_TOP ~AR7611.bcs~ ~AC_QUEST/baf/AR7611.baf~
+
+COPY ~AC_QUEST/ARE/AC7711.ARE~ ~OVERRIDE/AC7711.ARE~
+COPY ~AC_QUEST/ARE/AC7712.ARE~ ~OVERRIDE/AC7712.ARE~
+
+COPY_EXISTING ~KEY09.ITM~ ~OVERRIDE/ACQKEY03.ITM~ 
+SAY NAME1 @54
+SAY NAME2 @54
+SAY DESC @55
+
+COPY ~AC_QUEST/ITM/ACQ18001.ITM~ ~Override/ACQ18001.ITM~
+SAY NAME1 @56
+SAY NAME2 @56
+SAY UNIDENTIFIED_DESC @57
+SAY DESC @57
+
+COPY ~AC_QUEST/ITM/ACQ18002.ITM~ ~Override/ACQ18002.ITM~
+SAY NAME1 #6664
+SAY NAME2 #6365
+SAY UNIDENTIFIED_DESC #6667
+SAY DESC @58
+
+COPY_EXISTING ~MISC5D.ITM~ ~OVERRIDE/ACQ18003.ITM~ 
+SAY NAME1 @59
+SAY NAME2 @59
+SAY DESC @60
+
+COPY ~AC_QUEST/cre/ACQ18001.CRE~ ~OVERRIDE/ACQ18001.CRE~
+SAY NAME1 #2286
+SAY NAME2 #2286
+SAY BATTLE_CRY1 #5503
+SAY BATTLE_CRY2 #5504
+SAY ATTACK1 #5505
+SAY ATTACK2 #5506
+SAY DAMAGE #5508
+SAY DYING #5509
+WRITE_ASCII 0x280 ~ACQ18001~
+WRITE_ASCII 0x2cc ~ACQ18001~
+WRITE_ASCII 0x248 ~GIBBER~
+WRITE_ASCII 0x250 ~WTASIGHT~
+ADD_CRE_ITEM ~S1-8~ #1 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~WEAPON~ EQUIP
+ADD_CRE_ITEM ~ACQ18001~ #1 #0 #0 ~UNSTEALABLE~ ~INV1~
+
+COPY ~AC_QUEST/cre/ACQ18001.CRE~ ~OVERRIDE/ACQ18324.CRE~
+SAY NAME1 #2286
+SAY NAME2 #2286
+SAY BATTLE_CRY1 #5503
+SAY BATTLE_CRY2 #5504
+SAY ATTACK1 #5505
+SAY ATTACK2 #5506
+SAY DAMAGE #5508
+SAY DYING #5509
+WRITE_ASCII 0x280 ~ACQ18324~
+WRITE_ASCII 0x2cc ~ACQ18324~
+WRITE_ASCII 0x248 ~GIBBER~
+WRITE_ASCII 0x250 ~WTASIGHT~
+ADD_CRE_ITEM ~S1-8~ #1 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~WEAPON~ EQUIP
+ADD_CRE_ITEM ~ACQ18001~ #1 #0 #0 ~UNSTEALABLE~ ~INV1~
+
+COPY ~AC_QUEST/cre/ACQ18001.CRE~ ~OVERRIDE/ACQ18325.CRE~
+SAY NAME1 #2286
+SAY NAME2 #2286
+SAY BATTLE_CRY1 #5503
+SAY BATTLE_CRY2 #5504
+SAY ATTACK1 #5505
+SAY ATTACK2 #5506
+SAY DAMAGE #5508
+SAY DYING #5509
+WRITE_ASCII 0x280 ~ACQ18325~
+WRITE_ASCII 0x2cc ~ACQ18325~
+WRITE_ASCII 0x248 ~GIBBER~
+WRITE_ASCII 0x250 ~WTASIGHT~
+ADD_CRE_ITEM ~S1-8~ #1 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~WEAPON~ EQUIP
+ADD_CRE_ITEM ~ACQ18001~ #1 #0 #0 ~UNSTEALABLE~ ~INV1~
+
+COPY ~AC_QUEST/cre/ACQ18001.CRE~ ~OVERRIDE/ACQ18611.CRE~
+SAY NAME1 #2286
+SAY NAME2 #2286
+SAY BATTLE_CRY1 #5503
+SAY BATTLE_CRY2 #5504
+SAY ATTACK1 #5505
+SAY ATTACK2 #5506
+SAY DAMAGE #5508
+SAY DYING #5509
+WRITE_ASCII 0x280 ~ACQ18611~
+WRITE_ASCII 0x2cc ~ACQ18611~
+WRITE_ASCII 0x248 ~GIBBER~
+WRITE_ASCII 0x250 ~WTASIGHT~
+ADD_CRE_ITEM ~S1-8~ #1 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~WEAPON~ EQUIP
+ADD_CRE_ITEM ~ACQ18001~ #1 #0 #0 ~UNSTEALABLE~ ~INV1~
+
+COPY ~AC_QUEST/cre/ACQ18002.CRE~ ~OVERRIDE/ACQ18002.CRE~
+SAY NAME1 @61
+SAY NAME2 @62
+SAY INITIAL_MEETING #4520
+SAY DAMAGE #5432
+SAY DYING #5433
+SAY SELECT_COMMON1 #4523
+SAY SELECT_COMMON2 #4524
+SAY SELECT_COMMON3 #4525
+WRITE_ASCII 0x280 ~ACQ18002~
+WRITE_ASCII 0x2cc ~ACQ18002~
+WRITE_ASCII 0x248 ~ACQ18002~
+WRITE_ASCII 0x250 ~MAGE2~
+ADD_CRE_ITEM ~XBOW04~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP TWOHANDED
+ADD_CRE_ITEM ~SW1H07~ #0 #0 #0 ~NONE~ ~WEAPON2~
+ADD_CRE_ITEM ~BOLT01~ #10 #0 #0 ~NONE~ ~QUIVER1~
+ADD_CRE_ITEM ~BOLT01~ #10 #0 #0 ~NONE~ ~QUIVER2~
+ADD_CRE_ITEM ~RNDTRE02~ #0 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~RNDTRE03~ #0 #0 #0 ~NONE~ ~INV~
+
+COPY_EXISTING ~AR7700.are~ ~OVERRIDE~
+LPF fj_are_structure
+    INT_VAR
+    fj_loc_x          = 1354
+    fj_loc_y          = 3081
+    fj_dest_x         = 1354
+    fj_dest_y         = 3081
+    fj_orientation    = 1
+    STR_VAR
+    fj_structure_type = actor
+    fj_name           = Geraldo
+    fj_cre_resref     = ACQ18002
+END
+READ_LONG  0xa4  "doors_num"
+READ_LONG  0xa8  "doors_offset"
+    FOR( cnt=0; cnt<"%doors_num%"; cnt=cnt+1 ) BEGIN
+        READ_ASCII ("%doors_offset%"+0xc8*cnt)       "door_name"
+            PATCH_IF (("%door_name%" STRING_COMPARE_CASE "Door0711")=0) BEGIN
+                SET offset = ("%doors_offset%"+0xc8*cnt)
+                WRITE_LONG (offset+0x28) 0x00000442
+                WRITE_ASCII (offset+0x78) ~ACQKEY03~ (8)
+                WRITE_BYTE (offset+0x8c) 100
+            END
+END
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////																			////////////
+////////////							9.	Echte Fans									////////////
+////////////																			////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+COMPILE ~AC_QUEST/D/ACQ19000.D~
+
+COPY ~AC_QUEST/cre/ACQ19001.cre~ ~OVERRIDE/ACQ19001.cre~
+SAY NAME1 @63
+SAY NAME2 @63
+SAY INITIAL_MEETING #4863
+SAY DAMAGE #12548
+SAY DYING #12549
+SAY SELECT_COMMON1 #4863
+WRITE_ASCII 0x280 ~ACQ19001~
+WRITE_ASCII 0x248 ~ACQ19000~
+WRITE_ASCII 0x250 ~SHOUT~
+WRITE_ASCII 0x258 ~RUNENEMY~
+WRITE_ASCII 0x268 ~WTHSTLBE~
+WRITE_ASCII 0x2cc ~ACQ19001~
+
+COPY ~AC_QUEST/cre/ACQ19002.cre~ ~OVERRIDE/ACQ19002.cre~
+SAY NAME1 @64
+SAY NAME2 @64
+SAY INITIAL_MEETING #4863
+SAY DAMAGE #12548
+SAY DYING #12549
+SAY SELECT_COMMON1 #4863
+WRITE_ASCII 0x280 ~ACQ19002~
+WRITE_ASCII 0x248 ~ACQ19000~
+WRITE_ASCII 0x250 ~SHOUT~
+WRITE_ASCII 0x258 ~RUNENEMY~
+WRITE_ASCII 0x268 ~WTHSTLBE~
+WRITE_ASCII 0x2cc ~ACQ19002~
+
+COPY ~AC_QUEST/cre/ACQ19003.cre~ ~OVERRIDE/ACQ19003.cre~
+SAY NAME1 @65
+SAY NAME2 @65
+SAY INITIAL_MEETING #4863
+SAY DAMAGE #12548
+SAY DYING #12549
+SAY SELECT_COMMON1 #4863
+WRITE_ASCII 0x280 ~ACQ19003~
+WRITE_ASCII 0x248 ~ACQ19000~
+WRITE_ASCII 0x250 ~SHOUT~
+WRITE_ASCII 0x258 ~RUNENEMY~
+WRITE_ASCII 0x268 ~WTHSTLBE~
+WRITE_ASCII 0x2cc ~ACQ19003~
+
+COPY_EXISTING ~AR7200.are~ ~OVERRIDE~
+LPF fj_are_structure
+    INT_VAR
+    fj_loc_x          = 2834
+    fj_loc_y          = 2768
+    fj_dest_x         = 2834
+    fj_dest_y         = 2768
+    fj_orientation    = 0
+    STR_VAR
+    fj_structure_type = actor
+    fj_name           = Mandy
+    fj_cre_resref     = ACQ19001
+  END
+
+LPF fj_are_structure
+    INT_VAR
+    fj_loc_x          = 2792
+    fj_loc_y          = 2795
+    fj_dest_x         = 2792
+    fj_dest_y         = 2795
+    fj_orientation    = 10
+    STR_VAR
+    fj_structure_type = actor
+    fj_name           = Ashley
+    fj_cre_resref     = ACQ19002
+  END
+  
+LPF fj_are_structure
+    INT_VAR
+    fj_loc_x          = 2841
+    fj_loc_y          = 2813
+    fj_dest_x         = 2841
+    fj_dest_y         = 2813
+    fj_orientation    = 7
+    STR_VAR
+    fj_structure_type = actor
+    fj_name           = Cindy
+    fj_cre_resref     = ACQ19003
+  END
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////																			////////////
+////////////							10.	Die Schlangen Abbathors Teil I				////////////
+////////////																			////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+COMPILE ~AC_QUEST/D/ACQ10100.D~
+COMPILE ~AC_QUEST/BAF/ACQ6900.BAF~
+COMPILE ~AC_QUEST/BAF/ACQCUT01.BAF~
+COMPILE ~AC_QUEST/BAF/ACQCUT02.BAF~
+COMPILE ~AC_QUEST/BAF/AC8201.BAF~
+COMPILE ~AC_QUEST/BAF/AC4400.BAF~
+COMPILE ~AC_QUEST/BAF/AC4401.BAF~
+EXTEND_TOP ~AR8200.bcs~ ~AC_QUEST/baf/AR8200.baf~
+EXTEND_TOP ~AR4400.bcs~ ~AC_QUEST/baf/AR4400.baf~
+EXTEND_TOP ~AR4405.bcs~ ~AC_QUEST/baf/AR4405.baf~
+EXTEND_TOP ~AR7400.bcs~ ~AC_QUEST/baf/AR7400.baf~
+EXTEND_TOP ~AR7326.bcs~ ~AC_QUEST/baf/AR7326.baf~
+EXTEND_TOP ~AR7266.bcs~ ~AC_QUEST/baf/AR7266.baf~
+EXTEND_TOP ~AR7200.bcs~ ~AC_QUEST/baf/AR7200.baf~
+EXTEND_TOP ~ARA002.bcs~ ~AC_QUEST/baf/ARA002.baf~
+COMPILE ~AC_QUEST/BAF/ACQ10102.BAF~
+COMPILE ~AC_QUEST/BAF/ACQ10103.BAF~
+COMPILE ~AC_QUEST/BAF/ACQ10106.BAF~
+COMPILE ~AC_QUEST/BAF/ACQ10116.BAF~
+COMPILE ~AC_QUEST/BAF/ACQ10117.BAF~
+COMPILE ~AC_QUEST/BAF/ACQ10100.BAF~
+COMPILE ~AC_QUEST/BAF/ACQ10118.BAF~
+COMPILE ~AC_QUEST/BAF/ACQ10119.BAF~
+COMPILE ~AC_QUEST/BAF/ACQ10120.BAF~
+COMPILE ~AC_QUEST/BAF/ACQ4400Q.BAF~
+COMPILE ~AC_QUEST/BAF/ACQ44001.BAF~
+COMPILE ~AC_QUEST/BAF/AC4402.BAF~
+COMPILE ~AC_QUEST/BAF/ACQMINER.BAF~
+COMPILE ~AC_QUEST/BAF/AC4403.BAF~
+COMPILE ~AC_QUEST/BAF/AC4405.BAF~
+COMPILE ~AC_QUEST/BAF/ACUMBHUL.BAF~
+COMPILE ~AC_QUEST/BAF/ACQ4405.BAF~
+
+COPY_EXISTING ~KEY07.ITM~ ~OVERRIDE/ACQKEY01.ITM~ 
+SAY NAME1 @66
+SAY NAME2 @66
+SAY DESC @67
+
+COPY_EXISTING ~KEY09.ITM~ ~OVERRIDE/ACQKEY02.ITM~ 
+SAY NAME1 @68
+SAY NAME2 @68
+SAY DESC @69
+
+COPY_EXISTING ~SCRL2J.ITM~ ~OVERRIDE/ACQLET01.ITM~ 
+SAY NAME1 @70
+SAY NAME2 @70
+SAY DESC @71
+
+COPY_EXISTING ~SCRL2J.ITM~ ~OVERRIDE/ACQLET02.ITM~ 
+SAY NAME1 @70
+SAY NAME2 @70
+SAY DESC @72
+
+COPY_EXISTING ~SCRL2J.ITM~ ~OVERRIDE/ACQLET03.ITM~ 
+SAY NAME1 @73
+SAY NAME2 @73
+SAY DESC @74
+
+COPY_EXISTING ~MISC4T.ITM~ ~OVERRIDE/ACQLET05.ITM~ 
+SAY NAME1 @75
+SAY NAME2 @75
+SAY DESC @76
+
+COPY_EXISTING ~MISC4T.ITM~ ~OVERRIDE/ACQLET06.ITM~ 
+SAY NAME1 @75
+SAY NAME2 @75
+SAY DESC @77
+
+COPY_EXISTING ~SCRL2J.ITM~ ~OVERRIDE/ACQLET04.ITM~ 
+SAY NAME1 @70
+SAY NAME2 @70
+SAY DESC @78
+
+COPY_EXISTING ~BOOK92.ITM~ ~OVERRIDE/ACQBOOK3.ITM~ 
+SAY NAME1 @79
+SAY NAME2 @79
+SAY DESC @80
+
+COPY_EXISTING ~MISC4W.ITM~ ~OVERRIDE/ACQBOOK4.ITM~ 
+SAY NAME1 @81
+SAY NAME2 @81
+SAY DESC @82
+
+COPY_EXISTING ~PLOT18B.ITM~ ~OVERRIDE/ACQBOOK5.ITM~ 
+SAY NAME1 @83
+SAY NAME2 @83
+SAY DESC @84
+
+COPY_EXISTING ~HAMM05.ITM~ ~Override/ACQHAMM1.ITM~
+SAY NAME1 #6345
+SAY NAME2 @85
+SAY UNIDENTIFIED_DESC #6716
+SAY DESC @86
+
+COPY_EXISTING ~BOOK92.ITM~ ~OVERRIDE/ACQBOOK1.ITM~ 
+SAY NAME1 @87
+SAY NAME2 @87
+SAY DESC @88
+
+COPY_EXISTING ~MISC6L.ITM~ ~OVERRIDE/ACQ10101.ITM~ 
+SAY NAME1 @89
+SAY NAME2 @90
+SAY DESC @91
+
+COPY ~AC_QUEST/ITM/ACQ1011A.ITM~ ~OVERRIDE/ACQ1011A.ITM~ 
+SAY NAME1 @92
+SAY NAME2 @92
+SAY DESC @93
+
+COPY ~AC_QUEST/cre/ACQ10101.CRE~ ~OVERRIDE/ACQ10101.CRE~
+SAY NAME1 ~~
+SAY NAME2 ~~
+
+COPY_EXISTING ~AR4405.are~ ~OVERRIDE~
+LPF fj_are_structure
+    INT_VAR
+    fj_loc_x          = 583
+    fj_loc_y          = 831
+    fj_dest_x         = 583
+    fj_dest_y         = 831
+    fj_orientation    = 12
+    STR_VAR
+    fj_structure_type = actor
+    fj_name           = Dead Dwarf
+    fj_cre_resref     = ACQ10101
+  END
+  LPF fj_are_structure
+    INT_VAR
+    fj_type        = 10
+    fj_loc_x       = 568
+    fj_loc_y       = 857
+    fj_box_left    = 573
+    fj_box_top     = 821
+    fj_box_right   = 583
+    fj_box_bottom  = 831
+    fj_trap_loc_x  = 587
+    fj_trap_loc_y  = 831
+    fj_vertex_0    = 573 + (821 << 16)
+    fj_vertex_1    = 573 + (831 << 16)
+    fj_vertex_2    = 583 + (831 << 16)
+    fj_vertex_3    = 583 + (821 << 16)
+    STR_VAR
+    fj_structure_type = container
+    fj_name           = ~Dwarf~
+  END
+  LPF fj_are_structure
+    INT_VAR
+    fj_con_itm_idx    = SHORT_AT 0x74 - 1
+    fj_flags          = 1
+    STR_VAR
+    fj_name           = ACQLET01
+    fj_structure_type = itm
+END
+
+COPY ~AC_QUEST/cre/ACQ10102.CRE~ ~OVERRIDE/ACQ10102.CRE~
+SAY NAME1 @94
+SAY NAME2 @94
+SAY INITIAL_MEETING #4936
+SAY DAMAGE #12584
+SAY DYING #12585
+SAY SELECT_COMMON1 #4936
+SAY SELECT_COMMON2 #4939
+SAY SELECT_COMMON3 #4940
+WRITE_ASCII 0x280 ~ACQ10102~
+WRITE_ASCII 0x2cc ~ACQ10102~
+WRITE_ASCII 0x248 ~ACQ10102~
+WRITE_ASCII 0x250 ~USEITEM~
+WRITE_ASCII 0x258 ~WTASIGHT~
+ADD_CRE_ITEM ~AX1H02~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP
+ADD_CRE_ITEM ~SHLD03~ #0 #0 #0 ~NONE~ ~SHIELD~
+ADD_CRE_ITEM ~HELM08~ #0 #0 #0 ~NONE~ ~HELMET~
+ADD_CRE_ITEM ~CHAN09~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~ARMOR~
+ADD_CRE_ITEM ~potn14~ #1 #0 #0 ~NONE~ ~INV1~
+ADD_CRE_ITEM ~potn52~ #2 #0 #0 ~NONE~ ~INV2~
+ADD_CRE_ITEM ~RNDTRE02~ #0 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~RNDTRE04~ #0 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~CHAN01~ #0 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~ACQLET02~ #0 #0 #0 ~NONE~ ~INV~
+
+COPY_EXISTING ~AR6700.are~ ~OVERRIDE~
+LPF fj_are_structure
+    INT_VAR
+    fj_loc_x          = 2124
+    fj_loc_y          = 2503
+    fj_dest_x         = 2124
+    fj_dest_y         = 2503
+    fj_orientation    = 15
+    fj_schedule		  = 0xfff0003f
+    STR_VAR
+    fj_structure_type = actor
+    fj_name           = Tarash
+    fj_cre_resref     = ACQ10102
+END
+
+COPY ~AC_QUEST/cre/ACQ10103.CRE~ ~OVERRIDE/ACQ10103.CRE~
+SAY NAME1 @95
+SAY NAME2 @95
+SAY INITIAL_MEETING #4936
+SAY DAMAGE #12584
+SAY DYING #12585
+SAY SELECT_COMMON1 #4936
+SAY SELECT_COMMON1 #4939
+SAY SELECT_COMMON1 #4940
+WRITE_ASCII 0x280 ~ACQ10103~
+WRITE_ASCII 0x2cc ~ACQ10103~
+WRITE_ASCII 0x248 ~ACQ10103~
+WRITE_ASCII 0x250 ~USEITEM~
+WRITE_ASCII 0x258 ~WTARSGT~
+ADD_CRE_ITEM ~XBOW05~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~WEAPON1~ EQUIP TWOHANDED
+ADD_CRE_ITEM ~SW1H08~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~WEAPON2~
+ADD_CRE_ITEM ~HELM08~ #0 #0 #0 ~NONE~ ~HELMET~
+ADD_CRE_ITEM ~LEAT07~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~ARMOR~
+ADD_CRE_ITEM ~BOLT02~ #10 #0 #0 ~NONE~ ~QUIVER1~
+ADD_CRE_ITEM ~BOLT02~ #10 #0 #0 ~NONE~ ~QUIVER2~
+ADD_CRE_ITEM ~potn52~ #1 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~potn10~ #3 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~RNDTRE02~ #0 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~RNDTRE04~ #0 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~LEAT04~ #0 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~XBOW04~ #0 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~SW1H07~ #0 #0 #0 ~NONE~ ~INV~
+
+COPY_EXISTING ~AR6900.are~ ~OVERRIDE~
+LPF fj_are_structure
+	INT_VAR
+	fj_loc_x          = 0
+	fj_loc_y          = 0
+	fj_dest_x         = 0
+	fj_dest_y         = 0
+	fj_orientation    = 0
+	STR_VAR
+	fj_structure_type = actor
+	fj_name           = Wonderbunny Virginie
+	fj_cre_resref     = ACVIRGI
+	fj_bcs_override   = ACQ6900
+END
+
+COPY ~AC_QUEST/cre/ACQ10104.CRE~ ~OVERRIDE/ACQ10104.CRE~
+SAY NAME1 @96
+SAY NAME2 @96
+SAY INITIAL_MEETING #4936
+SAY DAMAGE #12584
+SAY DYING #12585
+SAY SELECT_COMMON1 #4936
+SAY SELECT_COMMON1 #4939
+SAY SELECT_COMMON1 #4940
+WRITE_ASCII 0x280 ~ACQ10104~
+WRITE_ASCII 0x2cc ~ACQ10104~
+WRITE_ASCII 0x248 ~ACQ10104~
+ADD_CRE_ITEM ~ACQHAMM1~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP
+ADD_CRE_ITEM ~SHLD03~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~SHIELD~
+ADD_CRE_ITEM ~HELM08~ #0 #0 #0 ~NONE~ ~HELMET~
+ADD_CRE_ITEM ~CHAN01~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~ARMOR~
+ADD_CRE_ITEM ~MISC58~ #0 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~RNDTRE04~ #0 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~MISC57~ #0 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~ACQBOOK1~ #0 #0 #0 ~NONE~ ~INV~
+
+COPY ~AC_QUEST/cre/ACQ10105.CRE~ ~OVERRIDE/ACQ10105.CRE~
+SAY NAME1 @97
+SAY NAME2 @97
+SAY INITIAL_MEETING #11063
+SAY DAMAGE #11075
+SAY DYING #11076
+WRITE_ASCII 0x280 ~ACQ10105~
+WRITE_ASCII 0x2cc ~ACQ10105~
+WRITE_ASCII 0x248 ~ACQ10104~
+ADD_CRE_ITEM ~BOW03~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP TWOHANDED
+ADD_CRE_ITEM ~SW1H01~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~WEAPON2~
+ADD_CRE_ITEM ~CHAN01~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~ARMOR~
+ADD_CRE_ITEM ~MISC58~ #0 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~RNDTRE04~ #0 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~MISC56~ #0 #0 #0 ~NONE~ ~INV~
+
+COPY ~AC_QUEST/cre/ACQ10106.CRE~ ~OVERRIDE/ACQ10106.CRE~
+SAY NAME1 @98
+SAY NAME2 @98
+SAY INITIAL_MEETING #4936
+SAY DAMAGE #12584
+SAY DYING #12585
+SAY SELECT_COMMON1 #4936
+SAY SELECT_COMMON2 #4939
+SAY SELECT_COMMON3 #4940
+WRITE_ASCII 0x280 ~ACQ10106~
+WRITE_ASCII 0x2cc ~ACQ10106~
+WRITE_ASCII 0x248 ~ACQ10106~
+WRITE_ASCII 0x250 ~USEITEM~
+WRITE_ASCII 0x258 ~WTASIGHT~
+ADD_CRE_ITEM ~MINHP1~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~AMULET~
+ADD_CRE_ITEM ~SW1H22~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP
+ADD_CRE_ITEM ~SW1H22~ #0 #0 #0 ~NONE~ ~SHIELD~
+ADD_CRE_ITEM ~LEAT14~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~ARMOR~
+ADD_CRE_ITEM ~potn10~ #1 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~INV~
+ADD_CRE_ITEM ~potn52~ #2 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~RNDTRE02~ #0 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~RNDTRE04~ #0 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~LEAT05~ #0 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~ACQLET03~ #0 #0 #0 ~NONE~ ~INV~
+
+COPY ~AC_QUEST/cre/ACQ10106.CRE~ ~OVERRIDE/ACQ10112.CRE~
+SAY NAME1 @99
+SAY NAME2 @99
+SAY INITIAL_MEETING #4936
+SAY DAMAGE #12584
+SAY DYING #12585
+SAY SELECT_COMMON1 #4936
+SAY SELECT_COMMON2 #4939
+SAY SELECT_COMMON3 #4940
+WRITE_ASCII 0x280 ~ACQ10112~
+WRITE_ASCII 0x2cc ~ACQ10112~
+WRITE_ASCII 0x248 ~ACQ10112~
+WRITE_ASCII 0x250 ~USEITEM~
+WRITE_ASCII 0x258 ~WTASIGHT~
+ADD_CRE_ITEM ~MINHP1~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~AMULET~
+ADD_CRE_ITEM ~SW1H22~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP
+ADD_CRE_ITEM ~LEAT05~ #0 #0 #0 ~NONE~ ~ARMOR~
+ADD_CRE_ITEM ~potn10~ #1 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~INV~
+ADD_CRE_ITEM ~potn52~ #2 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~RNDTRE02~ #0 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~RNDTRE04~ #0 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~ACQLET03~ #0 #0 #0 ~UNSTEALABLE~ ~INV~
+
+COPY_EXISTING ~AR8000.are~ ~OVERRIDE~
+LPF fj_are_structure
+    INT_VAR
+    fj_loc_x         	= 1298
+    fj_loc_y         	= 1499
+    fj_dest_x        	= 1298
+    fj_dest_y        	= 1499
+    fj_orientation   	= 12
+    STR_VAR
+    fj_bcs_override		= ACQ08000
+    fj_dlg_resref		= ACQ08000
+    fj_structure_type	= actor
+    fj_name          	= Abbathorian
+    fj_cre_resref    	= ACQ10112
+  END
+
+COPY_EXISTING ~AR7212.are~ ~OVERRIDE~
+LPF fj_are_structure
+    INT_VAR
+    fj_loc_x         	= 1132
+    fj_loc_y         	= 926
+    fj_dest_x        	= 1132
+    fj_dest_y        	= 926
+    fj_orientation   	= 14
+    STR_VAR
+    fj_structure_type	= actor
+    fj_name          	= Draglon
+    fj_cre_resref    	= ACQ10106
+  END
+  
+COPY ~AC_QUEST/cre/ACQ10107.CRE~ ~OVERRIDE/ACQ10107.CRE~
+SAY NAME1 @100
+SAY NAME2 @100
+SAY INITIAL_MEETING #4936
+SAY DAMAGE #12584
+SAY DYING #12585
+SAY SELECT_COMMON1 #4936
+SAY SELECT_COMMON2 #4939
+SAY SELECT_COMMON3 #4940
+WRITE_ASCII 0x280 ~ACQ10107~
+WRITE_ASCII 0x2cc ~ACQ10107~
+WRITE_ASCII 0x248 ~ACQ10107~
+WRITE_ASCII 0x250 ~USEITEM~
+WRITE_ASCII 0x258 ~WTASIGHT~
+ADD_CRE_ITEM ~AX1H01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP
+ADD_CRE_ITEM ~SHLD03~ #0 #0 #0 ~NONE~ ~SHIELD~
+ADD_CRE_ITEM ~CHAN03~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~ARMOR~
+ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~NONE~ ~HELMET~
+ADD_CRE_ITEM ~potn52~ #1 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~RNDTRE02~ #0 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~CHAN01~ #0 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~ACQLET03~ #0 #0 #0 ~NONE~ ~INV~
+
+COPY ~AC_QUEST/cre/ACQ10108.CRE~ ~OVERRIDE/ACQ10108.CRE~
+SAY NAME1 @100
+SAY NAME2 @100
+SAY INITIAL_MEETING #4936
+SAY DAMAGE #12584
+SAY DYING #12585
+SAY SELECT_COMMON1 #4936
+SAY SELECT_COMMON2 #4939
+SAY SELECT_COMMON3 #4940
+WRITE_ASCII 0x280 ~ACQ10108~
+WRITE_ASCII 0x2cc ~ACQ10108~
+WRITE_ASCII 0x248 ~ACQ10108~
+WRITE_ASCII 0x250 ~USEITEM~
+WRITE_ASCII 0x258 ~WTARSGT~
+ADD_CRE_ITEM ~XBOW01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP
+ADD_CRE_ITEM ~SW1H48~ #0 #0 #0 ~NONE~ ~WEAPON2~
+ADD_CRE_ITEM ~BOLT01~ #10 #0 #0 ~NONE~ ~QUIVER1~
+ADD_CRE_ITEM ~BOLT01~ #10 #0 #0 ~NONE~ ~QUIVER2~
+ADD_CRE_ITEM ~CHAN01~ #0 #0 #0 ~NONE~ ~ARMOR~
+ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~NONE~ ~HELMET~
+ADD_CRE_ITEM ~RNDTRE02~ #0 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~ACQLET03~ #0 #0 #0 ~NONE~ ~INV~
+
+COPY ~AC_QUEST/cre/ACQ10109.CRE~ ~OVERRIDE/ACQ10109.CRE~
+SAY NAME1 @101
+SAY NAME2 @101
+SAY INITIAL_MEETING #4936
+SAY DAMAGE #12584
+SAY DYING #12585
+SAY SELECT_COMMON1 #4936
+SAY SELECT_COMMON2 #4939
+SAY SELECT_COMMON3 #4940
+WRITE_ASCII 0x280 ~ACQ10109~
+WRITE_ASCII 0x2cc ~ACQ10109~
+WRITE_ASCII 0x248 ~ACQ10109~
+WRITE_ASCII 0x250 ~USEITEM~
+WRITE_ASCII 0x258 ~WTASIGHT~
+ADD_CRE_ITEM ~AX1H02~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP
+ADD_CRE_ITEM ~AX1H02~ #0 #0 #0 ~NONE~ ~SHIELD~
+ADD_CRE_ITEM ~CHAN03~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~ARMOR~
+ADD_CRE_ITEM ~HELM15~ #0 #0 #0 ~NONE~ ~HELMET~
+ADD_CRE_ITEM ~potn14~ #1 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~potn52~ #2 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~RNDTRE02~ #0 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~RNDTRE04~ #0 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~CHAN02~ #0 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~ACQLET03~ #0 #0 #0 ~NONE~ ~INV~
+
+COPY ~AC_QUEST/cre/ACQ10110.CRE~ ~OVERRIDE/ACQ10110.CRE~
+SAY NAME1 @102
+SAY NAME2 @102
+SAY INITIAL_MEETING #4936
+SAY DAMAGE #12584
+SAY DYING #12585
+SAY SELECT_COMMON1 #4936
+SAY SELECT_COMMON2 #4939
+SAY SELECT_COMMON3 #4940
+WRITE_ASCII 0x280 ~ACQ10110~
+WRITE_ASCII 0x2cc ~ACQ10110~
+WRITE_ASCII 0x248 ~ACQ10110~
+WRITE_ASCII 0x250 ~USEITEM~
+WRITE_ASCII 0x258 ~PRIEST5~
+ADD_CRE_ITEM ~BLUN07~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP
+ADD_CRE_ITEM ~SHLD03~ #0 #0 #0 ~NONE~ ~SHIELD~
+ADD_CRE_ITEM ~PLAT01~ #0 #0 #0 ~NONE~ ~ARMOR~
+ADD_CRE_ITEM ~HELM09~ #0 #0 #0 ~NONE~ ~HELMET~
+ADD_CRE_ITEM ~potn52~ #1 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~RNDTRE03~ #0 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~RNDTRE04~ #0 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~ACQLET03~ #0 #0 #0 ~NONE~ ~INV~
+
+COPY ~AC_QUEST/cre/ACQ10111.CRE~ ~OVERRIDE/ACQ10111.CRE~
+SAY NAME1 @103
+SAY NAME2 @103
+SAY INITIAL_MEETING #4936
+SAY DAMAGE #12584
+SAY DYING #12585
+SAY SELECT_COMMON1 #4936
+SAY SELECT_COMMON2 #4939
+SAY SELECT_COMMON3 #4940
+WRITE_ASCII 0x280 ~ACQ10111~
+WRITE_ASCII 0x2cc ~ACQ10111~
+WRITE_ASCII 0x248 ~ACQ10111~
+WRITE_ASCII 0x250 ~USEITEM~
+WRITE_ASCII 0x258 ~PRIES10B~
+ADD_CRE_ITEM ~SLNG04~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP
+ADD_CRE_ITEM ~BLUN07~ #0 #0 #0 ~NONE~ ~WEAPON2~
+ADD_CRE_ITEM ~SHLD03~ #0 #0 #0 ~NONE~ ~SHIELD~
+ADD_CRE_ITEM ~BULL02~ #10 #0 #0 ~NONE~ ~QUIVER1~
+ADD_CRE_ITEM ~BULL02~ #10 #0 #0 ~NONE~ ~QUIVER2~
+ADD_CRE_ITEM ~CHAN03~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~ARMOR~
+ADD_CRE_ITEM ~HELM09~ #0 #0 #0 ~NONE~ ~HELMET~
+ADD_CRE_ITEM ~CHAN02~ #0 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~potn52~ #1 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~RNDTRE03~ #0 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~RNDTRE04~ #0 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~ACQLET04~ #0 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~ACQBOOK3~ #0 #0 #0 ~NONE~ ~INV~
+
+COPY ~AC_QUEST/cre/ACQ10113.CRE~ ~OVERRIDE/ACQ10113.CRE~
+SAY NAME1 @104
+SAY NAME2 @104
+SAY INITIAL_MEETING #4936
+SAY DAMAGE #12584
+SAY DYING #12585
+SAY SELECT_COMMON1 #4936
+SAY SELECT_COMMON2 #4939
+SAY SELECT_COMMON3 #4940
+WRITE_ASCII 0x280 ~ACQ10113~
+WRITE_ASCII 0x2cc ~ACQ10113~
+WRITE_ASCII 0x248 ~ACQ10116~
+WRITE_ASCII 0x250 ~USEITEM~
+WRITE_ASCII 0x258 ~WTASIGHT~
+ADD_CRE_ITEM ~AX1H02~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP
+ADD_CRE_ITEM ~SHLD01~ #0 #0 #0 ~NONE~ ~SHIELD~
+ADD_CRE_ITEM ~HELM13~ #0 #0 #0 ~NONE~ ~HELMET~
+ADD_CRE_ITEM ~PLAT21~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~ARMOR~
+ADD_CRE_ITEM ~potn52~ #1 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~RNDTRE02~ #0 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~RNDTRE02~ #0 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~PLAT01~ #0 #0 #0 ~NONE~ ~INV~
+
+COPY ~AC_QUEST/cre/ACQ10114.CRE~ ~OVERRIDE/ACQ10114.CRE~
+SAY NAME1 @105
+SAY NAME2 @105
+SAY INITIAL_MEETING #4936
+SAY DAMAGE #12584
+SAY DYING #12585
+SAY SELECT_COMMON1 #4936
+SAY SELECT_COMMON2 #4939
+SAY SELECT_COMMON3 #4940
+WRITE_ASCII 0x280 ~ACQ10114~
+WRITE_ASCII 0x2cc ~ACQ10114~
+WRITE_ASCII 0x248 ~ACQ10116~
+WRITE_ASCII 0x250 ~USEITEM~
+WRITE_ASCII 0x258 ~WTARSGT~
+ADD_CRE_ITEM ~HALB02~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP TWOHANDED
+ADD_CRE_ITEM ~HELM10~ #0 #0 #0 ~NONE~ ~HELMET~
+ADD_CRE_ITEM ~PLAT01~ #0 #0 #0 ~NONE~ ~ARMOR~
+ADD_CRE_ITEM ~potn52~ #1 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~RNDTRE02~ #0 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~RNDTRE02~ #0 #0 #0 ~NONE~ ~INV~
+
+COPY ~AC_QUEST/cre/ACQ10115.CRE~ ~OVERRIDE/ACQ10115.CRE~
+SAY NAME1 @106
+SAY NAME2 @107
+SAY INITIAL_MEETING #4936
+SAY DAMAGE #12584
+SAY DYING #12585
+SAY SELECT_COMMON1 #4936
+SAY SELECT_COMMON1 #4939
+SAY SELECT_COMMON1 #4940
+WRITE_ASCII 0x280 ~ACQ10115~
+WRITE_ASCII 0x2cc ~ACQ10115~
+WRITE_ASCII 0x248 ~ACQ10116~
+WRITE_ASCII 0x250 ~USEITEM~
+WRITE_ASCII 0x258 ~WTARSGT~
+ADD_CRE_ITEM ~XBOW05~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~WEAPON1~ EQUIP TWOHANDED
+ADD_CRE_ITEM ~SW1H08~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~WEAPON2~
+ADD_CRE_ITEM ~HELM08~ #0 #0 #0 ~NONE~ ~HELMET~
+ADD_CRE_ITEM ~LEAT07~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~ARMOR~
+ADD_CRE_ITEM ~BOLT02~ #10 #0 #0 ~NONE~ ~QUIVER1~
+ADD_CRE_ITEM ~BOLT02~ #10 #0 #0 ~NONE~ ~QUIVER2~
+ADD_CRE_ITEM ~potn52~ #1 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~potn10~ #3 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~RNDTRE02~ #0 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~RNDTRE04~ #0 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~LEAT04~ #0 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~XBOW04~ #0 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~SW1H07~ #0 #0 #0 ~NONE~ ~INV~
+
+COPY ~AC_QUEST/cre/ACQ10116.CRE~ ~OVERRIDE/ACQ10116.CRE~
+SAY NAME1 @108
+SAY NAME2 @109
+SAY INITIAL_MEETING #4936
+SAY DAMAGE #12584
+SAY DYING #12585
+SAY SELECT_COMMON1 #4936
+SAY SELECT_COMMON2 #4939
+SAY SELECT_COMMON3 #4940
+WRITE_ASCII 0x280 ~ACQ10116~
+WRITE_ASCII 0x2cc ~ACQ10116~
+WRITE_ASCII 0x248 ~ACQ10116~
+WRITE_ASCII 0x250 ~USEITEM~
+WRITE_ASCII 0x258 ~PRIEST5~
+ADD_CRE_ITEM ~HAMM07~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~WEAPON1~ EQUIP
+ADD_CRE_ITEM ~SHLD03~ #0 #0 #0 ~NONE~ ~SHIELD~
+ADD_CRE_ITEM ~PLAT01~ #0 #0 #0 ~NONE~ ~ARMOR~
+ADD_CRE_ITEM ~HELM12~ #0 #0 #0 ~NONE~ ~HELMET~
+ADD_CRE_ITEM ~potn52~ #1 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~RNDTRE03~ #0 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~RNDTRE04~ #0 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~HAMM02~ #0 #0 #0 ~NONE~ ~INV~
+
+COPY_EXISTING ~AR7325.are~ ~OVERRIDE~
+LPF fj_are_structure
+    INT_VAR
+    fj_loc_x          = 3657
+    fj_loc_y          = 2265
+    fj_dest_x         = 3657
+    fj_dest_y         = 2265
+    fj_orientation    = 12
+    STR_VAR
+    fj_structure_type = actor
+    fj_name           = Galder
+    fj_cre_resref     = ACQ10113
+  END
+
+LPF fj_are_structure
+    INT_VAR
+    fj_loc_x          = 3677
+    fj_loc_y          = 2285
+    fj_dest_x         = 3677
+    fj_dest_y         = 2285
+    fj_orientation    = 0
+    STR_VAR
+    fj_structure_type = actor
+    fj_name           = Therk
+    fj_cre_resref     = ACQ10114
+  END
+  
+LPF fj_are_structure
+    INT_VAR
+    fj_loc_x          = 3677
+    fj_loc_y          = 2265
+    fj_dest_x         = 3677
+    fj_dest_y         = 2265
+    fj_orientation    = 7
+    STR_VAR
+    fj_structure_type = actor
+    fj_name           = Jarger
+	fj_cre_resref     = ACQ10115
+END
+
+LPF fj_are_structure
+    INT_VAR
+    fj_loc_x          = 3657
+    fj_loc_y          = 2285
+    fj_dest_x         = 3657
+    fj_dest_y         = 2285
+    fj_orientation    = 7
+    STR_VAR
+    fj_structure_type = actor
+    fj_name           = Wostok
+	fj_cre_resref     = ACQ10116
+END
+
+COPY ~AC_QUEST/cre/ACQ10117.CRE~ ~OVERRIDE/ACQ10117.CRE~
+SAY NAME1 @110
+SAY NAME2 @110
+SAY INITIAL_MEETING #4936
+SAY DAMAGE #12584
+SAY DYING #12585
+SAY SELECT_COMMON1 #4936
+SAY SELECT_COMMON2 #4939
+SAY SELECT_COMMON3 #4940
+WRITE_ASCII 0x280 ~ACQ10117~
+WRITE_ASCII 0x2cc ~ACQ10117~
+WRITE_ASCII 0x248 ~ACQ10117~
+WRITE_ASCII 0x250 ~USEITEM~
+WRITE_ASCII 0x258 ~WTASIGHT~
+ADD_CRE_ITEM ~AX1H02~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP
+ADD_CRE_ITEM ~SHLD03~ #0 #0 #0 ~NONE~ ~SHIELD~
+ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~NONE~ ~HELMET~
+ADD_CRE_ITEM ~CHAN05~ #0 #0 #0 ~NONE~ ~ARMOR~
+ADD_CRE_ITEM ~potn52~ #2 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~RNDTRE01~ #0 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~RNDTRE02~ #0 #0 #0 ~NONE~ ~INV~
+
+COPY ~AC_QUEST/cre/ACQ10118.CRE~ ~OVERRIDE/ACQ10118.CRE~
+SAY NAME1 @111
+SAY NAME2 @111
+SAY INITIAL_MEETING #61643
+SAY DAMAGE #61647
+SAY DYING #61648
+SAY SELECT_COMMON1 #61643
+WRITE_ASCII 0x280 ~ACQ10118~
+WRITE_ASCII 0x2cc ~ACQ10118~
+WRITE_ASCII 0x248 ~ACQ10118~
+WRITE_ASCII 0x250 ~USEITEM~
+WRITE_ASCII 0x258 ~MAGE6~
+ADD_CRE_ITEM ~~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP TWOHANDED
+ADD_CRE_ITEM ~~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~ARMOR~
+ADD_CRE_ITEM ~RNDTRE02~ #0 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~RNDTRE04~ #0 #0 #0 ~NONE~ ~INV~
+ADD_CRE_ITEM ~ACQKEY01~ #0 #0 #0 ~NONE~ ~INV~
+
+COPY_EXISTING ~AR7266.are~ ~OVERRIDE~
+  LPF fj_are_structure
+    INT_VAR
+    fj_type        		= 6
+    fj_flags	   		= 1
+    fj_lock_diff   		= 80
+    fj_trap_active 		= 1
+    fj_trap_status 		= 0
+    fj_trap_detect 		= 50
+    fj_trap_remove_diff = 60
+    fj_loc_x       		= 456
+    fj_loc_y   		    = 462
+    fj_box_left  		= 492
+    fj_box_top     		= 396
+    fj_box_right   		= 515
+    fj_box_bottom  		= 445
+    fj_trap_loc_x  		= 470
+    fj_trap_loc_y  		= 450
+    fj_vertex_0    		= 515 + (445 << 16)
+    fj_vertex_1    		= 515 + (412 << 16)
+    fj_vertex_2    		= 493 + (396 << 16)
+    fj_vertex_3    		= 493 + (431 << 16)
+    STR_VAR
+    fj_key_resref		= ~ACQKEY01~
+    fj_trap_script		= ~CTMM~
+    fj_structure_type 	= container
+    fj_name           	= ~ACSecret~
+END
+LPF fj_are_structure
+    INT_VAR
+    fj_con_itm_idx    = SHORT_AT 0x74 - 1
+    fj_flags          = 1
+    STR_VAR
+    fj_name           = ACQ10101
+    fj_structure_type = itm
+END
+
+COPY_EXISTING ~AR8200.are~ ~override~
+ READ_LONG  0xa4  "doors_num"
+ READ_LONG  0xa8  "doors_offset"
+    FOR( cnt=0; cnt<"%doors_num%"; cnt=cnt+1 ) BEGIN
+        READ_ASCII ("%doors_offset%"+0xc8*cnt)       "door_name"
+            PATCH_IF (("%door_name%" STRING_COMPARE_CASE "Door1301")=0) BEGIN
+                SET offset = ("%doors_offset%"+0xc8*cnt)
+                WRITE_LONG (offset+0x28) 0x00000442
+                WRITE_ASCII (offset+0x78) ~ACQKEY02~ (8)
+                WRITE_BYTE (offset+0x8c) 100
+            END
+END
+LPF fj_are_structure
+    INT_VAR
+    fj_type         = 2    //travel
+    fj_box_left     = 915
+    fj_box_top      = 2828
+    fj_box_right    = 957
+    fj_box_bottom   = 2918
+    fj_cursor_idx   = 30   //door
+    fj_vertex_0     = 915 + (2876 << 16)
+    fj_vertex_1     = 957 + (2918 << 16)
+    fj_vertex_2     = 957 + (2867 << 16)
+    fj_vertex_3     = 915 + (2828 << 16)
+    fj_flags		= 4
+    STR_VAR
+    fj_structure_type   = region
+    fj_name             = ACDOOR01
+    fj_destination_area = AC8201
+    fj_destination_name = Exit8200
+  END
+
+COPY ~AC_QUEST/ARE/AC8201.ARE~ ~OVERRIDE/AC8201.ARE~
+COPY ~AC_QUEST/ARE/AC4400.ARE~ ~OVERRIDE/AC4400.ARE~
+COPY ~AC_QUEST/ARE/AC4401.ARE~ ~OVERRIDE/AC4401.ARE~
+COPY ~AC_QUEST/ARE/AC4402.ARE~ ~OVERRIDE/AC4402.ARE~
+COPY ~AC_QUEST/ARE/AC4403.ARE~ ~OVERRIDE/AC4403.ARE~
+COPY ~AC_QUEST/ARE/AC4404.ARE~ ~OVERRIDE/AC4404.ARE~
+COPY ~AC_QUEST/ARE/AC4405.ARE~ ~OVERRIDE/AC4405.ARE~
+COPY ~AC_QUEST/ARE/AC4406.ARE~ ~OVERRIDE/AC4406.ARE~
+
+COPY ~AC_QUEST/cre/ACQ10119.CRE~ ~OVERRIDE/ACQ10119.CRE~
+SAY NAME1 @112
+SAY NAME2 @112
+WRITE_ASCII 0x280 ~ACQ10119~
+WRITE_ASCII 0x2cc ~ACQ10119~
+WRITE_ASCII 0x248 ~ACQ10119~
+WRITE_ASCII 0x250 ~USEITEM~
+WRITE_ASCII 0x258 ~WTASIGHT~
+ADD_CRE_ITEM ~AX1H02~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~WEAPON1~ EQUIP
+ADD_CRE_ITEM ~CHAN09~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~ARMOR~
+ADD_CRE_ITEM ~HELM06~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~HELMET~
+ADD_CRE_ITEM ~IMMCHS~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~RING~
+ADD_CRE_ITEM ~KIEL2~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~RING~
+
+COPY ~AC_QUEST/cre/ACQ10120.CRE~ ~OVERRIDE/ACQ10120.CRE~
+SAY NAME1 @113
+SAY NAME2 @113
+SAY INITIAL_MEETING #4940
+SAY DAMAGE #12584
+SAY DYING #12585
+SAY SELECT_COMMON1 #4936
+SAY SELECT_COMMON2 #4939
+SAY SELECT_COMMON3 #4940
+WRITE_ASCII 0x280 ~ACQ10120~
+WRITE_ASCII 0x2cc ~ACQ10120~
+WRITE_ASCII 0x248 ~ACQ10120~
+WRITE_ASCII 0x250 ~USEITEM~
+WRITE_ASCII 0x258 ~PRIES6C~
+ADD_CRE_ITEM ~HELMNOAN~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~HELMET~
+ADD_CRE_ITEM ~CLCK17~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~ARMOR~
+ADD_CRE_ITEM ~ACQBOOK5~ #0 #0 #0 ~NONE~ ~INV~
+
+COPY ~AC_QUEST/cre/ACQ10121.CRE~ ~OVERRIDE/ACQ10121.CRE~
+SAY NAME1 @114
+SAY NAME2 @114
+SAY INITIAL_MEETING #4889
+SAY DAMAGE #12562
+SAY DYING #12563
+SAY SELECT_COMMON1 #4889
+WRITE_ASCII 0x280 ~ACQ10121~
+WRITE_ASCII 0x2cc ~ACQ10121~
+WRITE_ASCII 0x248 ~ACQ10121~
+
+COPY ~AC_QUEST/cre/ACQ10121.CRE~ ~OVERRIDE/ACQ10122.CRE~
+SAY NAME1 @115
+SAY NAME2 @115
+SAY INITIAL_MEETING #4889
+SAY DAMAGE #12562
+SAY DYING #12563
+SAY SELECT_COMMON1 #4889
+WRITE_ASCII 0x280 ~ACQ10122~
+WRITE_ASCII 0x2cc ~ACQ10122~
+WRITE_ASCII 0x248 ~ACQ10122~
+
+COPY ~AC_QUEST/cre/ACQ10121.CRE~ ~OVERRIDE/ACQ10123.CRE~
+SAY NAME1 @116
+SAY NAME2 @116
+SAY INITIAL_MEETING #4889
+SAY DAMAGE #12562
+SAY DYING #12563
+SAY SELECT_COMMON1 #4889
+WRITE_ASCII 0x280 ~ACQ10123~
+WRITE_ASCII 0x2cc ~ACQ10123~
+WRITE_ASCII 0x248 ~ACQ10123~
+
+COPY ~AC_QUEST/cre/ACQ10121.CRE~ ~OVERRIDE/ACQ10124.CRE~
+SAY NAME1 @117
+SAY NAME2 @117
+SAY INITIAL_MEETING #4889
+SAY DAMAGE #12562
+SAY DYING #12563
+SAY SELECT_COMMON1 #4889
+WRITE_ASCII 0x280 ~ACQ10124~
+WRITE_ASCII 0x2cc ~ACQ10124~
+WRITE_ASCII 0x248 ~ACQ10124~
+
+COPY_EXISTING ~UMBHUL01.cre~ ~Override/ACUMBHUL.cre~
+READ_ASCII 0x280 ~DV~
+PATCH_IF ((~%DV%~ STRING_EQUAL ~~) OR (~%DV%~STRING_EQUAL_CASE ~none~)) BEGIN
+WRITE_ASCII 0x280 ~ACUMBHUL~
+END
+BUT_ONLY_IF_IT_CHANGES
+
+COPY ~AC_QUEST/2da/ACHP01.2da~ ~override/ACHP01.2da~
+REPLACE 99998 @118
+REPLACE 99999 @119
+
+COPY_EXISTING ~ARA002.are~ ~OVERRIDE~
+LPF fj_are_structure
+    INT_VAR
+    fj_loc_x          = 448
+    fj_loc_y          = 437
+    fj_dest_x         = 448
+    fj_dest_y         = 437
+    fj_orientation    = 3
+    STR_VAR
+    fj_structure_type = actor
+    fj_name           = Wostok
+    fj_cre_resref     = ACQ10116
+  END
+
+LPF fj_are_structure
+    INT_VAR
+    fj_loc_x          = 497
+    fj_loc_y          = 460
+    fj_dest_x         = 497
+    fj_dest_y         = 460
+    fj_orientation    = 0
+    STR_VAR
+    fj_structure_type = actor
+    fj_name           = DWARF
+    fj_cre_resref     = ACQ10113
+  END
+  
+LPF fj_are_structure
+    INT_VAR
+    fj_loc_x          = 543
+    fj_loc_y          = 442
+    fj_dest_x         = 543
+    fj_dest_y         = 442
+    fj_orientation    = 3
+    STR_VAR
+    fj_structure_type = actor
+    fj_name           = DWARF
+    fj_cre_resref     = ACQ10114
+  END
+
+LPF fj_are_structure
+    INT_VAR
+    fj_loc_x          = 488
+    fj_loc_y          = 405
+    fj_dest_x         = 488
+    fj_dest_y         = 405
+    fj_orientation    = 3
+    STR_VAR
+    fj_structure_type = actor
+    fj_name           = DWARF
+    fj_cre_resref     = ACQ10115
+  END
+  
+COPY ~AC_QUEST/cre/ACQ10125.CRE~ ~OVERRIDE/ACQ10125.CRE~
+SAY NAME1 @120
+SAY NAME2 @121
+
+COPY ~AC_QUEST/cre/ACQ10126.CRE~ ~OVERRIDE/ACQ10126.CRE~
+SAY NAME1 @122
+SAY NAME2 @122
+
+COPY ~AC_QUEST/cre/ACQ10127.CRE~ ~OVERRIDE/ACQ10127.CRE~
+SAY NAME1 @108
+SAY NAME2 @109
+SAY DYING #12585
+WRITE_ASCII 0x280 ~ACQ10127~
+WRITE_ASCII 0x2cc ~ACQ10127~
+WRITE_ASCII 0x248 ~ACQ10127~
+ADD_CRE_ITEM ~MINHP1~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~AMULET~
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////																			////////////
+////////////									BEGIN PART 2							////////////
+////////////																			////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+         
+// BEGIN ~Ascalons Questpack: Inhalte fuer BG 2~
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////																			////////////
+////////////						2. Ein Halbling auf Abwegen							////////////
+////////////																			////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+COPY ~AC_QUEST/cre/ACQ22001.CRE~ ~OVERRIDE/ACQ22001.CRE~
+SAY NAME1 @123
+SAY NAME2 @123
+SAY INITIAL_MEETING #11239
+SAY DAMAGE #11241
+SAY DYING #11242
+SAY SELECT_COMMON1 #11239
+WRITE_ASCII 0x280 ~ACQ22001~
+WRITE_ASCII 0x2cc ~ACQ22001~
+WRITE_ASCII 0x248 ~ACQ22001~
+WRITE_ASCII 0x250 ~SHOUT~
+WRITE_ASCII 0x258 ~RUNENEMY~
+
+COPY ~AC_QUEST/cre/ACQ22002.CRE~ ~OVERRIDE/ACQ22002.CRE~
+SAY NAME1 @124
+SAY NAME2 @124
+SAY INITIAL_MEETING #4870
+SAY DAMAGE #12552
+SAY DYING #12553
+SAY SELECT_COMMON1 #4870
+WRITE_ASCII 0x280 ~ACQ22002~
+WRITE_ASCII 0x2cc ~ACQ22002~
+WRITE_ASCII 0x248 ~ACQ22002~
+WRITE_ASCII 0x250 ~USEITEM~
+WRITE_ASCII 0x258 ~WTASIGHT~
+ADD_CRE_ITEM ~STAF01~ #0 #0 #0 ~NONE~ ~WEAPON~ EQUIP
+ADD_CRE_ITEM ~LEAT01~ #0 #0 #0 ~NONE~ ~ARMOR~
+
+
+COPY_EXISTING ~AR0900.are~ ~OVERRIDE~
+LPF fj_are_structure
+    INT_VAR
+    fj_loc_x          = 3165
+    fj_loc_y          = 1769
+    fj_dest_x         = 3165
+    fj_dest_y         = 1769
+    fj_orientation    = 13
+    STR_VAR
+    fj_structure_type = actor
+    fj_name           = Halfling
+    fj_cre_resref     = ACQ22001
+  END
+  
+COPY_EXISTING ~AR0202.are~ ~OVERRIDE~
+LPF fj_are_structure
+    INT_VAR
+    fj_loc_x          = 1799
+    fj_loc_y          = 1409
+    fj_dest_x         = 1799
+    fj_dest_y         = 1409
+    fj_orientation    = 14
+    STR_VAR
+    fj_structure_type = actor
+    fj_name           = Bunger
+    fj_cre_resref     = ACQ22002
+  END
+
+COMPILE ~AC_QUEST/BAF/ACQ22001.BAF~
+COMPILE ~AC_QUEST/D/ACQ22000.D~

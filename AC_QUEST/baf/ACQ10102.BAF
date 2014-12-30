@@ -1,0 +1,18 @@
+IF
+	OR(2)
+	GlobalLT("CHAPTER","GLOBAL",4)
+	GlobalGT("CHAPTER","GLOBAL",5)
+	IsActive(MYSELF)
+THEN
+	RESPONSE #100
+		Deactivate(MYSELF)
+END
+
+IF
+	GlobalGT("CHAPTER","GLOBAL",3)
+	GlobalLT("CHAPTER","GLOBAL",6)
+	!IsActive(MYSELF)
+THEN
+	RESPONSE #100
+		Activate(MYSELF)
+END
