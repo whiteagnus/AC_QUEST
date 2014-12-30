@@ -46,8 +46,7 @@ LANGUAGE ~English~ ~english~ ~AC_QUEST/TRA/english/setup-AC_QUEST.tra~
 ////////////////////////////////////////////////////////////////////////////////////////////////////
          
 BEGIN @1
-
-REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~beltbrd.CRE~ @2
+REQUIRE_PREDICATE GAME_IS ~bgt bgee tob bg2ee tutu_totsc eet~ @2
 
 
 
