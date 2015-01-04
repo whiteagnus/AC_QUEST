@@ -1,6 +1,6 @@
 /* @0    = */
 @1    = ~Ascalons Questpack: Inhalte fuer BG 1~
-@2    = ~Ascalons Questpack benötigt BGT um zu funktionieren. Installation wird abgebrochen.~
+@2    = ~Ascalons Questpack findet keine gültige BG-Installation. Die Mod-Installation wird abgebrochen.~
 @3    = ~Bringe Virginie, dem unsichtbaren Wunderbunny, ein paar neue Tricks bei~
 @4    = ~Installiere Virginie, das unsichtbare Wunderbunny~
 
@@ -39,7 +39,7 @@ RW-Bonus: -1~
 @31   = ~Elfenbogen~
 @32   = ~Aphriels Elfenbogen
 
-Schon in jungen Jahren zog die Elfe Aphriel durch die Wälder Faerûns und wurde zu einer der größten Waldläuferinnen der Gegenwart. Keine Fährte, der sie nicht folgen konnte und kein Übeltäter, der vor ihrem Bogen sicher war. Erst als sie bei einem Besuch in der Stadt Baldurs Tor einen ansässigen Menschenhändler traf und sich Hals über Kopf verliebte hatten ihre Tage im Wald ein Ende. Aus der Liaison wurde der junge Halbelf Perwell geboren und als dieser von den Räubern der SChwertküste entführt wurde brach Aphriel ein letztes Mal in die Wänder auf. Auf dieser Reise gelangte ihr Bogen in die Hände von <CHARNAME>.
+Schon in jungen Jahren zog die Elfe Aphriel durch die Wälder Faerûns und wurde zu einer der größten Waldläuferinnen der Gegenwart. Keine Fährte, der sie nicht folgen konnte und kein Übeltäter, der vor ihrem Bogen sicher war. Erst als sie bei einem Besuch in der Stadt Baldurs Tor einen ansässigen Menschenhändler traf und sich Hals über Kopf verliebte, hatten ihre Tage im Wald ein Ende. Aus der Liaison wurde der junge Halbelf Perwell geboren, und als dieser von den Räubern der Schwertküste entführt wurde brach Aphriel ein letztes Mal in die Wälder auf. Auf dieser Reise gelangte ihr Bogen in die Hände von <CHARNAME>.
 
 EIGENSCHAFTEN:
 
@@ -64,7 +64,7 @@ Kann nicht verwendet werden von:
 @37   = ~Tonders Leiche~
 @38   = ~Nach dem Tod hat sich der Werwolf wieder in einen Menschen zurückverwandelt.~
 @39   = ~Gurilbeeren~
-@40   = ~Gurilbeeren sind klassische Heilmittel auf Faerûn und werden für die verschiedensten Anwendungen benutzt. Gerade um Leiden der "besonderen" Art zu lindern sind sie sehr beliebt weswegen viele Läden im Umkreis von leichten Damen diese Beeren im Angebot haben.~
+@40   = ~Gurilbeeren sind klassische Heilmittel auf Faerûn und werden für die verschiedensten Anwendungen benutzt. Gerade um Leiden der "besonderen" Art zu lindern sind sie sehr beliebt, weswegen viele Läden im Umkreis von leichten Damen diese Beeren im Angebot haben.~
 @41   = ~Aiwells Blut~
 @42   = ~Aiwell hat Euch einen großen Teil ihres Blutes gegeben, um ihren Mann Tonder zu retten.~
 @43   = ~Heiltrank für Werwölfe~
@@ -89,7 +89,7 @@ Kann nicht verwendet werden von:
 - Magiern
 - Mönchen~
 @49   = ~Karlinis Zauberbuch~
-@50   = ~In diesem Buch hat der große Karlini, eine der schillernsten Gestalten der Gnomenheit, seine Experimente und Zaubersprüche aufgeschrieben. Die Schrift ist wirr und krakelig, wahrscheinlich könnte nur jemand, der genauso wahnsinnig ist wie Karlini, dieses Gekritzel entziffern.~
+@50   = ~In diesem Buch hat der große Karlini, eine der schillerndsten Gestalten der Gnomenheit, seine Experimente und Zaubersprüche aufgeschrieben. Die Schrift ist wirr und krakelig, wahrscheinlich könnte nur jemand, der genauso wahnsinnig ist wie Karlini, dieses Gekritzel entziffern.~
 @51   = ~Ygnatz~
 @52   = ~Ygnatius Bombastus~
 @53   = ~Karlini~
@@ -99,7 +99,7 @@ Kann nicht verwendet werden von:
 @57   = ~Die ist das Fell eines mutierten Kreischlings.~
 @58   = ~Rüstung aus Kreischlingsleder
 
-Eines der Nebenprodukte von Geraldos Arbeit mit Kreischlingen war eine hohe Lederproduktion. Da der Maler für seine Farben nur das Fell benötigte suchte er für die dicke Haut der Monster eine andere Verwendung... und fand sie. Leider hatte das Kreischlingsleder einige nicht erwartete Nebenwirkungen und so wartete Geraldo ungeduldig darauf, dass er sein Experiment einer leichtgläubigen Seele andrehen konnte.
+Eines der Nebenprodukte von Geraldos Arbeit mit Kreischlingen war eine hohe Lederproduktion. Da der Maler für seine Farben nur das Fell benötigte, suchte er für die dicke Haut der Monster eine andere Verwendung... und fand sie. Leider hatte das Kreischlingsleder einige nicht erwartete Nebenwirkungen und so wartete Geraldo ungeduldig darauf, dass er sein Experiment einer leichtgläubigen Seele andrehen konnte.
 
 Die Chronisten gehen davon aus, dass sich der große Geraldo ins Fäustchen lacht bei der Vorstellung, irgendein Idiot könnte seine Rüstung tatsächlich nützlich finden.
 
@@ -152,12 +152,12 @@ Aber ihr seid nicht allein. Vater Abbathor kümmert sich um seine Kinder. Auch da
 Dem Gott den Ruhm und der Schlange die Juwelen!~
 @75   = ~Notizen~
 @76   = ~Dieses zusammengerollte Bündel loser Blätter scheint das Vorgehen der Schlangen Abbathors weitgehend zusammen zu fassen. Anscheinend war es von Anfang an Ihr Plan, ein altes zwergisches Gerät namens Gundmagtor zu erobern, was in der Gemeinsprache so viel bedeutet wie "Rufer der schwarzen Seelen". Der Hauptschlag des Kultes scheint sich auf Nashkell zu konzentrieren und die Notiz "<CHARNAME> hat Mulahey getötet, Minen sind frei" verheißt nichts gutes.~
-@77   = ~Dieser <PRO_RACE> <CHARNAME>, der für Wostok arbeitet, ist auf dem Weg. Nehmt Euch einen der Wüter und einen Boten mit. Der Bote soll das Gundmagtor bergen und zu uns bringen, ihr beide wartet auf <CHARNAME> und macht <PRO_HIMHER> ein Ende. Kommt danach zu uns, damit wir die nächsten Schritte besprechen können.
+@77   = ~Dieser <PRO_RACE> <CHARNAME>, der für Wostok arbeitet, ist auf dem Weg. Nehmt Euch einen der Wüter und einen Boten mit. Der Bote soll das Gundmagtor bergen und zu uns bringen, Ihr beide wartet auf <CHARNAME> und macht <PRO_HIMHER> ein Ende. Kommt danach zu uns, damit wir die nächsten Schritte besprechen können.
 
 L~
 @78   = ~Lugosch, treuer Diener!
 
-Wir begrüßen Euere Bemühung, die Eisenmine in Nashkell unter Eure Kontrolle zu bringen. Allerdings haben wir noch ein weiteres Anliegen: Behaltet <CHARNAME> von Kerzenburg im Auge. Der Befehl kommt von ganz unten und Ihr wisst was das heißt.
+Wir begrüßen Eure Bemühung, die Eisenmine in Nashkell unter Eure Kontrolle zu bringen. Allerdings haben wir noch ein weiteres Anliegen: Behaltet <CHARNAME> von Kerzenburg im Auge. Der Befehl kommt von ganz unten und Ihr wisst, was das heißt.
 
 Dem Gott den Ruhm und der Schlange die Juwelen!~
 @79   = ~Lugoschs Tagebuch~
@@ -168,8 +168,8 @@ Die letzten Einträge des Buches handeln von den Bemühungen, mit Mulahey in der N
 @82   = ~Emerson, der Vorarbeiter der Nashkellmine, hat in diesem wirren Haufen von Blättern und Zetteln seine Berechnungen und Erfahrungen aufgeschrieben. Für jemanden, der im Bergbau arbeitet, ist dieser Wust an Informationen sicherlich eine Goldgrube. Für Euch jedoch sind die Notizen nutzlos.~
 @83   = ~Tagebuch~
 @84   = ~Das Buch sieht schon sehr alt aus und hat einiges durchgemacht. Einige Seiten sind zerrissen und andere durchstochen, manche angesengt und ein großer Teil des Buches ist mit Blut verschmiert. Auch wenn Ihr den Namen des Priesters nicht entziffern könnt, so scheint der alte Wanderer einiges durchgemacht zu haben - Reisen mit einer Abenteurergruppe, Gewissenkonflikte um das "wahre" Zwergendasein und schließlich die Verbannung aus seinem Clan. Dieser Verlust brachte den Zwerg, dem seine Familie über alles ging, erst um den Verstand und dann direkt in die Arme der Schlangen.~
-@85   = ~Bashriks Hammer + 2~
-@86   = ~Der Moradinpriester Bashrik Funkenhammer galt in den Kreisen liberal einsteller Zwerege als weise und wahrhaftig. Er setzte sich engagiert gegen die Abspaltung der Oberweltzwerge ein und genoss allgemein ein hohes Ansehen. Dieser Hammer, geladen mit den Blitzen Moradins, war seine größte Waffe im Kampf gegen das Böse.
+@85   = ~Bashriks Hammer +2~
+@86   = ~Der Moradinpriester Bashrik Funkenhammer galt in den Kreisen liberal einsteller Zwerge als weise und wahrhaftig. Er setzte sich engagiert gegen die Abspaltung der Oberweltzwerge ein und genoss allgemein ein hohes Ansehen. Dieser Hammer, geladen mit den Blitzen Moradins, war seine größte Waffe im Kampf gegen das Böse.
 
 EIGENSCHAFTEN:
 
@@ -186,20 +186,20 @@ Kann nicht verwendet werden von:
 - Magiern
 - Mönchen~
 @87   = ~Bashriks Tagebuch~
-@88   = ~Das Buch ist mit säuberlicher Handschrift geführt undberichtet von Bashrik Funkenhammers letzter Reise. Bashrik war einem Kult auf den Fersen, der sich selbst "Die Schlangen Abbathors" nennt. Abbathor, der einzige böse Gott unter den Morndinsamman, gilt bei ihnen als Befreier des Zwergenvolkes und als Schutzpatron der Oberweltzwerge.
+@88   = ~Das Buch ist mit säuberlicher Handschrift geführt und berichtet von Bashrik Funkenhammers letzter Reise. Bashrik war einem Kult auf den Fersen, der sich selbst "Die Schlangen Abbathors" nennt. Abbathor, der einzige böse Gott unter den Morndinsamman, gilt bei ihnen als Befreier des Zwergenvolkes und als Schutzpatron der Oberweltzwerge.
 
 Viel mehr könnt Ihr nicht aus dem Buch erfahren, denn Bashrik hat die Aufzeichnungen augenscheinlich in erster Linie für Eingeweihte verfasst. Einzig der letzte Eintrag bietet einen Anhaltspunkt, wenn Ihr der Sache nachgehen wollt:
 
-"Habe mich heute von Wostok getrennt. Während Mirjala ich mein Glück im Süden versuchen werden nimmt Wostok die große Stadt in Augenschein. Wir werden uns im Tempel des Helm wiedertreffen, sobald ich nähere Informationen habe.
+"Habe mich heute von Wostok getrennt. Während Mirjala und ich unser Glück im Süden versuchen werden, nimmt Wostok die große Stadt in Augenschein. Wir werden uns im Tempel des Helm wiedertreffen, sobald ich nähere Informationen habe.
 
-Nachtrag: Nachdem ich den Attentäter, der im Freundlichen Arm auf uns gewartet hat, einmal gehörig durch die Mangel gedreht habe kenne ich jetzt wenigstens einen Namen. Ein gewisser Draglon scheint in den Unterkellern die Geschäfte des Kultes zu regeln. Nun, das hat Zeit bis ich wieder da bin."
+Nachtrag: Nachdem ich den Attentäter, der im Freundlichen Arm auf uns gewartet hat, einmal gehörig durch die Mangel gedreht habe, kenne ich jetzt wenigstens einen Namen. Ein gewisser Draglon scheint in den Unterkellern die Geschäfte des Kultes zu regeln. Nun, das hat Zeit bis ich wieder da bin."
 
-(Wenn Ihr der Geschichte um den Kult nachgehen wollt dann ist es von Vorteil das Buch zu behalten)~
+(Wenn Ihr der Geschichte um den Kult nachgehen wollt, dann ist es von Vorteil das Buch zu behalten)~
 @89   = ~Artefakt~
 @90   = ~Zwergisches Artefakt~
 @91   = ~Was genau dieses Artefakt macht ist Euch unbekannt. Die Schlangen Abbathors wollen es, das ist wohl genug Information.~
 @92   = ~Gundmagtor~
-@93   = ~Die Geschichte dieses Artefaktes liegt im Dunkeln. Was Ihr Euch aus den paar Fetzen zusammenreimen könnt, die Ihr bisher erfahren habt, und wenn Ihr die paar uralten Zwergenrunen, die das Gerät überziehen, richtig deutet, dann dient das Artefakt auf irgendeine Art und Weise dazu, die Vorvätre der Zwerge zu kontaktieren und ihre Energie in Schattenhafte Wesen umzuleiten.
+@93   = ~Die Geschichte dieses Artefaktes liegt im Dunkeln. Was Ihr Euch aus den paar Fetzen zusammenreimen könnt, die Ihr bisher erfahren habt, und wenn Ihr die paar uralten Zwergenrunen, die das Gerät überziehen, richtig deutet, dann dient das Artefakt auf irgendeine Art und Weise dazu, die Vorväter der Zwerge zu kontaktieren und ihre Energie in Schattenhafte Wesen umzuleiten.
 
 Nach allem, was Ihr über die alten Zwerge wisst, kommt so eine Tat dem größten Sakrileg gleich zu dem ein Zwerg fähig sein mag. Die Ruhe der Toten ist heilig und nur äußerst verdorbene Seelen würden es wagen sie zu brechen.~
 @94   = ~Tarash~
@@ -227,7 +227,7 @@ Nach allem, was Ihr über die alten Zwerge wisst, kommt so eine Tat dem größten S
 @116  = ~Ron~
 @117  = ~Hank~
 @118  = ~Die Schlangen Abbathors~
-@119  = ~Lugosch und seine Mannen sind tot und die Nashkellmine von ihrem Übel befreit. Dennoch hat dieser Sieg mehr Fragen als Antworten aufgeworfen. Sind die Zwerge, die sich dem Kult angeschlossen haben, tatsächlich nichts anderes als Verstoßene, die eine neue Heimat suchen? Wenn ja, warum fordern die Hintermänner der Schlangen dann so nachdrücklich und vehement Euren Tod? Frgen, auf die es keine Antwort gibt, denn die Spur läuft hier ins Leere. Alles, was Euch nun zu tun bleibt, ist, mit Emerson zu sprechen und ihm davon zu berichten, dass die Minen wieder frei sind - und darauf zu hoffen, dass sich irgenwann alles finden wird.~
+@119  = ~Lugosch und seine Mannen sind tot und die Nashkellmine von ihrem Übel befreit. Dennoch hat dieser Sieg mehr Fragen als Antworten aufgeworfen. Sind die Zwerge, die sich dem Kult angeschlossen haben, tatsächlich nichts anderes als Verstoßene, die eine neue Heimat suchen? Wenn ja, warum fordern die Hintermänner der Schlangen dann so nachdrücklich und vehement Euren Tod? Fragen, auf die es keine Antwort gibt, denn die Spur läuft hier ins Leere. Alles, was Euch nun zu tun bleibt, ist, mit Emerson zu sprechen und ihm davon zu berichten, dass die Minen wieder frei sind - und darauf zu hoffen, dass sich irgenwann alles finden wird.~
 @120  = ~Jasr~
 @121  = ~Jas~
 @122  = ~Jen~
@@ -323,7 +323,7 @@ Ich konnte Emersons Aufzeichnungen finden. Er wird sich sicherlich freuen, sie w
 Ich konnte die vermissten Arbeiter aus den Klauen eines verrückten Klerikers befreien. Emerson wird sich sicherlich über diese Nachricht freuen.~
 @10020 = ~Die Schlangen Abbathors
 
-Ich konnte den Vormarsch der Schlangen im Gebiet von Baldurs Tor stoppen, zumidnest hoffe ich das. Lugosch Grauhemd ist tot und über andere Führer des Kultes liegen mir keine Informationen vor. Warum allerdings mein Name so explizit egenannt wurde vermag ich nicht zu sagen. Vielleicht erfahre ich dieses Geheimnis eines Tages - ob ich mir das wünschen soll weiß ich allerdings nicht.~
+Ich konnte den Vormarsch der Schlangen im Gebiet von Baldurs Tor stoppen, zumindest hoffe ich das. Lugosch Grauhemd ist tot und über andere Führer des Kultes liegen mir keine Informationen vor. Warum allerdings mein Name so explizit genannt wurde vermag ich nicht zu sagen. Vielleicht erfahre ich dieses Geheimnis eines Tages - ob ich mir das wünschen soll, weiß ich allerdings nicht.~
 @10021 = ~Ein toter Zwerg und eine Nachricht
 
 In Mulaheys Keller fand ich einen toten Zwerg, der eine Nachricht für Mulahey dabei hatte - offenbar war der Empfänger nicht sonderlich interessiert daran, was der Bote zu sagen hatte. Die Nachricht spricht von einem Treffen in Beregost. vielleicht sollte ich der Sache mal auf den Grund gehen.~
@@ -332,7 +332,7 @@ In Mulaheys Keller fand ich einen toten Zwerg, der eine Nachricht für Mulahey da
 Tarash Schwarzhelm war äußerst misstrauisch und agressiv - ich musste ihn töten. Unter seinen Sachen war auch ein Brief, der darauf hinwies, dass sich wohl nördlich der Stadt ein Attentat anbahnt...~
 @10023 = ~Ein mysteriöser Zwerg in Beregost
 
-Tarash Schwarzhelm sprach von den "Schlangen Abbathors" - wer auch immer das sein mag. Und er sagte, dass sich im Norden von Beregost etwas anbahnt... vielleicht sollt eich ein Auge auf die Sache haben und die Kreuzung beobachten.~
+Tarash Schwarzhelm sprach von den "Schlangen Abbathors" - wer auch immer das sein mag. Und er sagte, dass sich im Norden von Beregost etwas anbahnt... vielleicht sollte ich ein Auge auf die Sache haben und die Kreuzung beobachten.~
 @10024 = ~Der verlorene Sohn
 
 Wir haben Frau Brunnstein mitgeteilt, dass ihr Sohn tot ist.~
@@ -350,7 +350,7 @@ Es scheint als hätte sich alles in Wohlgefallen aufgelöst. Marina hat den Ring e
 Die Elfe Aphriel sucht im Mantelwald nach ihrem Sohn Perwell. Die Räuber haben ihn entführt und anscheinend an einen geheimen Ort gebracht.~
 @10029 = ~Die Suche nach Perwell
 
-Ich habe Perwell tatsächlich in der Mine gefunden und nach draußen geschickt. Auf der einen Seite könnte ich ihn bestimmt durch den Wald bringen... aber auf der anderen Seite kännte Aphriel mir auch ein gutes Lösegeld für den Kleinen zahlen...~
+Ich habe Perwell tatsächlich in der Mine gefunden und nach draußen geschickt. Auf der einen Seite könnte ich ihn bestimmt durch den Wald bringen... aber auf der anderen Seite könnte Aphriel mir auch ein gutes Lösegeld für den Kleinen zahlen...~
 @10030 = ~Die Suche nach Perwell
 
 Ich habe Perwell tatsächlich in der Mine gefunden und nach draußen geschickt. Ich habe keine Zeit, mich mit Kindern herumzuplagen.~
@@ -395,7 +395,6 @@ Bunger Wiesner ist zu seiner Mutter zurückgekehrt. Die alte Dame wird uns bestim
 @20023 = ~Ein geheimnisvolles Angebot
 
 Ein Bote hat mir eine Einladung seines Herrn überbracht. Auch wenn dieser seinen Namen geheimhalten will, so hat er doch aus irgendeinem Grund Interesse an mir. Wenn ich mich auf ein Treffen einlassen will dann finde ich den Boten in der Kupferkrone.~
-
 
 
 //BG:EE Compatibility
@@ -454,3 +453,4 @@ Ein Bote hat mir eine Einladung seines Herrn überbracht. Auch wenn dieser seinen
 @90008 = ~Die Schlangen Abbathors~
 @90009 = ~Der Kult der Augenlosen - Bunger Wiesner~
 @90010 = ~Ein geheimnisvolles Angebot~
+
