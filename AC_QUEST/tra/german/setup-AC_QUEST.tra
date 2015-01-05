@@ -441,6 +441,30 @@ Ein Bote hat mir eine Einladung seines Herrn überbracht. Auch wenn dieser seinen
 @80039 = ~Beschlagenes Lederwams +3~ //#6365
 @80040 = ~Mutierter Kreischling~ //#2286
 @80041 = ~Skelett-Bogenschütze~ //#73272
+@80042 = ~Diese Schwerter werden auch als zweischneidige Schwerter, Kriegsschwerter oder Militärschwerter bezeichnet. Es gibt keine einheitliche Form des Langschwertes. Seine Form und Länge sind von Kultur zu Kultur unterschiedlich und können selbst innerhalb einer Kultur je nach Zeitalter variieren. Das grundlegendste Merkmal aller Langschwerter ist ihre Länge, die zwischen 90 cm und 1,20 m beträgt. Im letzteren Fall nimmt die Klinge 1 m der Gesamtlänge ein. Die meisten Langschwerter besitzen eine zweischneidige Klinge mit einer scharfen Spitze. Trotz dieser Spitze ist das Langschwert nicht zum Stoßen, sondern zum Schwingen vorgesehen.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W8 (Klinge)
+Gewicht: 4
+Initiativefaktor: 5
+Mindeststärke: 6
+Fertigkeit: Langschwert
+Typ: 1-händig~ //#6742
+@80043 = ~Die Klinge brennt mit einem magischen Feuer und bei jedem Schlag wird versengende Hitze freigesetzt. Die Worte "Meta Infernum" sind in den Griff geritzt. Die Inschrift wirkt jedoch leicht verwischt und wurde vielleicht erst später von einem der Besitzer angebracht.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W8 +1 (Klinge)
+Schadensbonus: +1 (Feuer)
+ETW0-Bonus: -1
+Gewicht: 4
+Initiativefaktor: 4
+Mindeststärke: 6
+Fertigkeit: Langschwert
+Typ: 1-händig~ //#4421
+@80044 = ~Langschwert~ //#2893
+@80045 = ~Flammenschwert +1~ //#4422
 
 //Journal Titles
 @90001 = ~Raukners Raufende Rabauken~

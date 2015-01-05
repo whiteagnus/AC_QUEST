@@ -355,7 +355,7 @@ END
 
 IF ~~ THEN BEGIN AC16
 SAY @115 = @116
-IF ~~ THEN DO ~AddexperienceParty(300)EraseJournalEntry(@10033)EraseJournalEntry(@10034)SetGlobal("ACQ16","GLOBAL",6)TakePartyItem("ACQ16002")DestroyItem("ACQ16002")GiveItemCreate("SW1H53",LastTalkedToBy(),0,0,0)~ EXIT
+IF ~~ THEN DO ~AddexperienceParty(300)EraseJournalEntry(@10033)EraseJournalEntry(@10034)SetGlobal("ACQ16","GLOBAL",6)TakePartyItem("ACQ16002")DestroyItem("ACQ16002")GiveItemCreate("AC1H53",LastTalkedToBy(),0,0,0)~ EXIT
 END
 
 IF ~~ THEN BEGIN AC17
