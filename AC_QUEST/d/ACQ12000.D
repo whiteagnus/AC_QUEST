@@ -254,7 +254,7 @@ END
 BEGIN ACQ12003
 IF ~True()~ THEN BEGIN 0
 SAY @91
-IF ~PartyHasItem("ACQ12000")~ THEN REPLY @92 + 12
+IF ~Global("ACQ12","GLOBAL",5)PartyHasItem("ACQ12000")~ THEN REPLY @92 + 12
 ++ @93 + 1
 ++ @94 + 2
 ++ @95 + 3
@@ -264,7 +264,7 @@ END
 
 IF ~~ THEN BEGIN 1
 SAY @98
-++ @99 + 5
+IF ~!GlobalGT("ACQ12","GLOBAL",1)~ THEN REPLY @99 + 5
 ++ @100 + 6
 ++ @94 + 2
 ++ @95 + 3
@@ -274,7 +274,7 @@ END
 
 IF ~~ THEN BEGIN 2
 SAY @101
-++ @99 + 5
+IF ~!GlobalGT("ACQ12","GLOBAL",1)~ THEN REPLY @99 + 5
 ++ @100 + 6
 ++ @94 + 2
 ++ @95 + 3
@@ -303,7 +303,7 @@ END
 
 IF ~~ THEN BEGIN 6
 SAY @105
-++ @99 + 5
+IF ~!GlobalGT("ACQ12","GLOBAL",1)~ THEN REPLY @99 + 5
 ++ @94 + 2
 ++ @95 + 3
 IF ~GlobalGT("ACQ12","GLOBAL",0)!Global("ACQ122","GLOBAL",2)~ THEN REPLY @96 + 7
@@ -313,7 +313,7 @@ END
 IF ~~ THEN BEGIN 7
 SAY @106
 ++ @107 DO ~SetGlobal("ACQ122","GLOBAL",2)~ + 8
-++ @108 DO ~SetGlobal("ACQ122","GLOBAL",2)~ + 8
+IF ~!GlobalGT("ACQ12","GLOBAL",1)~ THEN REPLY @108 DO ~SetGlobal("ACQ122","GLOBAL",2)~ + 8
 ++ @109 DO ~SetGlobal("ACQ122","GLOBAL",2)~ + 9
 ++ @110 DO ~SetGlobal("ACQ122","GLOBAL",2)~ + 10
 END
@@ -485,8 +485,8 @@ EXIT
 CHAIN
 IF ~~ THEN ACQ12002 24
 @171 = @172 = @173 DO ~AddJournalEntry(@10026,QUEST)~
-==ACQ12002 IF ~HasItem("ACQ12000","ACQ12002")~ THEN @174 DO ~GiveItem("ACQ12000",LastTalkedToBy())~
-==ACQ12002 IF ~!HasItem("ACQ12000","ACQ12002")~ THEN @175
+==ACQ12002 IF ~HasItem("ACQ12000","ACQ12002")~ THEN @174 DO ~SetGlobal("ACQ12","GLOBAL",5)GiveItem("ACQ12000",LastTalkedToBy())~
+==ACQ12002 IF ~!HasItem("ACQ12000","ACQ12002")~ THEN @175 DO ~SetGlobal("ACQ12","GLOBAL",5)~
 END
 IF ~Global("ACQ12","GLOBAL",4)~ THEN DO ~SetGlobal("ACQ122","GLOBAL",4)~ EXIT
 IF ~!Global("ACQ12","GLOBAL",4)~ THEN DO ~SetGlobal("ACQ122","GLOBAL",4)~ EXTERN ACQ12001 21

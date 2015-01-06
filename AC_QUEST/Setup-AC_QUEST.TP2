@@ -1,7 +1,7 @@
 BACKUP ~AC_QUEST/backup~
 AUTHOR ~jastey@web.de~ //This is Ascalon's Questpack, but any bugreports about this version should go to jastey
 
-VERSION ~2.00b_150103~
+VERSION ~2.00b_150106~
 
 AUTO_TRA "AC_QUEST/TRA/autotra/%s"//%"
 
@@ -375,10 +375,10 @@ LPF fj_are_structure
 COPY_EXISTING ~%Nashkel%.are~ ~OVERRIDE~
 LPF fj_are_structure
     INT_VAR
-    fj_loc_x          = 1817
-    fj_loc_y          = 959
-    fj_dest_x         = 1817
-    fj_dest_y         = 959
+    fj_loc_x          = 2609
+    fj_loc_y          = 2340
+    fj_dest_x         = 2609
+    fj_dest_y         = 2340
     fj_orientation    = 2
     STR_VAR
     fj_structure_type = actor
@@ -779,6 +779,22 @@ COPY ~AC_QUEST/ITM/ACQ16001.ITM~ ~OVERRIDE/ACQ16001.ITM~
 SAY NAME1 @39
 SAY NAME2 @39
 SAY DESC @40
+
+ACTION_IF GAME_IS ~bgee~ THEN BEGIN
+COPY ~AC_QUEST/ITM/AC1H53.ITM~ ~override~
+SAY NAME1 @80044
+SAY NAME2 @80045
+SAY UNIDENTIFIED_DESC @80042
+SAY DESC @80043
+END
+
+ACTION_IF GAME_IS ~bgt tutu_totsc~ THEN BEGIN
+COPY ~AC_QUEST/ITM/AC1H53.ITM~ ~override~
+SAY NAME1 @80044
+SAY NAME2 @80045
+SAY UNIDENTIFIED_DESC @80046
+SAY DESC @80047
+END
 
 COPY ~AC_QUEST/ITM/MISCAS.ITM~ ~Override/ACQ16003.ITM~
 SAY NAME1 @41

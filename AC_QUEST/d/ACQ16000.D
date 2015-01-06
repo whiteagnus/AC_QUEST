@@ -190,6 +190,11 @@ SAY @57 = @58 = @59 = @58 = @60
 IF ~~ THEN DO ~GiveItemCreate("ACQ16003",LastTalkedToBy(),0,0,0)~ EXIT
 END
 
+IF ~!Dead("ACQ16002")GlobalGT("ACQ16","GLOBAL",2)~ THEN BEGIN 31
+SAY @146
+IF ~~ THEN REPLY @147 EXIT
+END
+
 
 /////////////////
 
@@ -198,7 +203,7 @@ IF ~!Dead("ACQ16001")Global("ACQ16","GLOBAL",0)~ THEN REPLY @61 + AC0
 IF ~!Dead("ACQ16001")Global("ACQ16","GLOBAL",3)~ THEN REPLY @62 + AC0a
 IF ~!Dead("ACQ16001")Global("ACQ16","GLOBAL",1)~ THEN REPLY @63 + AC0b
 IF ~PartyHasItem("ACQ16001")Global("ACQ16","GLOBAL",2)~ THEN REPLY @64 + AC15
-IF ~PartyHasItem("ACQ16002")Global("ACQ16","GLOBAL",2)~ THEN REPLY @65 + AC16
+IF ~PartyHasItem("ACQ16002")GlobalGT("ACQ16","GLOBAL",2)~ THEN REPLY @65 + AC16
 IF ~PartyHasItem("ACQ16003")Global("ACQ16","GLOBAL",2)~ THEN REPLY @66 + AC17
 IF ~PartyHasItem("MISC1I")Global("ACQ16","GLOBAL",2)~ THEN REPLY @67 + AC18
 END
@@ -355,7 +360,7 @@ END
 
 IF ~~ THEN BEGIN AC16
 SAY @115 = @116
-IF ~~ THEN DO ~AddexperienceParty(300)EraseJournalEntry(@10033)EraseJournalEntry(@10034)SetGlobal("ACQ16","GLOBAL",6)TakePartyItem("ACQ16002")DestroyItem("ACQ16002")GiveItemCreate("SW1H53",LastTalkedToBy(),0,0,0)~ EXIT
+IF ~~ THEN DO ~AddexperienceParty(300)EraseJournalEntry(@10033)EraseJournalEntry(@10034)SetGlobal("ACQ16","GLOBAL",6)TakePartyItem("ACQ16002")DestroyItem("ACQ16002")GiveItemCreate("AC1H53",LastTalkedToBy(),0,0,0)~ EXIT
 END
 
 IF ~~ THEN BEGIN AC17
