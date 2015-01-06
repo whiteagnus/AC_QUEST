@@ -313,7 +313,7 @@ END
 IF ~~ THEN BEGIN 7
 SAY @106
 ++ @107 DO ~SetGlobal("ACQ122","GLOBAL",2)~ + 8
-++ @108 DO ~SetGlobal("ACQ122","GLOBAL",2)~ + 8
+IF ~!GlobalGT("ACQ12","GLOBAL",1)~ THEN REPLY @108 DO ~SetGlobal("ACQ122","GLOBAL",2)~ + 8
 ++ @109 DO ~SetGlobal("ACQ122","GLOBAL",2)~ + 9
 ++ @110 DO ~SetGlobal("ACQ122","GLOBAL",2)~ + 10
 END
