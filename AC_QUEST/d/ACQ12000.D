@@ -264,7 +264,7 @@ END
 
 IF ~~ THEN BEGIN 1
 SAY @98
-++ @99 + 5
+IF ~!GlobalGT("ACQ12","GLOBAL",1)~ THEN REPLY @99 + 5
 ++ @100 + 6
 ++ @94 + 2
 ++ @95 + 3
@@ -274,7 +274,7 @@ END
 
 IF ~~ THEN BEGIN 2
 SAY @101
-++ @99 + 5
+IF ~!GlobalGT("ACQ12","GLOBAL",1)~ THEN REPLY @99 + 5
 ++ @100 + 6
 ++ @94 + 2
 ++ @95 + 3
@@ -303,7 +303,7 @@ END
 
 IF ~~ THEN BEGIN 6
 SAY @105
-++ @99 + 5
+IF ~!GlobalGT("ACQ12","GLOBAL",1)~ THEN REPLY @99 + 5
 ++ @94 + 2
 ++ @95 + 3
 IF ~GlobalGT("ACQ12","GLOBAL",0)!Global("ACQ122","GLOBAL",2)~ THEN REPLY @96 + 7
