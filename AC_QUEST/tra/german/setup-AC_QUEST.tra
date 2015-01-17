@@ -500,8 +500,8 @@ Kann nicht verwendet werden von:
 
 //Journal Titles
 @90001 = ~Raukners Raufende Rabauken~
-@90002 = ~Der verlorene Sohn~
-@90003 = ~Der Geist in den Wolkenspitzen~
+//@90002 = ~Der verlorene Sohn~
+//@90003 = ~Der Geist in den Wolkenspitzen~
 @90004 = ~Die Suche nach Hopsi~
 @90005 = ~Ein neuer bester Freund für Ugh~
 @90006 = ~Die Suche nach Perwell~
@@ -509,4 +509,4 @@ Kann nicht verwendet werden von:
 @90008 = ~Die Schlangen Abbathors~
 @90009 = ~Der Kult der Augenlosen - Bunger Wiesner~
 @90010 = ~Ein geheimnisvolles Angebot~
-
+@90011 = ~Ein missglücktes Picknick~

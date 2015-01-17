@@ -496,8 +496,8 @@ Not Usable By:
 
 //Journal Titles
 @90001 = ~Raukner's Ruffian Roughnecks~
-@90002 = ~The Lost Son~
-@90003 = ~A Ghost in the Cloudpeaks~
+//@90002 = ~The Lost Son~
+//@90003 = ~A Ghost in the Cloudpeaks~
 @90004 = ~The Quest for Jumper~
 @90005 = ~A New Best Friend for Ugh~
 @90006 = ~The Quest for Perwell~
@@ -505,4 +505,4 @@ Not Usable By:
 @90008 = ~The Serpents of Abbathor~
 @90009 = ~The Cult of the Unseeing Eye - Bunger Wiesner~
 @90010 = ~A Mysterious Offer~
-
+@90011 = ~A failed Picnic~
