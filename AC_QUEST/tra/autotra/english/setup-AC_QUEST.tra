@@ -1,456 +1,508 @@
 /* @0    = */
-@1    = ~Ascalons Questpack: Inhalte fuer BG 1~
-@2    = ~Ascalons Questpack benötigt BGT um zu funktionieren. Installation wird abgebrochen.~
-@3    = ~Bringe Virginie, dem unsichtbaren Wunderbunny, ein paar neue Tricks bei~
-@4    = ~Installiere Virginie, das unsichtbare Wunderbunny~
+@1    = ~Ascalon's Questpack: Content for BG 1~
+@2    = ~No valid BG install detected. Installation of Ascalon's Questpack will be aborted.~
+@3    = ~Teach Virginie, the invisible miracle Wonderbunny, a few new tricks~
+@4    = ~Install Virginie, the invisible Wonderbunny~
 
 @6    = ~Agnus~
-@7    = ~Agnus der Weiße~
+@7    = ~Agnus the White~
 @8    = ~Teliel~
-@9    = ~Teliel Weidensänger~
+@9    = ~Teliel Meadowsinger~ //fand ich als Nachnahmen schöner
 @10   = ~Udolf~
 @11   = ~Udolf Raukner~
-@12   = ~Frau Brunnstein~
+@12   = ~Mrs. Brunnstein~ 
 @13   = ~Aaron~
 @14   = ~Aaron Brunnstein~
-@15   = ~Gespenst~
+@15   = ~Ghost~
 @16   = ~Barin~
-@17   = ~Waldläufer Barin~
-@18   = ~Gnoll-Boss~
-@19   = ~Gnoll Leibwache~
-@20   = ~Aarons Schutzring~
-@21   = ~Aarons Schutzring
+@17   = ~Ranger Barin~
+@18   = ~Gnoll Boss~
+@19   = ~Gnoll Bodyguard~
+@20   = ~Aaron's Ring of Protection~
+@21   = ~Aaron's Ring of Protection
 
-Dieser einfache Ring ist mit einem leichten Zauber versehen, um den Träger zu schützen. Die Gravur im Inneren besagt: "Für M. in Liebe von A."
+This simple ring is provided with a spell to protect the wearer. The engraving within says: 'In love for M., from A.'
 
-EIGENSCHAFTEN:
+STATISTICS:
 
-RK-Bonus: -1
-RW-Bonus: -1~
+Armor Class: +1 bonus
+Saving Throws: +1 bonus~ //"light spell" fand ich missverständlich (Licht- / leicht)
 @22   = ~Kessy~
 @23   = ~Ugh~
-@24   = ~Hase~
-@25   = ~Kaninchenzüchter~
-@26   = ~Kaninchen~
-@27   = ~Ein kleines, weißes Kaninchen. Vielleicht das flauschigste das Ihr je gesehen habt.~
-@28   = ~Ein kleines, weißes Kaninchen. Es ist zwar nicht so flauschig wie Hopsi, aber welches Kaninchen ist das schon?~
+@24   = ~Rabbit~
+@25   = ~Rabbit Breeder~
+@26   = ~Rabbit~
+@27   = ~A little, white rabbit. Maybe the fluffiest you have ever seen.~
+@28   = ~A little, white rabbit. It is not as fluffy as Jumper, but which rabbit ever could be?~
 @29   = ~Perwell~
-@30   = ~Dies ist die Leiche von Perwell.~
-@31   = ~Elfenbogen~
-@32   = ~Aphriels Elfenbogen
+@30   = ~This is the body of Perwell.~
+@31   = ~Elven Longbow~
+@32   = ~Aphriel's Elven Longbow
 
-Schon in jungen Jahren zog die Elfe Aphriel durch die Wälder Faerûns und wurde zu einer der größten Waldläuferinnen der Gegenwart. Keine Fährte, der sie nicht folgen konnte und kein Übeltäter, der vor ihrem Bogen sicher war. Erst als sie bei einem Besuch in der Stadt Baldurs Tor einen ansässigen Menschenhändler traf und sich Hals über Kopf verliebte hatten ihre Tage im Wald ein Ende. Aus der Liaison wurde der junge Halbelf Perwell geboren und als dieser von den Räubern der SChwertküste entführt wurde brach Aphriel ein letztes Mal in die Wänder auf. Auf dieser Reise gelangte ihr Bogen in die Hände von <CHARNAME>.
+At an early age the elf Aphriel roamed the forests of Faerûn and became one of the greatest Rangers of our time. There was no scent she could not follow, and not one criminal was safe from her bow. It was only when she met a local merchant on a visit to the city of Baldur's Gate and fell passionately in love with him, that her days in the forest had come to an end. Their relationship was blessed with the young half-elf Perwell, and when he was kidnapped by bandits of the Sword Coast, Aphriel set out for one last time into the forests. During this trip the bow came into the hands of <CHARNAME>.
 
-EIGENSCHAFTEN:
+STATISTICS:
 
-Schadensbonus: +2 (Geschoß)
-ETW0-Bonus: -3
-Gewicht: 2
-Initiativefaktor: 5
-Mindeststärke: 6
-Fertigkeit: Langbogen
-Typ: 2-händig
+Damage: +2 bonus (missile)
+THAC0: +3 bonus
+Weight: 2
+Speed Factor: 5
+Proficiency Type: Long Bow
+Type: 2-handed
+Requires: 6 Strength
 
-Kann nicht verwendet werden von:
-- Dieben
-- Druiden
-- Klerikern
-- Magiern
-- Mönchen~
+Not Usable By:
+- Thief
+- Druid
+- Cleric
+- Mage
+- Monk~
 @33   = ~Aphriel~
 @34   = ~Aiwell~
-@35   = ~Werwolf~
+@35   = ~Werewolf~
 @36   = ~Tonder~
-@37   = ~Tonders Leiche~
-@38   = ~Nach dem Tod hat sich der Werwolf wieder in einen Menschen zurückverwandelt.~
-@39   = ~Gurilbeeren~
-@40   = ~Gurilbeeren sind klassische Heilmittel auf Faerûn und werden für die verschiedensten Anwendungen benutzt. Gerade um Leiden der "besonderen" Art zu lindern sind sie sehr beliebt weswegen viele Läden im Umkreis von leichten Damen diese Beeren im Angebot haben.~
-@41   = ~Aiwells Blut~
-@42   = ~Aiwell hat Euch einen großen Teil ihres Blutes gegeben, um ihren Mann Tonder zu retten.~
-@43   = ~Heiltrank für Werwölfe~
-@44   = ~Dieser Heiltrank enthält hauptsächlich Tollkirschenblüten.~
-@45   = ~Dieser Heiltrank enthält hauptsächlich Gurilbeeren.~
-@46   = ~Dieser Heiltrank enthält hauptsächlich Aiwells Blut.~
-@47   = ~Spiegelschild +1~
-@48   = ~Dieser Schild ist auf Hochglanz poliert und offensichtlich magisch. Kratzer verschwinden und Blut und Schmutz perlt einfach von seiner spiegelnden Oberfläche ab. Es steht zu vermuten, dass er sogar dem Blick eines Basilisken standhalten kann.
+@37   = ~Tonder's body~
+@38   = ~After death the werewolf has turned back into a human.~
+@39   = ~Guril berries~
+@40   = ~Guril berries are traditional remedies in Faerûn, and are used for various applications. They are especially popular to alleviate sufferings of the 'special' type, which is why these berries are often offered by stores in vicinity to courtesans.~ //"floozy" ist sehr umgangssprachlich
+@41   = ~Aiwell's blood~
+@42   = ~Aiwell has given you a big portion of her blood to save her husband Tonder.~
+@43   = ~Potion against Lycantrophy~
+@44   = ~This potion contains mainly belladonna flowers.~
+@45   = ~This potion contains mainly Guril berries.~
+@46   = ~This potion contains mainly Aiwell's blood.~
+@47   = ~Mirror Shield +1~
+@48   = ~This shield is polished to a high gloss and obviously magical. Scratches disappear and blood and dirt simply run off of its reflective surface. It can be presumed that it can even withstand the look of a basilisk.
 
-EIGENSCHAFTEN:
+STATISTICS:
 
-Der Träger ist vor allen Arten der Versteinerung geschützt, auch vor Blickangriffen.
+The wearer is protected against all types of petrification and forms of gaze attacks.
 
-RK-Bonus: -1
-Gewicht: 7
-Mindeststärke: 12
+Armor Class: +1 bonus
+Weight: 7
+Requires: 12 Strength
 
-Kann nicht verwendet werden von:
-- Barden
-- Dieben
-- Druiden
-- Magiern
-- Mönchen~
-@49   = ~Karlinis Zauberbuch~
-@50   = ~In diesem Buch hat der große Karlini, eine der schillernsten Gestalten der Gnomenheit, seine Experimente und Zaubersprüche aufgeschrieben. Die Schrift ist wirr und krakelig, wahrscheinlich könnte nur jemand, der genauso wahnsinnig ist wie Karlini, dieses Gekritzel entziffern.~
+Not Usable By:
+- Bard
+- Thief
+- Druid
+- Mage
+- Monk~
+@49   = ~Karlini's Spellbook~
+@50   = ~In this book the great Karlini, one of the most colorful figures of gnomish wisdom, wrote down his experiences and spells. The handwriting is confusing and scrawly, probably only someone who is as mad as Karlini could decipher this scribble.~
 @51   = ~Ygnatz~
 @52   = ~Ygnatius Bombastus~
 @53   = ~Karlini~
-@54   = ~Geraldos Schlüssel~
-@55   = ~Der Schlüssel öffnet die Tür von Geraldos Haus im Zemtrum von Baldurs Tor.~
-@56   = ~Kreischlingsfell~
-@57   = ~Die ist das Fell eines mutierten Kreischlings.~
-@58   = ~Rüstung aus Kreischlingsleder
+@54   = ~Geraldo's key~
+@55   = ~The key opens the door of Geraldo's house in the center of Baldur's Gate.~
+@56   = ~Gibberling's skin~
+@57   = ~This is the skin of a mutant gibberling.~
+@58   = ~Armor from Gibberling Leather
 
-Eines der Nebenprodukte von Geraldos Arbeit mit Kreischlingen war eine hohe Lederproduktion. Da der Maler für seine Farben nur das Fell benötigte suchte er für die dicke Haut der Monster eine andere Verwendung... und fand sie. Leider hatte das Kreischlingsleder einige nicht erwartete Nebenwirkungen und so wartete Geraldo ungeduldig darauf, dass er sein Experiment einer leichtgläubigen Seele andrehen konnte.
+One of the byproducts of Geraldo's work with gibberlings was a high leather production. Since the painter only needed the fur for his colors, he sought a different use for the thick skin of the monsters... and found it. Unfortunately, the leather of gibberlings had some unexpected side effects and so Geraldo impatiently waited for a credulous soul to foist his experiment on.
 
-Die Chronisten gehen davon aus, dass sich der große Geraldo ins Fäustchen lacht bei der Vorstellung, irgendein Idiot könnte seine Rüstung tatsächlich nützlich finden.
+The chroniclers are assuming that the great Geraldo laughs in his sleeve at the idea that some idiot would find this armor actually useful.
 
-EIGENSCHAFTEN:
+STATISTICS:
 
-Der Charakter verfärbt sich blau.
+The character turns blue.
 
-Kann nur durch Fluch brechen wieder abgenommen werden.
+Can only be removed by a 'Remove Curse' spell.
 
-Rüstungsklasse: 4
+Armor Class: 4
 Charisma: -3
-Widerstand gg. Geschosswaffen: +10%
-Gewicht: 7
-Mindeststärke: 6
+Resistance vs. projectile weapons: +10%
+Weight: 7
+Requires: 6 Strength
 
-Kann nicht verwendet werden von:
-- Magiern
-- Mönchen~
-@59   = ~Elminster der Vogel~
-@60   = ~Elminster ist Geraldos zahmer Vogel, obwohl selbst dieser nicht so genau weiß welcher Gattung er angehört. Der Vogel hat einen klugen Blick und eine gehörige Abneigung gegen Kreischlinge. Sobald er einen wittert äußert er sich in einem lauten "Kiwitt".
+Not Usable By:
+- Mage
+- Monk~
+@59   = ~Elminster the Bird~
+@60   = ~Elminster is Geraldo's tame bird, although even he does not know the exact species. The bird has a wise look and an exceptional aversion to gibberlings. As soon as he senses one he will call a loud 'Kiwitt'.
 
-Ohne den Vogel dürfte es unmöglich sein in den Kellern und Kanälen die Kreischlinge aufzuspüren, achtet also sorgsam auf ihn.~
+Without the bird, it would be impossible to track down the gibberlings in the cellars and sewers, so take good care of him.~
 @61   = ~Geraldo~
-@62   = ~Geraldo der Prächtige~
+@62   = ~Geraldo the Magnificent~
 @63   = ~Mandy~
 @64   = ~Ashley~
 @65   = ~Cindy~
-@66   = ~Schlüssel~
-@67   = ~Ein kleiner Schlüssel, der so etwas wie ein Fach in der Wand öffnet.~
-@68   = ~Lagerhausschlüssel~
-@69   = ~Dieser Schlüssel öffnet das Lagerhaus im Süden der Stadt. Die Schlangen Abbathors haben dort ihren Unterschlupf.~
-@70   = ~Brief~
+@66   = ~Key~
+@67   = ~A small key, opening some sort of panel in the wall.~
+@68   = ~Warehouse Key~
+@69   = ~This key opens a warehouse in the Southern District of the city. The Serpents of Abbathor have their hideout there.~
+@70   = ~Letter~
 @71   = ~Mulahey,
 
-wir beobachten Eure Anstrengungen nun schon eine ganze Weile und sind äußerst beeindruckt. Eine Zusammenarbeit zwischen Euch und unserer Organisation würde sich auf lange Sicht als profitabel herausstellen. Wenn Ihr mit uns Kontakt aufnehmen wollt, dann trefft unseren Kontaktman Tarasch Schwarzhelm nachts in Beregost. Er wird an der Steinsäule im Zentrum der Stadt auf Euch warten.
+we have observed your efforts for quite a while now and are very impressed. A collaboration between you and our organization would prove to be profitable in the long run. If you want to get in touch with us, then meet our contact Tarasch Blackhelmet in Beregost at night. He is waiting at the stone pillar in the center of the city for you.
 
-Dem Gott den Ruhm und der Schlange die Juwelen!~
+To God all glory and all jewels to the Serpent!~
 @72   = ~Tarash,
 
-Nun ist es amtlich. Bashrik Funkenhammer ist an die Schwertküste gereist! Dieser verdammte Wohltäter wird uns alles vermiesen. Nach unseren Informationen reist er mit dieser Elfenschlampe von Baldurs Tor aus nach Süden... wenn er an der Kreuzung vom Weg des Löwen ankommt werden wir ihm mal eine gehörige Überraschung bereiten!
+Now it's official. Bashrik Sparklehammer has traveled to the Sword Coast! That damned Do-Gooder will ruin us all. According to our information, he and this elf bitch travel from Baldur's Gate to the south... when he arrives at the crossroads to Lion's Way, we will give him a proper surprise!
 
-Dem Gott den Ruhm und der Schlange die Juwelen!~
-@73   = ~Flugblatt~
-@74   = ~Zwerge der Oberwelt!
+To God all glory and all the jewels to the Serpent!~
+@73   = ~Pamphlet~
+@74   = ~Dwarves of the upper world!
 
-Wir wissen wie ihr euch fühlt! Die Langhachsen haben nichts besseres zu tun als euch am Bart über den Tisch zu ziehen, die Spitzohren lachen über euch und die Tiefen haben sich von euch abgewandt!
+We know how you feel! The Longgrown do nothing but pull a fast one on your beard, the Pointy-ears laugh at you and the Subsurfacers have turned away from you!
 
-Aber ihr seid nicht allein. Vater Abbathor kümmert sich um seine Kinder. Auch dann, wenn Moradin euch die Fackel ausbläst. Wollt Ihr auch zu Abbathors Familie gehören? Dann kommt in die Unterkeller und fragt nach Draglon!
+But you are not alone. Father Abbathor cares for his children. Even after Moradin knocks your torch out. Do you want to belong to Abbathor's family? Then come to the Undercellars and ask for Draglon!
 
-Dem Gott den Ruhm und der Schlange die Juwelen!~
-@75   = ~Notizen~
-@76   = ~Dieses zusammengerollte Bündel loser Blätter scheint das Vorgehen der Schlangen Abbathors weitgehend zusammen zu fassen. Anscheinend war es von Anfang an Ihr Plan, ein altes zwergisches Gerät namens Gundmagtor zu erobern, was in der Gemeinsprache so viel bedeutet wie "Rufer der schwarzen Seelen". Der Hauptschlag des Kultes scheint sich auf Nashkell zu konzentrieren und die Notiz "<CHARNAME> hat Mulahey getötet, Minen sind frei" verheißt nichts gutes.~
-@77   = ~Dieser <PRO_RACE> <CHARNAME>, der für Wostok arbeitet, ist auf dem Weg. Nehmt Euch einen der Wüter und einen Boten mit. Der Bote soll das Gundmagtor bergen und zu uns bringen, ihr beide wartet auf <CHARNAME> und macht <PRO_HIMHER> ein Ende. Kommt danach zu uns, damit wir die nächsten Schritte besprechen können.
+To God all glory and all the jewels to the Serpent!~ //"steal you blind" als Idiom kenne ich nicht
+@75   = ~Notes~
+@76   = ~This bundle of wrapped loose pages seems to summarize the approach of the Serpents of Abbathor to a large extent. Apparently, it was their plan from the beginning to capture an ancient dwarfish device, called Gundmagtor, which in common language means something like 'Caller of Black Souls'. The main strike of the cult seems to focus on Nashkel, and the note '<CHARNAME> has killed Mulahey, mines are free' bodes ill indeed.~
+@77   = ~This <PRO_RACE> <CHARNAME> who works for Wostok is making <PRO_HISHER> way here. Take someone of the Furious, and a Herald. The Herald shall take the Gundmagtor and bring it to us while you two wait for <CHARNAME> and take <PRO_HIMHER> to an end. Then come to us so that we can discuss the next steps.
 
 L~
-@78   = ~Lugosch, treuer Diener!
+@78   = ~Lugosch, faithful servant!
 
-Wir begrüßen Euere Bemühung, die Eisenmine in Nashkell unter Eure Kontrolle zu bringen. Allerdings haben wir noch ein weiteres Anliegen: Behaltet <CHARNAME> von Kerzenburg im Auge. Der Befehl kommt von ganz unten und Ihr wisst was das heißt.
+We welcome your effort to bring the iron mine in Nashkel under your control. However, we do have another concern: keep an eye on <CHARNAME> from Candlekeep. The order comes from the lowest depths and you know what that means.
 
-Dem Gott den Ruhm und der Schlange die Juwelen!~
-@79   = ~Lugoschs Tagebuch~
-@80   = ~Lugosch Grauhemd hat seinen Weg vom kleinen Kultisten bis zum Abbathorpriester mit fein säuberlicher Handschrift festgehalten. Jede Zeile strotzt vor Selbstvertrauen und Arroganz. Er bescheibt, wie der Kult in Amn Fuß fasste und er selbst als Handlanger der Lurraxols in Handelstreff angeworben wurde. Der Kult entwickelte sich und unterwanderte schon bald die größeren Städte, nur um sich an Athkalta und den dort residierenden Schattendieben die Zähne auszubeißen. Lugosch, der mittlerweile zum Priester aufgestiegen war, wurde von den Kultführern abgerufen, sich in Richtung Norden zu orientieren und in Baldurs Tor weiter zu arbeiten.
+To God all glory and all jewels to the Serpent!~
+@79   = ~Lugosch's diary~
+@80   = ~Lugosch Grayshirt has written down his journey from a small cultist to priest of Abbathor with neat handwriting. Every line is full of confidence and arrogance. He describes how the cult took root in Amn and he himself was hired as a henchman to the Lurraxol family in Trademeet. The cult grew and soon migrated to larger cities, only to find itself kept down by the Shadow Thieves in Athkatla. Lugosch, who now had ascended to priesthood, was called away by the cult leaders to descend northwards and continue his work in Baldur's Gate.
 
-Die letzten Einträge des Buches handeln von den Bemühungen, mit Mulahey in der Nashkelmine in Kontakt zu treten, von der rüden Abfuhr die der Halbork den Zwergen erteilte und von der hämischen Schadenfreude, als <CHARNAME> die Mine befreite. Lugosch witterte seine Chance und führte einen schnellen Schlag, um dem Kult eine gut laufende Eisenmine einzuverleiben.~
-@81   = ~Emersons Notizen~
-@82   = ~Emerson, der Vorarbeiter der Nashkellmine, hat in diesem wirren Haufen von Blättern und Zetteln seine Berechnungen und Erfahrungen aufgeschrieben. Für jemanden, der im Bergbau arbeitet, ist dieser Wust an Informationen sicherlich eine Goldgrube. Für Euch jedoch sind die Notizen nutzlos.~
-@83   = ~Tagebuch~
-@84   = ~Das Buch sieht schon sehr alt aus und hat einiges durchgemacht. Einige Seiten sind zerrissen und andere durchstochen, manche angesengt und ein großer Teil des Buches ist mit Blut verschmiert. Auch wenn Ihr den Namen des Priesters nicht entziffern könnt, so scheint der alte Wanderer einiges durchgemacht zu haben - Reisen mit einer Abenteurergruppe, Gewissenkonflikte um das "wahre" Zwergendasein und schließlich die Verbannung aus seinem Clan. Dieser Verlust brachte den Zwerg, dem seine Familie über alles ging, erst um den Verstand und dann direkt in die Arme der Schlangen.~
-@85   = ~Bashriks Hammer + 2~
-@86   = ~Der Moradinpriester Bashrik Funkenhammer galt in den Kreisen liberal einsteller Zwerege als weise und wahrhaftig. Er setzte sich engagiert gegen die Abspaltung der Oberweltzwerge ein und genoss allgemein ein hohes Ansehen. Dieser Hammer, geladen mit den Blitzen Moradins, war seine größte Waffe im Kampf gegen das Böse.
+The last entries of the book deal with his efforts to get in touch with Mulahey in the mines of Nashkel, describe the rude denial given by the Halforc to the dwarves and his malicious glee when <CHARNAME> freed the mine. Lugosch saw his chance and led a fast strike to incorporate a smoothly running iron mine into the cult.~
+@81   = ~Emerson's Notes~
+@82   = ~Emerson, the foreman of the Nashkel Mines, has written down his calculations and experience in this messed up cluster of papers. For someone who works in the mining industry, this jumble of information is surely a gold mine. For you, however, the notes are useless.~
+@83   = ~Diary~
+@84   = ~This book looks very old and has been through a lot. Some pages are torn and others pierced, some singed, and a large part of the book is smeared with blood. Even if you cannot decipher the name of the priest, it seems the old wanderer has gone through a lot - traveling with a group of adventurers, certain conflicts over the 'true' dwarf existence and finally the banishment from his clan. To the dwarf, to whom his family was above all, this loss made him first lose his mind and then drove him straight into the arms of the Serpents.~
+@85   = ~Bashrik's Hammer +2~
+@86   = ~The priest of Moradin, Bashrik Sparklehammer, was considered as wise and true and within the community of liberal dwarves. He continued to fight against the secession of the surface dwarves and generally relished a high reputation. This hammer, charged with the thunderbolts of Moradin, was his greatest weapon in the fight against evil.
 
-EIGENSCHAFTEN:
+STATISTICS:
 
-Schaden: 1W4 +1 (Wucht)
-Gewicht: 6
-Initiativefaktor: 4
-Mindeststärke: 9
-Fertigkeit: Kriegshammer
-Typ: 1-händig
+Damange: 1D4 +1 (crushing)
+Weight: 6
+Speed Factor: 4
+Requires: 9 Strength
+Proficiency Type: Warhammer
+Type: 1-handed
 
-Kann nicht verwendet werden von:
-- Dieben
-- Druiden
-- Magiern
-- Mönchen~
-@87   = ~Bashriks Tagebuch~
-@88   = ~Das Buch ist mit säuberlicher Handschrift geführt undberichtet von Bashrik Funkenhammers letzter Reise. Bashrik war einem Kult auf den Fersen, der sich selbst "Die Schlangen Abbathors" nennt. Abbathor, der einzige böse Gott unter den Morndinsamman, gilt bei ihnen als Befreier des Zwergenvolkes und als Schutzpatron der Oberweltzwerge.
+Not Usable By:
+- Thief
+- Druid
+- Mage
+- Monk~
+@87   = ~Bashrik's Diary~
+@88   = ~The book is written with neat handwriting and reports the last trip of Bashrik Sparklehammer. Bashrik was on the tail of a cult that calls itself 'The Serpents of Abbathor'. For them, Abbathor, the only evil god among the Morndinsamman, is considered the liberator and saint patron of the dwarfkind of the surface.
 
-Viel mehr könnt Ihr nicht aus dem Buch erfahren, denn Bashrik hat die Aufzeichnungen augenscheinlich in erster Linie für Eingeweihte verfasst. Einzig der letzte Eintrag bietet einen Anhaltspunkt, wenn Ihr der Sache nachgehen wollt:
+You cannot learn much more from the book because apparently, the notes of Bashrik were written primarily for the initiated. Only the last entry could offer a clue, should you want to look into the matter:
 
-"Habe mich heute von Wostok getrennt. Während Mirjala ich mein Glück im Süden versuchen werden nimmt Wostok die große Stadt in Augenschein. Wir werden uns im Tempel des Helm wiedertreffen, sobald ich nähere Informationen habe.
+'I have departed from Wostok today. Mirjala and I will try our luck south, Wostok will take a look in the big city. We will meet again in the temple of Helm when I have more information.
 
-Nachtrag: Nachdem ich den Attentäter, der im Freundlichen Arm auf uns gewartet hat, einmal gehörig durch die Mangel gedreht habe kenne ich jetzt wenigstens einen Namen. Ein gewisser Draglon scheint in den Unterkellern die Geschäfte des Kultes zu regeln. Nun, das hat Zeit bis ich wieder da bin."
+Addendum: After racking the assassin who awaited us at the Friendly Arm Inn I have learned a name, at least. A certain Draglon appears in the Undercellars to regulate the affairs of the cult. Well, I will delay that until my return.'
 
-(Wenn Ihr der Geschichte um den Kult nachgehen wollt dann ist es von Vorteil das Buch zu behalten)~
-@89   = ~Artefakt~
-@90   = ~Zwergisches Artefakt~
-@91   = ~Was genau dieses Artefakt macht ist Euch unbekannt. Die Schlangen Abbathors wollen es, das ist wohl genug Information.~
+(If you want to investigate the cult and what it's about, it will be of advantage to keep this book.)~
+@89   = ~Artifact~
+@90   = ~Dwarven Artifact~
+@91   = ~What this artifact exactly does is unknown to you. The Serpents of Abbathor want it, that's probably sufficient information.~
 @92   = ~Gundmagtor~
-@93   = ~Die Geschichte dieses Artefaktes liegt im Dunkeln. Was Ihr Euch aus den paar Fetzen zusammenreimen könnt, die Ihr bisher erfahren habt, und wenn Ihr die paar uralten Zwergenrunen, die das Gerät überziehen, richtig deutet, dann dient das Artefakt auf irgendeine Art und Weise dazu, die Vorvätre der Zwerge zu kontaktieren und ihre Energie in Schattenhafte Wesen umzuleiten.
+@93   = ~The history of this artifact lies in darkness. From what you can conjecture from the few scraps that you have learned so far, and if you have interpreted the few ancient dwarven runes that cover the device correctly, this artifact in some way allows you to contact the forefathers of the dwarves and redirect their energy into shadowy beings.
 
-Nach allem, was Ihr über die alten Zwerge wisst, kommt so eine Tat dem größten Sakrileg gleich zu dem ein Zwerg fähig sein mag. Die Ruhe der Toten ist heilig und nur äußerst verdorbene Seelen würden es wagen sie zu brechen.~
+From what you know about the old dwarves, such an act is the greatest sacrilege a dwarf might be capable of. The peace of the dead is sacred and only very corrupted souls would dare to break it.~
 @94   = ~Tarash~
-@95   = ~Assasine~
+@95   = ~Assasin~
 @96   = ~Bashrik~
 @97   = ~Mirjala~
 @98   = ~Draglon~
-@99   = ~Zwerg~
-@100  = ~Kultist~
-@101  = ~Abbathor Fanatiker~
-@102  = ~Abbathor Kleriker~
+@99   = ~Dwarf~
+@100  = ~Cultist~
+@101  = ~Abbathor Fanatic~
+@102  = ~Abbathor Cleric~
 @103  = ~Lugosch~
 @104  = ~Galder~
 @105  = ~Therk~
 @106  = ~Jarger~
 @107  = ~Jarger Goldbart~
 @108  = ~Wostok~
-@109  = ~Wostok Hammerkopf~
+@109  = ~Wostok Hammerhead~
 @110  = ~Jassir~
 @111  = ~Jenna~
-@112  = ~Schatten~
-@113  = ~Verrückter Dumathoinpriester~
+@112  = ~Shadow~
+@113  = ~Mad Priest of Dumathoin~
 @114  = ~Larn~
 @115  = ~Bob~
 @116  = ~Ron~
 @117  = ~Hank~
-@118  = ~Die Schlangen Abbathors~
-@119  = ~Lugosch und seine Mannen sind tot und die Nashkellmine von ihrem Übel befreit. Dennoch hat dieser Sieg mehr Fragen als Antworten aufgeworfen. Sind die Zwerge, die sich dem Kult angeschlossen haben, tatsächlich nichts anderes als Verstoßene, die eine neue Heimat suchen? Wenn ja, warum fordern die Hintermänner der Schlangen dann so nachdrücklich und vehement Euren Tod? Frgen, auf die es keine Antwort gibt, denn die Spur läuft hier ins Leere. Alles, was Euch nun zu tun bleibt, ist, mit Emerson zu sprechen und ihm davon zu berichten, dass die Minen wieder frei sind - und darauf zu hoffen, dass sich irgenwann alles finden wird.~
+@118  = ~The Serpents of Abbathor~
+@119  = ~Lugosch and his men are dead and the Nashkel Mines are freed from their evil. However, this victory has raised more questions than it has given answers. Are the dwarves who have joined the cult actually nothing more than outcasts looking for a new home? If so, why do the men of the Serpents request so firmly and vehemently for your death? These are questions to which there is no answer because the track you followed ends here. All that remains for you to do now is talk to Emerson and report that the mines are again free - and hope that everything will work out at some point.~
 @120  = ~Jasr~
 @121  = ~Jas~
 @122  = ~Jen~
 @123  = ~Emmi Wiesner~
 @124  = ~Bunger~
 
-
-
-@5000 = ~Heda! Auf ein Wort, wenn's beliebt!~
-@5001 = ~Hilfe! Ich brauche Hilfe!~
-@5002 = ~Bei den Göttern, helft mir!~
-@5003 = ~Wieso hilft mir denn keiner!~
-@5004 = ~Wuuuuuuuäääääähähähähähähääääääääh!~
-@5005 = ~Hooooopsiiiiiiiii! Wuuuääääähähääääääääh!~
-@5006 = ~Uuuuääääääääääääh!~
-@5007 = ~Kommt schon raus!~
-@5008 = ~Ich weiß, dass Ihr zu Hause seid!~
-@5009 = ~Verdammter Mistkerl!~
-@5010 = ~So, das war's. Und wenn Ihr mich jetzt entschuldigt, ich habe zu tun.~
-@5011 = ~Ein Hinterhalt!~
-@5012 = ~Bande von Ignoranten...~
-@5013 = ~... unfähiger Sauhaufen...~
-@5014 = ~Sowas schimpft sich Abenteurer...~
+@5000 = ~Hey there! A word, if you please!~
+@5001 = ~Help! I need help!~
+@5002 = ~By the gods, help me!~
+@5003 = ~Why does noone help me!~
+@5004 = ~Uuuuuuuuaaaaaahahahahahahaaaaaaaah!~
+@5005 = ~Juuuuumpeeeeer! Uuuuaaaaahahaaaaaaaah!~
+@5006 = ~Uuuuaaaaaaaaaaaah!~
+@5007 = ~Get out now!~
+@5008 = ~I know that you are at home!~
+@5009 = ~You nasty piece of work!~ //Fucking bastard war mir etwas zu heftig
+@5010 = ~And that is that. Would you excuse me now, I have things to do.~
+@5011 = ~An ambush!~
+@5012 = ~Bunch of ignorants...~
+@5013 = ~... incompetent rabble...~
+@5014 = ~And they call themselves adventurers...~
 @5015 = ~Birrabollos ko valla allamatillo!~
-@5016 = ~Was zum...~
-@5017 = ~Mama!~
-@5018 = ~Abenteurer! Hallo!~
-@5019 = ~Kommt doch mal her!~
-@5020 = ~Ich muss mit Euch reden!~
+@5016 = ~What the...~
+@5017 = ~Mum!~
+@5018 = ~Adventurer! Hello!~
+@5019 = ~Come over here!~
+@5020 = ~I need to talk to you!~
 @5021 = ~KIWITT!~
-@6000 = ~Lasst mich doch nicht einfach stehen!~
+@6000 = ~Don't leave me this way!~
 
+@10001 = ~Raukner's Ruffian Roughnecks
 
-@10001 = ~Raukners Raufende Rabauken
+I've roughed up a militant group of adventurers in Beregost.~
+@10002 = ~Raukner's Ruffian Roughnecks
 
-Ich habe in Beregost eine streitbare Abenteurergruppe aufgemischt.~
-@10002 = ~Raukners Raufende Rabauken
+Unfortunately, I could not help the party in Beregost.~
+@10003 = ~Raukner's Ruffian Roughnecks
 
-Leider konnte ich der Gruppe in Beregost nicht helfen.~
-@10003 = ~Raukners Raufende Rabauken
+I was able to solve the problem for the group of adventurers.~
+@10004 = ~The Quest for Jumper
 
-Ich konnte das Problem für die Abenteurergruppe lösen.~
-@10004 = ~Die Suche nach Hopsi
+And lo, it happened that my companions and I set out to find the fluffiest bunny of Faerûn, thy name be Jumper. Westward we must travel as our tasker instructed us and who knows what hazards await us on our journey.
 
-Und siehe, es begab sich dass meine Recken und ich aufbrachen, zu finden den flauschigsten Hasen Faerûns welcher genannt wird Hopsi. Unsere Auftraggeberin wies uns zu Reisen gen Westen und wer weiß was für Gefahren dort lauern mögen.
+What wouldn't one do for a thousand million pieces of gold. I'm just made for an adventurer's life.~
+@10005 = ~A New Best Friend for Ugh
 
-Was tut man nicht alles für tausendmillionen Goldstücke. Ich bin einfach für's Abenteurerleben wie geschaffen.~
-@10005 = ~Ein neuer bester Freund für Ugh
+The ogre Ugh has given back Jumper so we could make the girl Kessy happy. Now it's up to me to fulfill my promise and find a substitute rabbit - Kessy has mentioned her father at the Carnival.~
+@10006 = ~The Quest for Jumper
 
-Der Oger Ugh hat uns Hopsi zurückgegeben, so dass wir das Mädchen Kessy glücklich machen konnten. Jetzt ist es an mir, mein Versprechen einzulösen und ein Ersatzkaninchen zu finden - Kessy hat ihren Vater auf dem Jahrmarkt erwähnt.~
-@10006 = ~Die Suche nach Hopsi
+We were able to bring Kessy back her favourite rabbit. Now I remember why I like being an adventurer.~
+@10007 = ~A New Best Friend for Ugh
 
-Wir konnten Kessy ihr Lieblingskaninchen wiederbringen. Jetzt weiß ich wieder warum ich gerne ein Abenteurer bin.~
-@10007 = ~Ein neuer bester Freund für Ugh
+Ugh is marching into the big wide world with his rabbit Little-Little-Ugh. A noble endeavor, in my opinion there are not enough big fellows with rodents in the world.~
+@10008 = ~Mrs. Brunnstein in Nashkel misses her Son
 
-Ugh ist mit seinem Kaninchen Klein-Klein-Ugh in die große weite Welt marschiert. Ein nobles Unterfangen, meiner Meinung nach kann es nicht genug große Burschen mit Nagetieren auf dieser Welt geben.~
-@10008 = ~Frau Brunnstein in Nashkell vermisst ihren Sohn
+I agreed to look for Aaron Brunnstein. The boy went for a mountain trip with his fiancée and was never seen again. Perhaps the ranger Barin in the temple in Nashkel can help us.~
+@10009 = ~A Ghost in the Cloudpeaks?
 
-Ich habe zugestimmt, Aaron Brunnstein zu suchen. Der Junge ist mit seiner Verlobten in die Berge gewandert und wurde nicht wieder gesehen. Der Waldläufer Barin im Tempel in Nashkell kann uns vielleicht weiterhelfen.~
-@10009 = ~Ein Geist in den Wolkenspitzen?
+Some farmers report to have seen a strange figure at night by the waterfall.~
+@10010 = ~The Quest for Perwell
 
-Einige Bauern wollen in der Nacht eine merkwürdige Gestalt in der Nacht am Wasserfall gesehen haben.~
-@10010 = ~Die Suche nach Perwell
+I could not find Perwell in the mines... I hope that he managed to get out with the other slaves before the water broke in.~
+@10011 = ~The Serpents of Abbathor in Nashkel?
 
-Ich konnte Perwell in den Minen nicht finden... hoffentlich hat er es zusammen mit den anderen Sklaven nach draußen geschafft, bevor das Wasser einbrach.~
-@10011 = ~Die Schlangen Abbathors in Nashkell?
+In the headquarters of the Serpents I've learned some bad news: Their initial plan was, apparently, to capture an ancient dwarven device called Gundmagtor, which translated into common language means something like 'Caller of the black souls'. The main stroke of the cult seems to focus on Nashkel.~
+@10012 = ~The Serpents of Abbathor in Nashkel - Lugosch
 
-Im Hauptquartier der Schlangen habe ich ein paar schlechte Neuigkeiten erfahren:  Anscheinend war es von Anfang an Ihr Plan, ein altes zwergisches Gerät namens Gundmagtor zu erobern, was in der Gemeinsprache so viel bedeutet wie "Rufer der schwarzen Seelen". Der Hauptschlag des Kultes scheint sich auf Nashkell zu konzentrieren.~
-@10012 = ~Die Schlangen Abbathors in Nashkell - Lugosch
+Lugosch, the leader of the Serpents of Abbathor from Baldur's Gate, is on site in the Nashkel Mines. There will be no escape for him this time.~
+@10013 = ~The Serpents of Abbathor in Nashkel - Shadowy Dwarves
 
-Lugosch, der Anführer der Schlangen Abbathors aus Baldurs Tor, ist persönlich in den Minen Nashkells. Dieses Mal wird es kein Entkommen für ihn geben.~
-@10013 = ~Die Schlangen Abbathors in Nashkell - Schattenhafte Zwerge
+Apparently we have learned what the use of the Gundmagtor is. It calls forth some kind of shadow warriors who are under the domination of the user. I must conquer or destroy this device.~
+@10014 = ~The Serpents of Abbathors in Nashkel - Missing Miners
 
-Anscheinend wissen wir jetzt, wozu das Gundmagtor dient. Es ruft eine Art Schattenkämpfer hervor die unter dem Willen des Anwenders stehen. Ich muss dieses Gerät erobern oder zerstören.~
-@10014 = ~Die Schlangen Abbathors in Nashkell - Vermisste Arbeiter
+There still seem to be a few miners in the pit.~
+@10015 = ~The Serpents of Abbathor in Nashkel - Monsters
 
-Offenbar sind noch ein paar Minenarbeiter in der Grube.~
-@10015 = ~Die Schlangen Abbathors in Nashkell - Monster
+The Serpents seem to have brought a couple of giant monsters into the mine. That would surely disturb mining.~
+@10016 = ~The Serpents of Abbathor in Nashkel - Emerson's notes
 
-Die Schlangen scheinen ein paar riesenhafte Monster in die Mine gebracht zu haben. Das dürfte die Bergarbeiten ziemlich behindern.~
-@10016 = ~Die Schlangen Abbathors in Nashkell - Emersons Aufzeichnungen
+Emerson is missing his notes since the attack of the Serpents of Abbathor.~
+@10017 = ~The Serpents of Abbathor in Nashkel - Monsters
 
-Emerson vermisst seine Notizen seit dem Angriff der Schlangen Abbathors.~
-@10017 = ~Die Schlangen Abbathors in Nashkell - Monster
+I killed the two Umber Hulks the Serpents have brought into the mine.~
+@10018 = ~The Serpents of Abbathor in Nashkel - Emerson's notes
 
-Ich habe die beiden Erdkolosse getötet, die die Schlangen in die Mine geschafft haben.~
-@10018 = ~Die Schlangen Abbathors in Nashkell - Emersons Aufzeichnungen
+I was able to find Emerson's notes. He will certainly be pleased to get them back.~
+@10019 = ~The Serpents of Abbathor in Nashkel - Missing Miners
 
-Ich konnte Emersons Aufzeichnungen finden. Er wird sich sicherlich freuen, sie wieder zu bekommen.~
+I was able to rescue the missing miners from the clutches of a mad cleric. Emerson surely will be happy about the news.~
+@10020 = ~The Serpents of Abbathor
 
-@10019 = ~Die Schlangen Abbathors in Nashkell - Vermisste Arbeiter
+I could stop the advance of the Serpents in the area of Baldur's Gate, at least I hope so. Lugosch Grayshirt is dead and I have no informations about any other leaders of the cult. But I cannot say why my own name was mentioned so explicitly. Maybe one day I'll find out this secret - whether I like the answer I do not know.~
+@10021 = ~A Dead Dwarf and a Message
 
-Ich konnte die vermissten Arbeiter aus den Klauen eines verrückten Klerikers befreien. Emerson wird sich sicherlich über diese Nachricht freuen.~
-@10020 = ~Die Schlangen Abbathors
+In Mulahey's cellars I found a dead dwarf who had a message for Mulahey - apparently the receiver was not particularly interested in what the messenger had to say. The message speaks of a meeting in Beregost. Maybe I should go investigate this matter.~
+@10022 = ~A Mysterious Dwarf in Beregost
 
-Ich konnte den Vormarsch der Schlangen im Gebiet von Baldurs Tor stoppen, zumidnest hoffe ich das. Lugosch Grauhemd ist tot und über andere Führer des Kultes liegen mir keine Informationen vor. Warum allerdings mein Name so explizit egenannt wurde vermag ich nicht zu sagen. Vielleicht erfahre ich dieses Geheimnis eines Tages - ob ich mir das wünschen soll weiß ich allerdings nicht.~
-@10021 = ~Ein toter Zwerg und eine Nachricht
+Tarash Blackhelmet was extremely suspicious and aggressive - I had to kill him. Among his possessions there was a letter pointing out that there will be an assassination north of the city...~
+@10023 = ~A Mysterious Dwarf in Beregost
 
-In Mulaheys Keller fand ich einen toten Zwerg, der eine Nachricht für Mulahey dabei hatte - offenbar war der Empfänger nicht sonderlich interessiert daran, was der Bote zu sagen hatte. Die Nachricht spricht von einem Treffen in Beregost. vielleicht sollte ich der Sache mal auf den Grund gehen.~
-@10022 = ~Ein mysteriöser Zwerg in Beregost
+Tarash Blackhelmet spoke of the "Serpents of Abbathor" - whoever they might be. And he said that something is going to happen north of Beregost... I should keep an eye on the Crossroads.~
+@10024 = ~The Lost Son
 
-Tarash Schwarzhelm war äußerst misstrauisch und agressiv - ich musste ihn töten. Unter seinen Sachen war auch ein Brief, der darauf hinwies, dass sich wohl nördlich der Stadt ein Attentat anbahnt...~
-@10023 = ~Ein mysteriöser Zwerg in Beregost
+We have informed Mrs. Brunnstein that her son is dead.~
+@10025 = ~The Lost Son
 
-Tarash Schwarzhelm sprach von den "Schlangen Abbathors" - wer auch immer das sein mag. Und er sagte, dass sich im Norden von Beregost etwas anbahnt... vielleicht sollt eich ein Auge auf die Sache haben und die Kreuzung beobachten.~
-@10024 = ~Der verlorene Sohn
+I found Aaron in the Gnoll Stronghold. He awaits us on the other side of the bridge.~
+@10026 = ~A Ghost in the Cloudpeaks
 
-Wir haben Frau Brunnstein mitgeteilt, dass ihr Sohn tot ist.~
-@10025 = ~Der verlorene Sohn
+Aaron gave us the solution. Marina had promised not to go to sleep before she would get his engagement ring. I should bring her the ring.~
+@10027 = ~A Ghost in the Cloudpeaks
 
-Ich habe Aaron in der Gnollfeste gefunden. Er erwartet uns auf der anderen Seite der Brücke.~
-@10026 = ~Der Geist in den Wolkenspitzen
+It seems as if everything has been settled. Marina has received the ring and can finally rest in peace.~
+@10028 = ~The Quest for Perwell
 
-Aaron hat die Lösung für uns. Marina hat damals versprochen, nicht schlafen zu gehen, bevor sie seinen Verlobungsring erhalten würde. Ich soll ihr nun den Ring bringen.~
-@10027 = ~Der Geist in den Wolkenspitzen
+The elf Aphriel is looking for her son Perwell in the Cloakwood forest. The Bandits have kidnapped him and apparently took him to a secret location.~
+@10029 = ~The Quest for Perwell
 
-Es scheint als hätte sich alles in Wohlgefallen aufgelöst. Marina hat den Ring erhalten und kann nun endlich in Ruhe schlafen.~
-@10028 = ~Die Suche nach Perwell
+I've actually found Perwell in the mine and sent him out. On the one hand, I could certainly bring him through the woods... but on the other hand Aphriel could pay me a good ransom for the little one...~
+@10030 = ~The Quest for Perwell
 
-Die Elfe Aphriel sucht im Mantelwald nach ihrem Sohn Perwell. Die Räuber haben ihn entführt und anscheinend an einen geheimen Ort gebracht.~
-@10029 = ~Die Suche nach Perwell
+I've actually found Perwell in the mine and sent him out. I have no time to mess about with children.~ //"struggle klang so, als wolle der PC mit ihm kämpfen
+@10031 = ~The Quest for Perwell
 
-Ich habe Perwell tatsächlich in der Mine gefunden und nach draußen geschickt. Auf der einen Seite könnte ich ihn bestimmt durch den Wald bringen... aber auf der anderen Seite kännte Aphriel mir auch ein gutes Lösegeld für den Kleinen zahlen...~
-@10030 = ~Die Suche nach Perwell
+Aphriel is now searching for her son herself. At least I saved him from the mine.~
+@10032 = ~The Quest for Perwell
 
-Ich habe Perwell tatsächlich in der Mine gefunden und nach draußen geschickt. Ich habe keine Zeit, mich mit Kindern herumzuplagen.~
-@10031 = ~Die Suche nach Perwell
+Aphriel and her son are happily reunited.~
+@10033 = ~Of Wolves and Men
 
-Aphriel sucht nun selbst nach ihrem Sohn. Immerhin habe ich ihn aus der Mine gerettet.~
-@10032 = ~Die Suche nach Perwell
+The husband of the mage Aiwell seems to have been infected with Lycanthropy. I probably have two options to solve the problem: Either with a potion I can get from Thalantyr, or the old fashioned sword solution.~
+@10034 = ~Of Wolves and Men
 
-Aphriel und ihr Sohn sind wieder glücklich vereint.~
-@10033 = ~Von Wölfen und Männern
+Thalantyr has enumerated several ways. He can mix the potion with Aiwell's blood, which is highly questionable. Or he can use Guril berries that do not always work. The best would be an elixir of belladonna.
 
-Der Mann der Zauberin Aiwell hat sich wohl mit Lycanthropie angesteckt. Ich habe wohl verschiedene Möglichkeiten, das Problem zu lösen: Entweder mit einem Trank, den ich von Thalantyr bekommen kann, oder auf die althergebrachte Tour mit dem Schwert.~
-@10034 = ~Von Wölfen und Männern
-
-Thalantyr hat uns verschiedene Möglichkeiten aufgezählt. Er kann den Trank mit Aiwells Blut mixen, was äußerst fragwürdig ist. Oder er benutzt Gurilbeeren, die nicht immer wirken. Am besten wäre ein Trank aus Tollkirschen.
-
-Ich kann ihm allerdings auch den Leichnam Thonders bringen, damit er die Werwolfskrankheit besser erforschen kann.~
+I could also bring him the corpse of Thonder so that he can better understand the werewolf disease.~
 @10035 = ~Von Wölfen und Männern
 
 Thalantyr hat den Leichnam von Thonder mit einem Flammenschwert erkauft. Auch nicht schlecht.~
-@10036 = ~Von Wölfen und Männern
+@10036 = ~Of Wolves and Men
 
-Aiwell und Thonder waren überglücklich, dass der Mann von seinem Fluch erlöst wurde.~
-@20001 = ~Der Kult der Augenlosen - Bunger Wiesner
+Aiwell and Thonder were overjoyed that the man was freed from his curse.~
+@20001 = ~The Cult of the Unseeing Eye - Bunger Wiesner
 
-Die Halblingsdame Emmi Wiesner hat uns regelrecht angefleht, nach ihrem Sohn zu sehen, den es in die Fänge ges Kultes gezogen hat.~
-@20002 = ~Der Kult der Augenlosen - Bunger Wiesner
+The halfling lady Emmi Wiesner has downright begged us to look for her son, who was drawn into the clutches of the Cult.~ //"to look after" kenne ich als "sich kümmern um"
+@20002 = ~The Cult of the Unseeing Eye - Bunger Wiesner
 
-Ich habe Bunger gefunden und konnte ihn überreden, mit mir zu kommen. Er wird sich ruhig verhalten, bis ich die Gefahr, die vom Kult ausgeht, gebannt habe.~
-@20003 = ~Der Kult der Augenlosen - Bunger Wiesner
+I've found Bunger and persuaded him to come with me. He will remain quiet until I have banished the danger posed by the Cult.~
+@20003 = ~The Cult of the Unseeing Eye - Bunger Wiesner
 
-Ich habe Bunger gefunden und konnte ihn überreden zu fliehen. Allerdings wurde dadurch der Kult alarmiert.~
-@20004 = ~Der Kult der Augenlosen - Bunger Wiesner
+I've found Bunger and persuaded him to flee. However, the cult has been alerted by that.~
+@20004 = ~The Cult of the Unseeing Eye - Bunger Wiesner
 
-Ich habe Bunger gefunden. Er zeigte sich leider uneinsichtig und alarmierte den Rest des Kultes. Ich musste ihn töten.~
-@20005 = ~Der Kult der Augenlosen - Bunger Wiesner
+I've found Bunger. He was, unfortunately, unapologetic and alerted the rest of the cult. I had to kill him.~
+@20005 = ~The Cult of the Unseeing Eye - Bunger Wiesner
 
-Bei dem Versuch, sich zu retten, starb Bunger Wiesner tief unter der Stadt.~
-@20006 = ~Der Kult der Augenlosen - Bunger Wiesner
+In an attempt to save himself, Bunger Wiesner died under the city.~
+@20006 = ~The Cult of the Unseeing Eye - Bunger Wiesner
 
-Bunger Wiesner ist zu seiner Mutter zurückgekehrt. Die alte Dame wird uns bestimmt danken wollen.~
-@20023 = ~Ein geheimnisvolles Angebot
+Bunger Wiesner has returned to his mother. The old lady surely will want to thank us.~
+@20023 = ~A Mysterious Offer
 
-Ein Bote hat mir eine Einladung seines Herrn überbracht. Auch wenn dieser seinen Namen geheimhalten will, so hat er doch aus irgendeinem Grund Interesse an mir. Wenn ich mich auf ein Treffen einlassen will dann finde ich den Boten in der Kupferkrone.~
-
+A messenger has brought me an invitation from his master. Although he will keep his name secret, he somehow has an interest in me. If I want to get involved in a meeting than I'll meet the messenger in the Copper Coronet.~
 
 
 //BG:EE Compatibility
 
-//Strings from BG2
-@80001 = ~Hilfe! So helft mir doch!~ [PEASF09] //#61667
+//Strings from Original BG2 for Setup-AC_QUEST.tra
+@80001 = ~ Somebody help me!~ [PEASF09] //#61667
 @80002 = ~~ [PEASF07] //#61665
 @80003 = ~~ [PEASF08] //#61666
-@80004 = ~Ich danke den Göttern jeden Tag für all die guten Dinge in meinem Leben.~ [PEASF02] //##61660
-@80005 = ~Aaah! Lauft!~ [PEASM09] //#61823
+@80004 = ~I thank the gods every day for the good things in my life.~ [PEASF02] //##61660
+@80005 = ~ Aaahhhh.........run!~ [PEASM09] //#61823
 @80006 = ~~ [PEASM07] //#61821
 @80007 = ~~ [PEASM08] //#61822
-@80008 = ~Klar, ich rede gerne ein paar Worte mit Euch.~ [PEASM03] //#61817
+@80008 = ~I'll trade you a few words, sure enough.~ [PEASM03] //#61817
 @80009 = ~~ [WWOLF07] //#11393
-@80010 = ~Ich grüße Euch. Eure Macht ist beeindruckend.~ [EPRIM01] //#61614
+@80010 = ~Greetings. Your power impresses.~ [EPRIM01] //#61614
 @80011 = ~~ [EPRIM06] //#61619
 @80012 = ~~ [EPRIM07] //#61620
-@80013 = ~Die Götter vergeben niemals!~ [EPRIM04] //#61617
-@80014 = ~Verneigt Euch vor den Göttern und bettelt um Gnade!~ [EPRIM03] //#61616
-@80015 = ~Was wollt Ihr bei den wahren Gläubigen?~ [EPRIM02] //#61615
-@80016 = ~Ich... darf nicht mit Fremden reden.~ [CHILF04] //#61556
+@80013 = ~The gods are unforgiving, fool!~ [EPRIM04] //#61617
+@80014 = ~Bow down before the gods and beg for mercy!~ [EPRIM03] //#61616
+@80015 = ~What do you want amongst the faithful?~ [EPRIM02] //#61615
+@80016 = ~I'm... not supposed to talk to strangers.~ [CHILF04] //#61556
 @80017 = ~~ [CHILF06] //#61558
-@80018 = ~Ähm... Hallo.~ [CHILF03] //#61555
-@80019 = ~Nun, nun, Ihr seht mir wie Leute aus, in deren Geldbörsen nicht nur zwei einsame Goldmünzen traurig klimpern.~ [MALMER03] //#38784
+@80018 = ~Ummm... hello.~ [CHILF03] //#61555
+@80019 = ~Well, you look like the sort who has more than two gold pieces to rub together!~ [MALMER03] //#38784
 @80020 = ~~ [MALMER06] //#38847
 @80021 = ~~ [MALMER05] //#38786
-@80022 = ~Seht Euch nur um und begutachtet die Waren. Ich bin mir sicher, dass sie Euren hohen Ansprüchen gerecht werden.~ [MALMER02] //#38783
-@80023 = ~Tut mir bitte nicht weh!~ [CHILM07] //#61567
+@80022 = ~Have a look at my wares, I trust you'll find them all in satisfactory condition.~ [MALMER02] //#38783
+@80023 = ~Don't hurt me!~ [CHILM07] //#61567
 @80024 = ~~ [CHILM05] //#61565
 @80025 = ~~ [CHILM06] //#61566
-@80026 = ~Boah! Abenteurer!~ [CHILM03] //#61563
-@80027 = ~Ich seid nicht von hier, das wüsste ich nämlich.~ [CHILM02] //#61562
-@80028 = ~Mir gefällt überhaupt nicht, wie Ihr ausseht!~ [PEASF306] //#61683
+@80026 = ~Wow!  An adventurer!~ [CHILM03] //#61563
+@80027 = ~You ain't from around here!  I knows it!~ [CHILM02] //#61562
+@80028 = ~Well, I certainly don't like the look of you.~ [PEASF306] //#61683
 @80029 = ~~ [PEASF307] //#61684
 @80030 = ~~ [PEASF308] //#61685
-@80031 = ~Sprecht.~ [FEMALE4H] //#16255
-@80032 = ~Hmmm, ja?~ [GNOMEM03] //#61703
+@80031 = ~Speak.~ [ACFEM4H] //#16255
+@80032 = ~Mmmmmm, yes?~ [GNOMEM03] //#61703
 @80033 = ~~ [GNOMEM06] //#61706
 @80034 = ~~ [GNOMEM07] //#61707
 @80035 = ~Balor~ //#8449
-@80036 = ~Ich mag Leute wie Euch eigentlich nicht, aber... guten Tag trotzdem.~ [NOBFE03] //#61643
+@80036 = ~I don't usually speak to the likes of you, but hello.~ [NOBFE03] //#61643
 @80037 = ~~ [NOBFE07] //#61647
 @80038 = ~~ [NOBFE08] //#61648
-@80039 = ~Beschlagenes Lederwams +3~ //#6365
-@80040 = ~Mutierter Kreischling~ //#2286
-@80041 = ~Skelett-Bogenschütze~ //#73272
+@80039 = ~Orc Leather +3~ //#6365
+@80040 = ~Mutated Gibberling~ //#2286
+@80041 = ~Skeleton Archer~ //#73272
+@80042 = ~These swords are usually referred to as doubled-edged swords, war swords, or military swords.  In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture, and may vary within the same culture depending on the era.  Among the most common characteristics of all long swords is their length, which ranges from 35 inches to 47 inches.  In the latter case, the blade is known to take up 40 inches of the total length.  Most long swords have a double-edged blade and a sharp point at the tip.  Despite the tip, the long sword is designed for slashing, not thrusting. 
+
+STATISTICS:
+
+Damage:  1D8
+Damage type:  slashing
+Weight: 4
+Speed Factor: 5
+Proficiency Type: Long Sword
+Type:  1-handed
+Requires: 6 Strength~ //#6742
+@80043 = ~This blade burns with a magical fire, and a charring blast is released whenever a hit is scored.  "Meta Infernum" is etched on the hilt, though it appears somewhat faded and may not be original to the sword.
+
+STATISTICS:
+
+THAC0: +1 bonus
+Damage:  1D8 +1, +1 fire damage
+Damage type:  slashing
+Weight: 4
+Speed Factor: 5
+Proficiency Type: Long Sword
+Type:  1-handed
+Requires: 6 Strength~ //#4421
+@80044 = ~Long Sword~ //#2893
+@80045 = ~Sword of Flame +1~ //#4422
+@80046 = ~These swords are usually referred to as doubled-edged swords, war swords, or military swords.  In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture, and may vary within the same culture depending on the era.  Among the most common characteristics of all long swords is their length, which ranges from 35 inches to 47 inches.  In the latter case, the blade is known to take up 40 inches of the total length.  Most long swords have a double-edged blade and a sharp point at the tip.  Despite the tip, the long sword is designed for slashing, not thrusting. 
+
+STATISTICS:
+
+Damage:  1D8
+Damage type:  slashing
+Weight: 4
+Speed Factor: 5
+Proficiency Type: Long Sword
+Type:  1-handed
+Requires: 6 Strength
+Not Usable By:
+ Druid
+ Cleric
+ Mage~ //#6742
+@80047 = ~This blade burns with a magical fire, and a charring blast is released whenever a hit is scored.  "Meta Infernum" is etched on the hilt, though it appears somewhat faded and may not be original to the sword.
+
+STATISTICS:
+
+THAC0: +1 bonus
+Damage:  1D8 +1, +1 fire damage
+Damage type:  slashing
+Weight: 4
+Speed Factor: 5
+Proficiency Type: Long Sword
+Type:  1-handed
+Requires: 6 Strength
+Not Usable By:
+ Druid
+ Cleric
+ Mage~ //#4421
 
 //Journal Titles
-@90001 = ~Raukners Raufende Rabauken~
-@90002 = ~Der verlorene Sohn~
-@90003 = ~Der Geist in den Wolkenspitzen~
-@90004 = ~Die Suche nach Hopsi~
-@90005 = ~Ein neuer bester Freund für Ugh~
-@90006 = ~Die Suche nach Perwell~
-@90007 = ~Von Wölfen und Männern~
-@90008 = ~Die Schlangen Abbathors~
-@90009 = ~Der Kult der Augenlosen - Bunger Wiesner~
-@90010 = ~Ein geheimnisvolles Angebot~
+@90001 = ~Raukner's Ruffian Roughnecks~
+//@90002 = ~The Lost Son~
+//@90003 = ~A Ghost in the Cloudpeaks~
+@90004 = ~The Quest for Jumper~
+@90005 = ~A New Best Friend for Ugh~
+@90006 = ~The Quest for Perwell~
+@90007 = ~Of Wolves and Men~
+@90008 = ~The Serpents of Abbathor~
+@90009 = ~The Cult of the Unseeing Eye - Bunger Wiesner~
+@90010 = ~A Mysterious Offer~
+@90011 = ~A failed Picnic~
