@@ -254,7 +254,7 @@ END
 BEGIN ACQ12003
 IF ~True()~ THEN BEGIN 0
 SAY @91
-IF ~Global("ACQ12","GLOBAL",5)PartyHasItem("ACQ12000")~ THEN REPLY @92 + 12
+IF ~Global("ACKnowsMelinaStory","GLOBAL",1)PartyHasItem("ACQ12000")~ THEN REPLY @92 + 12
 ++ @93 + 1
 ++ @94 + 2
 ++ @95 + 3
@@ -485,8 +485,8 @@ EXIT
 CHAIN
 IF ~~ THEN ACQ12002 24
 @171 = @172 = @173 DO ~AddJournalEntry(@10026,QUEST)~
-==ACQ12002 IF ~HasItem("ACQ12000","ACQ12002")~ THEN @174 DO ~SetGlobal("ACQ12","GLOBAL",5)GiveItem("ACQ12000",LastTalkedToBy())~
-==ACQ12002 IF ~!HasItem("ACQ12000","ACQ12002")~ THEN @175 DO ~SetGlobal("ACQ12","GLOBAL",5)~
+==ACQ12002 IF ~HasItem("ACQ12000","ACQ12002")~ THEN @174 DO ~SetGlobal("ACKnowsMelinaStory","GLOBAL",1)GiveItem("ACQ12000",LastTalkedToBy())~
+==ACQ12002 IF ~!HasItem("ACQ12000","ACQ12002")~ THEN @175 DO ~SetGlobal("ACKnowsMelinaStory","GLOBAL",1)~
 END
 IF ~Global("ACQ12","GLOBAL",4)~ THEN DO ~SetGlobal("ACQ122","GLOBAL",4)~ EXIT
 IF ~!Global("ACQ12","GLOBAL",4)~ THEN DO ~SetGlobal("ACQ122","GLOBAL",4)~ EXTERN ACQ12001 21
