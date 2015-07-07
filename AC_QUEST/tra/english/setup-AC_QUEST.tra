@@ -506,3 +506,54 @@ Not Usable By:
 @90009 = ~The Cult of the Unseeing Eye - Bunger Wiesner~
 @90010 = ~A Mysterious Offer~
 @90011 = ~A failed Picnic~
+
+//EE Descriptions
+@100032   = ~Aphriel's Elven Longbow
+
+At an early age the elf Aphriel roamed the forests of Faerûn and became one of the greatest Rangers of our time. There was no scent she could not follow, and not one criminal was safe from her bow. It was only when she met a local merchant on a visit to the city of Baldur's Gate and fell passionately in love with him, that her days in the forest had come to an end. Their relationship was blessed with the young half-elf Perwell, and when he was kidnapped by bandits of the Sword Coast, Aphriel set out for one last time into the forests. During this trip the bow came into the hands of <CHARNAME>.
+
+STATISTICS:
+
+Damage: +2 bonus (missile)
+THAC0: +3 bonus
+Weight: 2
+Speed Factor: 5
+Proficiency Type: Long Bow
+Type: 2-handed
+Requires: 6 Strength~
+@100048   = ~This shield is polished to a high gloss and obviously magical. Scratches disappear and blood and dirt simply run off of its reflective surface. It can be presumed that it can even withstand the look of a basilisk.
+
+STATISTICS:
+
+The wearer is protected against all types of petrification and forms of gaze attacks.
+
+Armor Class: +1 bonus
+Weight: 7
+Requires: 12 Strength~
+@100058   = ~Armor from Gibberling Leather
+
+One of the byproducts of Geraldo's work with gibberlings was a high leather production. Since the painter only needed the fur for his colors, he sought a different use for the thick skin of the monsters... and found it. Unfortunately, the leather of gibberlings had some unexpected side effects and so Geraldo impatiently waited for a credulous soul to foist his experiment on.
+
+The chroniclers are assuming that the great Geraldo laughs in his sleeve at the idea that some idiot would find this armor actually useful.
+
+STATISTICS:
+
+The character turns blue.
+
+Can only be removed by a 'Remove Curse' spell.
+
+Armor Class: 4
+Charisma: -3
+Resistance vs. projectile weapons: +10%
+Weight: 7
+Requires: 6 Strength~
+@100086   = ~The priest of Moradin, Bashrik Sparklehammer, was considered as wise and true and within the community of liberal dwarves. He continued to fight against the secession of the surface dwarves and generally relished a high reputation. This hammer, charged with the thunderbolts of Moradin, was his greatest weapon in the fight against evil.
+
+STATISTICS:
+
+Damange: 1D4 +1 (crushing)
+Weight: 6
+Speed Factor: 4
+Requires: 9 Strength
+Proficiency Type: Warhammer
+Type: 1-handed~
