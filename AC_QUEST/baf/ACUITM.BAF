@@ -3,7 +3,7 @@ IF
 	HasItem("potn55",Myself) // Extrastarker Heiltrank
 THEN
 	RESPONSE #100
-		DisplayStringHead(Myself,46150) // trinkt einen Trank
+		DisplayStringHead(Myself,@0) // trinkt einen Trank
 		UseItem("potn55",Myself) // Extrastarker Heiltrank
 		Continue()
 END
@@ -13,7 +13,7 @@ IF
 	HasItem("potn52",Myself) // Konzentrierter Heiltrank
 THEN
 	RESPONSE #100
-		DisplayStringHead(Myself,46150) // trinkt einen Trank
+		DisplayStringHead(Myself,@0) // trinkt einen Trank
 		UseItem("potn52",Myself) // Konzentrierter Heiltrank
 		Continue()
 END
@@ -24,7 +24,7 @@ IF
 	HasItem("potn14",Myself) // Schnelligkeitsöl
 THEN
 	RESPONSE #100
-		DisplayStringHead(Myself,46150) // trinkt einen Trank
+		DisplayStringHead(Myself,@0) // trinkt einen Trank
 		UseItem("potn14",Myself) // Schnelligkeitsöl
 		Continue()
 END
@@ -36,7 +36,7 @@ IF
 	HasItem("potn10",Myself) // Unsichtbarkeitstrank
 THEN
 	RESPONSE #100
-		DisplayStringHead(Myself,46150) // trinkt einen Trank
+		DisplayStringHead(Myself,@0) // trinkt einen Trank
 		UseItem("potn10",Myself) // Unsichtbarkeitstrank
 		Continue()
 END
@@ -47,7 +47,7 @@ IF
 	HasItem("potn03",Myself) // Trank der Hügelriesenstärke
 THEN
 	RESPONSE #100
-		DisplayStringHead(Myself,46150) // trinkt einen Trank
+		DisplayStringHead(Myself,@0) // trinkt einen Trank
 		UseItem("potn03",Myself) // Trank der Hügelriesenstärke
 		Continue()
 END
@@ -58,7 +58,7 @@ IF
 	HasItem("potn04",Myself) // Trank der Frostriesenstärke
 THEN
 	RESPONSE #100
-		DisplayStringHead(Myself,46150) // trinkt einen Trank
+		DisplayStringHead(Myself,@0) // trinkt einen Trank
 		UseItem("potn04",Myself) // Trank der Frostriesenstärke
 		Continue()
 END
@@ -69,7 +69,7 @@ IF
 	HasItem("potn04",Myself) // Trank der Frostriesenstärke
 THEN
 	RESPONSE #100
-		DisplayStringHead(Myself,46150) // trinkt einen Trank
+		DisplayStringHead(Myself,@0) // trinkt einen Trank
 		UseItem("potn03",Myself) // Trank der Hügelriesenstärke
 		Continue()
 END
@@ -80,7 +80,7 @@ IF
 	HasItem("potn12",Myself) // Trank der Steinriesenstärke
 THEN
 	RESPONSE #100
-		DisplayStringHead(Myself,46150) // trinkt einen Trank
+		DisplayStringHead(Myself,@0) // trinkt einen Trank
 		UseItem("potn12",Myself) // Trank der Steinriesenstärke
 		Continue()
 END
@@ -97,7 +97,7 @@ IF
 	HasItem("wand02",Myself) // Stab der Furcht
 THEN
 	RESPONSE #100
-		DisplayStringHead(Myself,31971) // verwendet einen Stab
+		DisplayStringHead(Myself,@1) // verwendet einen Stab
 		UseItem("wand02",NearestEnemyOf(Myself)) // Stab der Furcht
 		Continue()
 END
@@ -113,7 +113,7 @@ IF
 	HasItem("wand04",Myself) // Lähmungsstab
 THEN
 	RESPONSE #100
-		DisplayStringHead(Myself,31971) // verwendet einen Stab
+		DisplayStringHead(Myself,@1) // verwendet einen Stab
 		UseItem("wand04",NearestEnemyOf(Myself)) // Lähmungsstab
 		Continue()
 END
@@ -128,7 +128,7 @@ IF
 	HasItem("wand06",Myself) // Stab des Frostes
 THEN
 	RESPONSE #100
-		DisplayStringHead(Myself,31971) // verwendet einen Stab
+		DisplayStringHead(Myself,@1) // verwendet einen Stab
 		UseItem("wand06",NearestEnemyOf(Myself)) // Stab des Frostes
 		Continue()
 END
@@ -145,7 +145,7 @@ IF
 	HasItem("wand08",Myself) // Stab des Schlafes
 THEN
 	RESPONSE #100
-		DisplayStringHead(Myself,31971) // verwendet einen Stab
+		DisplayStringHead(Myself,@1) // verwendet einen Stab
 		UseItem("wand08",NearestEnemyOf(Myself)) // Stab des Schlafes
 		Continue()
 END
@@ -161,7 +161,7 @@ IF
 	HasItem("wand09",Myself) // Verwandlungsstab
 THEN
 	RESPONSE #100
-		DisplayStringHead(Myself,31971) // verwendet einen Stab
+		DisplayStringHead(Myself,@1) // verwendet einen Stab
 		UseItem("wand09",NearestEnemyOf(Myself)) // Verwandlungsstab
 		Continue()
 END
@@ -175,7 +175,7 @@ IF
 	HasItem("wand10",Myself) // Stab der Monsterherbeirufung
 THEN
 	RESPONSE #100
-		DisplayStringHead(Myself,31971) // verwendet einen Stab
+		DisplayStringHead(Myself,@1) // verwendet einen Stab
 		UseItem("wand10",Myself) // Stab der Monsterherbeirufung
 		Continue()
 END
@@ -190,7 +190,7 @@ IF
 	HasItem("wand11",Myself) // Stab der Himmel
 THEN
 	RESPONSE #100
-		DisplayStringHead(Myself,31971) // verwendet einen Stab
+		DisplayStringHead(Myself,@1) // verwendet einen Stab
 		UseItem("wand11",NearestEnemyOf(Myself)) // Stab der Himmel
 		Continue()
 END
