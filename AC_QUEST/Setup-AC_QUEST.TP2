@@ -140,6 +140,7 @@ COPY ~AC_QUEST/itm/SPECTR.ITM~ ~override~
 COMPILE ~AC_QUEST/baf/DEMBAL01.BAF~
 		~AC_QUEST/baf/PRIES6C.BAF~
 		~AC_QUEST/baf/PRIES10B.BAF~
+		~AC_QUEST/baf/INPAIVSG.BAF~
 
 END
 
@@ -1214,7 +1215,6 @@ LPF fj_are_structure
     fj_dest_y        	= 1499
     fj_orientation   	= 12
     STR_VAR
-    fj_bcs_override		= ACQ08000
     fj_dlg_resref		= ACQ08000
     fj_structure_type	= actor
     fj_name          	= Abbathorian
@@ -1502,11 +1502,6 @@ SAY NAME1 @117
 SAY NAME2 @117
 
 COPY_EXISTING ~AC_QUEST/cre/ACUMBHUL.cre~ ~override~
-READ_ASCII 0x280 ~DV~
-PATCH_IF ((~%DV%~ STRING_EQUAL ~~) OR (~%DV%~STRING_EQUAL_CASE ~none~)) BEGIN
-WRITE_ASCII 0x280 ~ACUMBHUL~
-END
-BUT_ONLY
 
 COPY ~AC_QUEST/2da/ACHP01.2da~ ~override~
 REPLACE 99998 @118
