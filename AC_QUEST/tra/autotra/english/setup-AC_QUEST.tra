@@ -1,5 +1,5 @@
 /* @0    = */
-@1    = ~Ascalon's Questpack: Content for BG 1~
+@1    = ~Ascalon's Questpack~
 @2    = ~No valid BG install detected. Installation of Ascalon's Questpack will be aborted.~
 @3    = ~Teach Virginie, the invisible miracle Wonderbunny, a few new tricks~
 @4    = ~Install Virginie, the invisible Wonderbunny~
@@ -494,6 +494,90 @@ Not Usable By:
  Cleric
  Mage~ //#4421
 
+@80048 = ~Magical slings are the hallmark of stout halfling warriors. Usually their mothers or a talented aunt will create this sling for the halfling lad or lass who is about to embark on their second great adventure. The reason that the sling is given on the second adventure and not the first is that many halflings decide not to pursue the life of an adventurer after getting a taste of it.
+
+STATISTICS:
+
+THAC0: +2
+Damage: +2 (missile)
+Speed Factor: 4
+Proficiency Type: Sling
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 0~//#619
+@80049 = ~Whether by design or through exposure to intense heat in battle, the chain links of this armor are coal black throughout. While legends usually speak of knights in shining armor facing great beasts, the fire resistant enchantment on this suit suggests equally great, if unheralded, battles with fire-breathing creatures.
+
+STATISTICS:
+
+Equipped abilities:
+– Fire Resistance: +20%
+
+Armor Class: 2 (0 vs. slashing, 4 vs. crushing)
+Requires:
+ 8 Strength
+
+Weight: 9~//#39557
+@80050 = ~Robe of the Apprenti~//#37573	
+@80051 = ~This robe was created by your apprentices, working busily away within the planar sphere.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: 3
+
+Weight: 3~//#39649	
+@80052 = ~Hammer of Thunderbolts +3~//#7781
+@80053 = ~A dwarven smith, Silverblade, forged this hammer and two other items: a girdle of frost giant strength and a pair of gauntlets of ogre power. His intention was to gift them to his son, who was then a high officer in the dwarven armies, fighting the giant and ogre tribes of the area. Unfortunately, Silverblade's son died just after the completion of the three items and before they could be gifted to him. In grief, Silverblade himself donned the girdle and the gauntlets. Taking up the Hammer of Thunderbolts, he went to battle against the giant folk. He died valiantly.
+
+Alone, the Hammer of Thunderbolts is a powerful magical weapon, but when merged with the gauntlets of ogre power and the girdle of frost giant strength, the hammer is transformed. This transformation requires magical assistance. The Hammer of Thunderbolts is then capable of doing an additional +8 damage as well as instantly killing any giant or ogre that it strikes.
+
+STATISTICS:
+
+THAC0: +3
+Damage: 2d4+3 (crushing)
+Speed Factor: 1
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 18 Strength
+
+Weight: 4~//#39444
+@80054 = ~Guild House Key~ //#54030
+@80055 = ~This is the key to the lower levels of Lady Galvena's Festhall, the Courtesan's Guild.
+
+STATISTICS:
+
+Weight: 0~ //#1091
+@80056 = ~The Night's Gift +5~ //#6363
+@80057 = ~Originally blessed by Shar, this armor has a long and interesting history. Only the greatest of thieves have ever owned this heavily enchanted armor. The essence of night has been woven into the dark set of armor so that it feels like normal armor but encloses the wearer in a mass of twisting shadows.
+
+STATISTICS:
+
+Equipped abilities:
+– Hide In Shadows: +20%
+
+Armor Class: 3 (5 vs. piercing and missile)
+Requires:
+ 3 Strength
+
+Weight: 5~ //#39548
+@80058 = ~Enkidu's Full Plate +3~ //#65033
+@80059 = ~This armor was created for Enkidu, a famed warrior from Kara-Tur. While none dared challenge him in fair combat, Enkidu was often subject to cowardly sneak attacks from assassins, ninjas and Wu-Jen.
+
+STATISTICS:
+
+Equipped abilities:
+– Magic Resistance: +5%
+– Immunity to backstab
+
+Armor Class: -2 (-6 vs. slashing, -5 vs. piercing and missile)
+Requires:
+ 15 Strength
+
+Weight: 45~ //#66422
+
 //Journal Titles
 @90001 = ~Raukner's Ruffian Roughnecks~
 //@90002 = ~The Lost Son~
@@ -506,3 +590,90 @@ Not Usable By:
 @90009 = ~The Cult of the Unseeing Eye - Bunger Wiesner~
 @90010 = ~A Mysterious Offer~
 @90011 = ~A failed Picnic~
+
+//EE Descriptions
+@100032   = ~Aphriel's Elven Longbow
+
+At an early age the elf Aphriel roamed the forests of Faerûn and became one of the greatest Rangers of our time. There was no scent she could not follow, and not one criminal was safe from her bow. It was only when she met a local merchant on a visit to the city of Baldur's Gate and fell passionately in love with him, that her days in the forest had come to an end. Their relationship was blessed with the young half-elf Perwell, and when he was kidnapped by bandits of the Sword Coast, Aphriel set out for one last time into the forests. During this trip the bow came into the hands of <CHARNAME>.
+
+STATISTICS:
+
+Damage: +2 bonus (missile)
+THAC0: +3 bonus
+Weight: 2
+Speed Factor: 5
+Proficiency Type: Long Bow
+Type: 2-handed
+Requires: 6 Strength~
+@100048   = ~This shield is polished to a high gloss and obviously magical. Scratches disappear and blood and dirt simply run off of its reflective surface. It can be presumed that it can even withstand the look of a basilisk.
+
+STATISTICS:
+
+The wearer is protected against all types of petrification and forms of gaze attacks.
+
+Armor Class: +1 bonus
+Weight: 7
+Requires: 12 Strength~
+@100058   = ~Armor from Gibberling Leather
+
+One of the byproducts of Geraldo's work with gibberlings was a high leather production. Since the painter only needed the fur for his colors, he sought a different use for the thick skin of the monsters... and found it. Unfortunately, the leather of gibberlings had some unexpected side effects and so Geraldo impatiently waited for a credulous soul to foist his experiment on.
+
+The chroniclers are assuming that the great Geraldo laughs in his sleeve at the idea that some idiot would find this armor actually useful.
+
+STATISTICS:
+
+The character turns blue.
+
+Can only be removed by a 'Remove Curse' spell.
+
+Armor Class: 4
+Charisma: -3
+Resistance vs. projectile weapons: +10%
+Weight: 7
+Requires: 6 Strength~
+@100086   = ~The priest of Moradin, Bashrik Sparklehammer, was considered as wise and true and within the community of liberal dwarves. He continued to fight against the secession of the surface dwarves and generally relished a high reputation. This hammer, charged with the thunderbolts of Moradin, was his greatest weapon in the fight against evil.
+
+STATISTICS:
+
+Damange: 1D4 +1 (crushing)
+Weight: 6
+Speed Factor: 4
+Requires: 9 Strength
+Proficiency Type: Warhammer
+Type: 1-handed~
+
+//Karlini Journals
+@2000001   = ~The magnificent Karlini - The spellbook of the magnificent Karlini
+
+Inside the Friendly Arm Inn we met a gnome called Ygnatius Bombastus III.
+He offered 300 pieces of gold if we receive one of the spellbooks of the magnificent Karlini which could be found inside the Ulcaster Ruins.~
+
+@2000002   = ~The magnificent Karlini - The spellbook of the magnificent Karlini
+
+Luckily we found the spellbook of the magnificent Karlini in the Ulcaster Ruins.~
+
+@2000003   = ~The magnificent Karlini - The spellbook of the magnificent Karlini
+
+We gave Ygnatius the spellbook of the magnificent Karlini as promissed. After some research he found the fitting spell to track down Karlini and we agreed to oversee his task of casting the spell. For that we will meet with Ygnatius at the stone cirlce at Lion's Way.~
+
+@2000004   = ~The magnificent Karlini
+
+We told Ygnatius to not continue working for him.~
+
+@2000005   = ~The magnificent Karlini
+
+We gave Ygnatius the spellbook of the magnificent Karlini and received our reward as promissed.~
+
+@2000006   = ~The magnificent Karlini
+
+We oversaw the casting of the spell but surprisingly a balor appeared and Ygnatius vanished. It was a tough fight to take the balor down but we did it. Unfortunately we don't know of a way to bring Ygnatius back from whereever he is right now.~
+
+@2000007   = ~The magnificent Karlini
+
+We oversaw the casting of the spell but surprisingly a balor appeared and Ygnatius vanished. Unexpectedly the fiend agreed on letting the two gnomes go for my soul in exchange. I refused the offer and the balor vanished into thin air.~
+
+@2000008   = ~The magnificent Karlini
+
+We oversaw the casting of the spell but surprisingly a balor appeared and Ygnatius vanished. Unexpectedly the fiend agreed on letting the two gnomes go if we would answer some difficult questions about the Sword Coast correctly. Otherwise my soul would be his reward. By luck and effort I was able to answer all three questions correctly. In return the balor vanished into thin air but stayed true to his word and brought the two gnomes back save and sound. They in return were thankful - more or less- for their rescue. Gnomes ... In retrospect the delivered reward by theese two gnomes was fitting the needed efforts to solve the given tasks.~
+
+@2000009   = ~The magnificent Karlini~

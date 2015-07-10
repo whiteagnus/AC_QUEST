@@ -497,6 +497,79 @@ Kann nicht verwendet werden von:
 - Druiden
 - Klerikern
 - Magiern~ //#4421
+@80048 = ~Magische Schleudern sind die typische Waffe des stämmigen Halblingkriegers. Normalerweise wird die Waffe von der Mutter oder einer begabten Tante des jungen Halblings angefertigt, bevor er auf sein zweites großes Abenteuer auszieht. Der Grund, warum die Schleuder erst angefertigt wird, nachdem der junge Halbling bereits sein erstes Abenteuer bestanden hat, liegt darin, dass so mancher Halbling nach diesem ersten Abenteuer beschließt, dass das Leben eines Abenteurers doch nichts für ihn ist.
+
+EIGENSCHAFTEN:
+
+Schadensbonus: +2 (Geschoss)
+ETW0-Bonus: -2
+Gewicht: 0
+Initiativefaktor: 4
+Mindeststärke: 3
+Fertigkeit: Schleuder
+Typ: 1-händig~ //#619
+@80049 = ~Dunkelkettenhemd
+
+Die Kettenglieder dieser Rüstung sind schwarz verkohlt. Ob sie absichtlich so gefertigt wurde oder ob sie im Kampf extremer Hitze ausgesetzt war, kann man nicht sagen. In Legenden wird ja normalerweise von Rittern in glänzender Rüstung erzählt, die gegen riesige, feuerspeiende Untiere kämpfen. Die Rüstung eignet sich wohl mindestens ebenso gut für derartige Kämpfe, fand aber dank ihres eher nicht so heroischen Aussehens noch in keiner Legende Erwähnung.
+
+EIGENSCHAFTEN:
+
+Rüstungsklasse: 2
+Feuerwiderstand: +20%
+Gewicht: 9
+Mindeststärke: 8~ //#39557
+@80050 = ~Robe der Zauberlehrlinge~//#37573	
+@80051 = ~Diese Robe wurde von Euren Zauberlehrlingen erschaffen, die fleißig in der Sphäre der Ebenen an neuen magischen Gegenständen arbeiten.
+
+EIGENSCHAFTEN:
+
+Rüstungsklasse: 3
+Gewicht: 3~//#39649
+@80052 = ~Kriegshammer +3~//#7781
+@80053 = ~Hammer der Blitze
+
+Ein Zwergenschmied namens Silberklinge fertigte sowohl diesen Hammer, als auch zwei andere mächtige magische Gegenstände – einen Gürtel der Riesenstärke und Ogerkrafthandschuhe. Er wollte sie seinem Sohn zum Geschenk machen, der zu diesem Zeitpunkt ein wichtiger Offizier in der Zwergenarmee war und gegen die Riesen- und Ogerstämme in der Gegend kämpfte. Dummerweise starb Silberklinges Sohn kurz nachdem die Gegenstände fertig gestellt waren. Der Vater kam nicht mehr dazu, sie seinem Sohn zu überreichen. In tiefer Trauer legte er die Handschuhe und den Gürtel an, schnappte sich den Hammer und zog gegen die Riesen in den Kampf. Er starb den Tod eines Helden.
+
+Für sich allein ist der Hammer der Blitze schon ein mächtiger magischer Gegenstand. Wird er jedoch mit den Ogerkrafthandschuhen und dem Gürtel der Riesenstärke vereint, durchläuft er eine Verwandlung. Diese Verwandlung muss durch ein entsprechendes magisches Ritual unterstützt werden. Nachdem die Verwandlung abgeschlossen ist, verursacht der Hammer zusätzlich +8 Schadenspunkte und ist in der Lage, Riesen und Oger mit einem Schlag niederzustrecken.
+
+EIGENSCHAFTEN:
+
+Schaden: 2W4 +3 (Wucht)
+ETW0-Bonus: -3
+Gewicht: 4
+Initiativefaktor: 1
+Mindeststärke: 18
+Fertigkeit: Kriegshammer
+Typ: 1-händig~//#39444
+@80054 = ~Gildenschlüssel~ //#54030
+@80055 = ~Das ist der Schlüssel zu den unteren Ebenen von Lady Galvenas Freudenhaus, der Gilde der Kurtisanen.
+
+EIGENSCHAFTEN:
+
+Gewicht: 0~ //#1091
+@80056 = ~Lederrüstung +5~ //#6363
+@80057 = ~Geschenk der Nacht
+
+Die Rüstung wurde einst von Shar gesegnet und hat eine lange und interessante Geschichte. Nur die besten aller Diebe waren je im Besitz dieser extrem stark verzauberten Rüstung. Die Essenz der Nacht wurde in die dunkle Rüstung verwoben. Sie fühlt sich wie eine normale Rüstung an, hüllt den Träger aber in einen schützenden Mantel aus sich windenden Schatten.
+
+EIGENSCHAFTEN:
+
+Rüstungsklasse: 3
+Im Schatten verstecken: +20%
+Gewicht: 5~ //#39548
+@80058 = ~Prunkharnisch +3~ //#65033
+@80059 = ~Enkidus Prunkharnisch
+
+Die Rüstung wurde für Enkidu, einen berühmten Krieger aus Kara-Tur, hergestellt. Niemand wagte es, ihn in einem fairen Kampf herauszufordern, aber zahlreiche Meuchelmörder, Ninjas und Wu-Jen versuchten Enkidu hinterrücks und feige zu ermorden.
+
+EIGENSCHAFTEN:
+
+Der Träger ist immun gegen hinterhältige Angriffe.
+
+Rüstungsklasse: -2
+Magiewiderstand: +5%
+Gewicht: 45
+Mindeststärke: 15~ //#66422
 
 //Journal Titles
 @90001 = ~Raukners Raufende Rabauken~
@@ -561,3 +634,45 @@ Initiativefaktor: 4
 Mindeststärke: 9
 Fertigkeit: Kriegshammer
 Typ: 1-händig~ //@86 without "Not useable by"
+
+//Karlini Journals
+@2000001   = ~Der große Karlini - Das Buch des großen Karlinis
+
+Im Freundlichen Arm trafen wir auf einen Gnom Namens Ygnatius Bombastus III. Er versprach uns 300 Goldmünzen dafür, ein Buch des großen Karlinis ausfindig zu machen, welches sich in den Ruinen von Ulcaster befinden soll.~
+
+
+@2000002   = ~Der große Karlini - Das Buch des großen Karlinis
+
+Wir haben das Buch des großen Karlini in den Ruinen von Ulcaster gefunden.~
+
+
+@2000003   = ~Der große Karlini - Die große Formel
+
+Wir haben Ygnatz das Buch des großen Karlinis übergeben und er hat darin die große Formel entdeckt. Wir haben angeboten beim Sprechen der großen Formel anwesend zu sein und sollen uns mit Ygnatz bei den Steinkreisen am Löwenweg, westlich vom Freundlichen Arm treffen.~
+
+
+@2000004   = ~Der große Karlini
+
+Wir haben Ygnatz gesagt dass wir nicht mehr für Ihn arbeiten wollen.~
+
+
+@2000005   = ~Der große Karlini
+
+Wir haben Ygnatz das Buch des großen Karlinis übergeben und wir haben unsere Belohnung kassiert.~
+
+
+@2000006   = ~Der große Karlini
+
+Wir haben Ygnatz dabei beobachtet wie er die große Formel gesprochen hat, dabei erschien ein Balor und Ygnatz verschwand. Der Balor war ein harter Brocken, wir konnten ihn letztendlich doch besiegen, Ygnatz bleibt leider verschwunden.~
+
+
+@2000007   = ~Der große Karlini
+
+Wir haben Ygnatz dabei beobachtet wie er die große Formel gesprochen hat, dabei erschien ein Balor und Ygnatz verschwand. Der Balor bot an die Gnome freizulassen, im Austausch gegen meine Seele. Ich schlug das Angebot aus und der Balor verschwand.~
+
+
+@2000008   = ~Der große Karlini
+
+Wir haben Ygnatz dabei beobachtet wie er die große Formel gesprochen hat, dabei erschien ein Balor und Ygnatz verschwand. Der Balor bot an die Gnome freizulassen, wenn ich ihm einige Fragen über die Schwertküste richtig beantworten könnte. Sollte ich versagen, würde meine Seele dem Dämon gehören. Ich schaffte es, alle seine Fragen richtig zu beantworten, woraufhin der Balor verschwand. Ygnaz und Karlini kehrten wohlbehalten zurück und zeigten sich mehr oder weniger dankbar für ihre Rettung - na ja, gnomische Gelehrte eben ... Die Belohnung der beiden machte die ganzen Strapazen jedenfalls mehr als wett.~
+
+@2000009   = ~Der große Karlini~
