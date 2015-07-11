@@ -365,7 +365,7 @@ Aphriel und ihr Sohn sind wieder glücklich vereint.~
 Der Mann der Zauberin Aiwell hat sich wohl mit Lycanthropie angesteckt. Ich habe wohl verschiedene Möglichkeiten, das Problem zu lösen: Entweder mit einem Trank, den ich von Thalantyr bekommen kann, oder auf die althergebrachte Tour mit dem Schwert.~
 @10034 = ~Von Wölfen und Männern
 
-Thalantyr hat uns verschiedene Möglichkeiten aufgezählt. Er kann den Trank mit Aiwells Blut mixen, was äußerst fragwürdig ist. Oder er benutzt Gurilbeeren, die nicht immer wirken. Am besten wäre ein Trank aus Tollkirschen.
+Thalantyr hat uns verschiedene Möglichkeiten aufgezählt. Er kann den Trank mit Aiwells Blut mixen, was äußerst fragwürdig ist. Oder er benutzt Gurilbeeren, die nicht immer wirken. Am besten wäre ein Trank aus Tollkirschen. Er sagte auch, dass er uns nur einen der drei Tränke brauen kann.
 
 Ich kann ihm allerdings auch den Leichnam Thonders bringen, damit er die Werwolfskrankheit besser erforschen kann.~
 @10035 = ~Von Wölfen und Männern
@@ -676,3 +676,22 @@ Wir haben Ygnatz dabei beobachtet wie er die große Formel gesprochen hat, dabei 
 Wir haben Ygnatz dabei beobachtet wie er die große Formel gesprochen hat, dabei erschien ein Balor und Ygnatz verschwand. Der Balor bot an die Gnome freizulassen, wenn ich ihm einige Fragen über die Schwertküste richtig beantworten könnte. Sollte ich versagen, würde meine Seele dem Dämon gehören. Ich schaffte es, alle seine Fragen richtig zu beantworten, woraufhin der Balor verschwand. Ygnaz und Karlini kehrten wohlbehalten zurück und zeigten sich mehr oder weniger dankbar für ihre Rettung - na ja, gnomische Gelehrte eben ... Die Belohnung der beiden machte die ganzen Strapazen jedenfalls mehr als wett.~
 
 @2000009   = ~Der große Karlini~
+
+//Geraldos Journal entries
+
+@3000001   = ~Kreischlingszucht in Baldurs Tor
+
+Wir haben auf den Straßen von Baldurs Tor einen Mann namens "Geraldo der Prächtige" getroffen. Er erzählte uns,dass er vorhatte aus dem Fell gefangener Kreischlinge blaue Farbe zu gewinnen, diese pflanzten sich aber innerhalb kürzester Zeit fort und er musste sie in seinem Haus einsperren. Er hat uns gebeten in sein Haus zu gehen, um uns um die Kreischlinge zu kümmern und erwähnte, dass es um die 20 Kreischlinge sein müssten.~
+@3000002   = ~Kreischlingszucht in Baldurs Tor
+
+Wir konnten im Haus leider nur zwei Kreischlinge antreffen, wir sollten mit den Fellen zu Geraldo zurückkehren.~
+@3000003   = ~Kreischlingszucht in Baldurs Tor
+
+Geraldo hat uns gebeten die geflüchteten Kreischlinge zu suchen, um uns die Aufgabe zu erleichten gab er uns seinen Vogel mit dem Namen Elminster, der uns bei der Suche helfen kann, sobald Kreischlinge in der Nähe sind. Er bot uns ausserdem 50 Goldmünzen für jedes weitere Fell an und einen magischen Gegenstand, wenn wir alle gefunden hätten.~
+@3000004   = ~Kreischlingszucht in Baldurs Tor
+
+Wir haben alle Kreischlinge ausfindig machen können. Geraldo verschwand und murmelte etwas von Glück in der Fremde finden.~
+@3000005   = ~Kreischlingszucht in Baldurs Tor
+
+Wir haben Geraldo gesagt, dass wir nicht mehr für ihn arbeiten wollen. Geraldo verschwand und murmelte etwas von Glück in der Fremde finden.~
+@3000006   = ~Kreischlingszucht in Baldurs Tor~

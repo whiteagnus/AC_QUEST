@@ -1,7 +1,7 @@
 BACKUP ~AC_QUEST/backup~
 AUTHOR ~whiteagnus@baldursgatemods.de~ //This is Ascalon's Questpack, but any bugreports about this version should go to jastey
 
-VERSION ~2.00b_150710~
+VERSION ~2.00b_150711~
 
 AUTO_TRA "AC_QUEST/TRA/autotra/%s"//%"
 
@@ -783,6 +783,8 @@ END
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+ADD_JOURNAL TITLE (@3000006) @3000001 @3000002 @3000003 @3000004 @3000005
+
 COMPILE ~AC_QUEST/BAF/ACQ18002.BAF~
 COMPILE ~AC_QUEST/D/ACQ18000.D~
 
@@ -812,6 +814,7 @@ END
 
 EXTEND_TOP ~%BaldursGateDocks_IronThrone_Cellar_BCS%.bcs~ ~AC_QUEST/baf/AR7611.baf~
 EVAL
+COMPILE ~AC_QUEST/baf/AC7711.baf~
 
 COPY ~AC_QUEST/ARE/AC7711.ARE~ ~override~
 WRITE_EVALUATED_ASCII 0x8 ~%NWBaldursGate_House2_L1%~ #6
@@ -849,6 +852,7 @@ SAY NAME2 @59
 SAY DESC @60
 
 COPY ~AC_QUEST/cre/ACQ18001.CRE~ ~override~
+	 ~AC_QUEST/cre/ACQ18004.CRE~ ~override~
 	 ~AC_QUEST/cre/ACQ18324.CRE~ ~override~
 	 ~AC_QUEST/cre/ACQ18325.CRE~ ~override~
 	 ~AC_QUEST/cre/ACQ18611.CRE~ ~override~

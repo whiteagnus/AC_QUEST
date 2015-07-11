@@ -2,7 +2,8 @@
 								A modification for BGT-WeiDU
                             Ascalon (geheimer.herrscher@gmx.de)
 
-                                      Version: 1.01
+	Currently supported by: White Agnus (whiteagnus@baldursgatemods.de)
+                                      Version: 2.00 (Beta)
 
 ***************************************************************************************************************
 
@@ -107,13 +108,22 @@ A mysterious dwarven kult is recruiting along the Sword Coast and heroes are in 
 
 VII. Version history:
 
-0.1 (Alpha) 	- first open beta
-0.2 (Alpha)	- corrections and completion of conent
-0.3 (Alpha)	- rebalancing of enemies and creatures
-0.5 (Beta)	- public beta with more interjections, corrected journal entries and XP rewards
-1.0		- complete overhaul
-1.01		- small bug fixes
-1.01		- english translation by klatu
+0.1 (Alpha)
+- first open beta
+0.2 (Alpha)
+- corrections and completion of conent
+0.3 (Alpha)
+- rebalancing of enemies and creatures
+0.5 (Beta)
+- public beta with more interjections, corrected journal entries and XP rewards
+1.0
+- complete overhaul
+1.01		
+- small bug fixes
+2.00 (Beta)	
+- Compatibility with Tutu (TotSC only), BG:EE, BG2 ToB, BG2:EE and EET
+- several small bug fixes
+- English Translation by Bloodtitan
 
 ***************************************************************************************************************
 
@@ -124,6 +134,7 @@ VIII. Thanks
 - Gerri fürs Testen und Bebildern
 - Jastey für großartige Hilfestellungen (was fürde ich nur ohne deine Tagebucheintragsbeispiele machen)
 - Leomar und Leonardo Watson für ihre Arbeit am BWP
+- Bloodtitan für die englische Übersetzung
 - Fridtjof und Hedian und allen anderen von www.rosenranken.org, die dem Questpack ein feines zu Hause bieten
 - vorlast but not vorleast den motivierten und begeisterten Spielern des BWP, die das beste Spiel aller Zeiten am Leben erhalten
 - Und zu guter Letzt meiner Lieblingsschweizerin Revianêl, die jede einzelne Quest, jede Anspielung, jeden Gag und jede versteckte Kleinigkeit auf Herz und Nieren geprüft und durchgewunken bzw. ausgebremst hat - Ohne jemals selbst über Kerzenburg hinausgekommen zu sein.
@@ -134,11 +145,13 @@ VIII. Thanks
 
 IX: Tools used
 
-- WeiDU Vers. 2.10 - 2.11
-- Near Infinity v1.32
+- WeiDU Vers. 2.10 - 2.38
+- Near Infinity v1.32 - 1.36
 - Shadowkeeper V2.1.4
 - Crimson Editor v3.70
-- DLTCEP V7.1e
+- Notepad ++ v6.7.8.2
+- DLTCEP V7.1e - 7.6d
+- iconv v1.9.2-1
 
 
 ***************************************************************************************************************

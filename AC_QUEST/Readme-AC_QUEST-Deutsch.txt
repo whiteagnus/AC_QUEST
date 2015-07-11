@@ -2,6 +2,8 @@
                               Eine Modifikation für BGT-WeiDU
                             Ascalon (geheimer.herrscher@gmx.de)
 
+Derzeitiger Support: White Agnus (whiteagnus@baldursgatemods.de)
+
                                       Version: 2.00 (Beta)
 
 ***************************************************************************************************************
@@ -127,8 +129,9 @@ VII. Versions-History:
 1.01		
 - kleinere Bugfixes
 2.00 (Beta)
-- Kompatiblität für Tutu (mit LdSK), BG:EE, BG2 TdB, BG2:EE und EET (ungetestet) hergestellt
+- Kompatiblität für Tutu (mit LdSK), BG:EE, BG2 TdB, BG2:EE und EET hergestellt
 - mehrere kleine Bugfixes
+- Englische Übersetzung von Bloodtitan hinzugefügt
 
 
 ***************************************************************************************************************
@@ -140,6 +143,7 @@ VIII. Danksagungen
 - Gerri fürs Testen und Bebildern
 - Jastey für großartige Hilfestellungen (was fürde ich nur ohne deine Tagebucheintragsbeispiele machen)
 - Leomar und Leonardo Watson für ihre Arbeit am BWP
+- Bloodtitan für die englische Übersetzung
 - Fridtjof und Hedian und allen anderen von www.rosenranken.org, die dem Questpack ein feines zu Hause bieten
 - vorlast but not vorleast den motivierten und begeisterten Spielern des BWP, die das beste Spiel aller Zeiten am Leben erhalten
 - Und zu guter Letzt meiner Lieblingsschweizerin Revianêl, die jede einzelne Quest, jede Anspielung, jeden Gag und jede versteckte Kleinigkeit auf Herz und Nieren geprüft und durchgewunken bzw. ausgebremst hat - Ohne jemals selbst über Kerzenburg hinausgekommen zu sein.
@@ -150,11 +154,13 @@ VIII. Danksagungen
 
 IX: Benutzte Tools
 
-- WeiDU Vers. 2.10 - 2.11
-- Near Infinity v1.32
+- WeiDU Vers. 2.10 - 2.38
+- Near Infinity v1.32 - 1.36
 - Shadowkeeper V2.1.4
 - Crimson Editor v3.70
-- DLTCEP V7.1e
+- Notepad ++ v6.7.8.2
+- DLTCEP V7.1e - 7.6d
+- iconv v1.9.2-1
 
 
 ***************************************************************************************************************
