@@ -570,6 +570,7 @@ Rüstungsklasse: -2
 Magiewiderstand: +5%
 Gewicht: 45
 Mindeststärke: 15~ //#66422
+@80060 = ~Erdkoloss~
 
 //Journal Titles
 @90001 = ~Raukners Raufende Rabauken~

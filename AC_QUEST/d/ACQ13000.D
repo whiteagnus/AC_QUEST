@@ -129,7 +129,7 @@ END
 
 IF ~~ THEN BEGIN 15
 SAY @47 = @48 = @49
-IF ~~ THEN DO ~TakePartyItem("ACQ13004")AddexperienceParty(450)EscapeAreaDestroy(10)EraseJournalEntry(@10005)~ SOLVED_JOURNAL @10007 EXIT
+IF ~~ THEN DO ~TakePartyItem("ACQ13004")AddexperienceParty(450)EraseJournalEntry(@10005)EscapeAreaDestroy(10)~ SOLVED_JOURNAL @10007 EXIT
 END
 
 IF ~~ THEN BEGIN 0b
