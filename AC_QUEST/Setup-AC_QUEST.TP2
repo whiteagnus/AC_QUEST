@@ -1,7 +1,7 @@
 BACKUP ~AC_QUEST/backup~
 AUTHOR ~whiteagnus@baldursgatemods.de~ //This is Ascalon's Questpack, but any bugreports about this version should go to jastey
 
-VERSION ~2.00b_150711~
+VERSION ~2.00b_160119~
 
 AUTO_TRA "AC_QUEST/TRA/autotra/%s"//%"
 
