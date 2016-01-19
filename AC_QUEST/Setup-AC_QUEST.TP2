@@ -993,15 +993,15 @@ EXTEND_TOP ~%NWBaldursGate_Tavern_L2_BCS%.bcs~ ~AC_QUEST/baf/AR7266.baf~
 EVAL
 
 ACTION_IF GAME_IS ~tutu_totsc~ THEN BEGIN
-COPY_EXISTING ~%NWBaldursGate_House4_L2%.are~ ~override~
+COPY_EXISTING ~%NWBaldursGate%.are~ ~override~
   READ_ASCII 0x94 area_script
   PATCH_IF (("%area_script%" STRING_COMPARE_CASE "None")=0) BEGIN
-  	WRITE_EVALUATED_ASCII 0x94 ~%NWBaldursGate_House4_L2_BCS%~ (8)
+  	WRITE_EVALUATED_ASCII 0x94 ~%NWBaldursGate_BCS%~ (8)
   END
 BUT_ONLY
 END
 
-EXTEND_TOP ~%NWBaldursGate_House4_L2_BCS%.bcs~ ~AC_QUEST/baf/AR7200.baf~
+EXTEND_TOP ~%NWBaldursGate_BCS%.bcs~ ~AC_QUEST/baf/AR7200.baf~
 
 ACTION_IF GAME_IS ~tutu_totsc~ THEN BEGIN
 COPY_EXISTING ~%NBaldursGate_TempleofHelm%.are~ ~override~
