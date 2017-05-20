@@ -63,7 +63,7 @@ END
 
 IF ~~ THEN BEGIN 9a
 SAY @25
-IF ~~ THEN DO ~EscapeAreaDestroy(10)~ EXIT
+IF ~~ THEN DO ~EraseJournalEntry(@2000001) EraseJournalEntry(@2000002) AddJournalEntry(@2000004,QUEST_DONE) EscapeAreaDestroy(10)~ EXIT
 END
 
 IF ~~ THEN BEGIN 10
@@ -101,7 +101,7 @@ END
 
 IF ~~ THEN BEGIN 14
 SAY @47
-IF ~~ THEN DO ~RevealAreaOnMap("%Ulcaster%")~ EXIT
+IF ~~ THEN DO ~RevealAreaOnMap("%Ulcaster%") AddJournalEntry(@2000001,QUEST)~ EXIT
 END
 
 IF ~~ THEN BEGIN 15
@@ -153,12 +153,12 @@ END
 
 IF ~~ THEN BEGIN 22
 SAY @74
-IF ~~ THEN DO ~GiveGoldForce(300)EscapeAreaDestroy(10)~ EXIT
+IF ~~ THEN DO ~EraseJournalEntry(@2000001) EraseJournalEntry(@2000002) AddJournalEntry(@2000005,QUEST_DONE)GiveGoldForce(300)EscapeAreaDestroy(10)~ EXIT
 END
 
 IF ~~ THEN BEGIN 23
 SAY @74
-IF ~~ THEN DO ~GiveGoldForce(300)EscapeAreaDestroy(10)~ EXIT
+IF ~~ THEN DO ~EraseJournalEntry(@2000001) EraseJournalEntry(@2000002) AddJournalEntry(@2000005,QUEST_DONE)GiveGoldForce(300)EscapeAreaDestroy(10)~ EXIT
 END
 
 IF ~~ THEN BEGIN 24
@@ -184,7 +184,7 @@ END
 
 IF ~~ THEN BEGIN 27
 SAY @81
-IF ~~ THEN DO ~SetNumTimesTalkedTo(2)EscapeAreaMove("%LionsWay%",2470,1537,0)~ EXIT
+IF ~~ THEN DO ~AddJournalEntry(@2000003,QUEST)SetNumTimesTalkedTo(2)EscapeAreaMove("%LionsWay%",2470,1537,0)~ EXIT
 END
 
 IF ~NumTimesTalkedToGT(1)~ THEN BEGIN 28
@@ -273,7 +273,7 @@ END
 
 IF ~~ THEN BEGIN 10
 SAY @115 = @116
-IF ~~ THEN DO ~DropItem("ACQ17003",[-1.-1])ForceSpell(Myself,DRYAD_TELEPORT)Wait(1)DestroySelf()~ EXIT
+IF ~~ THEN DO ~EraseJournalEntry(@2000001)EraseJournalEntry(@2000002)EraseJournalEntry(@2000003)AddJournalEntry(@2000007,QUEST_DONE)DropItem("ACQ17003",[-1.-1])ForceSpell(Myself,DRYAD_TELEPORT)Wait(1)DestroySelf()~ EXIT
 END
 
 IF ~~ THEN BEGIN 11
@@ -424,5 +424,5 @@ IF ~~ THEN ACQ17001 31
 ==ACQ17002 @169
 ==ACQ17001 @170
 ==ACQ17002 @171 DO ~EscapeAreaDestroy(10)~
-==ACQ17001 @172 = @173DO ~GiveGoldForce(300)GiveItemCreate("ACQ17003",PLAYER1,0,0,0)EscapeAreaDestroy(10)~ 
+==ACQ17001 @172 = @173 DO ~EraseJournalEntry(@2000001)EraseJournalEntry(@2000002)EraseJournalEntry(@2000003)AddJournalEntry(@2000008,QUEST_DONE)GiveGoldForce(300)GiveItemCreate("ACQ17003",PLAYER1,0,0,0)EscapeAreaDestroy(10)~ 
 EXIT

@@ -1,5 +1,5 @@
 /* @0    = */
-@1    = ~Ascalons Questpack: Inhalte fuer BG 1~
+@1    = ~Ascalons Questpack~
 @2    = ~Ascalons Questpack findet keine gültige BG-Installation. Die Mod-Installation wird abgebrochen.~
 @3    = ~Bringe Virginie, dem unsichtbaren Wunderbunny, ein paar neue Tricks bei~
 @4    = ~Installiere Virginie, das unsichtbare Wunderbunny~
@@ -365,7 +365,7 @@ Aphriel und ihr Sohn sind wieder glücklich vereint.~
 Der Mann der Zauberin Aiwell hat sich wohl mit Lycanthropie angesteckt. Ich habe wohl verschiedene Möglichkeiten, das Problem zu lösen: Entweder mit einem Trank, den ich von Thalantyr bekommen kann, oder auf die althergebrachte Tour mit dem Schwert.~
 @10034 = ~Von Wölfen und Männern
 
-Thalantyr hat uns verschiedene Möglichkeiten aufgezählt. Er kann den Trank mit Aiwells Blut mixen, was äußerst fragwürdig ist. Oder er benutzt Gurilbeeren, die nicht immer wirken. Am besten wäre ein Trank aus Tollkirschen.
+Thalantyr hat uns verschiedene Möglichkeiten aufgezählt. Er kann den Trank mit Aiwells Blut mixen, was äußerst fragwürdig ist. Oder er benutzt Gurilbeeren, die nicht immer wirken. Am besten wäre ein Trank aus Tollkirschen. Er sagte auch, dass er uns nur einen der drei Tränke brauen kann.
 
 Ich kann ihm allerdings auch den Leichnam Thonders bringen, damit er die Werwolfskrankheit besser erforschen kann.~
 @10035 = ~Von Wölfen und Männern
@@ -497,11 +497,85 @@ Kann nicht verwendet werden von:
 - Druiden
 - Klerikern
 - Magiern~ //#4421
+@80048 = ~Magische Schleudern sind die typische Waffe des stämmigen Halblingkriegers. Normalerweise wird die Waffe von der Mutter oder einer begabten Tante des jungen Halblings angefertigt, bevor er auf sein zweites großes Abenteuer auszieht. Der Grund, warum die Schleuder erst angefertigt wird, nachdem der junge Halbling bereits sein erstes Abenteuer bestanden hat, liegt darin, dass so mancher Halbling nach diesem ersten Abenteuer beschließt, dass das Leben eines Abenteurers doch nichts für ihn ist.
+
+EIGENSCHAFTEN:
+
+Schadensbonus: +2 (Geschoss)
+ETW0-Bonus: -2
+Gewicht: 0
+Initiativefaktor: 4
+Mindeststärke: 3
+Fertigkeit: Schleuder
+Typ: 1-händig~ //#619
+@80049 = ~Dunkelkettenhemd
+
+Die Kettenglieder dieser Rüstung sind schwarz verkohlt. Ob sie absichtlich so gefertigt wurde oder ob sie im Kampf extremer Hitze ausgesetzt war, kann man nicht sagen. In Legenden wird ja normalerweise von Rittern in glänzender Rüstung erzählt, die gegen riesige, feuerspeiende Untiere kämpfen. Die Rüstung eignet sich wohl mindestens ebenso gut für derartige Kämpfe, fand aber dank ihres eher nicht so heroischen Aussehens noch in keiner Legende Erwähnung.
+
+EIGENSCHAFTEN:
+
+Rüstungsklasse: 2
+Feuerwiderstand: +20%
+Gewicht: 9
+Mindeststärke: 8~ //#39557
+@80050 = ~Robe der Zauberlehrlinge~//#37573	
+@80051 = ~Diese Robe wurde von Euren Zauberlehrlingen erschaffen, die fleißig in der Sphäre der Ebenen an neuen magischen Gegenständen arbeiten.
+
+EIGENSCHAFTEN:
+
+Rüstungsklasse: 3
+Gewicht: 3~//#39649
+@80052 = ~Kriegshammer +3~//#7781
+@80053 = ~Hammer der Blitze
+
+Ein Zwergenschmied namens Silberklinge fertigte sowohl diesen Hammer, als auch zwei andere mächtige magische Gegenstände – einen Gürtel der Riesenstärke und Ogerkrafthandschuhe. Er wollte sie seinem Sohn zum Geschenk machen, der zu diesem Zeitpunkt ein wichtiger Offizier in der Zwergenarmee war und gegen die Riesen- und Ogerstämme in der Gegend kämpfte. Dummerweise starb Silberklinges Sohn kurz nachdem die Gegenstände fertig gestellt waren. Der Vater kam nicht mehr dazu, sie seinem Sohn zu überreichen. In tiefer Trauer legte er die Handschuhe und den Gürtel an, schnappte sich den Hammer und zog gegen die Riesen in den Kampf. Er starb den Tod eines Helden.
+
+Für sich allein ist der Hammer der Blitze schon ein mächtiger magischer Gegenstand. Wird er jedoch mit den Ogerkrafthandschuhen und dem Gürtel der Riesenstärke vereint, durchläuft er eine Verwandlung. Diese Verwandlung muss durch ein entsprechendes magisches Ritual unterstützt werden. Nachdem die Verwandlung abgeschlossen ist, verursacht der Hammer zusätzlich +8 Schadenspunkte und ist in der Lage, Riesen und Oger mit einem Schlag niederzustrecken.
+
+EIGENSCHAFTEN:
+
+Schaden: 2W4 +3 (Wucht)
+ETW0-Bonus: -3
+Gewicht: 4
+Initiativefaktor: 1
+Mindeststärke: 18
+Fertigkeit: Kriegshammer
+Typ: 1-händig~//#39444
+@80054 = ~Gildenschlüssel~ //#54030
+@80055 = ~Das ist der Schlüssel zu den unteren Ebenen von Lady Galvenas Freudenhaus, der Gilde der Kurtisanen.
+
+EIGENSCHAFTEN:
+
+Gewicht: 0~ //#1091
+@80056 = ~Lederrüstung +5~ //#6363
+@80057 = ~Geschenk der Nacht
+
+Die Rüstung wurde einst von Shar gesegnet und hat eine lange und interessante Geschichte. Nur die besten aller Diebe waren je im Besitz dieser extrem stark verzauberten Rüstung. Die Essenz der Nacht wurde in die dunkle Rüstung verwoben. Sie fühlt sich wie eine normale Rüstung an, hüllt den Träger aber in einen schützenden Mantel aus sich windenden Schatten.
+
+EIGENSCHAFTEN:
+
+Rüstungsklasse: 3
+Im Schatten verstecken: +20%
+Gewicht: 5~ //#39548
+@80058 = ~Prunkharnisch +3~ //#65033
+@80059 = ~Enkidus Prunkharnisch
+
+Die Rüstung wurde für Enkidu, einen berühmten Krieger aus Kara-Tur, hergestellt. Niemand wagte es, ihn in einem fairen Kampf herauszufordern, aber zahlreiche Meuchelmörder, Ninjas und Wu-Jen versuchten Enkidu hinterrücks und feige zu ermorden.
+
+EIGENSCHAFTEN:
+
+Der Träger ist immun gegen hinterhältige Angriffe.
+
+Rüstungsklasse: -2
+Magiewiderstand: +5%
+Gewicht: 45
+Mindeststärke: 15~ //#66422
+@80060 = ~Erdkoloss~
 
 //Journal Titles
 @90001 = ~Raukners Raufende Rabauken~
-@90002 = ~Der verlorene Sohn~
-@90003 = ~Der Geist in den Wolkenspitzen~
+//@90002 = ~Der verlorene Sohn~
+//@90003 = ~Der Geist in den Wolkenspitzen~
 @90004 = ~Die Suche nach Hopsi~
 @90005 = ~Ein neuer bester Freund für Ugh~
 @90006 = ~Die Suche nach Perwell~
@@ -509,4 +583,116 @@ Kann nicht verwendet werden von:
 @90008 = ~Die Schlangen Abbathors~
 @90009 = ~Der Kult der Augenlosen - Bunger Wiesner~
 @90010 = ~Ein geheimnisvolles Angebot~
+@90011 = ~Ein missglücktes Picknick~
 
+//EE Descriptions
+@100032   = ~Aphriels Elfenbogen
+
+Schon in jungen Jahren zog die Elfe Aphriel durch die Wälder Faerûns und wurde zu einer der größten Waldläuferinnen der Gegenwart. Keine Fährte, der sie nicht folgen konnte und kein Übeltäter, der vor ihrem Bogen sicher war. Erst als sie bei einem Besuch in der Stadt Baldurs Tor einen ansässigen Menschenhändler traf und sich Hals über Kopf verliebte, hatten ihre Tage im Wald ein Ende. Aus der Liaison wurde der junge Halbelf Perwell geboren, und als dieser von den Räubern der Schwertküste entführt wurde brach Aphriel ein letztes Mal in die Wälder auf. Auf dieser Reise gelangte ihr Bogen in die Hände von <CHARNAME>.
+
+EIGENSCHAFTEN:
+
+Schadensbonus: +2 (Geschoß)
+ETW0-Bonus: -3
+Gewicht: 2
+Initiativefaktor: 5
+Mindeststärke: 6
+Fertigkeit: Langbogen
+Typ: 2-händig~ //@32 without "Not useable by"
+@100048   = ~Dieser Schild ist auf Hochglanz poliert und offensichtlich magisch. Kratzer verschwinden und Blut und Schmutz perlt einfach von seiner spiegelnden Oberfläche ab. Es steht zu vermuten, dass er sogar dem Blick eines Basilisken standhalten kann.
+
+EIGENSCHAFTEN:
+
+Der Träger ist vor allen Arten der Versteinerung geschützt, auch vor Blickangriffen.
+
+RK-Bonus: -1
+Gewicht: 7
+Mindeststärke: 12~ //@48 without "Not useable by"
+@100058   = ~Rüstung aus Kreischlingsleder
+
+Eines der Nebenprodukte von Geraldos Arbeit mit Kreischlingen war eine hohe Lederproduktion. Da der Maler für seine Farben nur das Fell benötigte, suchte er für die dicke Haut der Monster eine andere Verwendung... und fand sie. Leider hatte das Kreischlingsleder einige nicht erwartete Nebenwirkungen und so wartete Geraldo ungeduldig darauf, dass er sein Experiment einer leichtgläubigen Seele andrehen konnte.
+
+Die Chronisten gehen davon aus, dass sich der große Geraldo ins Fäustchen lacht bei der Vorstellung, irgendein Idiot könnte seine Rüstung tatsächlich nützlich finden.
+
+EIGENSCHAFTEN:
+
+Der Charakter verfärbt sich blau.
+
+Kann nur durch Fluch brechen wieder abgenommen werden.
+
+Rüstungsklasse: 4
+Charisma: -3
+Widerstand gg. Geschosswaffen: +10%
+Gewicht: 7
+Mindeststärke: 6~ //@58 without "Not useable by"
+@100086   = ~Der Moradinpriester Bashrik Funkenhammer galt in den Kreisen liberal einsteller Zwerge als weise und wahrhaftig. Er setzte sich engagiert gegen die Abspaltung der Oberweltzwerge ein und genoss allgemein ein hohes Ansehen. Dieser Hammer, geladen mit den Blitzen Moradins, war seine größte Waffe im Kampf gegen das Böse.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W4 +1 (Wucht)
+Gewicht: 6
+Initiativefaktor: 4
+Mindeststärke: 9
+Fertigkeit: Kriegshammer
+Typ: 1-händig~ //@86 without "Not useable by"
+
+//Karlini Journals
+@2000001   = ~Der große Karlini - Das Buch des großen Karlinis
+
+Im Freundlichen Arm trafen wir auf einen Gnom Namens Ygnatius Bombastus III. Er versprach uns 300 Goldmünzen dafür, ein Buch des großen Karlinis ausfindig zu machen, welches sich in den Ruinen von Ulcaster befinden soll.~
+
+
+@2000002   = ~Der große Karlini - Das Buch des großen Karlinis
+
+Wir haben das Buch des großen Karlini in den Ruinen von Ulcaster gefunden.~
+
+
+@2000003   = ~Der große Karlini - Die große Formel
+
+Wir haben Ygnatz das Buch des großen Karlinis übergeben und er hat darin die große Formel entdeckt. Wir haben angeboten beim Sprechen der großen Formel anwesend zu sein und sollen uns mit Ygnatz bei den Steinkreisen am Löwenweg, westlich vom Freundlichen Arm treffen.~
+
+
+@2000004   = ~Der große Karlini
+
+Wir haben Ygnatz gesagt dass wir nicht mehr für Ihn arbeiten wollen.~
+
+
+@2000005   = ~Der große Karlini
+
+Wir haben Ygnatz das Buch des großen Karlinis übergeben und wir haben unsere Belohnung kassiert.~
+
+
+@2000006   = ~Der große Karlini
+
+Wir haben Ygnatz dabei beobachtet wie er die große Formel gesprochen hat, dabei erschien ein Balor und Ygnatz verschwand. Der Balor war ein harter Brocken, wir konnten ihn letztendlich doch besiegen, Ygnatz bleibt leider verschwunden.~
+
+
+@2000007   = ~Der große Karlini
+
+Wir haben Ygnatz dabei beobachtet wie er die große Formel gesprochen hat, dabei erschien ein Balor und Ygnatz verschwand. Der Balor bot an die Gnome freizulassen, im Austausch gegen meine Seele. Ich schlug das Angebot aus und der Balor verschwand.~
+
+
+@2000008   = ~Der große Karlini
+
+Wir haben Ygnatz dabei beobachtet wie er die große Formel gesprochen hat, dabei erschien ein Balor und Ygnatz verschwand. Der Balor bot an die Gnome freizulassen, wenn ich ihm einige Fragen über die Schwertküste richtig beantworten könnte. Sollte ich versagen, würde meine Seele dem Dämon gehören. Ich schaffte es, alle seine Fragen richtig zu beantworten, woraufhin der Balor verschwand. Ygnaz und Karlini kehrten wohlbehalten zurück und zeigten sich mehr oder weniger dankbar für ihre Rettung - na ja, gnomische Gelehrte eben ... Die Belohnung der beiden machte die ganzen Strapazen jedenfalls mehr als wett.~
+
+@2000009   = ~Der große Karlini~
+
+//Geraldos Journal entries
+
+@3000001   = ~Kreischlingszucht in Baldurs Tor
+
+Wir haben auf den Straßen von Baldurs Tor einen Mann namens "Geraldo der Prächtige" getroffen. Er erzählte uns,dass er vorhatte aus dem Fell gefangener Kreischlinge blaue Farbe zu gewinnen, diese pflanzten sich aber innerhalb kürzester Zeit fort und er musste sie in seinem Haus einsperren. Er hat uns gebeten in sein Haus zu gehen, um uns um die Kreischlinge zu kümmern und erwähnte, dass es um die 20 Kreischlinge sein müssten.~
+@3000002   = ~Kreischlingszucht in Baldurs Tor
+
+Wir konnten im Haus leider nur zwei Kreischlinge antreffen, wir sollten mit den Fellen zu Geraldo zurückkehren.~
+@3000003   = ~Kreischlingszucht in Baldurs Tor
+
+Geraldo hat uns gebeten die geflüchteten Kreischlinge zu suchen, um uns die Aufgabe zu erleichten gab er uns seinen Vogel mit dem Namen Elminster, der uns bei der Suche helfen kann, sobald Kreischlinge in der Nähe sind. Er bot uns ausserdem 50 Goldmünzen für jedes weitere Fell an und einen magischen Gegenstand, wenn wir alle gefunden hätten.~
+@3000004   = ~Kreischlingszucht in Baldurs Tor
+
+Wir haben alle Kreischlinge ausfindig machen können. Geraldo verschwand und murmelte etwas von Glück in der Fremde finden.~
+@3000005   = ~Kreischlingszucht in Baldurs Tor
+
+Wir haben Geraldo gesagt, dass wir nicht mehr für ihn arbeiten wollen. Geraldo verschwand und murmelte etwas von Glück in der Fremde finden.~
+@3000006   = ~Kreischlingszucht in Baldurs Tor~

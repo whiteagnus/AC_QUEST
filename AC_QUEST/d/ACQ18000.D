@@ -56,7 +56,7 @@ END
 
 IF ~~ THEN BEGIN 5a
 SAY @19
-IF ~~ THEN DO ~SetGlobal("ACQ18","GLOBAL",9)Enemy()~ EXIT
+IF ~~ THEN DO ~EraseJournalEntry(@3000001)EraseJournalEntry(@3000002)EraseJournalEntry(@3000003)SetGlobal("ACQ18","GLOBAL",9)Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 6
@@ -131,7 +131,7 @@ END
 
 IF ~~ THEN BEGIN 18
 SAY @49
-IF ~~ THEN DO ~GiveItemCreate("ACQKEY03",LastTalkedToBy(),0,0,0)SetNumTimesTalkedTo(3)~ EXIT
+IF ~~ THEN DO ~AddJournalEntry(@3000001,QUEST)GiveItemCreate("ACQKEY03",LastTalkedToBy(),0,0,0)SetNumTimesTalkedTo(3)~ EXIT
 END
 
 IF ~NumTimesTalkedTo(3)~ THEN BEGIN 19
@@ -143,7 +143,7 @@ END
 
 IF ~~ THEN BEGIN 20
 SAY @54
-IF ~~ THEN DO ~SetGlobal("ACQ18","GLOBAL",9)EscapeAreaDestroy(10)~ EXIT
+IF ~~ THEN DO ~EraseJournalEntry(@3000001)EraseJournalEntry(@3000002)EraseJournalEntry(@3000003)AddJournalEntry(@3000005,QUEST_DONE)SetGlobal("ACQ18","GLOBAL",9)EscapeAreaDestroy(10)~ EXIT
 END
 
 IF ~~ THEN BEGIN 21
@@ -164,7 +164,7 @@ END
 
 IF ~~ THEN BEGIN 23
 SAY @68
-IF ~~ THEN DO ~GiveItemCreate("ACQ18003",LastTalkedToBy(),0,0,0)~ GOTO 25
+IF ~~ THEN DO ~AddJournalEntry(@3000003,QUEST)GiveItemCreate("ACQ18003",LastTalkedToBy(),0,0,0)~ GOTO 25
 END
 
 IF ~TRUE()~ THEN BEGIN 24
@@ -209,5 +209,5 @@ END
 
 IF ~~ THEN BEGIN 27
 SAY @77 = @78
-IF ~~ THEN DO ~GiveItemCreate("ACQ18002",LastTalkedToBy(),0,0,0)SetGlobal("ACQ18","GLOBAL",9)EscapeAreaDestroy(10)~ EXIT
+IF ~~ THEN DO ~EraseJournalEntry(@3000001)EraseJournalEntry(@3000002)EraseJournalEntry(@3000003)AddJournalEntry(@3000004,QUEST_DONE)GiveItemCreate("ACQ18002",LastTalkedToBy(),0,0,0)SetGlobal("ACQ18","GLOBAL",9)EscapeAreaDestroy(10)~ EXIT
 END
