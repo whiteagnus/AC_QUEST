@@ -137,7 +137,10 @@ VII. Version history:
 -(all fixes from BWPFixpack integrated)
 -deleted ACQ12CUT2.baf - ACQ12CUT.baf is the correct cutscene for both cases
 -fixed bug where Aaron gives the PC a ring although it is already in the PC's possession
+-fixed CtD in AC4400 area when moving to southern part removed faulty spawn points
+-fixed wrong map notes in quest areas AC4400.are and AC4401.are
 -update to weiDU v242
+
 
 ***************************************************************************************************************
 

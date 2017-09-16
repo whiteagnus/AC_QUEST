@@ -258,6 +258,9 @@ From what you know about the old dwarves, such an act is the greatest sacrilege 
 @5021 = ~KIWITT!~
 @6000 = ~Don't leave me this way!~
 
+@6001 = ~Mine Entrance~ /* new for v2.01 - AC4400.bcs */
+@6002 = ~Cabin~ /* new for v2.01 - AC4400.bcs */
+
 @10001 = ~Raukner's Ruffian Roughnecks
 
 I've roughed up a militant group of adventurers in Beregost.~

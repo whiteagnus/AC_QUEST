@@ -260,6 +260,9 @@ Nach allem, was Ihr über die alten Zwerge wisst, kommt so eine Tat dem größten S
 @5021 = ~KIWITT!~
 @6000 = ~Lasst mich doch nicht einfach stehen!~
 
+@6001 = ~Eingang zur Mine~ /* new for v2.01 - AC4400.bcs */
+@6002 = ~Lagerhaus~ /* new for v2.01 - AC4400.bcs */
+
 
 @10001 = ~Raukners Raufende Rabauken
 

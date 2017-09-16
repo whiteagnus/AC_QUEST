@@ -44,8 +44,8 @@ INCLUDE ~AC_QUEST/lib/ac_quest_cpmvars.tpa~
 			iconv_path = ~AC_QUEST/tools/iconv~
 	END
 		
-//		LOAD_TRA ~AC_QUEST/tra/autotra/german/Setup.tra~	
-		LOAD_TRA ~AC_QUEST/tra/autotra/%LANGUAGE%/Setup.tra~
+//		LOAD_TRA ~AC_QUEST/tra/autotra/german/setup-AC_QUEST.tra~	
+		LOAD_TRA ~AC_QUEST/tra/autotra/%LANGUAGE%/setup-AC_QUEST.tra~
 
 //CamDawgs CD_STATE_NOTVALID zum Checken der Dialogfähigkeit eines Char
 //Thank you very much, CamDawg!
