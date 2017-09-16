@@ -706,7 +706,7 @@ END
 CHAIN 
 IF ~~ THEN ACQ10116 3a
 @221 DO ~Enemy()~
-==%YESLICK_BANTER% IF ~InParty("YESLICK")InMyArea("YESLICK")!StateCheck("YESLICK",CD_STATE_NOTVALID)~ THEN @222 DO ~LeaveParty()Enemy()~
+==%YESLICK_JOINED% IF ~InParty("YESLICK")InMyArea("YESLICK")!StateCheck("YESLICK",CD_STATE_NOTVALID)~ THEN @222 DO ~LeaveParty()Enemy()~
 ==ACQ10114 @223 DO ~Enemy()~
 ==ACQ10113 @224 DO ~Enemy()~
 ==ACQ10115 @225 DO ~Enemy()~

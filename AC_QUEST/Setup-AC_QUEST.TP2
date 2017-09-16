@@ -1,7 +1,7 @@
 BACKUP ~AC_QUEST/backup~
 AUTHOR ~whiteagnus@baldursgatemods.de~ //This is Ascalon's Questpack, but any bugreports about this version should go to jastey
 
-VERSION ~2.00b_160119~
+VERSION ~2.01~ //170916 packed by jastey
 
 AUTO_TRA "AC_QUEST/TRA/autotra/%s"//%"
 
@@ -10,7 +10,12 @@ ALWAYS
 INCLUDE ~AC_QUEST/lib/g3_tutu_cpmvars.tpa~
 INCLUDE ~AC_QUEST/lib/g3_bgt_cpmvars.tpa~
 INCLUDE ~AC_QUEST/lib/liam_bgee_vars.tpa~
-INCLUDE ~AC_QUEST/lib/eet_cpmvars.tpa~
+
+/* Declaration of EET Platform Variables */
+ACTION_IF GAME_IS "eet" BEGIN
+  INCLUDE ~EET/other/cpmvars/eet_cpmvars.tpa~
+END
+
 INCLUDE ~AC_QUEST/lib/ac_quest_cpmvars.tpa~
 
 
@@ -59,10 +64,11 @@ APPEND ~STATE.IDS~ ~0x00000FC0 STATE_REALLY_DEAD~ UNLESS ~STATE_REALLY_DEAD~
 END
 
 
+//##
 
-LANGUAGE ~Deutsch (German)~ ~german~ ~AC_QUEST/TRA/autotra/german/setup-AC_QUEST.tra~
+LANGUAGE ~Deutsch (German)~ ~german~ ~AC_QUEST/TRA/german/setup-AC_QUEST.tra~
 
-LANGUAGE ~English~ ~english~ ~AC_QUEST/TRA/autotra/english/setup-AC_QUEST.tra~
+LANGUAGE ~English~ ~english~ ~AC_QUEST/TRA/english/setup-AC_QUEST.tra~
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -339,8 +345,6 @@ COMPILE ~AC_QUEST/BAF/ACQ12002.BAF~
 EVAL
 COMPILE ~AC_QUEST/BAF/ACQ12004.BAF~
 COMPILE ~AC_QUEST/BAF/ACQ12CUT.BAF~
-EVAL
-COMPILE ~AC_QUEST/BAF/ACQ12CUT2.BAF~
 EVAL
 
 EXTEND_TOP ~%GnollStronghold_BCS%.bcs~ ~AC_QUEST/baf/AC4100.baf~

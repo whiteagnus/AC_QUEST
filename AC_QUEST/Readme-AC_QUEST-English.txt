@@ -2,8 +2,8 @@
 								A modification for BGT-WeiDU
                             Ascalon (geheimer.herrscher@gmx.de)
 
-	Currently supported by: White Agnus (whiteagnus@baldursgatemods.de)
-                                      Version: 2.00 (Beta)
+	Currently supported by: White Agnus and jastey (whiteagnus@baldursgatemods.de; jastey@web.de)
+                                      Version: 2.01
 
 ***************************************************************************************************************
 
@@ -12,7 +12,7 @@ Content:
 
 I. Description
 II. Installation
-III. Notes (important!)
+III. Notes 
 IV. Compatibility
 V. Contact
 VI. Components
@@ -39,9 +39,7 @@ II. Installation:
 
 ***************************************************************************************************************
 
-III. Notes (important!)
-
-- The most recent version of Baldur's Gate Trilogy must be installed! Ascalon's Quest Pack is a pure BGT modification und is incompatible with TUTU or a normal SoA installation. Installing this mod on such installations results unpecified behaviour at best!
+III. Notes 
 
 - In order to be able to experience all features of the component "the lost son" gore must be enabled: Backup your baldur.ini and add the line "Memory Access=100" (without "") under [Game Options]. Gore can now be enabled ingame. Doing this is not required for the component to function, but it is recommended.
 
@@ -50,6 +48,8 @@ III. Notes (important!)
 IV. Compatibility:
 
 Ascalon's Quest Pack was written in WeiDU and is likely compatible with all other WeiDU modifications. This mod was written specifically with the BWP by Leonardo Watson in mind and should work without issues for all BGT games.
+
+From version 2.00 the mod is compatible with Tutu (w TotSC), BG:EE, BGII:EE, BGII, BGT, and EET.
 
 ***************************************************************************************************************
 
@@ -124,6 +124,20 @@ VII. Version history:
 - Compatibility with Tutu (TotSC only), BG:EE, BG2 ToB, BG2:EE and EET
 - several small bug fixes
 - English Translation by Bloodtitan
+2.01
+-changed path(s) for LANGUAGE definition to get rid of the doubled setup.tra
+-added Roxanne's fix to ACQ15002.BAF for Perwell not following the PC after being freed 
+-added another interjection point into CSGAAL's dialogue in ACQ22000.D to enable compatibility with NPC Stronghold Mod (G3)
+-english setup.tra: translated @10035 (fix from BWPTextpack / BWFixpack)
+-changed path to EET cpmvars to universal EET/other/cpmvars/eet_cpmvars.tpa
+-changed %xxxx_BANTER% to %xxxx_JOINED% in all instances (hoping it will fix the EET "dialogue ends abruptly" bug)
+-changed IMOEN2 to %IMOEN_DV% in ACQ19000.d
+-in ACQ12000.D changed transition to missing state "5" to "4"
+-@49 in ACQ18000.tra: Geraldo's wrong destination for his house "West" corrected to "east"
+-(all fixes from BWPFixpack integrated)
+-deleted ACQ12CUT2.baf - ACQ12CUT.baf is the correct cutscene for both cases
+-fixed bug where Aaron gives the PC a ring although it is already in the PC's possession
+-update to weiDU v242
 
 ***************************************************************************************************************
 

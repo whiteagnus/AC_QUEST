@@ -2,9 +2,9 @@
                               Eine Modifikation für BGT-WeiDU
                             Ascalon (geheimer.herrscher@gmx.de)
 
-Derzeitiger Support: White Agnus (whiteagnus@baldursgatemods.de)
+Derzeitiger Support: White Agnus und jastey (whiteagnus@baldursgatemods.de; jastey@web.de)
 
-                                      Version: 2.00 (Beta)
+                                      Version: 2.01 
 
 ***************************************************************************************************************
 
@@ -13,7 +13,7 @@ Inhalt:
 
 I. Beschreibung
 II. Installation
-III. Hinweise (wichtig!)
+III. Hinweise 
 IV. Kompatibilität
 V. Kontakt
 VI. Komponenten
@@ -41,9 +41,7 @@ II. Installation:
 
 ***************************************************************************************************************
 
-III. Hinweise (wichtig!)
-
-- Baldurs Gate Trilogy muss installiert und auf der neusten Version sein! Ascalons Questpack ist eine REINE BGT-MODIFIKATION und funktioniert nicht mit TUTU oder einer einfachen SoA-Installation. Wenn ihr versucht, Ascalons Questpack mit diesen Programmen zu benutzen, ruiniert ihr euch unter Umständen die komplette Installation!
+III. Hinweise 
 
 - Um in den vollen Genuss der Komponente "der verschwundene Sohn" zu kommen sollte der Blutpatch aktiviert sein: Macht ein Backup der Datei baldur.ini und tragt unter der Überschrift [Game Options] die Zeile "Memory Access=100" (ohne "") ein. Anschließend könnt Ihr im Spiel im Konfiguationsmenü den Button "Blut" anschalten. Die Komponente funktioniert auch ohne den Patch, macht aber längst nicht so viel Freude.
 
@@ -53,6 +51,8 @@ III. Hinweise (wichtig!)
 IV. Kompatibilität:
 
 Ascalons Questpack wurde mit WeiDU Vers. 2.10 und 2.11 programmiert und sollte daher mit allen anderen Modifikationen auf WeiDU-Basis kompatibel sein. Das Questpack wurde mit Blick auf das Big World Projekt von Leonardo Watson programmiert und sollte in jeder beliebigen Konstellation, in der BGT installiert ist, funktionieren.
+
+Ab Version 2.00 ist die Mod für die Spiele Tutu (w TotSC), BG:EE, BGII:EE, BGII, BGT und EET geeignet.
 
 
 ***************************************************************************************************************
@@ -132,6 +132,21 @@ VII. Versions-History:
 - Kompatiblität für Tutu (mit LdSK), BG:EE, BG2 TdB, BG2:EE und EET hergestellt
 - mehrere kleine Bugfixes
 - Englische Übersetzung von Bloodtitan hinzugefügt
+2.01
+-changed path(s) for LANGUAGE definition to get rid of the doubled setup.tra
+-added Roxanne's fix to ACQ15002.BAF for Perwell not following the PC after being freed 
+-added another interjection point into CSGAAL's dialogue in ACQ22000.D to enable compatibility with NPC Stronghold Mod (G3)
+-english setup.tra: translated @10035 (fix from BWPTextpack / BWFixpack)
+-changed path to EET cpmvars to universal EET/other/cpmvars/eet_cpmvars.tpa
+-changed %xxxx_BANTER% to %xxxx_JOINED% in all instances (hoping it will fix the EET "dialogue ends abruptly" bug)
+-changed IMOEN2 to %IMOEN_DV% in ACQ19000.d
+-in ACQ12000.D changed transition to missing state "5" to "4"
+-@49 in ACQ18000.tra: Geraldo's wrong destination for his house "West" corrected to "east"
+-(all fixes from BWPFixpack integrated)
+-deleted ACQ12CUT2.baf - ACQ12CUT.baf is the correct cutscene for both cases
+-fixed bug where Aaron gives the PC a ring although it is already in the PC's possession
+-update to weiDU v242
+
 
 
 ***************************************************************************************************************

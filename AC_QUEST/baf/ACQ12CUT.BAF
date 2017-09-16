@@ -17,7 +17,6 @@ THEN
 		ActionOverride(Player6,LeaveAreaLUA("%Nashkel%","",[2657.2508],10))
 		Wait(1)
 		CreateCreature("ACQ12002",[2554.2327],0)
-		ActionOverride("ACQ12002",CreateItem("ACQ12000",0,0,0))
 		MultiPlayerSync()
 		FadeFromColor([40.0],0)
 		Wait(2)
