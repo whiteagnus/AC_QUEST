@@ -1,7 +1,16 @@
-BACKUP ~AC_QUEST/backup~
-AUTHOR ~whiteagnus@baldursgatemods.de~ //This is Ascalon's Questpack, but any bugreports about this version should go to jastey
+/*
 
-VERSION ~2.01~ //170916 packed by jastey
+Changes:
+-corrected translation error in ACQ11000.tra
+-Aaron shouldn't stop on his way to the windmill
+
+*/
+
+BACKUP ~AC_QUEST/backup~
+AUTHOR ~whiteagnus@baldursgatemods.de~ //This is Ascalon's Questpack, 
+//but any bugreports about version 2.01 should go to jastey 
+
+VERSION ~2.01~ //171102 packed by jastey
 
 AUTO_TRA "AC_QUEST/TRA/autotra/%s"//%"
 
@@ -345,6 +354,8 @@ COMPILE ~AC_QUEST/BAF/ACQ12002.BAF~
 EVAL
 COMPILE ~AC_QUEST/BAF/ACQ12004.BAF~
 COMPILE ~AC_QUEST/BAF/ACQ12CUT.BAF~
+EVAL
+COMPILE ~AC_QUEST/BAF/ACQ12CU2.BAF~
 EVAL
 
 EXTEND_TOP ~%GnollStronghold_BCS%.bcs~ ~AC_QUEST/baf/AC4100.baf~

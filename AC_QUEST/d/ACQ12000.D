@@ -5,7 +5,7 @@ SAY @0
 ++ @2 + 2
 ++ @3 + 3
 ++ @4 + 4
-++ @5 + 4
+++ @5 + 5
 END
 
 IF ~~ THEN BEGIN 1
@@ -212,7 +212,7 @@ END
 IF ~~ THEN BEGIN 14
 SAY @77
 IF ~HasItem("ACQ12000","ACQ12002")~ THEN DO ~ClearAllActions()StartCutSceneMode()StartCutScene("ACQ12CUT")~ EXIT
-IF ~!HasItem("ACQ12000","ACQ12002")~ THEN DO ~ClearAllActions()StartCutSceneMode()StartCutScene("ACQ12CUT2")~ EXIT
+IF ~!HasItem("ACQ12000","ACQ12002")~ THEN DO ~ClearAllActions()StartCutSceneMode()StartCutScene("ACQ12CU2")~ EXIT
 END
 
 IF ~~ THEN BEGIN 15
@@ -461,19 +461,19 @@ IF ~Global("ACQ122","GLOBAL",3)~ THEN REPLY @162 EXTERN ACQ12002 23
 CHAIN
 IF ~~ THEN ACQ12001 22
 @164 DO ~SetGlobal("ACQ12","GLOBAL",4)AddexperienceParty(1200)ReputationInc(1)EscapeAreaDestroy(10)~
-==ACQ12002 @165 DO ~MoveToPointNoInterrupt([4490.2344])~
+==ACQ12002 @165 DO ~MoveBetweenAreas("%Nashkel%",[4490.2344],10)~ //MoveToPointNoInterrupt([4490.2344])~
 EXIT
 
 CHAIN
 IF ~~ THEN ACQ12001 23
 @166 DO ~SetGlobal("ACQ12","GLOBAL",4)AddexperienceParty(1200)GiveItemCreate("AMUL09",PLAYER1,0,0,0)EscapeAreaDestroy(10)~
-==ACQ12002 @165 DO ~MoveToPointNoInterrupt([4490.2344])~
+==ACQ12002 @165 DO ~MoveBetweenAreas("%Nashkel%",[4490.2344],10)~ //MoveToPointNoInterrupt([4490.2344])~
 EXIT
 
 CHAIN
 IF ~~ THEN ACQ12001 24
 @167 DO ~SetGlobal("ACQ12","GLOBAL",4)AddexperienceParty(1200)GiveItemCreate("AMUL09",PLAYER1,0,0,0)EscapeAreaDestroy(10)~
-==ACQ12002 @168 DO ~MoveToPointNoInterrupt([4490.2344])~
+==ACQ12002 @168 DO ~MoveBetweenAreas("%Nashkel%",[4490.2344],10)~ //MoveToPointNoInterrupt([4490.2344])~
 EXIT
 
 CHAIN
