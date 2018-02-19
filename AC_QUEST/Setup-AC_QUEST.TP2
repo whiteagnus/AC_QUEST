@@ -1,16 +1,8 @@
-/*
-
-Changes:
--corrected translation error in ACQ11000.tra
--Aaron shouldn't stop on his way to the windmill
-
-*/
-
 BACKUP ~AC_QUEST/backup~
 AUTHOR ~whiteagnus@baldursgatemods.de~ //This is Ascalon's Questpack, 
 //but any bugreports about version 2.01 should go to jastey 
 
-VERSION ~2.01~ //171102 packed by jastey
+VERSION ~2.02~ //180219 packed by jastey
 
 AUTO_TRA "AC_QUEST/TRA/autotra/%s"//%"
 
@@ -73,7 +65,7 @@ APPEND ~STATE.IDS~ ~0x00000FC0 STATE_REALLY_DEAD~ UNLESS ~STATE_REALLY_DEAD~
 END
 
 
-//##
+
 
 LANGUAGE ~Deutsch (German)~ ~german~ ~AC_QUEST/TRA/german/setup-AC_QUEST.tra~
 
@@ -977,7 +969,7 @@ LPF fj_are_structure
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-ADD_JOURNAL TITLE (@90008) @10011 @10012 @10013 @10014 @10019 @10015 @10017 @10016 @10018 @10020 @10022 @10023 @10021
+ADD_JOURNAL TITLE (@90008) @10011 @10012 @10013 @10014 @10019 @10015 @10017 @10016 @10018 @10020 @10022 @10023 @10021 @3000007 @3000008 @3000009 @3000010 @3000011 @3000012 @3000013
 
 COMPILE ~AC_QUEST/D/ACQ10100.D~
 EVAL
@@ -994,6 +986,9 @@ EXTEND_TOP ~%NashkelMines_BCS%.bcs~ ~AC_QUEST/baf/AR4400.baf~
 EXTEND_TOP ~%NashkelMines_MulaheysCave_BCS%.bcs~ ~AC_QUEST/baf/AR4405.baf~
 EXTEND_TOP ~%NEBaldursGate_BCS%.bcs~ ~AC_QUEST/baf/AR7400.baf~
 EXTEND_TOP ~%ESewers_BCS%.bcs~ ~AC_QUEST/baf/AR7326.baf~
+EXTEND_BOTTOM ~%CoastWay_BCS%.bcs~ ~AC_QUEST/baf/AR6900.baf~ 
+
+EXTEND_BOTTOM ~%BaldursGate_Undercellars%.bcs~ ~AC_QUEST/baf/AR7212.baf~ 
 
 ACTION_IF GAME_IS ~tutu_totsc~ THEN BEGIN
 COPY_EXISTING ~%NWBaldursGate_Tavern_L2%.are~ ~override~

@@ -8,10 +8,10 @@ THEN
 END
 
 IF
-	Global("C#ACQ_AddMapnotes","MYAREA",0)
+	Global("ACQUEST_AddMapnotes","MYAREA",0)
 THEN
 	RESPONSE #100
-		SetGlobal("C#ACQ_AddMapnotes","MYAREA",1)
+		SetGlobal("ACQUEST_AddMapnotes","MYAREA",1)
 		AddMapNote([1202.717],@6001) //mine entrance
 		AddMapNote([2796.430],@6002) //cabin
 END

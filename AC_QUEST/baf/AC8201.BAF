@@ -4,6 +4,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("ACQ1NASHKELL","GLOBAL",1)
+		EraseJournalEntry(@3000013)
 		AddJournalEntry(@10011,QUEST)
 		Continue()
 END

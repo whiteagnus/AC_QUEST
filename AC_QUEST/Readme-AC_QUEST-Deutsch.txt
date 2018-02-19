@@ -1,10 +1,10 @@
             *  Ascalons Questpack I: Die Schlangen Abbathors Teil 1 und andere Geschichten  *
-                              Eine Modifikation für BGT-WeiDU
+              Eine Modifikation für BG:EE, BGT-WeiDU, Tutu (w TotSC), BGII:EE, BGII und EET
                             Ascalon (geheimer.herrscher@gmx.de)
 
 Derzeitiger Support: White Agnus und jastey (whiteagnus@baldursgatemods.de; jastey@web.de)
 
-                                      Version: 2.01 
+                                      Version: 2.02 
 
 ***************************************************************************************************************
 
@@ -28,6 +28,7 @@ X. Letzte Worte
 I. Beschreibung:
 
 Im Laufe des Spiels kommen einem immer wieder kleinere und größere Ideen für Nebenhabdlungen und Geschichten, die sich außerhalb der Story um die Bhaalsbrut drehen. In dieser Modifikation sind nun meine Ideen gesammelt: Drei Questen von verschieden großen Ausmaßen. Einige sind humorvoll, andere etwas tragischer. Einige sind Rätsel, andere sind kampfbetont. Einige erfordern diplomatisches Geschick, andere sind nur von bestimmten Rassen oder Klassen lösbar.
+Die Modifikation fügt Quests für sowohl BG1 als auch BGII ein. Sie kann direkt auf BG:EE, BGT-WeiDU, Tutu (w TotSC), BGII:EE, BGII und EET installiert werden, die richtigen Komponenten werden dann installiert.
 
 
 ***************************************************************************************************************
@@ -92,6 +93,10 @@ Aivell, die junge Magierin, hält die Tür zu ihrem Haus verschlossen - von außen.
 - Hopsi
 Eine epische Queste um Ehre, Freundschaft und Kaninchen.
 
+- Die Schlangen Abbathors
+
+Ein mysteriöser Zwergenkult macht sich an der Schwertküste breit. Es werden Helden gesucht! Z.Z. ist der BGI-Part spielbar. Durchsucht Mulaheys Leiche oder begebt Euch in den Südwesten von Baldur's Tor.
+
 
 	Baldur's Gate II:
 
@@ -105,11 +110,7 @@ Wer hilft der armen Frau Wiesner, ihren Sohn wieder zu finden?
 t.b.a.
 
 
-Baldur's Gate Trilogy:
 
-- Die Schlangen Abbathors
-
-Ein mysteriöser Zwergenkult macht sich an der Schwertküste breit. Es werden Helden gesucht! Z.Z. ist der BGI-Part spielbar. Durchsucht Mulaheys Leiche oder begebt Euch in den Südwesten von Baldur's Tor.
 
 
 ***************************************************************************************************************
@@ -148,7 +149,15 @@ VII. Versions-History:
 -fixed CtD in AC4400 area when moving to southern part removed faulty spawn points
 -fixed wrong map notes in quest areas AC4400.are and AC4401.are
 -update to weiDU v242
-
+ 
+2.02
+-more journal entries for the quest "The Serpents of Abbathor"
+-Bashrik's hammer now has the correct statistics description
+-after setting Melina's ghost to rest there is one "I did it" dialogue with Aaron.
+-werewolfquest: if Thalantyr mixes the antidote the cutscene now fades to blayck instead of displaying that the "Antichickenator" spell is used.
+-journal entry in Emerson's dialogue now appear directly with the according dialogue lines.
+-updated readme so description matches the compatible games
+-update to weiDU v244
 
 
 ***************************************************************************************************************

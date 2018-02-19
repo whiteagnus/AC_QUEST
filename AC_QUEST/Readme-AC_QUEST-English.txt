@@ -1,9 +1,9 @@
-            *  Ascalon's Quest Pack I: The Serpents of Abbathor Part 1 and other stories  *
-								A modification for BGT-WeiDU
+            *  Ascalon's Quest Pack: The Serpents of Abbathor Part 1 and other stories  *
+	     A modification for BG:EE, BGT-WeiDU, Tutu (w TotSC), BGII:EE, BGII, and EET
                             Ascalon (geheimer.herrscher@gmx.de)
 
 	Currently supported by: White Agnus and jastey (whiteagnus@baldursgatemods.de; jastey@web.de)
-                                      Version: 2.01
+                                      Version: 2.02
 
 ***************************************************************************************************************
 
@@ -27,6 +27,7 @@ X. Final words
 I. Description:
 
 During the course of the game one is often inspired with smaller or bigger ideas for side-quests or stories that take place parallel to the story of the bhaalspawn. This modification is a collection of my ideas: Several quests or differing dimensions. Some are humorous, others of the tragic kind. There are puzzles and combat challenges. Several require a diplomatic touch. A few are race- and class-specific.
+The mod adds quests to both BG1 and BGII. It can be installed dierectly to BG:EE, BGII:EE, EET, BGT, Tutu (w TotSC), and BGII.
 
 ***************************************************************************************************************
 
@@ -35,7 +36,7 @@ II. Installation:
 - Backup your override directory, as well as the dialog.tlk, dialogf.tlk and chitin.key files, before running the setup.
 - Extract the zip archive to your Baldur's Gate II directory.
 - Execute setup-AC_QUEST.exe
-- If this modification is installed as part of a BWP installation, it is recommended to do so during the section "07. BG1 QUEST MODS". 
+- If this modification is installed as part of a BWP installation, it is recommended to do so during the section "BG1 QUEST MODS". 
 
 ***************************************************************************************************************
 
@@ -87,6 +88,9 @@ Aiwell the mage has barred her doors - from the outside. Find out why near High 
 - Flopsy
 An epic tale of honour, friendship and bunny-rabbits.
 
+- The Serpents of Abbathor
+A mysterious dwarven kult is recruiting along the Sword Coast and heroes are in great demand! At the moment only te BG 1 part is complete. Loot Mulahey's corpse or travel to the south-west part of Baldur's Gate to get started.
+
 
 	Baldur's Gate II:
 
@@ -99,10 +103,7 @@ Who will help Mrs Lawner to find her missing son?
 t.b.a.
 
 
-Baldur's Gate Trilogy:
 
-- The Serpents of Abbathor
-A mysterious dwarven kult is recruiting along the Sword Coast and heroes are in great demand! At the moment only te BG 1 part is complete. Loot Mulahey's corpse or travel to the south-west part of Baldur's Gate to get started.
 
 ***************************************************************************************************************
 
@@ -124,6 +125,7 @@ VII. Version history:
 - Compatibility with Tutu (TotSC only), BG:EE, BG2 ToB, BG2:EE and EET
 - several small bug fixes
 - English Translation by Bloodtitan
+
 2.01
 -changed path(s) for LANGUAGE definition to get rid of the doubled setup.tra
 -added Roxanne's fix to ACQ15002.BAF for Perwell not following the PC after being freed 
@@ -140,6 +142,15 @@ VII. Version history:
 -fixed CtD in AC4400 area when moving to southern part removed faulty spawn points
 -fixed wrong map notes in quest areas AC4400.are and AC4401.are
 -update to weiDU v242
+
+2.02
+-more journal entries for the quest "The Serpents of Abbathor"
+-Bashrik's hammer now has the correct statistics description
+-after setting Melina's ghost to rest there is one "I did it" dialogue with Aaron.
+-werewolfquest: if Thalantyr mixes the antidote the cutscene now fades to blayck instead of displaying that the "Antichickenator" spell is used.
+-journal entry in Emerson's dialogue now appear directly with the according dialogue lines.
+-updated readme so description matches the compatible games
+-update to weiDU v244
 
 
 ***************************************************************************************************************

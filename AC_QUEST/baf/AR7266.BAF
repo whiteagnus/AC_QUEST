@@ -25,3 +25,15 @@ THEN
 		ActionOverride("ACQ10110",CreateItem("ACQLET06",0,0,0)
 		ActionOverride("ACQ10110",Enemy())
 END
+
+IF
+	Dead("ACQ10109")
+	Dead("ACQ10110")
+	Global("ACQUEST_JournalEntries","MYAREA",0)
+THEN
+	RESPONSE #100
+		EraseJournalEntry(@3000010)
+		AddJournalEntry(@3000012,QUEST)
+		SetGlobal("ACQUEST_JournalEntries","MYAREA",1)
+END
+	

@@ -177,13 +177,13 @@
 @176  = ~We have a diary you should take a look at.~
 @177  = ~A diary? Let me see... hmm. This is Bashrik's! So the rumors are true? Is he dead?~
 @178  = ~It was an ambush. We could do nothing.~
-@179  = ~Does it have to do with this pamphlet?~
+@179  = ~Might it be related to this pamphlet?~
 @180  = ~Well, we only wanted to give it to you. Farewell.~
 @181  = ~A pamphlet? Let me see that...~
 @182  = ~A good journey to you.~
-@183  = ~I do not think you are to be blamed. But know you came across something big.~ 
+@183  = ~I do not think you are to be blamed. But be aware that you came across something big.~ 
 @184  = ~Listen, I'll be honest with you. We need your help. The search for the cult is getting too complicated for us and we have other things demanding our attention.~
-@185  = ~Bashrik mentions someone called Draglon in his notes. If he indeed is the man behind the curtain we must get rid of him. Take him out for us, good <MANWOMAN>. I would do it myself but I am afraid that our faces are known to the cult. Will you help us?~
+@185  = ~Bashrik mentions someone called Draglon in his notes. If he indeed is the man behind all this we must get rid of him. Take him out for us, good <MANWOMAN>. I would do it myself but I am afraid that our faces are known to the cult. Will you help us?~
 @186  = ~Well... actually we were searching for YOU with salutations from Draglon.~
 @187  = ~Does it pay off?~
 @188  = ~Okay, I'll do it.~
@@ -407,3 +407,5 @@
 @406  = ~There is no *cough* cure for old Wostok.~
 @407  = ~(The old priest breathes heavily a few times, then his eyes look as bright as before)~
 @408  = ~Age is not a disease. And now... now it's my time. Please, <GABBER>. Give me an end. I want to die by the sword, not... not like this.~ 
+
+@409  = ~I'm afraid it's too late now.~

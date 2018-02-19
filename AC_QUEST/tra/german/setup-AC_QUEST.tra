@@ -173,9 +173,11 @@ Die letzten Einträge des Buches handeln von den Bemühungen, mit Mulahey in der N
 
 EIGENSCHAFTEN:
 
-Schaden: 1W4 +1 (Wucht)
-Gewicht: 6
-Initiativefaktor: 4
+Schaden: 1W4 +3 (Wucht)
+Schadensbonus: +1 (Elektrizität)
+ETW0-Bonus: -2
+Gewicht: 5
+Initiativefaktor: 2
 Mindeststärke: 9
 Fertigkeit: Kriegshammer
 Typ: 1-händig
@@ -632,12 +634,14 @@ Mindeststärke: 6~ //@58 without "Not useable by"
 
 EIGENSCHAFTEN:
 
-Schaden: 1W4 +1 (Wucht)
-Gewicht: 6
-Initiativefaktor: 4
+Schaden: 1W4 +3 (Wucht)
+Schadensbonus: +1 (Elektrizität)
+ETW0-Bonus: -2
+Gewicht: 5
+Initiativefaktor: 2
 Mindeststärke: 9
 Fertigkeit: Kriegshammer
-Typ: 1-händig~ //@86 without "Not useable by"
+Typ: 1-händig~ //@86 for EE without "Not useable by"
 
 //Karlini Journals
 @2000001   = ~Der große Karlini - Das Buch des großen Karlinis
@@ -699,3 +703,31 @@ Wir haben alle Kreischlinge ausfindig machen können. Geraldo verschwand und murm
 
 Wir haben Geraldo gesagt, dass wir nicht mehr für ihn arbeiten wollen. Geraldo verschwand und murmelte etwas von Glück in der Fremde finden.~
 @3000006   = ~Kreischlingszucht in Baldurs Tor~
+
+@3000007  = ~Die Schlangen Abbathors
+
+Ich bin Zeuge eines Überfalls auf der Küstenstraße geworden. Bei der Leiche befand sich ein Tagebuch eines zwergen namens Bashrik. Ich sollte es in den Tempel des Helm in Baldurs Tor bringen.~
+ 
+@3000008  = ~Die Schlangen Abbathors
+
+Ich habe zugestimmt, diesem Draglon entgegenzutreten, der in Bashriks Tagebuch erwähnt wurde. Soviel ich weiß, müsste er in den Unterkellern zu finden sein.~
+
+@3000009  = ~Die Schlangen Abbathors
+
+Ich habe Draglon zur Rede stellen wollen, aber er ist geflohen. Ich sollte zum Tempel zurückkehren und mit den Zwergen reden.~
+
+@3000010  = ~Die Schlangen Abbathors
+
+Eine Magierin Jenna bewacht ein Zwergenartefakt. Sie und ihr Begleiter Jassir warten in einer Taverne im nordwestlichen Distrikt von Baldurs Tor. Wenn ich sie aufsuche, lautet das Passwort "Grüße von Mirjala".~
+
+@3000011  = ~Die Schlangen Abbathors
+
+Ich habe beschlossen, den Zwergen nicht weiter zu helfen.~
+
+@3000012  = ~Die Schlangen Abbathors
+
+Jenna wurde von den Schergen der Schlangen getötet, und sie haben das Artefakt mitgenommen! Ich sollte zu Wostock zurückkehren und es ihm mitteilen!~
+
+@3000013  = ~Die Schlangen Abbathors
+
+Ich habe mich bereiterklärt, ein Warenhaus im südöstlichen Distrikt von Baldurs Tor zu untersuchen. Dort befindet sich wohl der Unterschlupf der Schlangen des Abbathors. Um hineinzukommen, brauche ich einen Schlüssel.~

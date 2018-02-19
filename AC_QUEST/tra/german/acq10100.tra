@@ -72,7 +72,7 @@
 @71   = ~Wir sahen wie er ermordet wurde. Sprecht!~
 @72   = ~Ihr wisst nicht, worauf Ihr Euch einlasst, Mann.~ ~Ihr wisst nicht, worauf Ihr Euch da einlasst, Frau.~
 @73   = ~Ihr solltet wirklich... Ihr... Ihr seid <CHARNAME> von Kerzenburg, nicht wahr? Das... das kommt unerwartet.~
-@74   = ~Ihr solltet wirkllich... Ihr... Ihr seid <GABBER> nicht wahr? Aus der Gruppe von <CHARNAME> von Kerzenburg? Das... das kommt unerwartet.~
+@74   = ~Ihr solltet wirklich... Ihr... Ihr seid <GABBER> nicht wahr? Aus der Gruppe von <CHARNAME> von Kerzenburg? Das... das kommt unerwartet.~
 @75   = ~Betet zu Eurem Gott, dass Ihr noch die Gelegenheit habt, diesen Fehler zu bereuen. Ihr habt Euch einen schlimmen Feind gemacht!~
 @76   = ~Hm. Was Ihr sagt klingt vernünftig, <RACE>.~
 @77   = ~He he he. Kein Grund hier gleich laut zu werden.~
@@ -407,3 +407,5 @@
 @406  = ~Keine *hust* Heilung für den alten Wostok.~
 @407  = ~(Der alte Priester atmet ein paar mal tief durch, und dann erscheinen seine Augen wieder so klar wie vorher)~
 @408  = ~Das Alter ist keine Krankheit. Und nun... nun hat es mich erwischt. Bitte, <GABBER>. Schenkt mir ein Ende. Ich will durch den Stahl sterben und nicht wie ein Hund.~
+
+@409  = ~Ich fürchte, dafür ist es jetzt zu spät.~

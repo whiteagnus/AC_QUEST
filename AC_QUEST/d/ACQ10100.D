@@ -538,7 +538,7 @@ END
 
 IF ~Global("ACQWOSTOK","GLOBAL",5)~ THEN BEGIN 1
 SAY @154
-++ @155 + 2
+++ @155 DO ~EraseJournalEntry(@3000012)~ + 2
 END
 
 IF ~~ THEN BEGIN 2
@@ -571,7 +571,7 @@ END
 
 IF ~~ THEN BEGIN 6
 SAY @166 = @167
-IF ~~ THEN DO ~SetGlobal("ACQWOSTOK","GLOBAL",6)EscapeAreaDestroy(10)~ EXIT
+IF ~~ THEN DO ~AddJournalEntry(@3000013,QUEST) SetGlobal("ACQWOSTOK","GLOBAL",6)EscapeAreaDestroy(10)~ EXIT
 END
 BEGIN ACQ10116 //WOSTOK
 IF ~NumTimesTalkedTo(0)Global("ACQWOSTOK","GLOBAL",1)~ THEN BEGIN 0
@@ -583,7 +583,7 @@ IF ~NumTimesTalkedToGT(0)Global("ACQWOSTOK","GLOBAL",1)~ THEN BEGIN 0a
 SAY @169
 ++ @170 + 3
 IF ~Global("ACQSNAKEWORK","GLOBAL",1)~ THEN REPLY @171 + 2
-IF ~PartyHasItem("ACQBOOK1")~ THEN REPLY @172 + 4
+IF ~PartyHasItem("ACQBOOK1")~ THEN REPLY @172 DO ~EraseJournalEntry(@409)~ + 4
 IF ~PartyHasItem("ACQLET03")~ THEN REPLY @173 + 5
 ++ @174 + 6
 END
@@ -591,7 +591,7 @@ END
 IF ~~ THEN BEGIN 3
 SAY @175
 IF ~Global("ACQSNAKEWORK","GLOBAL",1)~ THEN REPLY @171 + 2
-IF ~PartyHasItem("ACQBOOK1")~ THEN REPLY @176 + 4
+IF ~PartyHasItem("ACQBOOK1")~ THEN REPLY @176 DO ~EraseJournalEntry(@409)~ + 4
 IF ~PartyHasItem("ACQLET03")~ THEN REPLY @146 + 5
 ++ @174 + 6
 END
@@ -630,14 +630,14 @@ END
 IF ~Global("ACQSNAKEENEMY","GLOBAL",1)Global("ACQWOSTOK","GLOBAL",2)~ THEN BEGIN 12
 SAY @192
 ++ @193 + 13
-++ @194 + 14
+++ @194 DO ~EraseJournalEntry(@3000009)~ + 14
 ++ @195 + 16
 END
 
 IF ~~ THEN BEGIN 13
 SAY @196
 ++ @193 + 17
-++ @194 + 14
+++ @194 DO ~EraseJournalEntry(@3000009)~ + 14
 ++ @195 + 16
 END
 
@@ -663,12 +663,12 @@ END
 
 IF ~~ THEN BEGIN 17
 SAY @206
-++ @194 + 14
+++ @194 DO ~EraseJournalEntry(@3000009)~ + 14
 END
 
 IF ~~ THEN BEGIN 18
 SAY @207 = @208 = @209
-IF ~~ THEN DO ~SetGlobal("ACQWOSTOK","GLOBAL",3)~ EXIT
+IF ~~ THEN DO ~SetGlobal("ACQWOSTOK","GLOBAL",3) AddJournalEntry(@3000010,QUEST)~ EXIT
 END
 
 IF ~~ THEN BEGIN 19
@@ -678,7 +678,7 @@ END
 
 IF ~~ THEN BEGIN 20
 SAY @211
-IF ~~ THEN DO ~SetGlobal("ACQWOSTOK","GLOBAL",9)~ EXIT
+IF ~~ THEN DO ~SetGlobal("ACQWOSTOK","GLOBAL",9) AddJournalEntry(@3000011,QUEST_DONE)~ EXIT
 END
 
 CHAIN
@@ -690,7 +690,7 @@ IF ~~ THEN ACQ10116 1
 END
 ++ @170 + 3
 IF ~Global("ACQSNAKEWORK","GLOBAL",1)~ THEN REPLY @171 + 2
-IF ~PartyHasItem("ACQBOOK1")~ THEN REPLY @172 + 4
+IF ~PartyHasItem("ACQBOOK1")~ THEN REPLY @172 DO ~EraseJournalEntry(@409)~ + 4
 IF ~PartyHasItem("ACQLET03")~ THEN REPLY @173 + 5
 ++ @174 + 6
 
@@ -702,6 +702,7 @@ IF ~~ THEN ACQ10116 2
 ==ACQ10116 @219
 END
 ++ @220 + 3a
+++ @409 + 3a
 
 CHAIN 
 IF ~~ THEN ACQ10116 3a
@@ -727,7 +728,7 @@ IF ~Global("ACQSNAKEWORK","GLOBAL",1)~ THEN REPLY @186 + 2
 
 CHAIN
 IF ~~ THEN ACQ10116 9
-@233 DO ~TakePartyItem("ACQBOOK1")TakePartyItem("ACQLET03")~
+@233 DO ~TakePartyItem("ACQBOOK1")TakePartyItem("ACQLET03") EraseJournalEntry(@409)~
 ==ACQ10114 @234 DO ~EscapeAreaDestroy(10)~
 ==ACQ10115 @235 DO ~EscapeAreaDestroy(10)~
 ==ACQ10113 @236 DO ~EscapeAreaDestroy(10)~ 
@@ -736,7 +737,7 @@ EXIT
 
 CHAIN
 IF ~~ THEN ACQ10116 11
-@238 DO ~TakePartyItem("ACQBOOK1")TakePartyItem("ACQLET03")~
+@238 DO ~TakePartyItem("ACQBOOK1")TakePartyItem("ACQLET03") EraseJournalEntry(@409) AddJournalEntry(@3000008,QUEST)~
 ==ACQ10114 @234 DO ~EscapeAreaDestroy(10)~
 ==ACQ10115 @235 DO ~EscapeAreaDestroy(10)~
 ==ACQ10113 @236 DO ~EscapeAreaDestroy(10)~ 
@@ -875,7 +876,7 @@ END
 
 IF ~~ THEN BEGIN 12
 SAY @280
-IF ~~ THEN DO ~ActionOverride("ACQ10117",ENEMY())ENEMY()~ EXIT
+IF ~~ THEN DO ~EraseJournalEntry(@3000010) ActionOverride("ACQ10117",ENEMY())ENEMY()~ EXIT
 END
 
 IF ~~ THEN BEGIN 13
@@ -887,7 +888,7 @@ END
 
 IF ~~ THEN BEGIN 14
 SAY @285
-IF ~~ THEN DO ~ActionOverride("ACQ10117",ENEMY())ENEMY()~ EXIT
+IF ~~ THEN DO ~EraseJournalEntry(@3000010) ActionOverride("ACQ10117",ENEMY())ENEMY()~ EXIT
 END
 
 IF ~~ THEN BEGIN 15
@@ -906,17 +907,17 @@ END
 
 IF ~~ THEN BEGIN 16
 SAY @298
-IF ~~ THEN DO ~ActionOverride("ACQ10117",ENEMY())ENEMY()~ EXIT
+IF ~~ THEN DO ~EraseJournalEntry(@3000010) ActionOverride("ACQ10117",ENEMY())ENEMY()~ EXIT
 END
 
 IF ~~ THEN BEGIN 17
 SAY @299
-IF ~~ THEN DO ~AddexperienceParty(550)DropItem("ACQKEY01",[-1.-1])ActionOverride("ACQ10117",EscapeAreaDestroy(10))EscapeAreaDestroy(10)~ EXIT
+IF ~~ THEN DO ~AddexperienceParty(550)DropItem("ACQKEY01",[-1.-1])ActionOverride("ACQ10117",EscapeAreaDestroy(10))EscapeAreaDestroy(10) EraseJournalEntry(@3000010)~ EXIT
 END
 
 IF ~StateCheck(Myself,STATE_CHARMED)~ THEN BEGIN 17a
 SAY @300
-IF ~~ THEN DO ~AddexperienceParty(400)DropItem("ACQKEY01",[-1.-1])ActionOverride("ACQ10117",EscapeAreaDestroy(10))EscapeAreaDestroy(10)~ EXIT
+IF ~~ THEN DO ~AddexperienceParty(400)DropItem("ACQKEY01",[-1.-1])ActionOverride("ACQ10117",EscapeAreaDestroy(10))EscapeAreaDestroy(10) EraseJournalEntry(@3000010)~ EXIT
 END
 
 CHAIN
@@ -985,10 +986,10 @@ END
 
 IF ~~ THEN BEGIN 2
 SAY @319 = @320
-++ @321 + 6
-++ @322 + 7
-++ @323 + 8
-++ @324 + 9
+++ @321 DO ~AddJournalEntry(@10012,QUEST)~ + 6
+++ @322 DO ~AddJournalEntry(@10013,QUEST)~ + 7
+++ @323 DO ~AddJournalEntry(@10014,QUEST)~ + 8
+++ @324 DO ~AddJournalEntry(@10016,QUEST)~ + 9
 ++ @325 + 10
 ++ @326 + 11
 ++ @327 + 12
@@ -1012,10 +1013,10 @@ END
 
 IF ~~ THEN BEGIN 6
 SAY @332
-++ @322 DO ~AddJournalEntry(@10012,QUEST)~ + 7
-++ @323 DO ~AddJournalEntry(@10012,QUEST)~ + 8
+++ @322 DO ~AddJournalEntry(@10013,QUEST)~ + 7
+++ @323 DO ~AddJournalEntry(@10014,QUEST)~ + 8
 ++ @324 DO ~AddJournalEntry(@10012,QUEST)~ + 9
-++ @325 DO ~AddJournalEntry(@10012,QUEST)~ + 10
+++ @325 DO ~AddJournalEntry(@10015,QUEST)~ + 10
 ++ @326 + 11
 ++ @327 + 12
 ++ @328 + 13
@@ -1023,10 +1024,10 @@ END
 
 IF ~~ THEN BEGIN 7
 SAY @333
-++ @334 DO ~AddJournalEntry(@10013,QUEST)~ + 6
-++ @323 DO ~AddJournalEntry(@10013,QUEST)~ + 8
-++ @324 DO ~AddJournalEntry(@10013,QUEST)~ + 9
-++ @325 DO ~AddJournalEntry(@10013,QUEST)~ + 10
+++ @334 DO ~AddJournalEntry(@10012,QUEST)~ + 6
+++ @323 DO ~AddJournalEntry(@10014,QUEST)~ + 8
+++ @324 DO ~AddJournalEntry(@10016,QUEST)~ + 9
+++ @325 DO ~AddJournalEntry(@10015,QUEST)~ + 10
 ++ @326 + 11
 ++ @327 + 12
 ++ @328 + 13
@@ -1034,10 +1035,10 @@ END
 
 IF ~~ THEN BEGIN 8
 SAY @335
-++ @334 DO ~AddJournalEntry(@10014,QUEST)~ + 6
-++ @322 DO ~AddJournalEntry(@10014,QUEST)~ + 7
+++ @334  + 6
+++ @322 DO ~AddJournalEntry(@10013,QUEST)~ + 7
 ++ @324 DO ~AddJournalEntry(@10014,QUEST)~ + 9
-++ @325 DO ~AddJournalEntry(@10014,QUEST)~ + 10
+++ @325 DO ~AddJournalEntry(@10015,QUEST)~ + 10
 ++ @326 + 11
 ++ @327 + 12
 ++ @328 + 13
@@ -1045,10 +1046,10 @@ END
 
 IF ~~ THEN BEGIN 10
 SAY @336
-++ @334 DO ~AddJournalEntry(@10015,QUEST)~ + 6
-++ @322 DO ~AddJournalEntry(@10015,QUEST)~ + 7
-++ @323 DO ~AddJournalEntry(@10015,QUEST)~ + 8
-++ @324 DO ~AddJournalEntry(@10015,QUEST)~ + 9
+++ @334 DO ~AddJournalEntry(@10012,QUEST)~ + 6
+++ @322 DO ~AddJournalEntry(@10013,QUEST)~ + 7
+++ @323 DO ~AddJournalEntry(@10014,QUEST)~ + 8
+++ @324 DO ~AddJournalEntry(@10016,QUEST)~ + 9
 ++ @326 + 11
 ++ @327 + 12
 ++ @328 + 13
@@ -1056,10 +1057,10 @@ END
 
 IF ~~ THEN BEGIN 9
 SAY @337
-++ @334 DO ~AddJournalEntry(@10016,QUEST)~ + 6
-++ @322 DO ~AddJournalEntry(@10016,QUEST)~ + 7
-++ @323 DO ~AddJournalEntry(@10016,QUEST)~ + 8
-++ @325 DO ~AddJournalEntry(@10016,QUEST)~ + 10
+++ @334 DO ~AddJournalEntry(@10012,QUEST)~ + 6
+++ @322 DO ~AddJournalEntry(@10013,QUEST)~ + 7
+++ @323 DO ~AddJournalEntry(@10014,QUEST)~ + 8
+++ @325 DO ~AddJournalEntry(@10015,QUEST)~ + 10
 ++ @326 + 11
 ++ @327 + 12
 ++ @328 + 13
@@ -1232,14 +1233,14 @@ EXIT
 
 CHAIN
 IF ~NumTimesTalkedToGT(0)!Dead("ACQ10116")Global("ACQWOSTOK","GLOBAL",2)~ THEN ACQ10106 0a
-@387
+@387 DO ~EraseJournalEntry(@3000008)~
 ==ACQ10106 IF ~!Race(LastTalkedToBy(),DWARF)~ THEN @388 DO ~SetGlobal("ACQSNAKEENEMY","GLOBAL",1)UseItem("potn10",Myself)Wait(1)DestroySelf()~
 ==ACQ10106 IF ~Race(LastTalkedToBy(),DWARF)~ THEN @389 DO ~SetGlobal("ACQSNAKEENEMY","GLOBAL",1)UseItem("potn10",Myself)Wait(1)DestroySelf()~
 EXIT
 
 CHAIN
 IF ~NumTimesTalkedTo(0)!Dead("ACQ10116")Global("ACQWOSTOK","GLOBAL",2)~ THEN ACQ10106 0a
-@390
+@390 DO ~EraseJournalEntry(@3000008)~
 ==ACQ10106 IF ~!InPartySlot(LastTalkedToBy(),0)~ THEN @391
 ==ACQ10106 IF ~InPartySlot(LastTalkedToBy(),0)~ THEN @392
 ==ACQ10106 IF ~!Race(LastTalkedToBy(),DWARF)~ THEN @388 DO ~SetGlobal("ACQSNAKEENEMY","GLOBAL",1)UseItem("potn10",Myself)Wait(1)DestroySelf()~

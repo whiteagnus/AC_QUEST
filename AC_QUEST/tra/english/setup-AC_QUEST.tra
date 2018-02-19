@@ -173,19 +173,20 @@ The last entries of the book deal with his efforts to get in touch with Mulahey 
 
 STATISTICS:
 
-Damange: 1D4 +1 (crushing)
-Weight: 6
-Speed Factor: 4
+Combat Abilities: +1 electricity damage
+THAC0: +2 bonus
+Damage:  1D4 + 3
+Damage type:  crushing
+Weight: 5
+Speed Factor: 2
+Proficiency Type: War Hammer
+Type:  1-handed
 Requires: 9 Strength
-Proficiency Type: Warhammer
-Type: 1-handed
-
 Not Usable By:
-- Thief
-- Druid
-- Mage
-- Monk~
-@87   = ~Bashrik's Diary~
+ Druid
+ Mage 
+ Thief~
+@87   = ~Bashrik's Journal~
 @88   = ~The book is written with neat handwriting and reports the last trip of Bashrik Sparklehammer. Bashrik was on the tail of a cult that calls itself 'The Serpents of Abbathor'. For them, Abbathor, the only evil god among the Morndinsamman, is considered the liberator and saint patron of the dwarfkind of the surface.
 
 You cannot learn much more from the book because apparently, the notes of Bashrik were written primarily for the initiated. Only the last entry could offer a clue, should you want to look into the matter:
@@ -639,12 +640,16 @@ Requires: 6 Strength~
 
 STATISTICS:
 
-Damange: 1D4 +1 (crushing)
-Weight: 6
-Speed Factor: 4
-Requires: 9 Strength
-Proficiency Type: Warhammer
-Type: 1-handed~
+THAC0: +2
+Damage: 1d4+3, +1 electrical damage
+Damage type: Crushing
+Speed Factor: 2
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 5~
 
 //Karlini Journals
 @2000001   = ~The magnificent Karlini - The spellbook of the magnificent Karlini
@@ -701,3 +706,31 @@ We were able to find all the remaining gibberlings. When we informed Geraldo he 
 We told Geraldo that we quit his little task. He mumbled something about finding his luck somewhere else and left.~
 
 @3000006   = ~Breeding Gibberlings in Baldur's Gate~
+
+@3000007  = ~The Serpents of Abbathor
+
+I witnessed an ambuch at the Coast Way and found a journal from a dwarf named Bashrik. I should bring it to the Temple of Helm in Baldur's Gate.~
+ 
+@3000008  = ~The Serpents of Abbathor
+
+I agreed to confront this Draglon who was mentioned in Bashrik's journal. As far as I know he might be in the Undercellars.~
+
+@3000009  = ~The Serpents of Abbathor
+
+I confronted Draglon, but he escaped. I should return to the temple of Helm and talk to the dwarves.~
+
+@3000010  = ~The Serpents of Abbathor
+
+A mage named Jenna keeps an artifact for the dwarves. She and her companion Jassir reside in the Northwestern District's tavern. I need to go there and tell her "Greetings from Mirjala" for password.~
+
+@3000011  = ~The Serpents of Abbathor
+
+I decided to help the dwarves no further.~
+
+@3000012  = ~The Serpents of Abbathor
+
+Jenna was killed by the Serpent's minions, and the artefact was taken. I should return to Wostock and tell him about it!~
+
+@3000013  = ~The Serpents of Abbathor
+
+I agreed to have a look at a warehouse in the Southeastern District of Baldur's Gate. We believe this to be the hideout from the Serpents of Abbathor. I will need a key to enter.~
