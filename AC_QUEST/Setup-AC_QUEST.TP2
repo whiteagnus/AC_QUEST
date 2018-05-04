@@ -1,8 +1,8 @@
 BACKUP ~AC_QUEST/backup~
-AUTHOR ~whiteagnus@baldursgatemods.de~ //This is Ascalon's Questpack, 
-//but any bugreports about version 2.01 should go to jastey 
+//AUTHOR ~whiteagnus@baldursgatemods.de~ 
+SUPPORT ~jastey@web.de~
 
-VERSION ~2.02~ //180219 packed by jastey
+VERSION ~2.03~ //180504 packed by jastey
 
 AUTO_TRA "AC_QUEST/TRA/autotra/%s"//%"
 
@@ -1642,6 +1642,7 @@ LPF fj_are_structure
   END
 
 COMPILE ~AC_QUEST/BAF/ACQ22001.BAF~
+COMPILE ~AC_QUEST/BAF/ACQ22002.BAF~
 COMPILE ~AC_QUEST/D/ACQ22000.D~
 
 END

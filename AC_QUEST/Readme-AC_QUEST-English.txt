@@ -3,7 +3,7 @@
                             Ascalon (geheimer.herrscher@gmx.de)
 
 	Currently supported by: White Agnus and jastey (whiteagnus@baldursgatemods.de; jastey@web.de)
-                                      Version: 2.02
+                                      Version: 2.03
 
 ***************************************************************************************************************
 
@@ -152,6 +152,13 @@ VII. Version history:
 -updated readme so description matches the compatible games
 -update to weiDU v244
 
+2.03 - 2018-05-04
+-"Snakes of Abbathor": journal entry if quest is solved; dwarf giving out pamphlets will be gone after the cult is destroyed
+-"Breeding of Gibberlings" Geraldo takes his bird Elminster back when quest is finished
+-journal entry "The Snakes of Abbathor in Nashkel?" will only be out once into the journal upon entering the area
+-"An Erring Halfling": activated additional script: mother will react to the death of her son, too.
+-added legal notice with regards to Wizards of the Coast's Fan Content Policy
+
 
 ***************************************************************************************************************
 
@@ -197,3 +204,7 @@ Good gaming! Buzzurk!
 Moers, september 2009
 
 Ascalon
+
+=================================================================================Ascalon's Questpack is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.
+This mod is also not developed, supported, or endorsed by BioWare, Black Isle Studios, Interplay Entertainment Corp., Overhaul Games or Beamdog. All other trademarks and copyrights are property of their respective owners.
+=================================================================================

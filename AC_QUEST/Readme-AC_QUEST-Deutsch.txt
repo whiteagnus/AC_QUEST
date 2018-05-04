@@ -4,7 +4,7 @@
 
 Derzeitiger Support: White Agnus und jastey (whiteagnus@baldursgatemods.de; jastey@web.de)
 
-                                      Version: 2.02 
+                                      Version: 2.03
 
 ***************************************************************************************************************
 
@@ -159,6 +159,13 @@ VII. Versions-History:
 -updated readme so description matches the compatible games
 -update to weiDU v244
 
+2.03 - 2018-05-04
+-"Schlangen des Abbathor": Tagebucheintrag für Questende freigeschaltet (wurde nicht verwendet); der Zwerg, der die Flugblätter austeilt, ist nun nach dem Ende des Kults nicht mehr da.
+-"Kreischlingszucht" Geraldo sollte nun nach Questende seinen Vogel Elminster wieder mitnehmen; Tagebucheintrag über die zwei Kreischling in Geraldos Haus sollte nun erscheinen, wenn man die beiden Kreischlinge eingesammelt hat
+-Tagebucheintrag „Die Schlangen Abbathors in Nashkell?“ erscheint nur noch einmal beim Betreten des Gebietes im Tagebuch
+-"Ein Halbling auf Abwegen": Questerweiterung aktiviert. Die Mutter reagiert nun auch auf den Tod ihres Sohnes
+-Copyrighthinweis nach Vorlage der Fan Content Policy von Wizards of the Coast eingefügt
+
 
 ***************************************************************************************************************
 
@@ -204,3 +211,8 @@ Viel Spaß beim Spielen! Buzzurk!
 Moers, im September 2009
 
 Ascalon
+
+
+=================================================================================Ascalon's Questpack is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.
+This mod is also not developed, supported, or endorsed by BioWare, Black Isle Studios, Interplay Entertainment Corp., Overhaul Games or Beamdog. All other trademarks and copyrights are property of their respective owners.
+=================================================================================
