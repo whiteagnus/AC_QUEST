@@ -3,7 +3,7 @@
                             Ascalon (geheimer.herrscher@gmx.de)
 
 	Currently supported by: White Agnus and jastey (whiteagnus@baldursgatemods.de; jastey@web.de)
-                                      Version: 2.03
+                                      Version: 2.04
 
 ***************************************************************************************************************
 
@@ -158,6 +158,9 @@ VII. Version history:
 -journal entry "The Snakes of Abbathor in Nashkel?" will only be out once into the journal upon entering the area
 -"An Erring Halfling": activated additional script: mother will react to the death of her son, too.
 -added legal notice with regards to Wizards of the Coast's Fan Content Policy
+
+2.04 - 2018-06-12
+-"A Halfling among the Eyeless" Bunger should walk to exit without being interrupted (moved the action into the areascript)
 
 
 ***************************************************************************************************************

@@ -2,7 +2,7 @@ BACKUP ~AC_QUEST/backup~
 //AUTHOR ~whiteagnus@baldursgatemods.de~ 
 SUPPORT ~jastey@web.de~
 
-VERSION ~2.03~ //180504 packed by jastey
+VERSION ~2.04~ //180612 packed by jastey
 
 AUTO_TRA "AC_QUEST/TRA/autotra/%s"//%"
 
@@ -48,6 +48,7 @@ INCLUDE ~AC_QUEST/lib/ac_quest_cpmvars.tpa~
 //		LOAD_TRA ~AC_QUEST/tra/autotra/german/setup-AC_QUEST.tra~	
 		LOAD_TRA ~AC_QUEST/tra/autotra/%LANGUAGE%/setup-AC_QUEST.tra~
 
+
 //CamDawgs CD_STATE_NOTVALID zum Checken der Dialogfähigkeit eines Char
 //Thank you very much, CamDawg!
 APPEND ~STATE.IDS~ // adds custom IsValidForPartyDialogue state
@@ -79,9 +80,11 @@ LANGUAGE ~English~ ~english~ ~AC_QUEST/TRA/english/setup-AC_QUEST.tra~
 ////////////																			////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-         
+
+       
 BEGIN @1
 REQUIRE_PREDICATE GAME_IS ~bgt bgee tob bg2ee tutu_totsc eet~ @2
+
 
 ACTION_IF GAME_IS ~bgt eet~ THEN BEGIN
 PRINT @3
@@ -1643,6 +1646,10 @@ LPF fj_are_structure
 
 COMPILE ~AC_QUEST/BAF/ACQ22001.BAF~
 COMPILE ~AC_QUEST/BAF/ACQ22002.BAF~
+
+EXTEND_TOP ~AR0202.bcs~ ~AC_QUEST/baf/AR0202.baf~
+EVAL
+
 COMPILE ~AC_QUEST/D/ACQ22000.D~
 
 END

@@ -4,7 +4,7 @@
 
 Derzeitiger Support: White Agnus und jastey (whiteagnus@baldursgatemods.de; jastey@web.de)
 
-                                      Version: 2.03
+                                      Version: 2.04
 
 ***************************************************************************************************************
 
@@ -162,9 +162,12 @@ VII. Versions-History:
 2.03 - 2018-05-04
 -"Schlangen des Abbathor": Tagebucheintrag für Questende freigeschaltet (wurde nicht verwendet); der Zwerg, der die Flugblätter austeilt, ist nun nach dem Ende des Kults nicht mehr da.
 -"Kreischlingszucht" Geraldo sollte nun nach Questende seinen Vogel Elminster wieder mitnehmen; Tagebucheintrag über die zwei Kreischling in Geraldos Haus sollte nun erscheinen, wenn man die beiden Kreischlinge eingesammelt hat
--Tagebucheintrag „Die Schlangen Abbathors in Nashkell?“ erscheint nur noch einmal beim Betreten des Gebietes im Tagebuch
+-Tagebucheintrag "Die Schlangen Abbathors in Nashkell?" erscheint nur noch einmal beim Betreten des Gebietes im Tagebuch
 -"Ein Halbling auf Abwegen": Questerweiterung aktiviert. Die Mutter reagiert nun auch auf den Tod ihres Sohnes
 -Copyrighthinweis nach Vorlage der Fan Content Policy von Wizards of the Coast eingefügt
+
+2.04 - 2018-06-12
+-"Ein Halbling unter Augenlosen" Bunger should walk to exit without being interrupted (moved the action into the areascript)
 
 
 ***************************************************************************************************************
