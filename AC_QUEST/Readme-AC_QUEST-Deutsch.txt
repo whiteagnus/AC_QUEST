@@ -175,6 +175,8 @@ VII. Versions-History:
 -"Of Wolves and Men": quest should now be solvable regardless of whom the PC meets first; quest can still have happy end if werewolf was killed before talking to Aiwell; corrected misspelled name "Tonder" in Setup-AC_QUEST.tra; more journal entries added; PC can offer the werewolf's corpse to Thalantyr regardless of quest status; sword in the chest will have the correct description text.
 -description for SLNG04.ITM corrected, 
 -items will only be installed if not present (instead of checking for BG:EE)
+-adding ac_quest.ini
+-renaming setup-ac_quest.ini to ac_quest.ini
 -update to weiDU v246
 
 
