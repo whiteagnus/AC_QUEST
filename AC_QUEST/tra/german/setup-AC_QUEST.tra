@@ -372,13 +372,44 @@ Der Mann der Zauberin Aiwell hat sich wohl mit Lycanthropie angesteckt. Ich habe
 
 Thalantyr hat uns verschiedene Möglichkeiten aufgezählt. Er kann den Trank mit Aiwells Blut mixen, was äußerst fragwürdig ist. Oder er benutzt Gurilbeeren, die nicht immer wirken. Am besten wäre ein Trank aus Tollkirschen. Er sagte auch, dass er uns nur einen der drei Tränke brauen kann.
 
-Ich kann ihm allerdings auch den Leichnam Thonders bringen, damit er die Werwolfskrankheit besser erforschen kann.~
+Ich kann ihm allerdings auch den Leichnam Tonders bringen, damit er die Werwolfskrankheit besser erforschen kann.~
 @10035 = ~Von Wölfen und Männern
 
-Thalantyr hat den Leichnam von Thonder mit einem Flammenschwert erkauft. Auch nicht schlecht.~
+Thalantyr hat den Leichnam von Tonder mit einem Flammenschwert erkauft. Auch nicht schlecht.~
 @10036 = ~Von Wölfen und Männern
 
-Aiwell und Thonder waren überglücklich, dass der Mann von seinem Fluch erlöst wurde.~
+Aiwell und Tonder waren überglücklich, dass der Mann von seinem Fluch erlöst wurde.~
+
+/* new for v2.05 */
+@10037 = ~Von Wölfen und Männern
+
+Vor Thalantyrs Festung hat mich eine Frau angeschrien, aber ich weiß nicht genau, was sie wollte. Hat es eventuell mit dem Werwolf in dem nahegelegenen Haus zu tun, den ich bekämpft habe?~
+
+@10038 = ~Von Wölfen und Männern
+
+Ich habe mich für das Heilmittel aus Gurilbeeren entschieden. Nun muss ich es dem Werwolf "nur" noch geben!~
+
+@10039 = ~Von Wölfen und Männern
+
+Ich habe mich für das Heilmittel aus Aiwells Blut entschieden. Nun muss ich es dem Werwolf "nur" noch geben!~
+
+@10040 = ~Von Wölfen und Männern
+
+Ich habe mich für das Heilmittel aus Tollkirschen entschieden. Nun muss ich es dem Werwolf "nur" noch geben!~
+
+@10041 = ~Von Wölfen und Männern
+
+Verdammt, das Heilmittel hat nicht gewirkt, und der Werwolf hat mich angegriffen. Ich werde leider Aiwell die schlechte Nachricht überbringen müssen.~
+
+@10042 = ~Von Wölfen und Männern
+
+Aiwell war entsprechend traurig, als wir ihr vom Tod ihres Mannes erzählt haben. Sie ist einfach verschwunden...~
+
+@10043 = ~Von Wölfen und Männern
+
+Leider ist hier heute niemand glücklich geworden. Aiwell hat ihren Mann verloren, ihr Mann ist... nunja, tot, Thalantyr hat keine Werwolfleiche zum forschen, und ich habe keine Belohnung bekommen. Nächstes mal sollte ich besser aufpassen, wo ich meine Trophäen hintue!~
+
+
 @20001 = ~Der Kult der Augenlosen - Bunger Wiesner
 
 Die Halblingsdame Emmi Wiesner hat uns regelrecht angefleht, nach ihrem Sohn zu sehen, den es in die Fänge ges Kultes gezogen hat.~
@@ -400,6 +431,11 @@ Bunger Wiesner ist zu seiner Mutter zurückgekehrt. Die alte Dame wird uns bestim
 @20023 = ~Ein geheimnisvolles Angebot
 
 Ein Bote hat mir eine Einladung seines Herrn überbracht. Auch wenn dieser seinen Namen geheimhalten will, so hat er doch aus irgendeinem Grund Interesse an mir. Wenn ich mich auf ein Treffen einlassen will dann finde ich den Boten in der Kupferkrone.~
+
+
+
+
+
 
 
 //BG:EE Compatibility
@@ -576,6 +612,8 @@ Magiewiderstand: +5%
 Gewicht: 45
 Mindeststärke: 15~ //#66422
 @80060 = ~Erdkoloss~
+
+@80061 = ~Schleuder +2~
 
 //Journal Titles
 @90001 = ~Raukners Raufende Rabauken~

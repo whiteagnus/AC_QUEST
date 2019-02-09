@@ -1,10 +1,10 @@
-            *  Ascalons Questpack I: Die Schlangen Abbathors Teil 1 und andere Geschichten  *
-              Eine Modifikation für BG:EE, BGT-WeiDU, Tutu (w TotSC), BGII:EE, BGII und EET
+    *  Ascalons Questpack I: Die Schlangen Abbathors Teil 1 und andere Geschichten  *
+      Eine Modifikation für BG:EE, BGT-WeiDU, Tutu (w TotSC), BGII:EE, BGII und EET
                             Ascalon (geheimer.herrscher@gmx.de)
 
-Derzeitiger Support: White Agnus und jastey (whiteagnus@baldursgatemods.de; jastey@web.de)
+Derzeitiger Support: jastey 
 
-                                      Version: 2.04
+                                      Version: 2.05
 
 ***************************************************************************************************************
 
@@ -168,6 +168,14 @@ VII. Versions-History:
 
 2.04 - 2018-06-12
 -"Ein Halbling unter Augenlosen" Bunger should walk to exit without being interrupted (moved the action into the areascript)
+
+2.05 - 2019-02-09
+-"The Serpents of Abbathor": journal entry should not be set upon entering the Undercellar if quest is finished; shadows in the mines now give XP;
+-"The Lost Son": in case the son was saved before talking to the mother the first time, she will recognise his presence and the quest will not be given first; the son should leave with the mother and not remain at the Friendly Arm Inn 
+-"Of Wolves and Men": quest should now be solvable regardless of whom the PC meets first; quest can still have happy end if werewolf was killed before talking to Aiwell; corrected misspelled name "Tonder" in Setup-AC_QUEST.tra; more journal entries added; PC can offer the werewolf's corpse to Thalantyr regardless of quest status; sword in the chest will have the correct description text.
+-description for SLNG04.ITM corrected, 
+-items will only be installed if not present (instead of checking for BG:EE)
+-update to weiDU v246
 
 
 ***************************************************************************************************************

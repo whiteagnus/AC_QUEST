@@ -242,7 +242,7 @@ END
 
 IF ~~ THEN BEGIN 4c
 SAY @75
-IF ~~ THEN DO ~SetGlobal("ACQSNAKEENEMY","GLOBAL",1)UseItem("potn10",Myself)Wait(1)DestroySelf()~ EXIT
+IF ~~ THEN DO ~SetGlobal("ACQSNAKEENEMY","GLOBAL",1)UseItem("potn10",Myself) AddJournalEntry(@3000009,QUEST) Wait(1)DestroySelf()~ EXIT
 END
 
 IF ~~ THEN BEGIN 5
@@ -267,7 +267,7 @@ END
 
 IF ~~ THEN BEGIN 8a
 SAY @80
-IF ~~ THEN DO ~SetGlobal("ACQSNAKEENEMY","GLOBAL",1)UseItem("potn10",Myself)Wait(1)DestroySelf()~ EXIT
+IF ~~ THEN DO ~SetGlobal("ACQSNAKEENEMY","GLOBAL",1)UseItem("potn10",Myself) AddJournalEntry(@3000009,QUEST) Wait(1)DestroySelf()~ EXIT
 END
 
 IF ~~ THEN BEGIN 9
@@ -380,7 +380,7 @@ END
 
 IF ~~ THEN BEGIN 14
 SAY @101
-IF ~~ THEN DO ~SetGlobal("ACQSNAKEENEMY","GLOBAL",1)UseItem("potn10",Myself)Wait(1)DestroySelf()~ EXIT
+IF ~~ THEN DO ~SetGlobal("ACQSNAKEENEMY","GLOBAL",1)UseItem("potn10",Myself) AddJournalEntry(@3000009,QUEST) Wait(1)DestroySelf()~ EXIT
 END
 
 IF ~~ THEN BEGIN 15
@@ -392,7 +392,7 @@ END
 
 IF ~~ THEN BEGIN 16
 SAY @104
-IF ~~ THEN DO ~SetGlobal("ACQSNAKEENEMY","GLOBAL",1)UseItem("potn10",Myself)Wait(1)DestroySelf()~ EXIT
+IF ~~ THEN DO ~SetGlobal("ACQSNAKEENEMY","GLOBAL",1)UseItem("potn10",Myself) AddJournalEntry(@3000009,QUEST) Wait(1)DestroySelf()~ EXIT
 END
 
 IF ~~ THEN BEGIN 17
@@ -424,7 +424,7 @@ END
 
 IF ~~ THEN BEGIN 24
 SAY @115
-IF ~~ THEN DO ~SetGlobal("ACQSNAKEENEMY","GLOBAL",1)UseItem("potn10",Myself)Wait(1)DestroySelf()~ EXIT
+IF ~~ THEN DO ~SetGlobal("ACQSNAKEENEMY","GLOBAL",1)UseItem("potn10",Myself) AddJournalEntry(@3000009,QUEST) Wait(1)DestroySelf()~ EXIT
 END
 
 IF ~~ THEN BEGIN 25
