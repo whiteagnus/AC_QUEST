@@ -1,8 +1,8 @@
 BACKUP ~AC_QUEST/backup~
 //AUTHOR ~whiteagnus@baldursgatemods.de~ 
-SUPPORT ~jastey@web.de~
+SUPPORT ~https://baldurs-gate.de/index.php?threads/ascalons-questpack.39286/~
 
-VERSION ~2.05~ 
+VERSION ~pre2.06_200523~  
 
 AUTO_TRA "AC_QUEST/TRA/autotra/%s"//%"
 
@@ -33,20 +33,20 @@ INCLUDE ~AC_QUEST/lib/ac_quest_cpmvars.tpa~
 	LAF autotra_workaround END
 
 	ACTION_DEFINE_ARRAY tra#reload BEGIN setup-AC_QUEST END
-	ACTION_DEFINE_ARRAY tra#noconvert BEGIN END
+//	ACTION_DEFINE_ARRAY tra#noconvert BEGIN END
 
 	LAF HANDLE_CHARSETS
 		INT_VAR
 			infer_charset = 1
 		STR_VAR
 			tra_path = EVAL ~AC_QUEST/tra/autotra~
-			noconvert_array = tra#noconvert
+//			noconvert_array = tra#noconvert
 			reload_array = tra#reload
 			iconv_path = ~AC_QUEST/tools/iconv~
 	END
 		
-//		LOAD_TRA ~AC_QUEST/tra/autotra/german/setup-AC_QUEST.tra~	
 		LOAD_TRA ~AC_QUEST/tra/autotra/%LANGUAGE%/setup-AC_QUEST.tra~
+		LOAD_TRA ~AC_QUEST/tra/autotra/%LANGUAGE%/setup-AC_QUEST_ee.tra~
 
 
 //CamDawgs CD_STATE_NOTVALID zum Checken der Dialogfähigkeit eines Char
@@ -71,6 +71,7 @@ END
 LANGUAGE ~Deutsch (German)~ ~german~ ~AC_QUEST/TRA/german/setup-AC_QUEST.tra~
 
 LANGUAGE ~English~ ~english~ ~AC_QUEST/TRA/english/setup-AC_QUEST.tra~
+LANGUAGE ~Russian~ ~russian~ ~AC_QUEST/TRA/russian/setup-AC_QUEST.tra~
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -114,6 +115,7 @@ END
 ACTION_IF GAME_IS ~bgt bgee tutu_totsc eet~ THEN BEGIN
 
 ACTION_IF GAME_IS ~bgee~ THEN BEGIN
+COPY ~AC_QUEST/TRA/english/sounds~ ~override~
 COPY ~AC_QUEST/TRA/%LANGUAGE%/sounds~ ~override~
 END
 
@@ -996,6 +998,7 @@ LPF fj_are_structure
     fj_cre_resref     = ACQ19003
   END
 
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////																			////////////
@@ -1612,6 +1615,8 @@ SAY NAME2 @122
 COPY ~AC_QUEST/cre/ACQ10127.CRE~ ~override~
 SAY NAME1 @108
 SAY NAME2 @109
+
+
 
 
 END
