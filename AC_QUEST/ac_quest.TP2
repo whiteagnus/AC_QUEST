@@ -37,7 +37,7 @@ INCLUDE ~AC_QUEST/lib/ac_quest_cpmvars.tpa~
 
 	LAF HANDLE_CHARSETS
 		INT_VAR
-			infer_charset = 1
+			infer_charsets = 1
 		STR_VAR
 			tra_path = EVAL ~AC_QUEST/tra/autotra~
 //			noconvert_array = tra#noconvert
