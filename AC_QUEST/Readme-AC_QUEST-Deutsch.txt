@@ -4,7 +4,7 @@
 
 Derzeitiger Support: jastey 
 
-                                      Version: 2.05
+
 
 ***************************************************************************************************************
 
@@ -85,7 +85,7 @@ Echte Fans halten ihren Idolen die Treue, so wie Cindy, Mandy und Ashley im Nord
 Was macht ein Künstler, dem die Ideen ausgehen? Probleme, jede Menge Probleme, wie Geraldo der Prächtige im Zentrumsviertel von Baldur's Tor beweist.
 
 - Der verschwundene Sohn
-Die Halbelfe Aphriel wollte eigentlich ihren Bogen für immer an die Wand hängen - doch dann kam alles ganz anders. Ihr trefft sie im Banditenlager nachdem das Chefzelt ausgeräumt wurde.
+Die Halbelfe Aphriel wollte eigentlich ihren Bogen für immer an die Wand hängen - doch dann kam alles ganz anders. Ihr trefft sie im Gebiet der Mantelwald Lodge.
 
 - Ein haariges Problem
 Aivell, die junge Magierin, hält die Tür zu ihrem Haus verschlossen - von außen. Warum nur? Besucht sie an ihrem Haus in der Nähe der hohen Hecke und findet es heraus.
@@ -178,6 +178,12 @@ VII. Versions-History:
 -adding ac_quest.ini
 -renaming setup-ac_quest.ini to ac_quest.ini
 -update to weiDU v246
+
+3.0 - 2020-05-22
+-Russian version added, by Arkie
+-Gnolls should not spawn BGII loot.
+-infer_charset corrected to infer_charsets
+-added folder libiconv-1.9.2-1-src.7z with iconv licence info
 
 
 ***************************************************************************************************************

@@ -3,7 +3,7 @@
                             Ascalon (geheimer.herrscher@gmx.de)
 
 	Currently supported by: jastey 
-                                      Version: 2.05
+
 
 ***************************************************************************************************************
 
@@ -80,7 +80,7 @@ True fangirls stay true to their idols, just like Cindy, Mandy and Ashley in the
 What does an artist create when out of ideas? Trouble, lots of trouble, considering what Gerlado the Splendiferous in the central part of Baldur's Gate has been up to recently.
 
 - The Lost Son
-All the half-elf Aphriel wanted was to lay down her bow in favour of a simple life. But then everything changed. Meet her in the bandit camp after dealing with the guards.
+All the half-elf Aphriel wanted was to lay down her bow in favour of a simple life. But then everything changed. Meet her in the Cloakwood Lodge area.
 
 - Of Wolves and Men
 Aiwell the mage has barred her doors - from the outside. Find out why near High Hedge.
