@@ -2,7 +2,7 @@ BACKUP ~AC_QUEST/backup~
 //AUTHOR ~whiteagnus@baldursgatemods.de~ 
 SUPPORT ~https://baldurs-gate.de/index.php?threads/ascalons-questpack.39286/~
 
-VERSION ~pre2.06_200523~  
+VERSION ~3.0 pre 200531~  
 
 AUTO_TRA "AC_QUEST/TRA/autotra/%s"//%"
 
@@ -278,7 +278,7 @@ SAY SELECT_COMMON1 @80004
 COPY ~AC_QUEST/cre/ACQ12002.CRE~ ~override~
 SAY NAME1 @13
 SAY NAME2 @14
-SAY INITIAL_MEETING @80005
+//SAY INITIAL_MEETING @80005
 SAY DAMAGE @80006
 SAY DYING @80007
 SAY SELECT_COMMON1 @80008
