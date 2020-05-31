@@ -445,7 +445,7 @@ Ein Bote hat mir eine Einladung seines Herrn überbracht. Auch wenn dieser seinen
 @80002 = ~~ [PEASF07] //#61665
 @80003 = ~~ [PEASF08] //#61666
 @80004 = ~Ich danke den Göttern jeden Tag für all die guten Dinge in meinem Leben.~ [PEASF02] //##61660
-@80005 = ~Aaah! Lauft!~ [PEASM09] //#61823
+//@80005 = ~Aaah! Lauft!~ [PEASM09] //#61823
 @80006 = ~~ [PEASM07] //#61821
 @80007 = ~~ [PEASM08] //#61822
 @80008 = ~Klar, ich rede gerne ein paar Worte mit Euch.~ [PEASM03] //#61817
