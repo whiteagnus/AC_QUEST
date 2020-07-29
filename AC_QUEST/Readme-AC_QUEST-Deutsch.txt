@@ -179,7 +179,7 @@ VII. Versions-History:
 -renaming setup-ac_quest.ini to ac_quest.ini
 -update to weiDU v246
 
-3.0 - 2020-xx-xx
+3.0 - 2020-07-29
 -Russian version added, by Arkie
 -Gnolls should not spawn BGII loot.
 -corrected class checks in ACUITM.baf
@@ -188,6 +188,7 @@ VII. Versions-History:
 -"A Home for the Gibberlings": journal entry gives better info about where Geraldo's house is
 -"A Lost Son": corrected readme (Aphriel is in CloakwoodLodge area, not Bandit Camp)
 -"A Halfling among the Eyeless": Bunger should not loop his dialogue at the exit of the Unseeing Eye Area but go to his mother if talked to.
+-"The Serpents of Abbathor": journal entry in Mulahey's Cave when taking the letter should be set for all games.
 -added folder libiconv-1.9.2-1-src.7z with iconv licence info
 -infer_charset corrected to infer_charsets
 -corrected download link in ac_quest.ini

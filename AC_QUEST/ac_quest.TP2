@@ -1,8 +1,16 @@
+/*
+
+überprüfen:
+-Und Perwell ist bei mir nach der Rückkehr einfach auf der Karte stehen geblieben und nicht mit seiner Mutter weiter. 
+-Kreischlingszucht:  did anyone actually solve this? Because I see 18 pelts, 18 instances of IncrementGlobal if they are handed over, but a trigger that distinguishes between lower than 20 and 20 skins to finish the quest.
+
+*/
+
 BACKUP ~AC_QUEST/backup~
 //AUTHOR ~whiteagnus@baldursgatemods.de~ 
 SUPPORT ~https://baldurs-gate.de/index.php?threads/ascalons-questpack.39286/~
 
-VERSION ~3.0 pre 200531~  
+VERSION ~3.0~  
 
 AUTO_TRA "AC_QUEST/TRA/autotra/%s"//%"
 
@@ -1024,7 +1032,7 @@ EXTEND_TOP ~%SEBaldursGate_BCS%.bcs~ ~AC_QUEST/baf/AR8200.baf~
 EVAL
 EXTEND_TOP ~%NashkelMines_BCS%.bcs~ ~AC_QUEST/baf/AR4400.baf~
 
-EXTEND_TOP ~%NashkelMines_MulaheysCave_BCS%.bcs~ ~AC_QUEST/baf/AR4405.baf~
+EXTEND_TOP ~%NashkelMines_MulaheysCave_BCS%.bcs~ ~AC_QUEST/baf/AR4405.baf~ EVALUATE_BUFFER
 EXTEND_TOP ~%NEBaldursGate_BCS%.bcs~ ~AC_QUEST/baf/AR7400.baf~
 EXTEND_TOP ~%ESewers_BCS%.bcs~ ~AC_QUEST/baf/AR7326.baf~
 EXTEND_BOTTOM ~%CoastWay_BCS%.bcs~ ~AC_QUEST/baf/AR6900.baf~ 
