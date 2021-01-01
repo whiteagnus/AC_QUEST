@@ -45,7 +45,7 @@
 @44   = ~You must set me free, <LADYLORD>! Please, you must set me free!~  [PEASM09]
 @45   = ~You are Aaron, right? Your mother has sent us to your rescue!~
 @46   = ~Not so fast, my boy.~
-@47   = ~I think I'll leave you down here a little longer.~ //Wenn der HC sagt "I'll keep you" klingt das, als hätte er Aaron eingesperrt
+@47   = ~I think I'll leave you down here a little longer.~ 
 @48   = ~Yes, that's me! Aaron Brunnstein. Please, <SIRMAAM>. Please get me out of here!~
 @49   = ~At once. I will cut your bonds.~ //"hobble" kenn ich nicht als Substantiv
 @50   = ~Not so fast? Damn, what are you waiting for?~
@@ -54,7 +54,8 @@
 @53   = ~Will you find the way?~
 @54   = ~Yes, I was conscious when they threw me in here.~
 @55   = ~But... I have one request.~
-@56   = ~I had a ring with me. The Gnoll Chieftain has taken it from me. Please, go see if you can find it for me.~
+/* rephrased for v4.0 */
+@56   = ~I had a ring with me. The gnolls took it from me. Please, go see if you can find it for me.~
 @57   = ~Is it this ring here?~
 @58   = ~We'll see what we can do.~
 @59   = ~Oh by the gods! It is my ring! Can I have it back? Please!~
