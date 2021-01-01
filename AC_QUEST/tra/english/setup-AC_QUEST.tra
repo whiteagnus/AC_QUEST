@@ -1,8 +1,8 @@
 /* @0    = */
-@1    = ~Ascalon's Questpack~
-@2    = ~No valid BG install detected. Installation of Ascalon's Questpack will be aborted.~
-@3    = ~Teach Virginie, the invisible miracle Wonderbunny, a few new tricks~
-@4    = ~Install Virginie, the invisible Wonderbunny~
+//@1    = ~Ascalon's Questpack~
+//@2    = ~No valid BG install detected. Installation of Ascalon's Questpack will be aborted.~
+//@3    = ~Teach Virginie, the invisible miracle Wonderbunny, a few new tricks~
+//@4    = ~Install Virginie, the invisible Wonderbunny~
 
 @6    = ~Agnus~
 @7    = ~Agnus the White~
@@ -16,17 +16,17 @@
 @15   = ~Ghost~
 @16   = ~Barin~
 @17   = ~Ranger Barin~
-@18   = ~Gnoll Boss~
+@18   = ~Gnoll Chieftain~
 @19   = ~Gnoll Bodyguard~
 @20   = ~Aaron's Ring of Protection~
 @21   = ~Aaron's Ring of Protection
 
-This simple ring is provided with a spell to protect the wearer. The engraving within says: 'In love for M., from A.'
+This simple ring is provided with a faint spell to protect the wearer. The engraving within says: 'In love for M., from A.'
 
 STATISTICS:
 
 Armor Class: +1 bonus
-Saving Throws: +1 bonus //"light spell" fand ich missverständlich (Licht- / leicht)
+Saving Throws: +1 bonus 
 
 Weight: 0~
 
@@ -41,7 +41,7 @@ Weight: 0~
 
 
 
-@28   = ~A little, white rabbit. It is not as fluffy as Jumper, but which rabbit ever could be?~
+@28   = ~A little, white rabbit. It is not as fluffy as Hopsi, but which rabbit ever could be?~
 
 
 
@@ -87,7 +87,7 @@ STATISTICS:
 Weight: 105
 ~
 @39   = ~Guril berries~
-@40   = ~Guril berries are traditional remedies in Faerûn, and are used for various applications. They are especially popular to alleviate sufferings of the 'special' type, which is why these berries are often offered by stores in vicinity to courtesans.~ //"floozy" ist sehr umgangssprachlich
+@40   = ~Guril berries are traditional remedies in Faerûn, and are used for various applications. They are especially popular to alleviate sufferings of the 'special' type, which is why these berries are often offered by stores in vicinity to courtesans.~ 
 @41   = ~Aiwell's blood~
 @42   = ~Aiwell has given you a big portion of her blood to save her husband Tonder.~
 @43   = ~Potion against Lycantrophy~
@@ -101,7 +101,7 @@ STATISTICS:
 
 The wearer is protected against all types of petrification and forms of gaze attacks.
 
-Armor Class: +1 bonus
+Armor Class: +2 bonus
 Weight: 7
 Requires: 12 Strength
 
@@ -294,15 +294,15 @@ Unfortunately, I could not help the party in Beregost.~
 @10003 = ~Raukner's Ruffian Roughnecks
 
 I was able to solve the problem for the group of adventurers.~
-@10004 = ~The Quest for Jumper
+@10004 = ~The Quest for Hopsi
 
-And lo, it happened that my companions and I set out to find the fluffiest bunny of Faerûn, thy name be Jumper. Westward we must travel as our tasker instructed us and who knows what hazards await us on our journey.
+And lo, it happened that my companions and I set out to find the fluffiest bunny of Faerûn, thy name be Hopsi. Westward we must travel as our tasker instructed us and who knows what hazards await us on our journey.
 
 What wouldn't one do for a thousand million pieces of gold. I'm just made for an adventurer's life.~
 @10005 = ~A New Best Friend for Ugh
 
-The ogre Ugh has given back Jumper so we could make the girl Kessy happy. Now it's up to me to fulfill my promise and find a substitute rabbit - Kessy has mentioned her father at the Carnival.~
-@10006 = ~The Quest for Jumper
+The ogre Ugh has given back Hopsi so we could make the girl Kessy happy. Now it's up to me to fulfill my promise and find a substitute rabbit - Kessy has mentioned her father at the Carnival.~
+@10006 = ~The Quest for Hopsi
 
 We were able to bring Kessy back her favourite rabbit. Now I remember why I like being an adventurer.~
 @10007 = ~A New Best Friend for Ugh
@@ -383,9 +383,12 @@ Aphriel is now searching for her son herself. At least I saved him from the mine
 @10032 = ~The Quest for Perwell
 
 Aphriel and her son are happily reunited.~
+/* rephrased for v4.0 */
 @10033 = ~Of Wolves and Men
 
-The husband of the mage Aiwell seems to have been infected with Lycanthropy. I probably have two options to solve the problem: Either with a potion I can get from Thalantyr, or the old fashioned sword solution.~
+The husband of the mage Aiwell seems to have been infected with Lycanthropy. I probably have two options to solve the problem: Either with a potion I can get from Thalantyr, or the old fashioned sword solution.
+
+Her house is the hut right next to Thalantyr's abode.~
 @10034 = ~Of Wolves and Men
 
 Thalantyr has enumerated several ways. He can mix the potion with Aiwell's blood, which is highly questionable. Or he can use Guril berries that do not always work. The best would be an elixir of belladonna. He also told us that he'll only be able to brew one of the potions.
@@ -506,7 +509,7 @@ STATISTICS:
 Damage:  1D8
 Damage type:  slashing
 Weight: 4
-Speed Factor: 5
+Speed Factor: 4
 Proficiency Type: Long Sword
 Type:  1-handed
 Requires: 6 Strength
@@ -623,7 +626,7 @@ Weight: 45~ //#66422
 @90001 = ~Raukner's Ruffian Roughnecks~
 //@90002 = ~The Lost Son~
 //@90003 = ~A Ghost in the Cloudpeaks~
-@90004 = ~The Quest for Jumper~
+@90004 = ~The Quest for Hopsi~
 @90005 = ~A New Best Friend for Ugh~
 @90006 = ~The Quest for Perwell~
 @90007 = ~Of Wolves and Men~
@@ -632,72 +635,11 @@ Weight: 45~ //#66422
 @90010 = ~A Mysterious Offer~
 @90011 = ~A failed Picnic~
 
-//EE Descriptions: the following item descriptions should be in EE style!
-@100032   = ~Aphriel's Elven Longbow
-
-At an early age the elf Aphriel roamed the forests of Faerûn and became one of the greatest Rangers of our time. There was no scent she could not follow, and not one criminal was safe from her bow. It was only when she met a local merchant on a visit to the city of Baldur's Gate and fell passionately in love with him, that her days in the forest had come to an end. Their relationship was blessed with the young half-elf Perwell, and when he was kidnapped by bandits of the Sword Coast, Aphriel set out for one last time into the forests. During this trip the bow came into the hands of <CHARNAME>.
-
-STATISTICS:
-
-THAC0: +3
-Damage: +2 (missile)
-Speed Factor: 5
-Proficiency Type: Longbow
-Type: Two-handed
-Requires: 
- 6 Strength
-
-Weight: 2
-~
-@100048   = ~This shield is polished to a high gloss and obviously magical. Scratches disappear and blood and dirt simply run off of its reflective surface. It can be presumed that it can even withstand the look of a basilisk.
-
-STATISTICS:
-
-Equipped abilities:
-- Armor Class: +2
-- The wearer is protected against all types of petrification and forms of gaze attacks.
-
-Requires: 
- 12 Strength
-
-Weight: 7
-~
-@100058   = ~Armor from Gibberling Leather
-
-One of the byproducts of Geraldo's work with gibberlings was a high leather production. Since the painter only needed the fur for his colors, he sought a different use for the thick skin of the monsters... and found it. Unfortunately, the leather of gibberlings had some unexpected side effects and so Geraldo impatiently waited for a credulous soul to foist his experiment on.
-
-The chroniclers are assuming that the great Geraldo laughs in his sleeve at the idea that some idiot would find this armor actually useful.
-
-STATISTICS:
-
-Equipped abilities:
-– Missile Resistance: +10%
-– The character turns blue
-– Charisma: -3
-– Can only be removed by a Remove Curse spell
-
-Armor Class: 4
-
-Requires: 
- 6 Strength
-
-Weight: 7
-~
-@100086   = ~The priest of Moradin, Bashrik Sparklehammer, was considered as wise and true and within the community of liberal dwarves. He continued to fight against the secession of the surface dwarves and generally relished a high reputation. This hammer, charged with the thunderbolts of Moradin, was his greatest weapon in the fight against evil.
-
-STATISTICS:
-
-THAC0: +2
-Damage: 1d4+3, +1 electrical damage
-Damage type: Crushing
-Speed Factor: 2
-Proficiency Type: War Hammer
-Type: One-handed
-Requires: 
- 9 Strength
- 
-Weight: 5
-~
+//EE Descriptions, not needed for BGT/BGII
+//@100032   
+//@100048   
+//@100058   
+//@100086  
 
 //Karlini Journals
 @2000001   = ~The magnificent Karlini - The spellbook of the magnificent Karlini
@@ -782,3 +724,17 @@ Jenna was killed by the Serpent's minions, and the artefact was taken. I should 
 @3000013  = ~The Serpents of Abbathor
 
 I agreed to have a look at a warehouse in the Southeastern District of Baldur's Gate. We believe this to be the hideout from the Serpents of Abbathor. I will need a key to enter.~
+
+
+/* new for v4.0 */
+//@10037 rephrased with location in Beregost
+@3000014 = ~Of Wolves and Men
+
+A woman shouted at me in front of Thalantyr's abode, but I am not sure what she was referring to. Maybe it had something to do with the werewolf I killed inside the house in the southwest of Beregost?~
+
+//@10033 rephrased with location in Beregost
+@3000015  = ~Of Wolves and Men
+
+The husband of the mage Aiwell seems to have been infected with Lycanthropy. I probably have two options to solve the problem: Either with a potion I can get from Thalantyr, or the old fashioned sword solution.
+
+Her home is the small house at the southwest boundary of Beregost.~
