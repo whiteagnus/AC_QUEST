@@ -64,43 +64,53 @@ VI: Komponenten:
 
 	Baldur's Gate I:
 
-- A Job Well-Paid
+1 A Job Well-Paid
+-------------------------
 What happens when adventurers are a bit too eager to spend their first big money? Travel to Beregost to find out.
 
-- A Feast for the Gnolls
+2 A Feast for the Gnolls
+-------------------------
 It was supposed to be a romantic picnic, but then everything went wrong. Look for Mrs Wellstone in Nashkel and help the poor woman find her son.
 
-- The Great Carlini
-Once a gnome's scientific curiousity has been stirred there is nothing that can stop him. Not even the spell that once cost the archmage Carlini hist life. Look for Ygnatius in the Friendly Arm Inn (he is hard to miss).
-
-- Fangirls
-True fangirls stay true to their idols, just like Cindy, Mandy and Ashley in the north-western part of Baldur's Gate...
-
-- A Home for the Gibberlings
-What does an artist create when out of ideas? Trouble, lots of trouble, considering what Gerlado the Splendiferous in the central part of Baldur's Gate has been up to recently.
-
-- The Lost Son
-All the half-elf Aphriel wanted was to lay down her bow in favour of a simple life. But then everything changed. Meet her in the Cloakwood Lodge area.
-
-- Of Wolves and Men
-Aiwell the mage has barred her doors - from the outside. Find out why near High Hedge.
-
-- Flopsy
+3 Hopsi
+-------------------------
 An epic tale of honour, friendship and bunny-rabbits.
 
-- The Serpents of Abbathor
+4 The Lost Son
+-------------------------
+All the half-elf Aphriel wanted was to lay down her bow in favour of a simple life. But then everything changed. Meet her in the Cloakwood Lodge area.
+
+5 Of Wolves and Men
+-------------------------
+Aiwell the mage has barred her doors - from the outside. Find out why near High Hedge.
+
+This component has two options: the first uses the hut near Thalantyr's Abode in HighHedge.
+The second option moves the home of the couple into a house in Beregost ("House 9" on Dudleyville's Walkthrough on the southwest boundary of Beregost). This is mainly for compatibility reasons because Glam's NPC Pack uses the hut in High Hedge for something else. Install this component if you want to play both mods together.
+
+6 The Great Carlini
+-------------------------
+Once a gnome's scientific curiousity has been stirred there is nothing that can stop him. Not even the spell that once cost the archmage Carlini hist life. Look for Ygnatius in the Friendly Arm Inn (he is hard to miss).
+
+7 A Home for the Gibberlings
+-------------------------
+What does an artist create when out of ideas? Trouble, lots of trouble, considering what Gerlado the Splendiferous in the central part of Baldur's Gate has been up to recently.
+
+8 Fangirls
+-------------------------
+True fangirls stay true to their idols, just like Cindy, Mandy and Ashley in the north-western part of Baldur's Gate...
+
+9 The Serpents of Abbathor
+-------------------------
 A mysterious dwarven kult is recruiting along the Sword Coast and heroes are in great demand! At the moment only te BG 1 part is complete. Loot Mulahey's corpse or travel to the south-west part of Baldur's Gate to get started.
 
 
 	Baldur's Gate II:
 
-- A Halfling among the Eyeless
+10 A Halfling among the Eyeless
+-------------------------
 Who will help Mrs Lawner to find her missing son?
 
 
-	Throne of Bhaal:
-
-t.b.a.
 
 
 
@@ -186,6 +196,25 @@ VII. Version history:
 -infer_charset corrected to infer_charsets
 -corrected download link in ac_quest.ini
 -removed empty file ACQCUT04.baf
+
+4.0 - 2021-01-01
+-split mod into optional components.
+-changed name of Gnoll "Boss" to "Gnoll Chieftain" to match the ingame names and Aaron's dialogue (English version).
+-Aaron will only say that the Gnolls took the ring, not a Gnoll Chieftain to prevent confusion with the existing Gnoll Chieftain near where Dynaheir is held.
+-Aaron should stay at the Old Mill after the PC rested and not return to the Inn.
+-Aaron's ring should not contain comments in the description.
+-more item descriptions in EE style by Cahir (English EE version).
+-Aphriel should rect to dead Perwell's body upon first meeting.
+-Ygnazius should not be at the FAI if quest is finished.
+-Aaron shouldn't initiate dialogue constantly while being in the pit.
+-Location of Aiwell's home can be either hut in High Hedge or house "9" in Beregost (for compatibility with Glam's NPC Pack).
+-use correct area variable in AC4402.baf.
+-renamed the rabbit to Hopsi (English version).
+-Added Dynamic Install Order categories to support Project Infinity.
+-All journal entries should be deleted upon transition to BGII in BGT. Journal entries for BG1 will not be deleted for EET.
+-split lines for install only into separate setup-install.tra. 
+-"Of Wolves and men" will no longer use the hidden cre "Virginy the wonder bunny".
+-corrected entry in cpmvars.tpa
 
 
 ***************************************************************************************************************

@@ -27,7 +27,7 @@ X. Letzte Worte
 
 I. Beschreibung:
 
-Im Laufe des Spiels kommen einem immer wieder kleinere und größere Ideen für Nebenhabdlungen und Geschichten, die sich außerhalb der Story um die Bhaalsbrut drehen. In dieser Modifikation sind nun meine Ideen gesammelt: Drei Questen von verschieden großen Ausmaßen. Einige sind humorvoll, andere etwas tragischer. Einige sind Rätsel, andere sind kampfbetont. Einige erfordern diplomatisches Geschick, andere sind nur von bestimmten Rassen oder Klassen lösbar.
+Im Laufe des Spiels kommen einem immer wieder kleinere und größere Ideen für Nebenhandlungen und Geschichten, die sich außerhalb der Story um die Bhaalsbrut drehen. In dieser Modifikation sind nun meine Ideen gesammelt: 10 Questen von verschieden großen Ausmaßen. Einige sind humorvoll, andere etwas tragischer. Einige sind Rätsel, andere sind kampfbetont. Einige erfordern diplomatisches Geschick, andere sind nur von bestimmten Rassen oder Klassen lösbar.
 Die Modifikation fügt Quests für sowohl BG1 als auch BGII ein. Sie kann direkt auf BG:EE, BGT-WeiDU, Tutu (w TotSC), BGII:EE, BGII und EET installiert werden, die richtigen Komponenten werden dann installiert.
 
 
@@ -69,45 +69,49 @@ VI: Komponenten:
 
 	Baldur's Gate I:
 
-- Der Lohn für die Mühe
+1. Der Lohn für die Mühe
+-------------------------
 Was passiert, wenn man über alle Maßen erfreut ist über das viele Geld, das man auf seiner ersten Abenteuertour verdient hat? Besucht Beregost und findet es heraus.
 
-- Ein Fressen für die Gnolle
+2. Ein Fressen für die Gnolle
+-------------------------
 Ein romantisches Picknick sollte es werden, doch dann kam alles ganz anders. Sucht Frau Brunnstein in Nashkell und helft der Ärmsten, ihren Sohn wieder zu finden.
 
-- Der große Karlini
-Wenn ein Gnom erstmal seine wissenschaftliche Neugier geweckt hat, dann hält ihn nichts auf. Sogar ein Zauber, der den großen Karlini einst das Leben kostete, nicht. Sucht Ygnatius im Freundlichen Arm (er sollte nicht zu übersehen sein).
-
-- Echte Fans
-Echte Fans halten ihren Idolen die Treue, so wie Cindy, Mandy und Ashley im Nordwestviertel von Baldur's Tor...
-
-- Die Kreischlingszucht
-Was macht ein Künstler, dem die Ideen ausgehen? Probleme, jede Menge Probleme, wie Geraldo der Prächtige im Zentrumsviertel von Baldur's Tor beweist.
-
-- Der verschwundene Sohn
-Die Halbelfe Aphriel wollte eigentlich ihren Bogen für immer an die Wand hängen - doch dann kam alles ganz anders. Ihr trefft sie im Gebiet der Mantelwald Lodge.
-
-- Ein haariges Problem
-Aivell, die junge Magierin, hält die Tür zu ihrem Haus verschlossen - von außen. Warum nur? Besucht sie an ihrem Haus in der Nähe der hohen Hecke und findet es heraus.
-
-- Hopsi
+3. Hopsi
+-------------------------
 Eine epische Queste um Ehre, Freundschaft und Kaninchen.
 
-- Die Schlangen Abbathors
+4. Der verschwundene Sohn
+-------------------------
+Die Halbelfe Aphriel wollte eigentlich ihren Bogen für immer an die Wand hängen - doch dann kam alles ganz anders. Ihr trefft sie im Gebiet der Mantelwald Lodge.
 
+5. Von Wölfen und Männern
+-------------------------
+Aivell, die junge Magierin, hält die Tür zu ihrem Haus verschlossen - von außen. Warum nur? Besucht sie an ihrem Haus in der Nähe der hohen Hecke und findet es heraus.
+
+6. Der große Karlini
+-------------------------
+Wenn ein Gnom erstmal seine wissenschaftliche Neugier geweckt hat, dann hält ihn nichts auf. Sogar ein Zauber, der den großen Karlini einst das Leben kostete, nicht. Sucht Ygnatius im Freundlichen Arm (er sollte nicht zu übersehen sein).
+
+7. Die Kreischlingszucht
+-------------------------
+Was macht ein Künstler, dem die Ideen ausgehen? Probleme, jede Menge Probleme, wie Geraldo der Prächtige im Zentrumsviertel von Baldur's Tor beweist.
+
+8. Echte Fans
+-------------------------
+Echte Fans halten ihren Idolen die Treue, so wie Cindy, Mandy und Ashley im Nordwestviertel von Baldur's Tor...
+
+9. Die Schlangen Abbathors
+-------------------------
 Ein mysteriöser Zwergenkult macht sich an der Schwertküste breit. Es werden Helden gesucht! Z.Z. ist der BGI-Part spielbar. Durchsucht Mulaheys Leiche oder begebt Euch in den Südwesten von Baldur's Tor.
 
 
 	Baldur's Gate II:
 
-- Ein Halbling unter Augenlosen
-
+10. Ein Halbling unter Augenlosen
+-------------------------
 Wer hilft der armen Frau Wiesner, ihren Sohn wieder zu finden?
 
-
-	Throne of Bhaal:
-
-t.b.a.
 
 
 
@@ -194,6 +198,24 @@ VII. Versions-History:
 -corrected download link in ac_quest.ini
 -removed empty file ACQCUT04.baf
 
+4.0 - 2021-01-01
+-split mod into optional components.
+-changed name of Gnoll "Boss" to "Gnoll Chieftain" to match the ingame names and Aaron's dialogue (English version).
+-Aaron will only say that the Gnolls took the ring, not a Gnoll Chieftain to prevent confusion with the existing Gnoll Chieftain near where Dynaheir is held.
+-Aaron should stay at the Old Mill after the PC rested and not return to the Inn.
+-Aaron's ring should not contain comments in the description.
+-more item descriptions in EE style by Cahir (English EE version).
+-Aphriel should rect to dead Perwell's body upon first meeting.
+-Ygnazius should not be at the FAI if quest is finished.
+-Aaron shouldn't initiate dialogue constantly while being in the pit.
+-Location of Aiwell's home can be either hut in High Hedge or house "9" in Beregost (for compatibility with Glam's NPC Pack).
+-use correct area variable in AC4402.baf.
+-renamed the rabbit to Hopsi (English version).
+-Added Dynamic Install Order categories to support Project Infinity.
+-All journal entries should be deleted upon transition to BGII in BGT. Journal entries for BG1 will not be deleted for EET.
+-split lines for install only into separate setup-install.tra. 
+-"Of Wolves and men" will no longer use the hidden cre "Virginy the wonder bunny".
+-corrected entry in cpmvars.tpa
 
 ***************************************************************************************************************
 
