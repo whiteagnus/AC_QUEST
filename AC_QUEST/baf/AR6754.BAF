@@ -1,5 +1,5 @@
 IF
-	Global("ACQ16_MoveWolfLocation","GLOBAL",1)
+	Global("ACQ16_MoveWolfLocation","GLOBAL",0)
 	InMyArea("ACQ16002")
 	Exists("ACQ16002")
 THEN
@@ -8,19 +8,26 @@ THEN
 END
 
 IF
-	Global("ACQ16_MoveWolfLocation","GLOBAL",0)
+	Global("ACQ16_MoveWolfLocation","GLOBAL",1)
 	Global("ACQ16_ResetQuest","GLOBAL",1)
 	Global("ACQ16_ResetTonder","MYAREA",0)
 THEN
 	RESPONSE #100
 		SetGlobal("ACQ16_ResetTonder","MYAREA",1)
-		CreateCreature("ACQ16002",[283.197],15)
-		Continue()
+		CreateCreature("ACQ16002",[386.260],2)
 END
 
+IF
+	Global("ACQ16_MoveWolfLocation","GLOBAL",1)
+	Global("ACQ16_SpawnTorben","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ACQ16_SpawnTorben","MYAREA",1)
+		CreateCreature("ACQ16002",[386.260],2)
+END
 
 IF
-	Global("ACQ16_MoveWolfLocation","GLOBAL",0)
+	Global("ACQ16_MoveWolfLocation","GLOBAL",1)
 	Global("ACQ16","GLOBAL",10)
 THEN
 	RESPONSE #100

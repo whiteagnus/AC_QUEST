@@ -172,3 +172,12 @@
 @167   = ~У меня не получилось найти тело вервольфа... Я не смогу принести его тебе.~
 @168   = ~Прошу, помоги нам!~
 @169   = ~Хмпф. Похоже, на этом все и закончится. (Талантир ворчит что-то о том, насколько безответственны нынешние искатели приключений.)~
+
+
+
+/* new for v 4.0 */
+//@26, rephrased for new location
+@170   = ~Tonder and I moved into the little house which lies at the southwest boundary of Beregost. We wanted nothing but till the lands and live in peace, but a few days ago, Tonder was attacked by a large animal! If not for Thalantyr my huband would have been devoured.~
+
+//@84, rephrased for new location
+@171   = ~Apparently, this woman Aiwell moved into a house at the southwest boundary of Beregost a few weeks ago, along with her dawdler of a husband.~
