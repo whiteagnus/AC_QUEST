@@ -5,7 +5,7 @@ EIGENSCHAFTEN:
 
 Schaden: 1W8 (Klinge)
 Gewicht: 4
-Initiativefaktor: 5
+Initiativefaktor: 4
 Mindeststärke: 6
 Fertigkeit: Langschwert
 Typ: 1-händig
@@ -102,7 +102,7 @@ EIGENSCHAFTEN:
 
 Der Träger ist vor allen Arten der Versteinerung geschützt, auch vor Blickangriffen.
 
-RK-Bonus: -1
+RK-Bonus: -2
 Gewicht: 7
 Mindeststärke: 12~ 
 //@58 without "Not useable by"
