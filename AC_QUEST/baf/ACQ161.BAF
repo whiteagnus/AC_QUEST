@@ -2,7 +2,7 @@ IF
 	HasItem("ACQ16001","THALANTYR")
 THEN
 	RESPONSE #100
-		CutSceneId(Player1)
+		CutSceneId("THALANTYR")
 		FadeToColor([20.0],0)
 		ActionOverride("THALANTYR",DestroyItem("ACQ16001"))
         	Wait(2)		

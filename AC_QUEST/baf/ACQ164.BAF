@@ -2,7 +2,7 @@ IF
 	HasItem("MISC1I","THALANTYR")
 THEN
 	RESPONSE #100
-		CutSceneId(Player1)
+		CutSceneId("THALANTYR")
 		Wait(1)
 		ActionOverride("THALANTYR",DestroyItem("MISC1I"))
 		ActionOverride("THALANTYR",ForceSpell("THALANTYR",EFFECT_ONLY))
