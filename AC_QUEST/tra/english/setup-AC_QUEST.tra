@@ -41,7 +41,7 @@ Weight: 0~
 
 
 
-@28   = ~A little, white rabbit. It is not as fluffy as Hopsi, but which rabbit ever could be?~
+@28   = ~A little, white rabbit. It is not as fluffy as Jumper, but which rabbit ever could be?~
 
 
 
@@ -294,15 +294,15 @@ Unfortunately, I could not help the party in Beregost.~
 @10003 = ~Raukner's Ruffian Roughnecks
 
 I was able to solve the problem for the group of adventurers.~
-@10004 = ~The Quest for Hopsi
+@10004 = ~The Quest for Jumper
 
-And lo, it happened that my companions and I set out to find the fluffiest bunny of Faerûn, thy name be Hopsi. Westward we must travel as our tasker instructed us and who knows what hazards await us on our journey.
+And lo, it happened that my companions and I set out to find the fluffiest bunny of Faerûn, thy name be Jumper. Westward we must travel as our tasker instructed us and who knows what hazards await us on our journey.
 
 What wouldn't one do for a thousand million pieces of gold. I'm just made for an adventurer's life.~
 @10005 = ~A New Best Friend for Ugh
 
-The ogre Ugh has given back Hopsi so we could make the girl Kessy happy. Now it's up to me to fulfill my promise and find a substitute rabbit - Kessy has mentioned her father at the Carnival.~
-@10006 = ~The Quest for Hopsi
+The ogre Ugh has given back Jumper so we could make the girl Kessy happy. Now it's up to me to fulfill my promise and find a substitute rabbit - Kessy has mentioned her father at the Carnival.~
+@10006 = ~The Quest for Jumper
 
 We were able to bring Kessy back her favourite rabbit. Now I remember why I like being an adventurer.~
 @10007 = ~A New Best Friend for Ugh
@@ -626,7 +626,7 @@ Weight: 45~ //#66422
 @90001 = ~Raukner's Ruffian Roughnecks~
 //@90002 = ~The Lost Son~
 //@90003 = ~A Ghost in the Cloudpeaks~
-@90004 = ~The Quest for Hopsi~
+@90004 = ~The Quest for Jumper~
 @90005 = ~A New Best Friend for Ugh~
 @90006 = ~The Quest for Perwell~
 @90007 = ~Of Wolves and Men~
