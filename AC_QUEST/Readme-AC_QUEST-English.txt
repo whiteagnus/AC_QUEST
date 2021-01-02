@@ -72,7 +72,7 @@ What happens when adventurers are a bit too eager to spend their first big money
 -------------------------
 It was supposed to be a romantic picnic, but then everything went wrong. Look for Mrs Wellstone in Nashkel and help the poor woman find her son.
 
-3 Hopsi
+3 Jumper
 -------------------------
 An epic tale of honour, friendship and bunny-rabbits.
 
@@ -197,7 +197,7 @@ VII. Version history:
 -corrected download link in ac_quest.ini
 -removed empty file ACQCUT04.baf
 
-4.0 - 2021-01-01
+4.0 - 2021-01-02
 -split mod into optional components.
 -changed name of Gnoll "Boss" to "Gnoll Chieftain" to match the ingame names and Aaron's dialogue (English version).
 -Aaron will only say that the Gnolls took the ring, not a Gnoll Chieftain to prevent confusion with the existing Gnoll Chieftain near where Dynaheir is held.
@@ -206,10 +206,10 @@ VII. Version history:
 -more item descriptions in EE style by Cahir (English EE version).
 -Aphriel should rect to dead Perwell's body upon first meeting.
 -Ygnazius should not be at the FAI if quest is finished.
+-Cutscenes to receive Werwolf cure from Thalantyr should work if PC is not inside his abode as well.
 -Aaron shouldn't initiate dialogue constantly while being in the pit.
 -Location of Aiwell's home can be either hut in High Hedge or house "9" in Beregost (for compatibility with Glam's NPC Pack).
 -use correct area variable in AC4402.baf.
--renamed the rabbit to Hopsi (English version).
 -Added Dynamic Install Order categories to support Project Infinity.
 -All journal entries should be deleted upon transition to BGII in BGT. Journal entries for BG1 will not be deleted for EET.
 -split lines for install only into separate setup-install.tra. 
