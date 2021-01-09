@@ -465,9 +465,9 @@ IF ~~ THEN ACQ12001 22
 @164 DO ~SetGlobal("ACQ12","GLOBAL",4)AddexperienceParty(1200)ReputationInc(1)EscapeAreaDestroy(10)~
 ==ACQ12002 @165 
 DO ~//EscapeAreaMove("%Nashkel%",4490,2344,10)
-ActionOverride("ACQ12001",JumpToPoint([4490.2344]))
-ActionOverride("ACQ12001",MoveToPointNoInterrupt([4490.2344]))
-ActionOverride("ACQ12001",Face(10))~
+ActionOverride("ACQ12002",JumpToPoint([4490.2344]))
+ActionOverride("ACQ12002",MoveToPointNoInterrupt([4490.2344]))
+ActionOverride("ACQ12002",Face(10))~
 EXIT
 
 CHAIN
@@ -475,9 +475,9 @@ IF ~~ THEN ACQ12001 23
 @166 DO ~SetGlobal("ACQ12","GLOBAL",4)AddexperienceParty(1200)GiveItemCreate("AMUL09",PLAYER1,0,0,0)EscapeAreaDestroy(10)~
 ==ACQ12002 @165 
 DO ~//EscapeAreaMove("%Nashkel%",4490,2344,10)
-ActionOverride("ACQ12001",JumpToPoint([4490.2344]))
-ActionOverride("ACQ12001",MoveToPointNoInterrupt([4490.2344]))
-ActionOverride("ACQ12001",Face(10))~
+ActionOverride("ACQ12002",JumpToPoint([4490.2344]))
+ActionOverride("ACQ12002",MoveToPointNoInterrupt([4490.2344]))
+ActionOverride("ACQ12002",Face(10))~
 EXIT
 
 CHAIN
@@ -485,9 +485,9 @@ IF ~~ THEN ACQ12001 24
 @167 DO ~SetGlobal("ACQ12","GLOBAL",4)AddexperienceParty(1200)GiveItemCreate("AMUL09",PLAYER1,0,0,0)EscapeAreaDestroy(10)~
 ==ACQ12002 @168 
 DO ~//EscapeAreaMove("%Nashkel%",4490,2344,10)
-ActionOverride("ACQ12001",JumpToPoint([4490.2344]))
-ActionOverride("ACQ12001",MoveToPointNoInterrupt([4490.2344]))
-ActionOverride("ACQ12001",Face(10))~
+ActionOverride("ACQ12002",JumpToPoint([4490.2344]))
+ActionOverride("ACQ12002",MoveToPointNoInterrupt([4490.2344]))
+ActionOverride("ACQ12002",Face(10))~
 EXIT
 
 CHAIN

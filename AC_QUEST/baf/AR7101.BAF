@@ -22,8 +22,27 @@ END
 IF
 	Global("ACQ16_MoveWolfLocation","GLOBAL",0)
 	Global("ACQ16","GLOBAL",10)
+	Global("AC_QUEST_CreateItem","MYAREA",0)
 THEN
 	RESPONSE #100
 		Unlock("Container 1")
+		SetGlobal("AC_QUEST_CreateItem","MYAREA",1)
 		ActionOverride("Container 1",CreateItem("AC1H53",0,0,0))
+END
+
+IF
+	Global("AC_QUEST_CutScene","MYAREA",1)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("AC_QUEST_CutScene","MYAREA",2)
+		Wait(1)
+		FadeToColor([20.0],0)
+		Wait(2)
+		CreateCreature("ACQ16003",[-1.-1],0)
+		ActionOverride("ACQ16002",DestroySelf())
+		FadeFromColor([20.0],0)
+		Wait(2)
+		ActionOverride("ACQ16003",StartDialogNoSet([PC])
+		SetInterrupt(TRUE)
 END

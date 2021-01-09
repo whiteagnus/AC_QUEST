@@ -565,25 +565,33 @@ END
 IF ~~ THEN BEGIN 2
 SAY @125 = @126
 IF ~RandomNumGT(10,1)~ THEN DO ~EraseJournalEntry(@10038)EraseJournalEntry(@10039)EraseJournalEntry(@10040)
-ClearAllActions()StartCutSceneMode()StartCutScene("ACQ162")~ EXIT
+ClearAllActions()StartCutSceneMode()
+//StartCutScene("ACQ162")
+SetGlobal("AC_QUEST_CutScene","MYAREA",1)~ EXIT
 IF ~RandomNumLT(10,2)~ THEN GOTO 6
 END
 
 IF ~~ THEN BEGIN 3
 SAY @125 = @126
-IF ~RandomNumGT(10,5)~ THEN DO ~EraseJournalEntry(@10038)EraseJournalEntry(@10039)EraseJournalEntry(@10040)ClearAllActions()StartCutSceneMode()StartCutScene("ACQ162")~ EXIT
+IF ~RandomNumGT(10,5)~ THEN DO ~EraseJournalEntry(@10038)EraseJournalEntry(@10039)EraseJournalEntry(@10040)ClearAllActions()StartCutSceneMode()
+//StartCutScene("ACQ162")
+SetGlobal("AC_QUEST_CutScene","MYAREA",1)~ EXIT
 IF ~RandomNumLT(10,6)~ THEN GOTO 6
 END
 
 IF ~~ THEN BEGIN 4
 SAY @125 = @126
 IF ~RandomNumGT(10,1)~ THEN GOTO 6
-IF ~RandomNumLT(10,2)~ THEN DO ~EraseJournalEntry(@10038)EraseJournalEntry(@10039)EraseJournalEntry(@10040)ClearAllActions()StartCutSceneMode()StartCutScene("ACQ162")~ EXIT
+IF ~RandomNumLT(10,2)~ THEN DO ~EraseJournalEntry(@10038)EraseJournalEntry(@10039)EraseJournalEntry(@10040)ClearAllActions()StartCutSceneMode()
+//StartCutScene("ACQ162")
+SetGlobal("AC_QUEST_CutScene","MYAREA",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 5
 SAY @127
-IF ~~ THEN DO ~ClearAllActions()StartCutSceneMode()StartCutScene("ACQ162")~ EXIT
+IF ~~ THEN DO ~ClearAllActions()StartCutSceneMode()
+//StartCutScene("ACQ162")
+SetGlobal("AC_QUEST_CutScene","MYAREA",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 6

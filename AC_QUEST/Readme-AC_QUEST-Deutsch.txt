@@ -204,13 +204,13 @@ VII. Versions-History:
 -Aaron will only say that the Gnolls took the ring, not a Gnoll Chieftain to prevent confusion with the existing Gnoll Chieftain near where Dynaheir is held.
 -Aaron should stay at the Old Mill after the PC rested and not return to the Inn.
 -Aaron's ring should not contain comments in the description.
--more item descriptions in EE style by Cahir (English EE version).
--Aphriel should rect to dead Perwell's body upon first meeting.
+-Aaron shouldn't initiate dialogue constantly while being in the pit.
+-Aphriel should react to dead Perwell's body upon first meeting.
 -Ygnazius should not be at the FAI if quest is finished.
 -Cutscenes to receive Werwolf cure from Thalantyr should work if PC is not inside his abode as well.
--Aaron shouldn't initiate dialogue constantly while being in the pit.
 -Location of Aiwell's home can be either hut in High Hedge or house "9" in Beregost (for compatibility with Glam's NPC Pack).
 -use correct area variable in AC4402.baf.
+-more item descriptions in EE style by Cahir (English EE version).
 -Added Dynamic Install Order categories to support Project Infinity.
 -All journal entries should be deleted upon transition to BGII in BGT. Journal entries for BG1 will not be deleted for EET.
 -split lines for install only into separate setup-install.tra. 
@@ -227,6 +227,7 @@ VIII. Danksagungen
 - Jastey für großartige Hilfestellungen (was fürde ich nur ohne deine Tagebucheintragsbeispiele machen)
 - Leomar und Leonardo Watson für ihre Arbeit am BWP
 - Bloodtitan für die englische Übersetzung
+- Arkie für die russische Übersetzung
 - Fridtjof und Hedian und allen anderen von www.rosenranken.org, die dem Questpack ein feines zu Hause bieten
 - vorlast but not vorleast den motivierten und begeisterten Spielern des BWP, die das beste Spiel aller Zeiten am Leben erhalten
 - Und zu guter Letzt meiner Lieblingsschweizerin Revianêl, die jede einzelne Quest, jede Anspielung, jeden Gag und jede versteckte Kleinigkeit auf Herz und Nieren geprüft und durchgewunken bzw. ausgebremst hat - Ohne jemals selbst über Kerzenburg hinausgekommen zu sein.
