@@ -19,14 +19,14 @@
 @18  = ~Wait! Who are you?~ 
 @19  = ~That will be your fate now!~
 @20  = ~Die!~ 
-@21  = ~(sigh) I'm looking for my son. Bandits have kidnapped him.~ 
+@21  = ~(sigh) I'm looking for my son, Perwell. Bandits have kidnapped him.~ 
 @22  = ~What a crime! We will help you.~
 @23  = ~Why do these people do such a thing?~ 
 @24  = ~Do you have a guess where he is?~
 @25  = ~Do you think that he is still alive?~
 @26  = ~I'm afraid we cannot help you.~
-@27  = ~I thank you. I am looking for my son. Bandits have kidnapped him.~
-@28  = ~Please forgive me. See, I'm desperate. I am looking for my son who has been kidnapped by the bandits.~
+@27  = ~I thank you. I am looking for my son, Perwell. Bandits have kidnapped him.~
+@28  = ~Please forgive me. See, I'm desperate. I am looking for my son Perwell who has been kidnapped by the bandits.~
 @29  = ~If you say so. I believe that you are not of the bandits. But you have not earned my respect. Proceed with whatever seems so important to you.~
 @30  = ~I was a ranger in this area for a long time until I retired a few years back with a local merchant in Baldur's Gate. We made some good money, and now the bandits are demanding a ransom we can't and won't pay.~ //merchant ist mir in BG vertrauter
 @31  = ~The Iron Throne's raiders have a base somewhere in the forest. I guess they keep him trapped there.~
@@ -112,7 +112,7 @@
 @111 = ~We should set out now. Are you ready?~
 @112 = ~Wait a bit longer, we are about to set out.~
 @113 = ~Alright, I'll wait here.~
-@114 = ~Yes, <SIRMAAM>, I'm ready. I will follow you until you have brought me to my mother. I just won't follow you into any caves, that's nothing for me anymore.~
+@114 = ~Yes, <SIRMAAM>, I'm ready. I will follow you until you have brought me to my mother. But not if you go into any caves. I won't follow you into any of those.~
 @115 = ~Argh...~ [CHILM06]
 @116 = ~Perwell! My darling, there you are!~
 @117 = ~Mom! Mom! The adventurers have led me through the woods!~
