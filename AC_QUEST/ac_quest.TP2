@@ -435,8 +435,12 @@ EVAL
 COMPILE ~AC_QUEST/BAF/ACQ12CU2.BAF~
 EVAL
 
+/*
 EXTEND_TOP ~%GnollStronghold_BCS%.bcs~ ~AC_QUEST/baf/AC4100.baf~
 EVAL
+*/
+LAF extend_area_script STR_VAR area="%GnollStronghold%" top="AC_QUEST/baf/AC4100.baf"   END
+
 
 COPY ~AC_QUEST/ITM/ACQ12000.ITM~ ~override~
 SAY NAME1 #6348
@@ -588,7 +592,11 @@ EVAL
 COMPILE ~AC_QUEST/BAF/ACQ15001.BAF~
 COMPILE ~AC_QUEST/BAF/ACQ15002.BAF~
 EVAL
+/*
 EXTEND_BOTTOM ~%CloakwoodMines_BCS%.bcs~ ~AC_QUEST/BAF/AC8600.BAF~
+*/
+LAF extend_area_script STR_VAR area="%CloakwoodMines%" bottom="AC_QUEST/BAF/AC8600.BAF"   END
+
 EXTEND_TOP ~BALDUR.bcs~ ~AC_QUEST/BAF/ACBALDUR.BAF~
 
 COPY_EXISTING ~MISC54.ITM~ ~Override/ACQ15002.ITM~
@@ -708,11 +716,15 @@ EVAL
 COMPILE EVALUATE_BUFFER ~AC_QUEST/BAF/ACQ17001.BAF~
 COMPILE EVALUATE_BUFFER ~AC_QUEST/BAF/ACQ17002.BAF~
 COMPILE EVALUATE_BUFFER ~AC_QUEST/BAF/ACQCUT03.BAF~
-
+/*
 EXTEND_BOTTOM ~%UlcasterRuins_BCS%.bcs~ ~AC_QUEST/BAF/AR9798.baf~
 EVAL
 EXTEND_BOTTOM ~%LionsWay_BCS%.bcs~ ~AC_QUEST/BAF/AR6600.baf~
 EVAL
+*/
+LAF extend_area_script STR_VAR area="%UlcasterRuins%" bottom="AC_QUEST/BAF/AR9798.baf"   END
+LAF extend_area_script STR_VAR area="%LionsWay%" bottom="AC_QUEST/BAF/AR6600.ba"   END
+
 
 COPY ~AC_QUEST/ITM/BOOK90.ITM~ ~OVERRIDE/ACQBOOK2.ITM~ 
 SAY NAME1 @49
@@ -789,12 +801,16 @@ COPY_EXISTING ~%CentralBaldursGate_House1_L1%.are~ ~override~
   END
 BUT_ONLY
 END
-
+/*
 EXTEND_TOP ~%CentralBaldursGate_House1_L1_BCS%.bcs~ ~AC_QUEST/baf/AR7711.baf~
 EXTEND_TOP ~%WSewers_BCS%.bcs~ ~AC_QUEST/baf/AR7324.baf~
 EVAL
 EXTEND_TOP ~%CentralSewers_BCS%.bcs~ ~AC_QUEST/baf/AR7325.baf~
 EVAL
+*/
+LAF extend_area_script STR_VAR area="%CentralBaldursGate_House1_L1%" bottom="AC_QUEST/baf/AR7711.baf"   END
+LAF extend_area_script STR_VAR area="%WSewers%" bottom="AC_QUEST/BAF/AR7324.baf"   END
+LAF extend_area_script STR_VAR area="%CentralSewers%" bottom="AC_QUEST/baf/AR7325.baf"   END
 
 ACTION_IF GAME_IS ~tutu_totsc~ THEN BEGIN
 COPY_EXISTING ~%BaldursGateDocks_IronThrone_Cellar%.are~ ~override~
@@ -804,9 +820,12 @@ COPY_EXISTING ~%BaldursGateDocks_IronThrone_Cellar%.are~ ~override~
   END
 BUT_ONLY
 END
-
+/*
 EXTEND_TOP ~%BaldursGateDocks_IronThrone_Cellar_BCS%.bcs~ ~AC_QUEST/baf/AR7611.baf~
 EVAL
+*/
+LAF extend_area_script STR_VAR area="%BaldursGateDocks_IronThrone_Cellar%" bottom="AC_QUEST/baf/AR7611.baf"   END
+
 COMPILE ~AC_QUEST/baf/AC7711.baf~
 
 COPY ~AC_QUEST/ARE/AC7711.ARE~ ~override~
@@ -994,6 +1013,7 @@ COMPILE ~AC_QUEST/BAF/ACQCUT02.BAF~
 COMPILE ~AC_QUEST/BAF/AC8201.BAF~
 COMPILE ~AC_QUEST/BAF/AC4400.BAF~
 COMPILE ~AC_QUEST/BAF/AC4401.BAF~
+/*
 EXTEND_TOP ~%SEBaldursGate_BCS%.bcs~ ~AC_QUEST/baf/AR8200.baf~
 EVAL
 EXTEND_TOP ~%NashkelMines_BCS%.bcs~ ~AC_QUEST/baf/AR4400.baf~
@@ -1002,6 +1022,14 @@ EXTEND_TOP ~%NashkelMines_MulaheysCave_BCS%.bcs~ ~AC_QUEST/baf/AR4405.baf~ EVALU
 EXTEND_TOP ~%NEBaldursGate_BCS%.bcs~ ~AC_QUEST/baf/AR7400.baf~
 EXTEND_TOP ~%ESewers_BCS%.bcs~ ~AC_QUEST/baf/AR7326.baf~
 EXTEND_BOTTOM ~%CoastWay_BCS%.bcs~ ~AC_QUEST/baf/AR6900.baf~ 
+*/
+LAF extend_area_script STR_VAR area="%SEBaldursGate%" top="AC_QUEST/baf/AR8200.baf"   END
+LAF extend_area_script STR_VAR area="%NashkelMines%" top="AC_QUEST/baf/AR4400.baf"   END
+LAF extend_area_script STR_VAR area="%NashkelMines_MulaheysCave%" top="AC_QUEST/baf/AR4405.baf"   END
+LAF extend_area_script STR_VAR area="%NEBaldursGate%" top="AC_QUEST/baf/AR7400.baf"   END
+LAF extend_area_script STR_VAR area="%ESewers%" top="AC_QUEST/baf/AR7326.baf"   END
+LAF extend_area_script STR_VAR area="%CoastWay%" bottom="AC_QUEST/baf/AR6900.baf"   END
+
 
 ACTION_IF GAME_IS ~tutu_totsc~ THEN BEGIN
 COPY_EXISTING ~%NWBaldursGate_Tavern_L2%.are~ ~override~
@@ -1011,9 +1039,12 @@ COPY_EXISTING ~%NWBaldursGate_Tavern_L2%.are~ ~override~
   END
 BUT_ONLY
 END
-
+/*
 EXTEND_TOP ~%NWBaldursGate_Tavern_L2_BCS%.bcs~ ~AC_QUEST/baf/AR7266.baf~
 EVAL
+/*
+LAF extend_area_script STR_VAR area="%NWBaldursGate_Tavern_L2%" top="AC_QUEST/baf/AR7266.baf"   END
+
 
 ACTION_IF GAME_IS ~tutu_totsc~ THEN BEGIN
 COPY_EXISTING ~%NWBaldursGate%.are~ ~override~
@@ -1023,8 +1054,10 @@ COPY_EXISTING ~%NWBaldursGate%.are~ ~override~
   END
 BUT_ONLY
 END
-
+/*
 EXTEND_TOP ~%NWBaldursGate_BCS%.bcs~ ~AC_QUEST/baf/AR7200.baf~
+*/
+LAF extend_area_script STR_VAR area="%NWBaldursGate%" top="AC_QUEST/baf/AR7200.baf"   END
 
 ACTION_IF GAME_IS ~tutu_totsc~ THEN BEGIN
 COPY_EXISTING ~%NBaldursGate_TempleofHelm%.are~ ~override~
@@ -1034,8 +1067,11 @@ COPY_EXISTING ~%NBaldursGate_TempleofHelm%.are~ ~override~
   END
 BUT_ONLY
 END
-
+/*
 EXTEND_TOP ~%NBaldursGate_TempleofHelm_BCS%.bcs~ ~AC_QUEST/baf/ARA002.baf~
+*/
+LAF extend_area_script STR_VAR area="%NBaldursGate_TempleofHelm%" top="AC_QUEST/baf/ARA002.baf"   END
+
 COMPILE ~AC_QUEST/BAF/ACQ10102.BAF~
 EVAL
 COMPILE ~AC_QUEST/BAF/ACQ10103.BAF~
