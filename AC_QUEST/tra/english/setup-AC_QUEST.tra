@@ -10,7 +10,7 @@
 @9    = ~Teliel Meadowsinger~ //fand ich als Nachnahmen schöner
 @10   = ~Udolf~
 @11   = ~Udolf Raukner~
-@12   = ~Mrs. Brunnstein~ 
+@12   = ~Mrs. Brunnstein~
 @13   = ~Aaron~
 @14   = ~Aaron Brunnstein~
 @15   = ~Ghost~
@@ -21,7 +21,7 @@
 @20   = ~Aaron's Ring of Protection~
 @21   = ~Aaron's Ring of Protection
 
-This simple ring is provided with a faint spell to protect the wearer. The engraving within says: 'In love for M., from A.'
+This simple ring is provided with a faint spell to protect the wearer. The engraving within says: "In love for M., from A."
 
 STATISTICS:
 
@@ -87,7 +87,7 @@ STATISTICS:
 Weight: 105
 ~
 @39   = ~Guril berries~
-@40   = ~Guril berries are traditional remedies in Faerûn, and are used for various applications. They are especially popular to alleviate sufferings of the 'special' type, which is why these berries are often offered by stores in vicinity to courtesans.~ 
+@40   = ~Guril berries are traditional remedies in Faerûn, and are used for various applications. They are especially popular to alleviate sufferings of the "special" type, which is why these berries are often offered by stores in vicinity to courtesans.~
 @41   = ~Aiwell's blood~
 @42   = ~Aiwell has given you a big portion of her blood to save her husband Tonder.~
 @43   = ~Potion against Lycantrophy~
@@ -130,7 +130,7 @@ STATISTICS:
 
 The character turns blue.
 
-Can only be removed by a 'Remove Curse' spell.
+Can only be removed by a "Remove Curse" spell.
 
 Armor Class: 4
 Charisma: -3
@@ -142,7 +142,7 @@ Not Usable By:
 - Mage
 - Monk~
 @59   = ~Elminster the Bird~
-@60   = ~Elminster is Geraldo's tame bird, although even he does not know the exact species. The bird has a wise look and an exceptional aversion to gibberlings. As soon as he senses one he will call a loud 'Kiwitt'.
+@60   = ~Elminster is Geraldo's tame bird, although even he does not know the exact species. The bird has a wise look and an exceptional aversion to gibberlings. As soon as he senses one he will call a loud "Kiwitt".
 
 Without the bird, it would be nearly impossible to track down the gibberlings in the cellars and sewers, so take good care of him.~
 @61   = ~Geraldo~
@@ -174,7 +174,7 @@ But you are not alone. Father Abbathor cares for his children. Even after Moradi
 
 To God all glory and all the jewels to the Serpent!~ //"steal you blind" als Idiom kenne ich nicht
 @75   = ~Notes~
-@76   = ~This bundle of wrapped loose pages seems to summarize the approach of the Serpents of Abbathor to a large extent. Apparently, it was their plan from the beginning to capture an ancient dwarfish device, called Gundmagtor, which in common language means something like 'Caller of Black Souls'. The main strike of the cult seems to focus on Nashkel, and the note '<CHARNAME> has killed Mulahey, mines are free' bodes ill indeed.~
+@76   = ~This bundle of wrapped loose pages seems to summarize the approach of the Serpents of Abbathor to a large extent. Apparently, it was their plan from the beginning to capture an ancient dwarfish device, called Gundmagtor, which in common language means something like "Caller of Black Souls". The main strike of the cult seems to focus on Nashkel, and the note "<CHARNAME> has killed Mulahey, mines are free" bodes ill indeed.~
 @77   = ~This <PRO_RACE> <CHARNAME> who works for Wostok is making <PRO_HISHER> way here. Take someone of the Furious, and a Herald. The Herald shall take the Gundmagtor and bring it to us while you two wait for <CHARNAME> and take <PRO_HIMHER> to an end. Then come to us so that we can discuss the next steps.
 
 L~
@@ -190,7 +190,7 @@ The last entries of the book deal with his efforts to get in touch with Mulahey 
 @81   = ~Emerson's Notes~
 @82   = ~Emerson, the foreman of the Nashkel Mines, has written down his calculations and experience in this messed up cluster of papers. For someone who works in the mining industry, this jumble of information is surely a gold mine. For you, however, the notes are useless.~
 @83   = ~Diary~
-@84   = ~This book looks very old and has been through a lot. Some pages are torn and others pierced, some singed, and a large part of the book is smeared with blood. Even if you cannot decipher the name of the priest, it seems the old wanderer has gone through a lot - traveling with a group of adventurers, certain conflicts over the 'true' dwarf existence and finally the banishment from his clan. To the dwarf, to whom his family was above all, this loss made him first lose his mind and then drove him straight into the arms of the Serpents.~
+@84   = ~This book looks very old and has been through a lot. Some pages are torn and others pierced, some singed, and a large part of the book is smeared with blood. Even if you cannot decipher the name of the priest, it seems the old wanderer has gone through a lot - traveling with a group of adventurers, certain conflicts over the "true" dwarf existence and finally the banishment from his clan. To the dwarf, to whom his family was above all, this loss made him first lose his mind and then drove him straight into the arms of the Serpents.~
 @85   = ~Bashrik's Hammer +2~
 @86   = ~The priest of Moradin, Bashrik Sparklehammer, was considered as wise and true and within the community of liberal dwarves. He continued to fight against the secession of the surface dwarves and generally relished a high reputation. This hammer, charged with the thunderbolts of Moradin, was his greatest weapon in the fight against evil.
 
@@ -198,19 +198,19 @@ STATISTICS:
 
 Combat Abilities: +1 electricity damage
 THAC0: +2 bonus
-Damage:  1D4 + 3
-Damage type:  crushing
+Damage: 1D4 + 3
+Damage type: crushing
 Weight: 5
 Speed Factor: 2
 Proficiency Type: War Hammer
-Type:  1-handed
+Type: 1-handed
 Requires: 9 Strength
 Not Usable By:
  Druid
  Mage 
  Thief~
 @87   = ~Bashrik's Journal~
-@88   = ~The book is written with neat handwriting and reports the last trip of Bashrik Sparklehammer. Bashrik was on the tail of a cult that calls itself 'The Serpents of Abbathor'. For them, Abbathor, the only evil god among the Morndinsamman, is considered the liberator and saint patron of the dwarfkind of the surface.
+@88   = ~The book is written with neat handwriting and reports the last trip of Bashrik Sparklehammer. Bashrik was on the tail of a cult that calls itself "The Serpents of Abbathor". For them, Abbathor, the only evil god among the Morndinsamman, is considered the liberator and saint patron of the dwarfkind of the surface.
 
 You cannot learn much more from the book because apparently, the notes of Bashrik were written primarily for the initiated. Only the last entry could offer a clue, should you want to look into the matter:
 
@@ -319,7 +319,7 @@ Some farmers report to have seen a strange figure at night by the waterfall.~
 I could not find Perwell in the mines... I hope that he managed to get out with the other slaves before the water broke in.~
 @10011 = ~The Serpents of Abbathor in Nashkel?
 
-In the headquarters of the Serpents I've learned some bad news: Their initial plan was, apparently, to capture an ancient dwarven device called Gundmagtor, which translated into common language means something like 'Caller of the black souls'. The main stroke of the cult seems to focus on Nashkel.~
+In the headquarters of the Serpents I've learned some bad news: Their initial plan was, apparently, to capture an ancient dwarven device called Gundmagtor, which translated into common language means something like "Caller of the black souls". The main stroke of the cult seems to focus on Nashkel.~
 @10012 = ~The Serpents of Abbathor in Nashkel - Lugosch
 
 Lugosch, the leader of the Serpents of Abbathor from Baldur's Gate, is on site in the Nashkel Mines. There will be no escape for him this time.~
@@ -456,11 +456,11 @@ A messenger has brought me an invitation from his master. Although he will keep 
 //BG:EE Compatibility
 
 //Strings from Original BG2 for Setup-AC_QUEST.tra
-@80001 = ~ Somebody help me!~ [PEASF09] //#61667
+@80001 = ~Somebody help me!~ [PEASF09] //#61667
 @80002 = ~~ [PEASF07] //#61665
 @80003 = ~~ [PEASF08] //#61666
 @80004 = ~I thank the gods every day for the good things in my life.~ [PEASF02] //##61660
-@80005 = ~ Aaahhhh.........run!~ [PEASM09] //#61823
+@80005 = ~Aaahhhh.........run!~ [PEASM09] //#61823
 @80006 = ~~ [PEASM07] //#61821
 @80007 = ~~ [PEASM08] //#61822
 @80008 = ~I'll trade you a few words, sure enough.~ [PEASM03] //#61817
@@ -481,8 +481,8 @@ A messenger has brought me an invitation from his master. Although he will keep 
 @80023 = ~Don't hurt me!~ [CHILM07] //#61567
 @80024 = ~~ [CHILM05] //#61565
 @80025 = ~~ [CHILM06] //#61566
-@80026 = ~Wow!  An adventurer!~ [CHILM03] //#61563
-@80027 = ~You ain't from around here!  I knows it!~ [CHILM02] //#61562
+@80026 = ~Wow! An adventurer!~ [CHILM03] //#61563
+@80027 = ~You ain't from around here! I knows it!~ [CHILM02] //#61562
 @80028 = ~Well, I certainly don't like the look of you.~ [PEASF306] //#61683
 @80029 = ~~ [PEASF307] //#61684
 @80030 = ~~ [PEASF308] //#61685
@@ -502,33 +502,33 @@ A messenger has brought me an invitation from his master. Although he will keep 
 //@80043 = /* description for EE */
 @80044 = ~Long Sword~ //#2893
 @80045 = ~Sword of Flame +1~ //#4422
-@80046 = ~These swords are usually referred to as doubled-edged swords, war swords, or military swords.  In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture, and may vary within the same culture depending on the era.  Among the most common characteristics of all long swords is their length, which ranges from 35 inches to 47 inches.  In the latter case, the blade is known to take up 40 inches of the total length.  Most long swords have a double-edged blade and a sharp point at the tip.  Despite the tip, the long sword is designed for slashing, not thrusting. 
+@80046 = ~These swords are usually referred to as doubled-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture, and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from 35 inches to 47 inches. In the latter case, the blade is known to take up 40 inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting. 
 
 STATISTICS:
 
-Damage:  1D8
-Damage type:  slashing
+Damage: 1D8
+Damage type: slashing
 Weight: 4
 Speed Factor: 4
 Proficiency Type: Long Sword
-Type:  1-handed
+Type: 1-handed
 Requires: 6 Strength
 Not Usable By:
  Druid
  Cleric
  Mage~ //#6742
 /* description for BGT */
-@80047 = ~This blade burns with a magical fire, and a charring blast is released whenever a hit is scored.  "Meta Infernum" is etched on the hilt, though it appears somewhat faded and may not be original to the sword.
+@80047 = ~This blade burns with a magical fire, and a charring blast is released whenever a hit is scored. "Meta Infernum" is etched on the hilt, though it appears somewhat faded and may not be original to the sword.
 
 STATISTICS:
 
 THAC0: +1 bonus
-Damage:  1D8 +1, +1 fire damage
-Damage type:  slashing
+Damage: 1D8 +1, +1 fire damage
+Damage type: slashing
 Weight: 4
 Speed Factor: 4
 Proficiency Type: Long Sword
-Type:  1-handed
+Type: 1-handed
 Requires: 6 Strength
 Not Usable By:
  Druid
@@ -636,10 +636,10 @@ Weight: 45~ //#66422
 @90011 = ~A failed Picnic~
 
 //EE Descriptions, not needed for BGT/BGII
-//@100032   
-//@100048   
-//@100058   
-//@100086  
+//@100032
+//@100048
+//@100058
+//@100086
 
 //Karlini Journals
 @2000001   = ~The magnificent Karlini - The spellbook of the magnificent Karlini
@@ -673,7 +673,7 @@ We oversaw the casting of the spell but surprisingly a balor appeared and Ygnati
 
 @2000008   = ~The magnificent Karlini
 
-We oversaw the casting of the spell but surprisingly a balor appeared and Ygnatius vanished. Unexpectedly the fiend agreed on letting the two gnomes go if we would answer some difficult questions about the Sword Coast correctly. Otherwise my soul would be his reward. By luck and effort I was able to answer all three questions correctly. In return the balor vanished into thin air but stayed true to his word and brought the two gnomes back save and sound. They in return were thankful - more or less- for their rescue. Gnomes ... In retrospect the delivered reward by theese two gnomes was fitting the needed efforts to solve the given tasks.~
+We oversaw the casting of the spell but surprisingly a balor appeared and Ygnatius vanished. Unexpectedly the fiend agreed on letting the two gnomes go if we would answer some difficult questions about the Sword Coast correctly. Otherwise my soul would be his reward. By luck and effort I was able to answer all three questions correctly. In return the balor vanished into thin air but stayed true to his word and brought the two gnomes back save and sound. They in return were thankful - more or less- for their rescue. Gnomes... In retrospect the delivered reward by theese two gnomes was fitting the needed efforts to solve the given tasks.~
 
 @2000009   = ~The magnificent Karlini~
 
@@ -681,7 +681,7 @@ We oversaw the casting of the spell but surprisingly a balor appeared and Ygnati
 
 @3000001   = ~Breeding Gibberlings in Baldur's Gate
 
-Travelling through the streets of Baldur's Gate we met a man who referred to himself as 'Geraldo the Magnificent'. He told us he had planned to create blue colour from the fur of gibberlings but when they started to breed uncontrollably he was forced to imprison them in his own house. He asked us to go to his house and deal with the monsters inside. By now there should be around 20 of the little beasts there. His house is the big blue-grey one with the white fence east of Central Baldur's Gate.~
+Travelling through the streets of Baldur's Gate we met a man who referred to himself as "Geraldo the Magnificent". He told us he had planned to create blue colour from the fur of gibberlings but when they started to breed uncontrollably he was forced to imprison them in his own house. He asked us to go to his house and deal with the monsters inside. By now there should be around 20 of the little beasts there. His house is the big blue-grey one with the white fence east of Central Baldur's Gate.~
 @3000002   = ~Breeding Gibberlings in Baldur's Gate
 
 There were only two gibberlings in Geraldo’s house. We should return to him and give him the furs anyway.~

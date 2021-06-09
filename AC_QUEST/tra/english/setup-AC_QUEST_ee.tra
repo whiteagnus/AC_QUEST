@@ -1,6 +1,6 @@
 @21   = ~Aaron's Ring of Protection
 
-This simple ring is provided with a faint spell to protect the wearer. The engraving within says: 'In love for M., from A.'
+This simple ring is provided with a faint spell to protect the wearer. The engraving within says: "In love for M., from A."
 
 STATISTICS:
 
@@ -29,7 +29,7 @@ STATISTICS:
 
 Weight: 110
 ~
-//@32   not needed in EE!
+//@32 not needed in EE!
 
 @38   = ~After death the werewolf has turned back into a human.
 
@@ -38,12 +38,12 @@ STATISTICS:
 Weight: 105
 ~
 
-@40   = ~Guril berries are traditional remedies in Faerûn, and are used for various applications. They are especially popular to alleviate sufferings of the 'special' type, which is why these berries are often offered by stores in vicinity to courtesans.
+@40   = ~Guril berries are traditional remedies in Faerûn, and are used for various applications. They are especially popular to alleviate sufferings of the "special" type, which is why these berries are often offered by stores in vicinity to courtesans.
 
 STATISTICS:
 
 Weight: 1
-~ 
+~
 
 
 @44   = ~This potion contains mainly belladonna flowers.
@@ -65,7 +65,7 @@ STATISTICS:
 Weight: 0
 ~
 
-//@48   not needed in EE!
+//@48 not needed in EE!
 
 @50   = ~In this book the great Karlini, one of the most colorful figures of gnomish wisdom, wrote down his experiences and spells. The handwriting is confusing and scrawly, probably only someone who is as mad as Karlini could decipher this scribble.
 
@@ -81,17 +81,17 @@ STATISTICS:
 Weight: 0
 ~
 
-@57   = ~This is the skin of a mutant gibberling.
+@57   = ~This is the fur of a mutant gibberling.
 
 STATISTICS:
 
 Weight: 0
 ~
-//@58   not needed for EE!
+//@58 not needed for EE!
 
-@60   = ~Elminster is Geraldo's tame bird, although even he does not know the exact species. The bird has a wise look and an exceptional aversion to gibberlings. As soon as he senses one he will call a loud 'Kiwitt'.
+@60   = ~Elminster is Geraldo's tame bird, although even he does not know the exact species. The bird has a wise look and an exceptional aversion to gibberlings. As soon as he senses one he will call a loud "Kiwitt".
 
-Without the bird, it would be impossible to track down the gibberlings in the cellars and sewers, so take good care of him.
+Without the bird, it would be nearly impossible to track down the gibberlings in the cellars and sewers, so take good care of him.
 
 STATISTICS:
 
@@ -114,7 +114,7 @@ Weight: 0
 
 
 
-@76   = ~This bundle of wrapped loose pages seems to summarize the approach of the Serpents of Abbathor to a large extent. Apparently, it was their plan from the beginning to capture an ancient dwarfish device, called Gundmagtor, which in common language means something like 'Caller of Black Souls'. The main strike of the cult seems to focus on Nashkel, and the note '<CHARNAME> has killed Mulahey, mines are free' bodes ill indeed.
+@76   = ~This bundle of wrapped loose pages seems to summarize the approach of the Serpents of Abbathor to a large extent. Apparently, it was their plan from the beginning to capture an ancient dwarfish device, called Gundmagtor, which in common language means something like "Caller of Black Souls". The main strike of the cult seems to focus on Nashkel, and the note "<CHARNAME> has killed Mulahey, mines are free" bodes ill indeed.
 
 STATISTICS:
 
@@ -137,16 +137,16 @@ STATISTICS:
 Weight: 3
 ~
 
-@84   = ~This book looks very old and has been through a lot. Some pages are torn and others pierced, some singed, and a large part of the book is smeared with blood. Even if you cannot decipher the name of the priest, it seems the old wanderer has gone through a lot - traveling with a group of adventurers, certain conflicts over the 'true' dwarf existence and finally the banishment from his clan. To the dwarf, to whom his family was above all, this loss made him first lose his mind and then drove him straight into the arms of the Serpents.
+@84   = ~This book looks very old and has been through a lot. Some pages are torn and others pierced, some singed, and a large part of the book is smeared with blood. Even if you cannot decipher the name of the priest, it seems the old wanderer has gone through a lot - traveling with a group of adventurers, certain conflicts over the "true" dwarf existence and finally the banishment from his clan. To the dwarf, to whom his family was above all, this loss made him first lose his mind and then drove him straight into the arms of the Serpents.
 
 STATISTICS:
 
 Weight: 0
 ~
 
-//@86   not needed in EE!
+//@86 not needed in EE!
 
-@88   = ~The book is written with neat handwriting and reports the last trip of Bashrik Sparklehammer. Bashrik was on the tail of a cult that calls itself 'The Serpents of Abbathor'. For them, Abbathor, the only evil god among the Morndinsamman, is considered the liberator and saint patron of the dwarfkind of the surface.
+@88   = ~The book is written with neat handwriting and reports the last trip of Bashrik Sparklehammer. Bashrik was on the tail of a cult that calls itself "The Serpents of Abbathor". For them, Abbathor, the only evil god among the Morndinsamman, is considered the liberator and saint patron of the dwarfkind of the surface.
 
 You cannot learn much more from the book because apparently, the notes of Bashrik were written primarily for the initiated. Only the last entry could offer a clue, should you want to look into the matter:
 
@@ -206,7 +206,7 @@ Requires:
  6 Strength
 
 Weight: 4
-~ 
+~
 //#6742 BGII same as @80042
 
 
