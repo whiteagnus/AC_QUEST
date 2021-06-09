@@ -24,7 +24,7 @@ Typ: 1-händig
 Mindeststärke: 6
 
 Gewicht: 4
-~ 
+~
 
 //#6742 BGII same as @80042
 //@80046 = only needed for BGT+Tutu
@@ -94,7 +94,7 @@ Gewicht: 2
 Initiativefaktor: 5
 Mindeststärke: 6
 Fertigkeit: Langbogen
-Typ: 2-händig~ 
+Typ: 2-händig~
 //@48 without "Not useable by"
 @100048   = ~Dieser Schild ist auf Hochglanz poliert und offensichtlich magisch. Kratzer verschwinden und Blut und Schmutz perlt einfach von seiner spiegelnden Oberfläche ab. Es steht zu vermuten, dass er sogar dem Blick eines Basilisken standhalten kann.
 
@@ -104,7 +104,7 @@ Der Träger ist vor allen Arten der Versteinerung geschützt, auch vor Blickangrif
 
 RK-Bonus: -1
 Gewicht: 7
-Mindeststärke: 12~ 
+Mindeststärke: 12~
 //@58 without "Not useable by"
 @100058   = ~Rüstung aus Kreischlingsleder
 
@@ -122,7 +122,7 @@ Rüstungsklasse: 4
 Charisma: -3
 Widerstand gg. Geschosswaffen: +10%
 Gewicht: 7
-Mindeststärke: 6~ 
+Mindeststärke: 6~
 //@86 for EE without "Not useable by"
 @100086   = ~Der Moradinpriester Bashrik Funkenhammer galt in den Kreisen liberal einsteller Zwerge als weise und wahrhaftig. Er setzte sich engagiert gegen die Abspaltung der Oberweltzwerge ein und genoss allgemein ein hohes Ansehen. Dieser Hammer, geladen mit den Blitzen Moradins, war seine größte Waffe im Kampf gegen das Böse.
 
@@ -135,4 +135,4 @@ Gewicht: 5
 Initiativefaktor: 2
 Mindeststärke: 9
 Fertigkeit: Kriegshammer
-Typ: 1-händig~ 
+Typ: 1-händig~
