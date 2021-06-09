@@ -93,7 +93,7 @@ Once a gnome's scientific curiousity has been stirred there is nothing that can 
 
 7 A Home for the Gibberlings
 -------------------------
-What does an artist create when out of ideas? Trouble, lots of trouble, considering what Gerlado the Splendiferous in the central part of Baldur's Gate has been up to recently.
+What does an artist create when out of ideas? Trouble, lots of trouble, considering what Geraldo the Splendiferous in the central part of Baldur's Gate has been up to recently.
 
 8 Fangirls
 -------------------------
