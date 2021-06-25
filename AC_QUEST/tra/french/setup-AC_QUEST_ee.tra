@@ -109,7 +109,7 @@ Vous ne pouvez pas en apprendre beaucoup plus dans ce livre car apparemment, les
 
 « Je me suis séparé de Wostok aujourd'hui. Mirjala et moi allons tenter notre chance dans le sud, Wostok va jeter un coup d'œil dans la grande ville. Nous nous retrouverons au temple de Heaum quand j'aurai plus d'informations.
 
-Addendum : Après avoir fait parler l'assassin qui nous attendait à l'Auberge de Brasamical, j'ai appris un nom, au moins. Un certain Draglon attend dans les caves souterraines pour régler les affaires de la secte. Eh bien, je vais retarder cela jusqu'à mon retour ».
+Addenda : Après avoir fait parler l'assassin qui nous attendait à l'Auberge de Brasamical, j'ai appris un nom, au moins. Un certain Draglon attend dans les caves souterraines pour régler les affaires de la secte. Eh bien, je vais retarder cela jusqu'à mon retour ».
 
 (Si vous voulez enquêter sur la secte et sur ce dont il s'agit, il serait préférable de conserver ce livre.)
 
@@ -160,7 +160,7 @@ Force nécessaire : 6~
 //@80047 = only needed for BGT+Tutu
 
 //#39444 BGII
-@80053 = ~Silverblade, un forgeron nain, créa ce marteau et deux autres objets, un ceinturon des géants et des gantelets des ogres. Son intention était de les offrir à son fils qui, en tant qu'officier supérieur dans les armées naines, combattait les géants et les tribus d'ogres de la région. Malheureusement le fils de Silverblade mourut à la fin de la fabrication des objets, avant qu'ils ne lui aient été offerts. De chagrin, Silverblade mit le ceinturon et les gantelets, et prenant le marteau de tonnerre, il partit se battre contre les géants. Il mourut en héros. Seul, le marteau de tonnerre est un objet magique puissant, mais combiné avec le ceinturon des géants et les gantelets des ogres, son pouvoir est transformé. Cette modification nécessite une aide magique. Le marteau de tonnerre devient alors capable d'infliger 8 points de dégâts supplémentaires par coup, et de tuer instantanément tous les géants et les ogres qu'il touche.
+@80053 = ~Silverblade, un forgeron nain, créa ce marteau et deux autres objets : un ceinturon des géants et des gantelets des ogres. Son intention était de les offrir à son fils qui, en tant qu'officier supérieur dans les armées naines, combattait les géants et les tribus d'ogres de la région. Malheureusement le fils de Silverblade mourut à la fin de la fabrication des objets, avant qu'ils ne lui aient été offerts. De chagrin, Silverblade mit le ceinturon et les gantelets, et prenant le marteau de tonnerre, il partit se battre contre les géants. Il mourut en héros. Seul, le marteau de tonnerre est un objet magique puissant, mais combiné avec le ceinturon des géants et les gantelets des ogres, son pouvoir est transformé. Cette modification nécessite une aide magique. Le marteau de tonnerre devient alors capable d'infliger 8 points de dégâts supplémentaires par coup, et de tuer instantanément tous les géants et les ogres qu'il touche.
 
 PARAMÈTRES :
 
