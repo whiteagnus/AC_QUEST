@@ -2,7 +2,7 @@ IF
 	HasItem("ACQ16003","THALANTYR")
 THEN
 	RESPONSE #100
-		CutSceneId(Player1)
+		CutSceneId("THALANTYR")
 		Wait(1)
 		ActionOverride("THALANTYR",DestroyItem("ACQ16003"))
 		ActionOverride("THALANTYR",ForceSpell("THALANTYR",EFFECT_ONLY))

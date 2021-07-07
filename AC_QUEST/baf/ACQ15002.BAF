@@ -63,3 +63,4 @@ THEN
 		MakeGlobal()
 		StartDialogNoSet([PC])
 END
+

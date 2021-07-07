@@ -180,7 +180,9 @@ END
 
 IF ~~ THEN BEGIN 9
 SAY @64
-IF ~~ THEN DO ~AddJournalEntry(@10025,QUEST)ClearAllActions()StartCutSceneMode()SetGlobal("ACQ12","GLOBAL",2)Wait(1)FadeToColor([40.0],0)Wait(1)JumpToPoint([5031.2709])MakeGlobal()FadeFromColor([40.0],0)EndCutSceneMode()~ EXIT
+IF ~~ THEN DO ~AddJournalEntry(@10025,QUEST)ClearAllActions()StartCutSceneMode()SetGlobal("ACQ12","GLOBAL",2)Wait(1)FadeToColor([40.0],0)Wait(1)
+ActionOverride("ACQ12002",JumpToPoint([5031.2709]))
+ActionOverride("ACQ12002",MakeGlobal())FadeFromColor([40.0],0)EndCutSceneMode()~ EXIT
 END
 
 IF ~Global("ACQ12","GLOBAL",2)~ THEN BEGIN 10
@@ -212,7 +214,7 @@ END
 IF ~~ THEN BEGIN 14
 SAY @77
 IF ~HasItem("ACQ12000","ACQ12002")~ THEN DO ~ClearAllActions()StartCutSceneMode()StartCutScene("ACQ12CUT")~ EXIT
-IF ~!HasItem("ACQ12000","ACQ12002")~ THEN DO ~ClearAllActions()StartCutSceneMode()StartCutScene("ACQ12CUT2")~ EXIT
+IF ~!HasItem("ACQ12000","ACQ12002")~ THEN DO ~ClearAllActions()StartCutSceneMode()StartCutScene("ACQ12CU2")~ EXIT
 END
 
 IF ~~ THEN BEGIN 15
@@ -461,19 +463,31 @@ IF ~Global("ACQ122","GLOBAL",3)~ THEN REPLY @162 EXTERN ACQ12002 23
 CHAIN
 IF ~~ THEN ACQ12001 22
 @164 DO ~SetGlobal("ACQ12","GLOBAL",4)AddexperienceParty(1200)ReputationInc(1)EscapeAreaDestroy(10)~
-==ACQ12002 @165 DO ~MoveToPointNoInterrupt([4490.2344])~
+==ACQ12002 @165 
+DO ~//EscapeAreaMove("%Nashkel%",4490,2344,10)
+ActionOverride("ACQ12002",JumpToPoint([4490.2344]))
+ActionOverride("ACQ12002",MoveToPointNoInterrupt([4490.2344]))
+ActionOverride("ACQ12002",Face(10))~
 EXIT
 
 CHAIN
 IF ~~ THEN ACQ12001 23
 @166 DO ~SetGlobal("ACQ12","GLOBAL",4)AddexperienceParty(1200)GiveItemCreate("AMUL09",PLAYER1,0,0,0)EscapeAreaDestroy(10)~
-==ACQ12002 @165 DO ~MoveToPointNoInterrupt([4490.2344])~
+==ACQ12002 @165 
+DO ~//EscapeAreaMove("%Nashkel%",4490,2344,10)
+ActionOverride("ACQ12002",JumpToPoint([4490.2344]))
+ActionOverride("ACQ12002",MoveToPointNoInterrupt([4490.2344]))
+ActionOverride("ACQ12002",Face(10))~
 EXIT
 
 CHAIN
 IF ~~ THEN ACQ12001 24
 @167 DO ~SetGlobal("ACQ12","GLOBAL",4)AddexperienceParty(1200)GiveItemCreate("AMUL09",PLAYER1,0,0,0)EscapeAreaDestroy(10)~
-==ACQ12002 @168 DO ~MoveToPointNoInterrupt([4490.2344])~
+==ACQ12002 @168 
+DO ~//EscapeAreaMove("%Nashkel%",4490,2344,10)
+ActionOverride("ACQ12002",JumpToPoint([4490.2344]))
+ActionOverride("ACQ12002",MoveToPointNoInterrupt([4490.2344]))
+ActionOverride("ACQ12002",Face(10))~
 EXIT
 
 CHAIN
@@ -492,6 +506,12 @@ IF ~Global("ACQ12","GLOBAL",4)~ THEN DO ~SetGlobal("ACQ122","GLOBAL",4)~ EXIT
 IF ~!Global("ACQ12","GLOBAL",4)~ THEN DO ~SetGlobal("ACQ122","GLOBAL",4)~ EXTERN ACQ12001 21
 
 APPEND ACQ12002
+
+IF ~Global("ACQ122","GLOBAL",6)~ THEN thankyou
+SAY @183
+IF ~~ THEN DO ~SetGlobal("ACQ122","GLOBAL",7)~ EXIT
+END
+
 IF ~True()~ THEN BEGIN True1
 SAY @81
 IF ~~ THEN EXIT
@@ -501,8 +521,8 @@ END
 CHAIN
 IF ~NumTimesTalkedTo(0)~ THEN ACQ12001 0
 @176
-== %AJANTIS_BANTER% IF ~InParty("AJANTIS")See("AJANTIS")!StateCheck("AJANTIS",CD_STATE_NOTVALID)~ THEN @177
-== %KAGAIN_BANTER% IF ~InParty("KAGAIN")See("KAGAIN")!StateCheck("KAGAIN",CD_STATE_NOTVALID)~ THEN @178
+== %AJANTIS_JOINED% IF ~InParty("AJANTIS")See("AJANTIS")!StateCheck("AJANTIS",CD_STATE_NOTVALID)~ THEN @177
+== %KAGAIN_JOINED% IF ~InParty("KAGAIN")See("KAGAIN")!StateCheck("KAGAIN",CD_STATE_NOTVALID)~ THEN @178
 END
 ++ @1 + 1
 ++ @2 + 2
@@ -513,7 +533,7 @@ END
 CHAIN
 IF ~~ THEN ACQ12001 5
 @179 DO ~SetGlobal("ACQ12","GLOBAL",9)EscapeAreaDestroy(10)~
-== %KAGAIN_BANTER% IF ~InParty("KAGAIN")See("KAGAIN")!StateCheck("KAGAIN",CD_STATE_NOTVALID)~ THEN @180
-== %JAHEIRA_BANTER% IF ~InParty("JAHEIRA")See("JAHEIRA")!StateCheck("JAHEIRA",CD_STATE_NOTVALID)~ THEN @181
-== %MONTARON_BANTER% IF ~InParty("MONTARON")See("MONTARON")!StateCheck("MONTARON",CD_STATE_NOTVALID)~ THEN @182
+== %KAGAIN_JOINED% IF ~InParty("KAGAIN")See("KAGAIN")!StateCheck("KAGAIN",CD_STATE_NOTVALID)~ THEN @180
+== %JAHEIRA_JOINED% IF ~InParty("JAHEIRA")See("JAHEIRA")!StateCheck("JAHEIRA",CD_STATE_NOTVALID)~ THEN @181
+== %MONTARON_JOINED% IF ~InParty("MONTARON")See("MONTARON")!StateCheck("MONTARON",CD_STATE_NOTVALID)~ THEN @182
 EXIT
