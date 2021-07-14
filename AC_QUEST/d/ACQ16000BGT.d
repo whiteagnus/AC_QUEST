@@ -25,7 +25,8 @@ GlobalGT("ACQ16","GLOBAL",2)
 IF ~PartyHasItem("ACQ16002")
 OR(2) Global("ACQ16","GLOBAL",2) Global("ACQ16","GLOBAL",3)
 Global("ACQ16_HelpWerewolf","LOCALS",1)~ THEN REPLY @160 + AC16
-IF ~PartyHasItem("ACQ16002")
+IF ~Global("ACQ16_ResetQuest","GLOBAL",0)
+PartyHasItem("ACQ16002")
 OR(2) Global("ACQ16","GLOBAL",2) Global("ACQ16","GLOBAL",3)
 Global("ACQ16_HelpWerewolf","LOCALS",1)~ THEN REPLY @161 + AC21
 IF ~Dead("ACQ16002")GlobalGT("ACQ16","GLOBAL",1) GlobalLT("ACQ16","GLOBAL",4)!Global("ACQ16","GLOBAL",11)~ THEN REPLY @167 + AC23

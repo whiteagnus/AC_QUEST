@@ -167,7 +167,9 @@ SAY @52
 IF ~~ THEN EXIT
 END
 
-IF ~~ THEN BEGIN 25
+IF ~Dead("ACQ16002") PartyHasItem("ACQ16002")
+Global("ACQ16_ResetQuest","GLOBAL",0)
+OR(2) Global("ACQ16","GLOBAL",2) Global("ACQ16","GLOBAL",3)~ THEN BEGIN 25
 SAY @53
 IF ~~ THEN EXIT
 END
@@ -183,9 +185,14 @@ IF ~Global("ACQ16_MoveWolfLocation","GLOBAL",1)~ THEN DO ~ActionOverride("ACQ160
 IF ~Global("ACQ16_MoveWolfLocation","GLOBAL",0)~ THEN DO ~ActionOverride("ACQ16001",EscapeAreaDestroy(5))~ UNSOLVED_JOURNAL @10037 EXIT
 END
 
-IF ~Dead("ACQ16002")GlobalLT("ACQ16","GLOBAL",4) !Global("ACQ16","GLOBAL",0)~ THEN BEGIN 27_1
+IF ~Dead("ACQ16002") 
+GlobalLT("ACQ16","GLOBAL",4) !Global("ACQ16","GLOBAL",0)
+OR(3)
+!PartyHasItem("ACQ16002")
+Global("ACQ16","GLOBAL",1)
+!Global("ACQ16_ResetQuest","GLOBAL",0)~ THEN BEGIN 27_1
 SAY @55
-IF ~~ THEN DO ~ReputationInc(-1)ActionOverride("ACQ16001",EscapeAreaDestroy(5))~ EXIT
+IF ~~ THEN DO ~SetGlobal("ACQ16_ResetQuest","GLOBAL",3) ReputationInc(-1)ActionOverride("ACQ16001",EscapeAreaDestroy(5))~ EXIT
 END
 
 IF ~Dead("ACQ16002") 
@@ -250,7 +257,8 @@ GlobalGT("ACQ16","GLOBAL",0)
 IF ~PartyHasItem("ACQ16002")
 OR(2) Global("ACQ16","GLOBAL",2) Global("ACQ16","GLOBAL",3)
 Global("ACQ16_HelpWerewolf","LOCALS",1)~ THEN REPLY @160 + AC16
-IF ~PartyHasItem("ACQ16002")
+IF ~Global("ACQ16_ResetQuest","GLOBAL",0)
+PartyHasItem("ACQ16002")
 OR(2) Global("ACQ16","GLOBAL",2) Global("ACQ16","GLOBAL",3)
 Global("ACQ16_HelpWerewolf","LOCALS",1)~ THEN REPLY @161 + AC21
 IF ~Dead("ACQ16002")GlobalGT("ACQ16","GLOBAL",1) GlobalLT("ACQ16","GLOBAL",4)!Global("ACQ16","GLOBAL",11)~ THEN REPLY @167 + AC23
