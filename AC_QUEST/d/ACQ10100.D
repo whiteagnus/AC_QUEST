@@ -1015,7 +1015,7 @@ IF ~~ THEN BEGIN 6
 SAY @332
 ++ @322 DO ~AddJournalEntry(@10013,QUEST)~ + 7
 ++ @323 DO ~AddJournalEntry(@10014,QUEST)~ + 8
-++ @324 DO ~AddJournalEntry(@10012,QUEST)~ + 9
+++ @324 DO ~AddJournalEntry(@10016,QUEST)~ + 9
 ++ @325 DO ~AddJournalEntry(@10015,QUEST)~ + 10
 ++ @326 + 11
 ++ @327 + 12
