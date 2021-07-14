@@ -265,7 +265,7 @@ END
 
 IF ~~ THEN BEGIN 3
 SAY @96
-IF ~~ THEN DO ~ActionOverride("ACQ15002",SetNumTimesTalkedTo(0))~ EXIT
+IF ~~ THEN DO ~SetGlobalTimer("ACQ15_TalkTimer","GLOBAL",10) ActionOverride("ACQ15002",SetNumTimesTalkedTo(0))~ EXIT
 END
 
 IF ~~ THEN BEGIN 4
@@ -333,7 +333,8 @@ SAY @113
 IF ~~ THEN DO ~SetNumTimesTalkedTo(1)~ EXIT
 END
 
-IF ~Global("ACQ15","GLOBAL",5)~ THEN BEGIN 15
+IF WEIGHT #-1
+~Global("ACQ15","GLOBAL",5)~ THEN BEGIN 15
 SAY @115
 IF ~~ THEN DO ~ActionOverride("ACQ15002",DropItem("ACQ15002",[-1.-1]))
 ActionOverride("ACQ15002",DestroySelf())~ EXIT
