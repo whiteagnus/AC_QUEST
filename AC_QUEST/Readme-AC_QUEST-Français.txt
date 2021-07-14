@@ -1,4 +1,4 @@
-        *  Ascalon's Quest Pack: Les Serpents d'Abbathor 1ere partie et d'autres histoires  *
+﻿        *  Ascalon's Quest Pack: Les Serpents d'Abbathor 1ere partie et d'autres histoires  *
 	  Un mod pour BG:EE, BGT-WeiDU, Tutu (avec TotSC), BGII:EE, BGII, et EET
                             Ascalon (geheimer.herrscher@gmx.de)
 
@@ -197,24 +197,32 @@ VII. Historique des versions :
 - Correction du lien de téléchargement dans ac_quest.ini
 - Suppression du fichier vide ACQCUT04.baf
 
-4.0 - 2021-01-02
-- Division du mod en composants optionnels.
-- Changement du nom "Chef Gnoll" en "Chef de groupe Gnoll" pour correspondre aux noms en jeu et au dialogue d'Aaron (version anglaise).
-- Aaron dira seulement que les Gnolls ont pris l'anneau, et non un chef Gnoll pour éviter toute confusion avec le chef Gnoll existant près de l'endroit où Dynaheir est détenu.
-- Aaron devrait rester au Vieux Moulin après que le PC se soit reposé et ne pas retourner à l'auberge.
-- La bague d'Aaron ne doit pas contenir de commentaires dans la description.
-- Aaron ne doit pas constamment engager le dialogue lorsqu'il est dans la fosse.
-- Aphriel devrait réagir au corps mort de Perwell dès sa première rencontre.
-- Ygnazius ne devrait pas être au FAI si la quête est terminée.
-- La cutscene pour recevoir le remède à la lycanthropie de Thalantyr devraient fonctionner même si le PC n'est pas dans sa demeure.
-- L'emplacement de la maison d'Aiwell peut être soit une hutte à Haute Haie, soit la maison "9" à Beregost (pour la compatibilité avec le Pack PNJ de Glam).
-- Correction de la variable de zone dans AC4402.baf.
-- Plus de descriptions d'objets dans le style EE par Cahir (versions EE anglaise et française).
-- Ajout des catégories Dynamic Install Order pour supporte le Projet Infinity.
-- Toutes les entrées de journal devraient être supprimées lors du passage à BGII dans BGT. Les entrées de journal pour BG1 ne seront pas supprimées pour EET.
-- Séparation des lignes pour l'installation uniquement dans les fichier setup-install.tra séparés. 
-- "Des loups et des hommes" n'utilisera plus la cre cachée "Virginie le lapin merveilleux".
-- Entrée corrigée dans cpmvars.tpa
+4.0 - 2021-07-14
+-French version added, by deratiseur & jazira (proofreading by tonton-thon)
+-Italian translation, by Coland
+-split mod into optional components.
+-changed name of Gnoll "Boss" to "Gnoll Chieftain" to match the ingame names and Aaron's dialogue (English version).
+-Aaron will only say that the Gnolls took the ring, not a Gnoll Chieftain to prevent confusion with the existing Gnoll Chieftain near where Dynaheir is held.
+-Aaron should stay at the Old Mill after the PC rested and not return to the Inn.
+-Russian version updates by Arkie
+-typo corrections by jazira
+-Inserted unused journal entries for "A Job Well-Paid".
+-Aaron's ring should not contain comments in the description.
+-Aaron shouldn't initiate dialogue constantly while being in the pit.
+-Aphriel should react to dead Perwell's body upon first meeting.
+-Aphriel should initiate dialogue only after Perwell called her.
+-Perwell shouldn't initiate dialogue constantly while being in the mine.
+-Ygnazius should not be at the FAI if quest is finished.
+-Aiwell will only react to dead Tonder after the PC talked to Thalantyr or if Tonder's corpse is not in inventory.
+-Cutscenes to receive Werwolf cure from Thalantyr should work if PC is not inside his abode as well.
+-Location of Aiwell's home can be either hut in High Hedge or house "9" in Beregost (for compatibility with Glam's NPC Pack).
+-use correct area variable in AC4402.baf.
+-more item descriptions in EE style by Cahir (English EE version).
+-Added Dynamic Install Order categories to support Project Infinity.
+-All journal entries should be deleted upon transition to BGII in BGT. Journal entries for BG1 will not be deleted for EET.
+-split lines for install only into separate setup-install.tra. 
+-"Of Wolves and men" will no longer use the hidden cre "Virginy the wonder bunny".
+-corrected entry in cpmvars.tpa
 
 
 ***************************************************************************************************************
@@ -228,6 +236,8 @@ VIII. Remerciements
 - Leomar et Leonardo Watson pour leur travail sur le BWP.
 - Bloodtitan pour la traduction anglaise.
 - Arkie pour la traduction russe.
+- deratiseur & jazira for the French translation, proofreading by tonton-thon.
+- Coland for the Italian translation.
 - Fridtjof et Hedian et tous les autres de www.rosenranken.org qui offrent un sympathique foyer au Pack de Quêtes.
 - en dernier, mais pas des moindres, les joueurs motivés et enthousiastes du BWP, qui maintiennent en vie le meilleur jeu de tous les temps.
 - et en fin de compte, ma Suissesse préférée Revianêl, qui a examiné de fond en comble toutes les quêtes, toutes les allusions, tous les gags et tous les petits détails cachés, qu'elle a validés ou refrénés, sans jamais avoir été soi-même au-delà de Château-Suif.

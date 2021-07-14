@@ -198,15 +198,23 @@ VII. Versions-History:
 -corrected download link in ac_quest.ini
 -removed empty file ACQCUT04.baf
 
-4.0 - 2021-01-02
+4.0 - 2021-07-14
+-French version added, by deratiseur & jazira (proofreading by tonton-thon)
+-Italian translation, by Coland
 -split mod into optional components.
 -changed name of Gnoll "Boss" to "Gnoll Chieftain" to match the ingame names and Aaron's dialogue (English version).
 -Aaron will only say that the Gnolls took the ring, not a Gnoll Chieftain to prevent confusion with the existing Gnoll Chieftain near where Dynaheir is held.
 -Aaron should stay at the Old Mill after the PC rested and not return to the Inn.
+-Russian version updates by Arkie
+-typo corrections by jazira
+-Inserted unused journal entries for "A Job Well-Paid".
 -Aaron's ring should not contain comments in the description.
 -Aaron shouldn't initiate dialogue constantly while being in the pit.
 -Aphriel should react to dead Perwell's body upon first meeting.
+-Aphriel should initiate dialogue only after Perwell called her.
+-Perwell shouldn't initiate dialogue constantly while being in the mine.
 -Ygnazius should not be at the FAI if quest is finished.
+-Aiwell will only react to dead Tonder after the PC talked to Thalantyr or if Tonder's corpse is not in inventory.
 -Cutscenes to receive Werwolf cure from Thalantyr should work if PC is not inside his abode as well.
 -Location of Aiwell's home can be either hut in High Hedge or house "9" in Beregost (for compatibility with Glam's NPC Pack).
 -use correct area variable in AC4402.baf.
@@ -228,6 +236,8 @@ VIII. Danksagungen
 - Leomar und Leonardo Watson für ihre Arbeit am BWP
 - Bloodtitan für die englische Übersetzung
 - Arkie für die russische Übersetzung
+- deratiseur & jazira für die französische Übersetzung, korrekturgelesen von tonton-thon
+- Coland für die italienische Übersetzung
 - Fridtjof und Hedian und allen anderen von www.rosenranken.org, die dem Questpack ein feines zu Hause bieten
 - vorlast but not vorleast den motivierten und begeisterten Spielern des BWP, die das beste Spiel aller Zeiten am Leben erhalten
 - Und zu guter Letzt meiner Lieblingsschweizerin Revianêl, die jede einzelne Quest, jede Anspielung, jeden Gag und jede versteckte Kleinigkeit auf Herz und Nieren geprüft und durchgewunken bzw. ausgebremst hat - Ohne jemals selbst über Kerzenburg hinausgekommen zu sein.
