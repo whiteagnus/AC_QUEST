@@ -194,7 +194,9 @@ To be used later in the form:
     //TRAs declared in LANGUAGE must be reloaded
 		
   LOAD_TRA ~AC_QUEST/tra/autotra/%LANGUAGE%/setup-AC_QUEST.tra~
-  LOAD_TRA ~AC_QUEST/tra/autotra/%LANGUAGE%/setup-AC_QUEST_ee.tra~
+  ACTION_IF GAME_IS ~bgee eet~ THEN BEGIN
+    LOAD_TRA ~AC_QUEST/tra/autotra/%LANGUAGE%/setup-AC_QUEST_ee.tra~
+  END
 
 END //ALWAYS
 
@@ -210,10 +212,16 @@ LANGUAGE ~English~
 	 ~english~ 
 	 ~AC_QUEST/TRA/english/setup-AC_QUEST.tra~
 	 ~AC_QUEST/TRA/english/setup-install.tra~
+
 LANGUAGE ~Russian~ 
 	 ~russian~ 
 	 ~AC_QUEST/TRA/russian/setup-AC_QUEST.tra~
 	 ~AC_QUEST/TRA/english/setup-install.tra~
+
+LANGUAGE ~Italian~ 
+	 ~italian~ 
+	 ~AC_QUEST/TRA/italian/setup-AC_QUEST.tra~
+	 ~AC_QUEST/TRA/italian/setup-install.tra~
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -244,7 +252,7 @@ FORBID_COMPONENT ~EET_end.tp2~ ~0~ @5000016
 FORBID_COMPONENT ~EET_end.tp2~ ~1~ @5000016
 
 
-ADD_JOURNAL TITLE (@90001) @10001 @10002 @10003
+ADD_JOURNAL TITLE (@90001) @10001 @10002 @10003 USING ~AC_QUEST/tra/autotra/%LANGUAGE%/setup-AC_QUEST.tra~
 
 COPY ~AC_QUEST/cre/ACQ11001.CRE~ ~override~
 SAY NAME1 @6
@@ -315,7 +323,7 @@ REQUIRE_PREDICATE GAME_IS ~bgt bgee tutu_totsc eet~ @5000004
 FORBID_COMPONENT ~EET_end.tp2~ ~0~ @5000016
 FORBID_COMPONENT ~EET_end.tp2~ ~1~ @5000016
 
-ADD_JOURNAL TITLE (@90011) @10008 @10024 @10025 @10009 @10026 @10027
+ADD_JOURNAL TITLE (@90011) @10008 @10009 @10024 @10025 @10026 @10027 USING ~AC_QUEST/tra/autotra/%LANGUAGE%/setup-AC_QUEST.tra~
 
 
 
@@ -461,8 +469,8 @@ REQUIRE_PREDICATE GAME_IS ~bgt bgee tutu_totsc eet~ @5000004
 FORBID_COMPONENT ~EET_end.tp2~ ~0~ @5000016
 FORBID_COMPONENT ~EET_end.tp2~ ~1~ @5000016
 
-ADD_JOURNAL TITLE (@90004) @10004 @10006
-ADD_JOURNAL TITLE (@90005) @10005 @10007
+ADD_JOURNAL TITLE (@90004) @10004 @10006 USING ~AC_QUEST/tra/autotra/%LANGUAGE%/setup-AC_QUEST.tra~
+ADD_JOURNAL TITLE (@90005) @10005 @10007 USING ~AC_QUEST/tra/autotra/%LANGUAGE%/setup-AC_QUEST.tra~
 
 COPY ~AC_QUEST/cre/ACQ13001.CRE~ ~override~
 SAY NAME1 @22
@@ -585,7 +593,7 @@ REQUIRE_PREDICATE GAME_IS ~bgt bgee tutu_totsc eet~ @5000004
 FORBID_COMPONENT ~EET_end.tp2~ ~0~ @5000016
 FORBID_COMPONENT ~EET_end.tp2~ ~1~ @5000016
 
-ADD_JOURNAL TITLE (@90006) @10010 @10028 @10029 @10030 @10031 @10032
+ADD_JOURNAL TITLE (@90006) @10010 @10028 @10029 @10030 @10031 @10032 USING ~AC_QUEST/tra/autotra/%LANGUAGE%/setup-AC_QUEST.tra~
 
 COMPILE ~AC_QUEST/D/ACQ15000.D~
 EVAL
@@ -697,7 +705,7 @@ REQUIRE_PREDICATE GAME_IS ~bgt bgee tutu_totsc eet~ @5000004
 FORBID_COMPONENT ~EET_end.tp2~ ~0~ @5000016
 FORBID_COMPONENT ~EET_end.tp2~ ~1~ @5000016
 
-ADD_JOURNAL TITLE (@2000009) @2000001 @2000002 @2000003 @2000004 @2000005 @2000006 @2000007 @2000008
+ADD_JOURNAL TITLE (@2000009) @2000001 @2000002 @2000003 @2000004 @2000005 @2000006 @2000007 @2000008 USING ~AC_QUEST/tra/autotra/%LANGUAGE%/setup-AC_QUEST.tra~
 
 COPY ~AC_QUEST/ITM/ACQ17003.ITM~ ~override~
 SAY NAME1 #215
@@ -723,7 +731,7 @@ EXTEND_BOTTOM ~%LionsWay_BCS%.bcs~ ~AC_QUEST/BAF/AR6600.baf~
 EVAL
 */
 LAF extend_area_script STR_VAR area="%UlcasterRuins%" bottom="AC_QUEST/BAF/AR9798.baf"   END
-LAF extend_area_script STR_VAR area="%LionsWay%" bottom="AC_QUEST/BAF/AR6600.ba"   END
+LAF extend_area_script STR_VAR area="%LionsWay%" bottom="AC_QUEST/BAF/AR6600.baf"   END
 
 
 COPY ~AC_QUEST/ITM/BOOK90.ITM~ ~OVERRIDE/ACQBOOK2.ITM~ 
@@ -788,7 +796,7 @@ REQUIRE_PREDICATE GAME_IS ~bgt bgee tutu_totsc eet~ @5000004
 FORBID_COMPONENT ~EET_end.tp2~ ~0~ @5000016
 FORBID_COMPONENT ~EET_end.tp2~ ~1~ @5000016
 
-ADD_JOURNAL TITLE (@3000006) @3000001 @3000002 @3000003 @3000004 @3000005
+ADD_JOURNAL TITLE (@3000006) @3000001 @3000002 @3000003 @3000004 @3000005 USING ~AC_QUEST/tra/autotra/%LANGUAGE%/setup-AC_QUEST.tra~
 
 COMPILE ~AC_QUEST/BAF/ACQ18002.BAF~
 COMPILE ~AC_QUEST/D/ACQ18000.D~
@@ -1003,7 +1011,7 @@ WRITE_ASCII 0x248 ~ACVIRGI~
 END
 
 
-ADD_JOURNAL TITLE (@90008) @10011 @10012 @10013 @10014 @10019 @10015 @10017 @10016 @10018 @10020 @10022 @10023 @10021 @3000007 @3000008 @3000009 @3000010 @3000011 @3000012 @3000013
+ADD_JOURNAL TITLE (@90008) @10011 @10012 @10013 @10014 @10015 @10016 @10017 @10018 @10019 @10020 @10021 @10022 @10023 @3000007 @3000008 @3000009 @3000010 @3000011 @3000012 @3000013 USING ~AC_QUEST/tra/autotra/%LANGUAGE%/setup-AC_QUEST.tra~
 
 COMPILE ~AC_QUEST/D/ACQ10100.D~
 EVAL
@@ -1042,7 +1050,7 @@ END
 /*
 EXTEND_TOP ~%NWBaldursGate_Tavern_L2_BCS%.bcs~ ~AC_QUEST/baf/AR7266.baf~
 EVAL
-/*
+*/
 LAF extend_area_script STR_VAR area="%NWBaldursGate_Tavern_L2%" top="AC_QUEST/baf/AR7266.baf"   END
 
 
@@ -1634,7 +1642,9 @@ SAY NAME2 @109
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////																			////////////
 ////////////									BEGIN PART 2							////////////
-////////////																			////////////
+////////////	
+
+//ADD_JOURNAL TITLE (@90010) @20023																		////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////
          
@@ -1654,8 +1664,7 @@ REQUIRE_PREDICATE GAME_IS ~bgt tob bg2ee eet~ @5000004
 FORBID_COMPONENT ~EET_end.tp2~ ~0~ @5000016
 FORBID_COMPONENT ~EET_end.tp2~ ~1~ @5000016
 
-ADD_JOURNAL TITLE (@90009) @20001 @20002 @20003 @20004 @20005 @20006
-//ADD_JOURNAL TITLE (@90010) @20023
+ADD_JOURNAL TITLE (@90009) @20001 @20002 @20003 @20004 @20005 @20006 USING ~AC_QUEST/tra/autotra/%LANGUAGE%/setup-AC_QUEST.tra~
 
 COPY ~AC_QUEST/cre/ACQ22001.CRE~ ~override~
 SAY NAME1 @123
