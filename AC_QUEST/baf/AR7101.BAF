@@ -9,6 +9,8 @@ END
 
 IF
 	Global("ACQ16_MoveWolfLocation","GLOBAL",0)
+	!InMyArea("ACQ16002")
+	Global("ACQ16_TonderWithAiwell","GLOBAL",0)
 	Global("ACQ16_ResetQuest","GLOBAL",1)
 	Global("ACQ16_ResetTonder","MYAREA",0)
 THEN
@@ -32,17 +34,9 @@ END
 
 IF
 	Global("AC_QUEST_CutScene","MYAREA",1)
+	InMyArea("ACVIRGI")
 THEN
 	RESPONSE #100
-		SetInterrupt(FALSE)
+		ActionOverride("ACVIRGI",DestroySelf())
 		SetGlobal("AC_QUEST_CutScene","MYAREA",2)
-		Wait(1)
-		FadeToColor([20.0],0)
-		Wait(2)
-		CreateCreatureObject("ACQ16003","ACQ16002",0,0,0)
-		ActionOverride("ACQ16002",DestroySelf())
-		FadeFromColor([20.0],0)
-		Wait(2)
-		ActionOverride("ACQ16003",StartDialogNoSet([PC])
-		SetInterrupt(TRUE)
 END

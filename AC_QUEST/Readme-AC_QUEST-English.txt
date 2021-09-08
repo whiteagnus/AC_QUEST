@@ -197,15 +197,16 @@ VII. Version history:
 -corrected download link in ac_quest.ini
 -removed empty file ACQCUT04.baf
 
-4.0 - 2021-07-14
+4.0 - 2021-09-08
+-split mod into optional components.
+-"Of Wolves and men" offers second install choice where house ("9" of Dudleyville Walkthrough) in Beregost is used instead of hut in High Hedge for compatibility with Glam's NPC Pack.
 -French version added, by deratiseur & jazira (proofreading by tonton-thon)
 -Italian translation, by Coland
--split mod into optional components.
+-Russian version updates by Arkie
+-typo corrections by jazira
 -changed name of Gnoll "Boss" to "Gnoll Chieftain" to match the ingame names and Aaron's dialogue (English version).
 -Aaron will only say that the Gnolls took the ring, not a Gnoll Chieftain to prevent confusion with the existing Gnoll Chieftain near where Dynaheir is held.
 -Aaron should stay at the Old Mill after the PC rested and not return to the Inn.
--Russian version updates by Arkie
--typo corrections by jazira
 -Inserted unused journal entries for "A Job Well-Paid".
 -Aaron's ring should not contain comments in the description.
 -Aaron shouldn't initiate dialogue constantly while being in the pit.
@@ -213,15 +214,13 @@ VII. Version history:
 -Aphriel should initiate dialogue only after Perwell called her.
 -Perwell shouldn't initiate dialogue constantly while being in the mine.
 -Ygnazius should not be at the FAI if quest is finished.
--Aiwell will only react to dead Tonder after the PC talked to Thalantyr or if Tonder's corpse is not in inventory.
 -Cutscenes to receive Werwolf cure from Thalantyr should work if PC is not inside his abode as well.
--Location of Aiwell's home can be either hut in High Hedge or house "9" in Beregost (for compatibility with Glam's NPC Pack).
 -use correct area variable in AC4402.baf.
 -more item descriptions in EE style by Cahir (English EE version).
 -Added Dynamic Install Order categories to support Project Infinity.
 -All journal entries should be deleted upon transition to BGII in BGT. Journal entries for BG1 will not be deleted for EET.
 -split lines for install only into separate setup-install.tra. 
--"Of Wolves and men" will no longer use the hidden cre "Virginy the wonder bunny".
+-added globally unique LABELs to support Project Infinity
 -corrected entry in cpmvars.tpa
 
 

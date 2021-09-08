@@ -2,7 +2,7 @@ BACKUP ~AC_QUEST/backup~
 //AUTHOR ~whiteagnus@baldursgatemods.de~ 
 SUPPORT ~https://baldurs-gate.de/index.php?threads/ascalons-questpack.39286/~
 
-VERSION ~4.0~  
+VERSION ~4.0pre~  
 
 AUTO_TRA "AC_QUEST/TRA/autotra/%s"//%"
 
@@ -247,6 +247,7 @@ LANGUAGE ~Italian~
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 BEGIN @5000003 /* Der Lohn für die Mühe */
+LABEL AscalonsQuestpack-JobWellPaid
 REQUIRE_PREDICATE GAME_IS ~bgt bgee tutu_totsc eet~ @5000004
 FORBID_COMPONENT ~EET_end.tp2~ ~0~ @5000016
 FORBID_COMPONENT ~EET_end.tp2~ ~1~ @5000016
@@ -319,6 +320,7 @@ COMPILE ~AC_QUEST/BAF/ACQ11002.BAF~
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 BEGIN @5000005
+LABEL AscalonsQuestpack-FeastforGnolls
 REQUIRE_PREDICATE GAME_IS ~bgt bgee tutu_totsc eet~ @5000004
 FORBID_COMPONENT ~EET_end.tp2~ ~0~ @5000016
 FORBID_COMPONENT ~EET_end.tp2~ ~1~ @5000016
@@ -465,6 +467,7 @@ SAY DESC @21
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 BEGIN @5000006
+LABEL AscalonsQuestpack-Rabbit
 REQUIRE_PREDICATE GAME_IS ~bgt bgee tutu_totsc eet~ @5000004
 FORBID_COMPONENT ~EET_end.tp2~ ~0~ @5000016
 FORBID_COMPONENT ~EET_end.tp2~ ~1~ @5000016
@@ -589,6 +592,7 @@ COMPILE ~AC_QUEST/BAF/ACQ13002.BAF~
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 BEGIN @5000007
+LABEL AscalonsQuestpack-LostSon
 REQUIRE_PREDICATE GAME_IS ~bgt bgee tutu_totsc eet~ @5000004
 FORBID_COMPONENT ~EET_end.tp2~ ~0~ @5000016
 FORBID_COMPONENT ~EET_end.tp2~ ~1~ @5000016
@@ -674,6 +678,7 @@ END
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 BEGIN @5000008 /* ~Quest uses hut near Thalantyr in High Hedge.~ */
+LABEL AscalonsQuestpack-WolvesMen_Highhedge
 SUBCOMPONENT @5000009 /* ~Von Wölfen und Männern~ */
 REQUIRE_PREDICATE GAME_IS ~bgt bgee tutu_totsc eet~ @5000004
 FORBID_COMPONENT ~EET_end.tp2~ ~0~ @5000016
@@ -683,6 +688,7 @@ INCLUDE ~AC_QUEST/tpa/wolves_and_men.tpa~
 
 
 BEGIN @5000010 /* ~Quest uses house in Beregost.~ */
+LABEL AscalonsQuestpack-WolvesMen_Beregost
 SUBCOMPONENT @5000009 /* ~Von Wölfen und Männern~ */
 REQUIRE_PREDICATE GAME_IS ~bgt bgee tutu_totsc eet~ @5000004
 
@@ -701,6 +707,7 @@ LAF extend_area_script STR_VAR area="%Beregost_House09%" bottom="AC_QUEST/BAF/AR
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 BEGIN @5000011
+LABEL AscalonsQuestpack-GreatKarlini
 REQUIRE_PREDICATE GAME_IS ~bgt bgee tutu_totsc eet~ @5000004
 FORBID_COMPONENT ~EET_end.tp2~ ~0~ @5000016
 FORBID_COMPONENT ~EET_end.tp2~ ~1~ @5000016
@@ -792,6 +799,7 @@ END
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 BEGIN @5000012
+LABEL AscalonsQuestpack-Gibberlings
 REQUIRE_PREDICATE GAME_IS ~bgt bgee tutu_totsc eet~ @5000004
 FORBID_COMPONENT ~EET_end.tp2~ ~0~ @5000016
 FORBID_COMPONENT ~EET_end.tp2~ ~1~ @5000016
@@ -917,6 +925,7 @@ END
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 BEGIN @5000013
+LABEL AscalonsQuestpack-Fans
 REQUIRE_PREDICATE GAME_IS ~bgt bgee tutu_totsc eet~ @5000004
 FORBID_COMPONENT ~EET_end.tp2~ ~0~ @5000016
 FORBID_COMPONENT ~EET_end.tp2~ ~1~ @5000016
@@ -986,6 +995,7 @@ LPF fj_are_structure
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 BEGIN @5000014
+LABEL AscalonsQuestpack-SerpentsAbbathor
 REQUIRE_PREDICATE GAME_IS ~bgt bgee tutu_totsc eet~ @5000004
 FORBID_COMPONENT ~EET_end.tp2~ ~0~ @5000016
 FORBID_COMPONENT ~EET_end.tp2~ ~1~ @5000016
@@ -1660,6 +1670,7 @@ SAY NAME2 @109
 //ACTION_IF GAME_IS ~tob bg2ee eet~ THEN BEGIN
 
 BEGIN @5000015
+LABEL AscalonsQuestpack-HalflingEyeless
 REQUIRE_PREDICATE GAME_IS ~bgt tob bg2ee eet~ @5000004
 FORBID_COMPONENT ~EET_end.tp2~ ~0~ @5000016
 FORBID_COMPONENT ~EET_end.tp2~ ~1~ @5000016

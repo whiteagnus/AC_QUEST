@@ -243,7 +243,8 @@ END
 
 /////////////////
 
-EXTEND_TOP %Thalantyr_Dialog% 1 #1
+//EXTEND_TOP %Thalantyr_Dialog% 1 #1
+EXTEND_BOTTOM %Thalantyr_Dialog% 1
 IF ~!Dead("ACQ16001")Global("ACQ16","GLOBAL",0)!Dead("ACQ16002")~ THEN REPLY @61 + AC0
 IF ~!Dead("ACQ16001")Global("ACQ16","GLOBAL",0)Dead("ACQ16002")~ THEN REPLY @148 + AC0
 IF ~!Dead("ACQ16001")Global("ACQ16","GLOBAL",3)~ THEN REPLY @62 + AC0a
@@ -261,13 +262,15 @@ IF ~Global("ACQ16_ResetQuest","GLOBAL",0)
 PartyHasItem("ACQ16002")
 OR(2) Global("ACQ16","GLOBAL",2) Global("ACQ16","GLOBAL",3)
 Global("ACQ16_HelpWerewolf","LOCALS",1)~ THEN REPLY @161 + AC21
-IF ~Dead("ACQ16002")GlobalGT("ACQ16","GLOBAL",1) GlobalLT("ACQ16","GLOBAL",4)!Global("ACQ16","GLOBAL",11)~ THEN REPLY @167 + AC23
+IF ~Dead("ACQ16002") !PartyHasItem("ACQ16002")
+GlobalGT("ACQ16","GLOBAL",1) GlobalLT("ACQ16","GLOBAL",4)!Global("ACQ16","GLOBAL",11)~ THEN REPLY @167 + AC23
 
 IF ~PartyHasItem("ACQ16003")Global("ACQ16","GLOBAL",2)!Global("ACQ16_HelpWerewolf","LOCALS",1)~ THEN REPLY @66 + AC17
 IF ~PartyHasItem("MISC1I")Global("ACQ16","GLOBAL",2)!Global("ACQ16_HelpWerewolf","LOCALS",1)~ THEN REPLY @67 + AC18
 END
 
-EXTEND_TOP %Thalantyr_Dialog% 2 #1
+//EXTEND_TOP %Thalantyr_Dialog% 2 #1
+EXTEND_BOTTOM %Thalantyr_Dialog% 2
 IF ~!Dead("ACQ16001")Global("ACQ16","GLOBAL",0)~ THEN REPLY @61 + AC0
 IF ~!Dead("ACQ16001")Global("ACQ16","GLOBAL",3)~ THEN REPLY @62 + AC0a
 IF ~!Dead("ACQ16001")Global("ACQ16","GLOBAL",1)~ THEN REPLY @63 + AC0b
@@ -573,33 +576,42 @@ END
 IF ~~ THEN BEGIN 2
 SAY @125 = @126
 IF ~RandomNumGT(10,1)~ THEN DO ~EraseJournalEntry(@10038)EraseJournalEntry(@10039)EraseJournalEntry(@10040)
-ClearAllActions()StartCutSceneMode()
-//StartCutScene("ACQ162")
-SetGlobal("AC_QUEST_CutScene","MYAREA",1)~ EXIT
+//ClearAllActions()
+//CreateCreature("ACVIRGI",[10.10],0)
+//StartCutSceneMode()
+//StartCutScene("ACQ162") 
+~ + 5
 IF ~RandomNumLT(10,2)~ THEN GOTO 6
 END
 
 IF ~~ THEN BEGIN 3
 SAY @125 = @126
-IF ~RandomNumGT(10,5)~ THEN DO ~EraseJournalEntry(@10038)EraseJournalEntry(@10039)EraseJournalEntry(@10040)ClearAllActions()StartCutSceneMode()
-//StartCutScene("ACQ162")
-SetGlobal("AC_QUEST_CutScene","MYAREA",1)~ EXIT
+IF ~RandomNumGT(10,5)~ THEN DO ~EraseJournalEntry(@10038)EraseJournalEntry(@10039)EraseJournalEntry(@10040)
+//ClearAllActions()
+//CreateCreature("ACVIRGI",[10.10],0)
+//StartCutSceneMode()
+//StartCutScene("ACQ162") 
+~ + 5
 IF ~RandomNumLT(10,6)~ THEN GOTO 6
 END
 
 IF ~~ THEN BEGIN 4
 SAY @125 = @126
 IF ~RandomNumGT(10,1)~ THEN GOTO 6
-IF ~RandomNumLT(10,2)~ THEN DO ~EraseJournalEntry(@10038)EraseJournalEntry(@10039)EraseJournalEntry(@10040)ClearAllActions()StartCutSceneMode()
+IF ~RandomNumLT(10,2)~ THEN DO ~EraseJournalEntry(@10038)EraseJournalEntry(@10039)EraseJournalEntry(@10040)
+//ClearAllActions()
+//CreateCreature("ACVIRGI",[10.10],0)
+//StartCutSceneMode()
 //StartCutScene("ACQ162")
-SetGlobal("AC_QUEST_CutScene","MYAREA",1)~ EXIT
+~ + 5
 END
 
 IF ~~ THEN BEGIN 5
 SAY @127
-IF ~~ THEN DO ~ClearAllActions()StartCutSceneMode()
-//StartCutScene("ACQ162")
-SetGlobal("AC_QUEST_CutScene","MYAREA",1)~ EXIT
+IF ~~ THEN DO ~ClearAllActions()
+CreateCreature("ACVIRGI",[10.10],0)
+StartCutSceneMode()
+StartCutScene("ACQ162")~ EXIT
 END
 
 IF ~~ THEN BEGIN 6
@@ -645,7 +657,7 @@ END
 
 IF ~~ THEN BEGIN 6
 SAY @140
-IF ~~ THEN DO ~SetGlobal("ACQ16_TorbenWithAiwell","GLOBAL",1) ActionOverride("ACQ16003",EscapeAreaDestroy(5))~ EXIT
+IF ~~ THEN DO ~SetGlobal("ACQ16_TonderWithAiwell","GLOBAL",1) ActionOverride("ACQ16003",EscapeAreaDestroy(5))~ EXIT
 END
 
 CHAIN

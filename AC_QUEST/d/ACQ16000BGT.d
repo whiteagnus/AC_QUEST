@@ -11,7 +11,8 @@ END
 */
 
 /* new for v2.5: new reply options */
-EXTEND_TOP %Thalantyr_Dialog% 35 #1
+//EXTEND_TOP %Thalantyr_Dialog% 35 #1
+EXTEND_BOTTOM %Thalantyr_Dialog% 35
 IF ~!Dead("ACQ16001")Global("ACQ16","GLOBAL",0)!Dead("ACQ16002")~ THEN REPLY @61 + AC0
 IF ~!Dead("ACQ16001")Global("ACQ16","GLOBAL",0)Dead("ACQ16002")~ THEN REPLY @148 + AC0
 IF ~!Dead("ACQ16001")Global("ACQ16","GLOBAL",3)~ THEN REPLY @62 + AC0a

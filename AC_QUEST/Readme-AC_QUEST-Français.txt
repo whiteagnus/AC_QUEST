@@ -1,4 +1,4 @@
-ï»¿        *  Ascalon's Quest Pack: Les Serpents d'Abbathor 1ere partie et d'autres histoires  *
+        *  Ascalon's Quest Pack: Les Serpents d'Abbathor 1ere partie et d'autres histoires  *
 	  Un mod pour BG:EE, BGT-WeiDU, Tutu (avec TotSC), BGII:EE, BGII, et EET
                             Ascalon (geheimer.herrscher@gmx.de)
 
@@ -13,12 +13,12 @@ Contenu :
 I. Description
 II. Installation
 III. Note
-IV. CompatibilitÃ©
+IV. Compatibilité
 V. Contact
 VI. Composants
 VII. Historique des versions
 VIII. Remerciements
-IX. Outils utilisÃ©s
+IX. Outils utilisés
 X. Mots de la fin
 
 
@@ -26,29 +26,29 @@ X. Mots de la fin
 
 I. Description :
 
-Au cours du jeu, il arrive qu'on soit inspirÃ© par des idÃ©es plus ou moins grandes de quÃªtes secondaires ou d'histoires qui se dÃ©roulent parallÃ¨lement Ã  l'histoire de l'enfant de Bhaal. Cette modification est un recueil de mes idÃ©es : 10 quÃªtes de tailles diffÃ©rentes. Certaines sont humoristiques, d'autres sont un peu plus tragiques. Certaines sont des Ã©nigmes, d'autres sont liÃ©es au combat. Certaines exigent des compÃ©tences diplomatiques, d'autres ne peuvent Ãªtre rÃ©solues que par certaines races ou classes.
-Le mod ajoute des quÃªtes Ã  BG1 et Ã  BGII. Il peut Ãªtre installÃ© directement sur BG:EE, BGII:EE, EET, BGT, Tutu (w TotSC), et BGII.
+Au cours du jeu, il arrive qu'on soit inspiré par des idées plus ou moins grandes de quêtes secondaires ou d'histoires qui se déroulent parallèlement à l'histoire de l'enfant de Bhaal. Cette modification est un recueil de mes idées : 10 quêtes de tailles différentes. Certaines sont humoristiques, d'autres sont un peu plus tragiques. Certaines sont des énigmes, d'autres sont liées au combat. Certaines exigent des compétences diplomatiques, d'autres ne peuvent être résolues que par certaines races ou classes.
+Le mod ajoute des quêtes à BG1 et à BGII. Il peut être installé directement sur BG:EE, BGII:EE, EET, BGT, Tutu (w TotSC), et BGII.
 
 ***************************************************************************************************************
 
 II. Installation :
 
-- Sauvegardez votre rÃ©pertoire override, ainsi que les fichiers dialog.tlk, dialogf.tlk et chitin.key, avant de lancer l'installation.
-- Extrayez l'archive zip dans votre rÃ©pertoire Baldur's Gate II.
+- Sauvegardez votre répertoire override, ainsi que les fichiers dialog.tlk, dialogf.tlk et chitin.key, avant de lancer l'installation.
+- Extrayez l'archive zip dans votre répertoire Baldur's Gate II.
 - Lancez setup-AC_QUEST.exe
-- Si ce mod est installÃ© dans le cadre d'une installation BWP, il est recommandÃ© de le faire pendant la section "Mods de quÃªtes pour BG1". 
+- Si ce mod est installé dans le cadre d'une installation BWP, il est recommandé de le faire pendant la section "Mods de quêtes pour BG1". 
 
 ***************************************************************************************************************
 
 III. Note :
 
-- Afin de pouvoir expÃ©rimenter toutes les caractÃ©ristiques du composant "Ã€ la recherche de Perwell", l'option "gore" doit Ãªtre activÃ©e : Sauvegardez votre baldur.ini et ajoutez la ligne "Memory Access=100" (sans "") sous [Options du jeu]. L'option gore peut maintenant Ãªtre activÃ©e dans le jeu. Il n'est pas nÃ©cessaire de le faire pour que le composant fonctionne, mais c'est recommandÃ©.
+- Afin de pouvoir expérimenter toutes les caractéristiques du composant "À la recherche de Perwell", l'option "gore" doit être activée : Sauvegardez votre baldur.ini et ajoutez la ligne "Memory Access=100" (sans "") sous [Options du jeu]. L'option gore peut maintenant être activée dans le jeu. Il n'est pas nécessaire de le faire pour que le composant fonctionne, mais c'est recommandé.
 
 ***************************************************************************************************************
 
-IV. CompatibilitÃ© :
+IV. Compatibilité :
 
-Ascalon's Quest Pack a Ã©tÃ© Ã©crit en WeiDU et est probablement compatible avec tous les autres mods Ã©crits en WeiDU. Ce mod a Ã©tÃ© Ã©crit spÃ©cifiquement pour le BWP par Leonardo Watson et devrait fonctionner sans problÃ¨me pour tous les jeux BGT.
+Ascalon's Quest Pack a été écrit en WeiDU et est probablement compatible avec tous les autres mods écrits en WeiDU. Ce mod a été écrit spécifiquement pour le BWP par Leonardo Watson et devrait fonctionner sans problème pour tous les jeux BGT.
 
 Depuis la version 2.00 le mod est compatible avec Tutu (avec TotSC), BG:EE, BGII:EE, BGII, BGT, et EET.
 
@@ -56,7 +56,7 @@ Depuis la version 2.00 le mod est compatible avec Tutu (avec TotSC), BG:EE, BGII
 
 V. Contact :
 
-Si vous rencontrez des problÃ¨mes (lors de l'installation ou dans le jeu), vous pouvez me contacter Ã  l'adresse email ci-dessus ou sur les forums www.kerzenburg.nightisforum.de (mon nom est "Ascalon" dans les deux cas).
+Si vous rencontrez des problèmes (lors de l'installation ou dans le jeu), vous pouvez me contacter à l'adresse email ci-dessus ou sur les forums www.kerzenburg.nightisforum.de (mon nom est "Ascalon" dans les deux cas).
 
 ***************************************************************************************************************
 
@@ -64,51 +64,51 @@ VI: Composants :
 
 	Baldur's Gate I :
 
-1 Un travail bien payÃ©
+1 Un travail bien payé
 -------------------------
-Que se passe-t-il quand les aventuriers sont un peu trop pressÃ©s de dÃ©penser leur premier gros paquet d'argent ? Rendez-vous Ã  BÃ©rÃ©gost pour le savoir.
+Que se passe-t-il quand les aventuriers sont un peu trop pressés de dépenser leur premier gros paquet d'argent ? Rendez-vous à Bérégost pour le savoir.
 
 2 Un festin pour les gnolls
 -------------------------
-C'Ã©tait censÃ© Ãªtre un pique-nique romantique, mais tout a dÃ©rapÃ©. Cherchez Mme Brunnstein Ã  Nashkel et aidez cette pauvre femme Ã  retrouver son fils.
+C'était censé être un pique-nique romantique, mais tout a dérapé. Cherchez Mme Brunnstein à Nashkel et aidez cette pauvre femme à retrouver son fils.
 
-3 Ã€ la recherche de Ricochet
+3 À la recherche de Ricochet
 -------------------------
-Un rÃ©cit Ã©pique sur l'honneur, l'amitiÃ© et les lapins.
+Un récit épique sur l'honneur, l'amitié et les lapins.
 
-4 Ã€ la recherche de Perwell
+4 À la recherche de Perwell
 -------------------------
-Tout ce que la demi-elfe Aphriel voulait, c'Ã©tait de poser son arc en faveur d'une vie simple. Mais ensuite, tout a changÃ©. Retrouvez-la dans la loge de Bois Manteau.
+Tout ce que la demi-elfe Aphriel voulait, c'était de poser son arc en faveur d'une vie simple. Mais ensuite, tout a changé. Retrouvez-la dans la loge de Bois Manteau.
 
 5 Des loups et des hommes
 -------------------------
-Aiwell la mage a barrÃ© sa porte... de l'extÃ©rieur. DÃ©couvrez pourquoi prÃ¨s de Haute Haie.
+Aiwell la mage a barré sa porte... de l'extérieur. Découvrez pourquoi près de Haute Haie.
 
-Ce composant a deux options : la premiÃ¨re utilise la cabane situÃ©e prÃ¨s de la demeure de Thalantyr Ã  Haute Haie.
-La seconde option consiste Ã  dÃ©placer la maison du couple dans une maison Ã  BÃ©rÃ©gost ("Maison 9" dans la solution complÃ¨te de Dudleyville Ã  la limite sud-ouest de BÃ©rÃ©gost). C'est principalement pour des raisons de compatibilitÃ©, car le mod Glam's NPC Pack utilise la cabane de Haute Haie pour autre chose. Installez ce composant si vous voulez jouer aux deux mods ensemble.
+Ce composant a deux options : la première utilise la cabane située près de la demeure de Thalantyr à Haute Haie.
+La seconde option consiste à déplacer la maison du couple dans une maison à Bérégost ("Maison 9" dans la solution complète de Dudleyville à la limite sud-ouest de Bérégost). C'est principalement pour des raisons de compatibilité, car le mod Glam's NPC Pack utilise la cabane de Haute Haie pour autre chose. Installez ce composant si vous voulez jouer aux deux mods ensemble.
 
 6 Le grand Carlini
 -------------------------
-Une fois que la curiositÃ© scientifique d'un gnome a Ã©tÃ© Ã©veillÃ©e, rien ne peut l'arrÃªter. Pas mÃªme le sort qui a coÃ»tÃ© la vie Ã  l'archimage Carlini. Cherchez Ygnatius dans l'auberge de Brasamical (difficile de la rater).
+Une fois que la curiosité scientifique d'un gnome a été éveillée, rien ne peut l'arrêter. Pas même le sort qui a coûté la vie à l'archimage Carlini. Cherchez Ygnatius dans l'auberge de Brasamical (difficile de la rater).
 
-7 Ã‰levage de grouilleux
+7 Élevage de grouilleux
 -------------------------
-Que crÃ©e un artiste lorsqu'il est Ã  court d'idÃ©es ? Des ennuis, beaucoup d'ennuis, si l'on considÃ¨re ce que Geraldo le Magnifique, dans la partie centrale de la Porte de Baldur, a fait rÃ©cemment.
+Que crée un artiste lorsqu'il est à court d'idées ? Des ennuis, beaucoup d'ennuis, si l'on considère ce que Geraldo le Magnifique, dans la partie centrale de la Porte de Baldur, a fait récemment.
 
 8 Les groupies
 -------------------------
-Les vraies groupies restent fidÃ¨les Ã  leurs idoles, tout comme Cindy, Mandy et Ashley dans la partie nord-ouest de la Porte de Baldur...
+Les vraies groupies restent fidèles à leurs idoles, tout comme Cindy, Mandy et Ashley dans la partie nord-ouest de la Porte de Baldur...
 
 9 Les Serpents d'Abbathor
 -------------------------
-Un mystÃ©rieux culte de nains recrute le long de la CÃ´te des Ã‰pÃ©es et les hÃ©ros sont trÃ¨s demandÃ©s ! Pour l'instant, seule la partie BG1 est complÃ©tÃ©e. Pillez le cadavre de Mulahey ou rendez-vous dans la partie sud-ouest de la Porte de Baldur pour commencer.
+Un mystérieux culte de nains recrute le long de la Côte des Épées et les héros sont très demandés ! Pour l'instant, seule la partie BG1 est complétée. Pillez le cadavre de Mulahey ou rendez-vous dans la partie sud-ouest de la Porte de Baldur pour commencer.
 
 
 	Baldur's Gate II :
 
 10 Un petit-homme parmi les sans-yeux
 -------------------------
-Qui aidera Mme Wiesner Ã  retrouver son fils disparu ?
+Qui aidera Mme Wiesner à retrouver son fils disparu ?
 
 
 
@@ -120,92 +120,103 @@ Qui aidera Mme Wiesner Ã  retrouver son fils disparu ?
 VII. Historique des versions :
 
 0.1 (Alpha)
-- PremiÃ¨re version (mise Ã  l'essai)
+- Première version (mise à l'essai)
 0.2 (Alpha)
-- Corrections et complÃ©ments de contenu
+- Corrections et compléments de contenu
 0.3 (Alpha)
-- RÃ©Ã©quilibrage des ennemis et des crÃ©atures
+- Rééquilibrage des ennemis et des créatures
 0.5 (Beta)
-- BÃªta publique avec plus d'interjections, des entrÃ©es de journal corrigÃ©es et des rÃ©compenses en XP
+- Bêta publique avec plus d'interjections, des entrées de journal corrigées et des récompenses en XP
 1.0
-- Refonte complÃ¨te
+- Refonte complète
 1.01		
 - Corrections de petits bugs
 2.00 (Beta)	
-- CompatibilitÃ© avec Tutu (avec TotSC), BG:EE, BG2 ToB, BG2:EE et EET
+- Compatibilité avec Tutu (avec TotSC), BG:EE, BG2 ToB, BG2:EE et EET
 - Plusieurs petites corrections de bugs
 - Traduction anglaise par Bloodtitan
 
 2.01
-- Changement des chemins pour la dÃ©finition de la LANGUE afin de se dÃ©barrasser de la double configuration.tra
-- Ajout de la correction de Roxanne's Ã  ACQ15002.BAF pour le fait que Perwell ne suive pas le PC aprÃ¨s avoir Ã©tÃ© libÃ©rÃ© 
-- Ajout d'un autre interjection dans le dialogue de CSGAAL dans ACQ22000.D pour permettre la compatibilitÃ© avec le mod NPC Stronghold (G3)
+- Changement des chemins pour la définition de la LANGUE afin de se débarrasser de la double configuration.tra
+- Ajout de la correction de Roxanne's à ACQ15002.BAF pour le fait que Perwell ne suive pas le PC après avoir été libéré 
+- Ajout d'un autre interjection dans le dialogue de CSGAAL dans ACQ22000.D pour permettre la compatibilité avec le mod NPC Stronghold (G3)
 - english setup.tra : traduction de @10035 (correction du BWPTextpack / BWFixpack)
 - Changement du chemin vers cpmvars de EET en un chemin plus universel : EET/other/cpmvars/eet_cpmvars.tpa
-- Changement de %xxxx_BANTER% en %xxxx_JOINED% dans toutes les instances (en espÃ©rant que cela corrigera le bug "le dialogue se termine brutalement" de EET)
+- Changement de %xxxx_BANTER% en %xxxx_JOINED% dans toutes les instances (en espérant que cela corrigera le bug "le dialogue se termine brutalement" de EET)
 - Changement de IMOEN2 en %IMOEN_DV% dans ACQ19000.D
 - Changement de la transition dans missing state "5" en "4" dans ACQ12000.D
-- @49 dans ACQ18000.tra: La mauvaise destination indiquÃ©e par Geraldo pour sa maison "Ouest" corrigÃ©e en "Est"
-- (toutes les corrections de BWPFixpack intÃ©grÃ©s)
-- Suppression de ACQ12CUT2.baf - ACQ12CUT.baf est la cutscene nÃ©cessaire dans les deux cas
-- Correction d'un bug qui faisait qu'Aaron donnait un anneau au PJ alors que ce dernier le possÃ©dait dÃ©jÃ 
-- Correction du CtD dans la zone AC4400 lors du dÃ©placement vers la partie sud, suppression des points de spawn dÃ©fectueux
-- Correction des notes de carte erronÃ©es dans les zones de quÃªte AC4400.are et AC4401.are
-- Mise Ã  jour vers weiDU v242
+- @49 dans ACQ18000.tra: La mauvaise destination indiquée par Geraldo pour sa maison "Ouest" corrigée en "Est"
+- (toutes les corrections de BWPFixpack intégrés)
+- Suppression de ACQ12CUT2.baf - ACQ12CUT.baf est la cutscene nécessaire dans les deux cas
+- Correction d'un bug qui faisait qu'Aaron donnait un anneau au PJ alors que ce dernier le possédait déjà
+- Correction du CtD dans la zone AC4400 lors du déplacement vers la partie sud, suppression des points de spawn défectueux
+- Correction des notes de carte erronées dans les zones de quête AC4400.are et AC4401.are
+- Mise à jour vers weiDU v242
 
 2.02
-- Plus d'entrÃ©es de journal pour la quÃªte "Les Serpents d'Abbathor"
+- Plus d'entrées de journal pour la quête "Les Serpents d'Abbathor"
 - Le marteau de Bashrik a maintenant la bonne description de ses statistiques
-- AprÃ¨s avoir apportÃ© le repos au fantÃ´me de Melina, il y a un dialogue "Je l'ai fait" avec Aaron.
-- QuÃªte du Loup-garou : si Thalantyr prÃ©pare l'antidote, la  cutscene rend l'Ã©cran noir au lieu de montrer le lancement du sort "Antipouletiseur" .
-- Les entrÃ©es de journal dans le dialogue d'Emerson apparaissent maintenant directement avec les lignes de dialogue correspondantes.
-- Mise Ã  jour du readme pour que la description corresponde aux jeux compatibles
-- Mise Ã  jour vers weiDU v244
+- Après avoir apporté le repos au fantôme de Melina, il y a un dialogue "Je l'ai fait" avec Aaron.
+- Quête du Loup-garou : si Thalantyr prépare l'antidote, la  cutscene rend l'écran noir au lieu de montrer le lancement du sort "Antipouletiseur" .
+- Les entrées de journal dans le dialogue d'Emerson apparaissent maintenant directement avec les lignes de dialogue correspondantes.
+- Mise à jour du readme pour que la description corresponde aux jeux compatibles
+- Mise à jour vers weiDU v244
 
 2.03 - 2018-05-04
-- "Les Serpents d'Abbathor" : inscription dans le journal si la quÃªte est rÃ©solue ; les nains distribuant des brochures disparaissent aprÃ¨s la destruction du culte
-- "Ã‰levage de grouilleux" Geraldo reprend son oiseau Elminster quand la quÃªte est terminÃ©e
-- L'entrÃ©e de journal "Les serpents d'Abbathor Ã  Nashkel" ne sera affichÃ©e qu'une fois lors de l'entrÃ©e dans la zone
-- "Un petit-homme parmi les sans-yeux" : activation d'un script supplÃ©mentaire : la mÃ¨re va rÃ©agir Ã  la mort de son fils, elle aussi.
-- Ajout de la mention lÃ©gale concernant la politique de contenu des fans de Wizards of the Coast
+- "Les Serpents d'Abbathor" : inscription dans le journal si la quête est résolue ; les nains distribuant des brochures disparaissent après la destruction du culte
+- "Élevage de grouilleux" Geraldo reprend son oiseau Elminster quand la quête est terminée
+- L'entrée de journal "Les serpents d'Abbathor à Nashkel" ne sera affichée qu'une fois lors de l'entrée dans la zone
+- "Un petit-homme parmi les sans-yeux" : activation d'un script supplémentaire : la mère va réagir à la mort de son fils, elle aussi.
+- Ajout de la mention légale concernant la politique de contenu des fans de Wizards of the Coast
 
 2.04 - 2018-06-12
--"Un petit-homme parmi les sans-yeux" Bunger doit marcher vers la sortie sans Ãªtre interrompu (dÃ©placement de l'action dans le script de zone)
+-"Un petit-homme parmi les sans-yeux" Bunger doit marcher vers la sortie sans être interrompu (déplacement de l'action dans le script de zone)
 
 2.05 - 2019-02-09
-- "Les Serpents d'Abbathor" : L'entrÃ©e de journal ne s'affiche plus Ã  l'entrÃ©e des souterrains si la quÃªte est terminÃ©e ; les ombres dans les mines donnent maintenant de l'XP ;
-- "Ã€ la recherche de Perwell" : au cas oÃ¹ le fils a Ã©tÃ© sauvÃ© avant de parler Ã  la mÃ¨re la premiÃ¨re fois, celle-ci reconnaÃ®tra sa prÃ©sence et la quÃªte ne sera pas donnÃ©e en premier ; le fils doit partir avec la mÃ¨re et ne pas rester Ã  l'auberge de Brasamical 
--"Des hommes et des loups": la quÃªte devrait maintenant pouvoir Ãªtre rÃ©solue quel que soit le premier protagoniste que rencontre le PC; la quÃªte peut toujours avoir une fin heureuse si le loup-garou a Ã©tÃ© tuÃ© avant de parler Ã  Aiwell; correction du nom "Tonder" mal orthographiÃ© dans Setup-AC_QUEST.tra ; ajout de nouvelles entrÃ©es de journal; le PC peut offrir le cadavre du loup-garou Ã  Thalantyr quel que soit le statut de la quÃªte ; l'Ã©pÃ©e dans le coffre a maintenant le texte de description correct.
+- "Les Serpents d'Abbathor" : L'entrée de journal ne s'affiche plus à l'entrée des souterrains si la quête est terminée ; les ombres dans les mines donnent maintenant de l'XP ;
+- "À la recherche de Perwell" : au cas où le fils a été sauvé avant de parler à la mère la première fois, celle-ci reconnaîtra sa présence et la quête ne sera pas donnée en premier ; le fils doit partir avec la mère et ne pas rester à l'auberge de Brasamical 
+-"Des hommes et des loups": la quête devrait maintenant pouvoir être résolue quel que soit le premier protagoniste que rencontre le PC; la quête peut toujours avoir une fin heureuse si le loup-garou a été tué avant de parler à Aiwell; correction du nom "Tonder" mal orthographié dans Setup-AC_QUEST.tra ; ajout de nouvelles entrées de journal; le PC peut offrir le cadavre du loup-garou à Thalantyr quel que soit le statut de la quête ; l'épée dans le coffre a maintenant le texte de description correct.
 - Correction de la description de SLNG04.ITM
-- Les objets ne seront installÃ©s que s'ils ne sont pas prÃ©sents (au lieu de vÃ©rifier BG:EE)
+- Les objets ne seront installés que s'ils ne sont pas présents (au lieu de vérifier BG:EE)
 - Ajout de ac_quest.ini
 - Renommage setup-ac_quest.ini en ac_quest.ini
-- Mise Ã  jour vers v246
+- Mise à jour vers v246
 
 3.0 - 2020-07-29
 - Ajout de la traduction russe, par Arkie
 - Les gnolls ne devraient pas laisser tomber du butin de BGII.
-- Correction des vÃ©rifications de classes dans ACUITM.baf
-- Tonder devrait aller voir Aiwell aprÃ¨s sa guÃ©rison (changement de EscapeAreaMove() en SetGlobal+EscapeAreaDestroy(5) et CreateCreature dans le script de la zone)
+- Correction des vérifications de classes dans ACUITM.baf
+- Tonder devrait aller voir Aiwell après sa guérison (changement de EscapeAreaMove() en SetGlobal+EscapeAreaDestroy(5) et CreateCreature dans le script de la zone)
 - Corrections d'erreurs de typo
-- "Ã‰levage de grouilleux" : L'inscription dans le journal donne de meilleures informations sur l'endroit oÃ¹ se trouve la maison de Geraldo
-- "Ã€ la recherche de Perwell" : correction du readme (Aphriel est dans la zone de Bois manteau, pas dans le camp des bandits)
-- "Un petit-homme parmi les sans-yeux" : Bunger ne doit pas relancer son dialogue Ã  la sortie de la zone "Zone de l'Oeil Aveugle" mais aller voir sa mÃ¨re si on lui parle.
-- "Les Serpents d'Abbathor" : L'entrÃ©e de journal dans la grotte de Mulahey lors de lâ€™ostension de la lettre doit Ãªtre corrigÃ©e pour tous les jeux.
+- "Élevage de grouilleux" : L'inscription dans le journal donne de meilleures informations sur l'endroit où se trouve la maison de Geraldo
+- "À la recherche de Perwell" : correction du readme (Aphriel est dans la zone de Bois manteau, pas dans le camp des bandits)
+- "Un petit-homme parmi les sans-yeux" : Bunger ne doit pas relancer son dialogue à la sortie de la zone "Zone de l'Oeil Aveugle" mais aller voir sa mère si on lui parle.
+- "Les Serpents d'Abbathor" : L'entrée de journal dans la grotte de Mulahey lors de l’ostension de la lettre doit être corrigée pour tous les jeux.
 - Ajout du dossier libiconv-1.9.2-1-src.zip avec l'information de licence d'iconv
 - Correction de Infer_charset en infer_charsets
-- Correction du lien de tÃ©lÃ©chargement dans ac_quest.ini
+- Correction du lien de téléchargement dans ac_quest.ini
 - Suppression du fichier vide ACQCUT04.baf
 
-4.0 - 2021-07-14
+4.0 - 2021-09-08
+-split mod into optional components.
+-"Of Wolves and men" offers second install choice where house ("9" of 
+
+Dudleyville Walkthrough) in Beregost is used instead of hut in High Hedge for 
+
+compatibility with Glam's NPC Pack.
 -French version added, by deratiseur & jazira (proofreading by tonton-thon)
 -Italian translation, by Coland
--split mod into optional components.
--changed name of Gnoll "Boss" to "Gnoll Chieftain" to match the ingame names and Aaron's dialogue (English version).
--Aaron will only say that the Gnolls took the ring, not a Gnoll Chieftain to prevent confusion with the existing Gnoll Chieftain near where Dynaheir is held.
--Aaron should stay at the Old Mill after the PC rested and not return to the Inn.
 -Russian version updates by Arkie
 -typo corrections by jazira
+-changed name of Gnoll "Boss" to "Gnoll Chieftain" to match the ingame names and 
+
+Aaron's dialogue (English version).
+-Aaron will only say that the Gnolls took the ring, not a Gnoll Chieftain to 
+
+prevent confusion with the existing Gnoll Chieftain near where Dynaheir is held.
+-Aaron should stay at the Old Mill after the PC rested and not return to the 
+
+Inn.
 -Inserted unused journal entries for "A Job Well-Paid".
 -Aaron's ring should not contain comments in the description.
 -Aaron shouldn't initiate dialogue constantly while being in the pit.
@@ -213,15 +224,17 @@ VII. Historique des versions :
 -Aphriel should initiate dialogue only after Perwell called her.
 -Perwell shouldn't initiate dialogue constantly while being in the mine.
 -Ygnazius should not be at the FAI if quest is finished.
--Aiwell will only react to dead Tonder after the PC talked to Thalantyr or if Tonder's corpse is not in inventory.
--Cutscenes to receive Werwolf cure from Thalantyr should work if PC is not inside his abode as well.
--Location of Aiwell's home can be either hut in High Hedge or house "9" in Beregost (for compatibility with Glam's NPC Pack).
+-Cutscenes to receive Werwolf cure from Thalantyr should work if PC is not 
+
+inside his abode as well.
 -use correct area variable in AC4402.baf.
 -more item descriptions in EE style by Cahir (English EE version).
 -Added Dynamic Install Order categories to support Project Infinity.
--All journal entries should be deleted upon transition to BGII in BGT. Journal entries for BG1 will not be deleted for EET.
+-All journal entries should be deleted upon transition to BGII in BGT. Journal 
+
+entries for BG1 will not be deleted for EET.
 -split lines for install only into separate setup-install.tra. 
--"Of Wolves and men" will no longer use the hidden cre "Virginy the wonder bunny".
+-added globally unique LABELs to support Project Infinity
 -corrected entry in cpmvars.tpa
 
 
@@ -230,23 +243,23 @@ VII. Historique des versions :
 
 VIII. Remerciements
 
-- White Agnus pour ses conseils et ses actions, l'inspiration qu'il m'a procurÃ©e et la configuration du mod.
+- White Agnus pour ses conseils et ses actions, l'inspiration qu'il m'a procurée et la configuration du mod.
 - Gerri pour les tests et les images.
-- Jastey pour son aide inestimable (que ferais-je sans ses exemples d'entrÃ©es de journal).
+- Jastey pour son aide inestimable (que ferais-je sans ses exemples d'entrées de journal).
 - Leomar et Leonardo Watson pour leur travail sur le BWP.
 - Bloodtitan pour la traduction anglaise.
 - Arkie pour la traduction russe.
 - deratiseur & jazira for the French translation, proofreading by tonton-thon.
 - Coland for the Italian translation.
-- Fridtjof et Hedian et tous les autres de www.rosenranken.org qui offrent un sympathique foyer au Pack de QuÃªtes.
-- en dernier, mais pas des moindres, les joueurs motivÃ©s et enthousiastes du BWP, qui maintiennent en vie le meilleur jeu de tous les temps.
-- et en fin de compte, ma Suissesse prÃ©fÃ©rÃ©e RevianÃªl, qui a examinÃ© de fond en comble toutes les quÃªtes, toutes les allusions, tous les gags et tous les petits dÃ©tails cachÃ©s, qu'elle a validÃ©s ou refrÃ©nÃ©s, sans jamais avoir Ã©tÃ© soi-mÃªme au-delÃ  de ChÃ¢teau-Suif.
+- Fridtjof et Hedian et tous les autres de www.rosenranken.org qui offrent un sympathique foyer au Pack de Quêtes.
+- en dernier, mais pas des moindres, les joueurs motivés et enthousiastes du BWP, qui maintiennent en vie le meilleur jeu de tous les temps.
+- et en fin de compte, ma Suissesse préférée Revianêl, qui a examiné de fond en comble toutes les quêtes, toutes les allusions, tous les gags et tous les petits détails cachés, qu'elle a validés ou refrénés, sans jamais avoir été soi-même au-delà de Château-Suif.
 
 
 ***************************************************************************************************************
 
 
-IX: Outils utilisÃ©s
+IX: Outils utilisés
 
 - WeiDU Vers. 2.10 - 2.38
 - Near Infinity v1.32 - 1.36
@@ -262,9 +275,9 @@ IX: Outils utilisÃ©s
 
 X: mots de la fin
 
-Depuis la premiÃ¨re version fonctionnelle de Breagar, 13 mois se sont Ã©coulÃ©s (20 depuis le dÃ©but de ma carriÃ¨re de modding). Pendant ce temps, j'ai appris beaucoup de trucs et de techniques que je n'aurais pas pu apprendre au dÃ©but. De nombreuses idÃ©es que j'ai eues en jouant Ã  Baldur's Gate sont rassemblÃ©es ici et d'autres suivront certainement. Je m'efforce actuellement d'apprendre la programmation de zones et j'aurai certainement quelque chose Ã  dire Ã  ce sujet Ã  l'avenir. 
+Depuis la première version fonctionnelle de Breagar, 13 mois se sont écoulés (20 depuis le début de ma carrière de modding). Pendant ce temps, j'ai appris beaucoup de trucs et de techniques que je n'aurais pas pu apprendre au début. De nombreuses idées que j'ai eues en jouant à Baldur's Gate sont rassemblées ici et d'autres suivront certainement. Je m'efforce actuellement d'apprendre la programmation de zones et j'aurai certainement quelque chose à dire à ce sujet à l'avenir. 
 
-MÃªme si cela me tape vraiment sur les nerfs de rÃ©Ã©crire les mÃªmes Ã©lÃ©ments encore et encore, au final, le travail est trÃ¨s amusant parce que je sais pour qui je le fais : Ce mod est pour vous, fans et amis de Baldur's Gate ! Amusez-vous bien et si vous avez des commentaires, des critiques, des souhaits ou peut-Ãªtre un peu de louanges, j'en serai trÃ¨s heureux.
+Même si cela me tape vraiment sur les nerfs de réécrire les mêmes éléments encore et encore, au final, le travail est très amusant parce que je sais pour qui je le fais : Ce mod est pour vous, fans et amis de Baldur's Gate ! Amusez-vous bien et si vous avez des commentaires, des critiques, des souhaits ou peut-être un peu de louanges, j'en serai très heureux.
 
 
 Amusez-vous bien ! Buzzurk !
@@ -274,6 +287,6 @@ Moers, september 2009
 Ascalon
 
 =================================================================================
-Ascalon's Questpack est un contenu de fan non officiel autorisÃ© dans le cadre de la politique de contenu de fan. Non approuvÃ© par Wizards. Certaines parties du matÃ©riel utilisÃ© sont la propriÃ©tÃ© de Wizards of the Coast. Wizards of the Coast LLC.
-Ce mod n'est pas non plus dÃ©veloppÃ©, soutenu ou approuvÃ© par BioWare, Black Isle Studios, Interplay Entertainment Corp, Overhaul Games ou Beamdog. Toutes les autres marques et tous les autres droits d'auteur sont la propriÃ©tÃ© de leurs dÃ©tenteurs respectifs.
+Ascalon's Questpack est un contenu de fan non officiel autorisé dans le cadre de la politique de contenu de fan. Non approuvé par Wizards. Certaines parties du matériel utilisé sont la propriété de Wizards of the Coast. Wizards of the Coast LLC.
+Ce mod n'est pas non plus développé, soutenu ou approuvé par BioWare, Black Isle Studios, Interplay Entertainment Corp, Overhaul Games ou Beamdog. Toutes les autres marques et tous les autres droits d'auteur sont la propriété de leurs détenteurs respectifs.
 =================================================================================
