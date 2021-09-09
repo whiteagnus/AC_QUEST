@@ -1458,6 +1458,7 @@ COPY_EXISTING ~%NWBaldursGate_Tavern_L2%.are~ ~OVERRIDE~
     fj_structure_type 	= container
     fj_name           	= ~ACSecret~
 END
+/*
 LPF fj_are_structure
     INT_VAR
     fj_con_itm_idx    = SHORT_AT 0x74 - 1
@@ -1466,6 +1467,7 @@ LPF fj_are_structure
     fj_name           = ACQ10101
     fj_structure_type = itm
 END
+*/
 
 COPY_EXISTING ~%SEBaldursGate%.are~ ~override~
  READ_LONG  0xa4  "doors_num"
