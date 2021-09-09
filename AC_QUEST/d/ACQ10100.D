@@ -1038,7 +1038,7 @@ IF ~~ THEN BEGIN 8
 SAY @335
 ++ @334  + 6
 ++ @322 DO ~AddJournalEntry(@10013,QUEST)~ + 7
-++ @324 DO ~AddJournalEntry(@10014,QUEST)~ + 9
+++ @324 DO ~AddJournalEntry(@10016,QUEST)~ + 9
 ++ @325 DO ~AddJournalEntry(@10015,QUEST)~ + 10
 ++ @326 + 11
 ++ @327 + 12
