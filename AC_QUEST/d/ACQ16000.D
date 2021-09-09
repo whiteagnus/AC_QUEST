@@ -250,7 +250,10 @@ IF ~!Dead("ACQ16001")Global("ACQ16","GLOBAL",0)Dead("ACQ16002")~ THEN REPLY @148
 IF ~!Dead("ACQ16001")Global("ACQ16","GLOBAL",3)~ THEN REPLY @62 + AC0a
 IF ~!Dead("ACQ16001")Global("ACQ16","GLOBAL",1)!Dead("ACQ16002")~ THEN REPLY @63 + AC0b
 
-IF ~PartyHasItem("ACQ16001")Global("ACQ16","GLOBAL",2)!Global("ACQ16_HelpWerewolf","LOCALS",1)~ THEN REPLY @64 + AC15
+IF ~OR(2)
+PartyHasItem("ACQ16001")
+PartyHasItem("misc6c")
+Global("ACQ16","GLOBAL",2)!Global("ACQ16_HelpWerewolf","LOCALS",1)~ THEN REPLY @64 + AC15
 
 IF ~PartyHasItem("ACQ16002")
 GlobalGT("ACQ16","GLOBAL",0)
@@ -266,7 +269,10 @@ IF ~Dead("ACQ16002") !PartyHasItem("ACQ16002")
 GlobalGT("ACQ16","GLOBAL",1) GlobalLT("ACQ16","GLOBAL",4)!Global("ACQ16","GLOBAL",11)~ THEN REPLY @167 + AC23
 
 IF ~PartyHasItem("ACQ16003")Global("ACQ16","GLOBAL",2)!Global("ACQ16_HelpWerewolf","LOCALS",1)~ THEN REPLY @66 + AC17
-IF ~PartyHasItem("MISC1I")Global("ACQ16","GLOBAL",2)!Global("ACQ16_HelpWerewolf","LOCALS",1)~ THEN REPLY @67 + AC18
+IF ~OR(2)
+PartyHasItem("MISC1I")
+PartyHasItem("bdbellad")
+Global("ACQ16","GLOBAL",2)!Global("ACQ16_HelpWerewolf","LOCALS",1)~ THEN REPLY @67 + AC18
 END
 
 //EXTEND_TOP %Thalantyr_Dialog% 2 #1
@@ -460,6 +466,11 @@ EraseJournalEntry(@3000014)EraseJournalEntry(@3000015)
 SetGlobal("ACQ16","GLOBAL",4)AddJournalEntry(@10038,QUEST)
 ActionOverride("Thalantyr",TakePartyItem("ACQ16001"))
 ClearAllActions()StartCutSceneMode()StartCutScene("ACQ161")~ EXIT
+IF ~!PartyHasItem("ACQ16001") PartyHasItem("misc6c")~ THEN DO ~AddexperienceParty(300)EraseJournalEntry(@10033)EraseJournalEntry(@10034)EraseJournalEntry(@10037)
+EraseJournalEntry(@3000014)EraseJournalEntry(@3000015)
+SetGlobal("ACQ16","GLOBAL",4)AddJournalEntry(@10038,QUEST)
+ActionOverride("Thalantyr",TakePartyItemNum("misc6c",1))
+ClearAllActions()StartCutSceneMode()StartCutScene("ACQ161")~ EXIT
 END
 
 IF ~~ THEN BEGIN AC16
@@ -486,7 +497,12 @@ SAY @118
 IF ~~ THEN DO ~AddexperienceParty(450)EraseJournalEntry(@10033)EraseJournalEntry(@10034)EraseJournalEntry(@10037)
 EraseJournalEntry(@3000014)EraseJournalEntry(@3000015)
 SetGlobal("ACQ16","GLOBAL",4)AddJournalEntry(@10040,QUEST)
-ActionOverride("Thalantyr",TakePartyItem("MISC1I")) 
+ActionOverride("Thalantyr",TakePartyItemNum("MISC1I",1)) 
+ClearAllActions()StartCutSceneMode()StartCutScene("ACQ164")~ EXIT
+IF ~!PartyHasItem("MISC1I") PartyHasItem("bdbellad")~ THEN DO ~AddexperienceParty(450)EraseJournalEntry(@10033)EraseJournalEntry(@10034)EraseJournalEntry(@10037)
+EraseJournalEntry(@3000014)EraseJournalEntry(@3000015)
+SetGlobal("ACQ16","GLOBAL",4)AddJournalEntry(@10040,QUEST)
+ActionOverride("Thalantyr",TakePartyItemNum("bdbellad",1)) 
 ClearAllActions()StartCutSceneMode()StartCutScene("ACQ164")~ EXIT
 END
 

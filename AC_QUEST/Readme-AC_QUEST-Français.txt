@@ -206,24 +206,25 @@ VII. Historique des versions :
 -typo corrections by jazira
 -changed name of Gnoll "Boss" to "Gnoll Chieftain" to match the ingame names and Aaron's dialogue (English version).
 -Aaron will only say that the Gnolls took the ring, not a Gnoll Chieftain to prevent confusion with the existing Gnoll Chieftain near where Dynaheir is held.
--Aaron should stay at the Old Mill after the PC rested and not return to the Inn.
--Inserted unused journal entries for "A Job Well-Paid".
+-Aaron should really stay at the Old Mill after the PC rested and not return to the Inn.
 -Aaron's ring should not contain comments in the description.
 -Aaron shouldn't initiate dialogue constantly while being in the pit.
+-Inserted unused journal entries for "A Job Well-Paid".
 -Journal entry about Emerson's notes should always be set correctly.
--Dwarven artefact should be accessible inside hidden wand safe before PC has key to it.
+-Dwarven artefact should not be accessible inside hidden wand safe before PC has key to it.
 -Aphriel should react to dead Perwell's body upon first meeting.
 -Aphriel should initiate dialogue only after Perwell called her.
 -Perwell shouldn't initiate dialogue constantly while being in the mine.
 -Ygnazius should not be at the FAI if quest is finished.
 -Cutscenes to receive Werwolf cure from Thalantyr should work if PC is not inside his abode as well.
+-Guril berries and Belladonna from original games (BGII/SoD) can also be used for werewolf cure. Also, guril berries from Ascalon's Questpack can be used for tanner quest in BGII.
 -use correct area variable in AC4402.baf.
 -more item descriptions in EE style by Cahir (English EE version).
--Added Dynamic Install Order categories to support Project Infinity.
 -All journal entries should be deleted upon transition to BGII in BGT. Journal entries for BG1 will not be deleted for EET.
 -split lines for install only into separate setup-install.tra. 
--added globally unique LABELs to support Project Infinity
+-Added Dynamic Install Order categories and globally unique LABELs to support Project Infinity.
 -corrected entry in cpmvars.tpa
+
 
 
 

@@ -181,3 +181,9 @@ SAY NAME1 @43
 SAY NAME2 @43
 SAY UNIDENTIFIED_DESC @46
 SAY DESC @46
+
+/* enable Guril berries from this component for the BGII tanner quest */
+ACTION_IF GAME_IS ~tob bg2ee eet~ THEN BEGIN
+  INCLUDE ~AC_QUEST/lib/get_respone_strrefs.tph~
+  INCLUDE ~AC_QUEST/tpa/patch_murdgirl-dlg.tpa~
+END

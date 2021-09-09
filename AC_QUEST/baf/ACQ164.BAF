@@ -5,6 +5,7 @@ THEN
 		CutSceneId("THALANTYR")
 		FadeToColor([20.0],0)
         	DestroyItem("MISC1I")
+        	DestroyItem("bdbellad")
         	Wait(2)		
 //		ForceSpell("THALANTYR",EFFECT_ONLY)
 //		Wait(3)
