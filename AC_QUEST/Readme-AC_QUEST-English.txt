@@ -210,6 +210,8 @@ VII. Version history:
 -Inserted unused journal entries for "A Job Well-Paid".
 -Aaron's ring should not contain comments in the description.
 -Aaron shouldn't initiate dialogue constantly while being in the pit.
+-Journal entry about Emerson's notes should always be set correctly.
+-Dwarven artefact should be accessible inside hidden wand safe before PC has key to it.
 -Aphriel should react to dead Perwell's body upon first meeting.
 -Aphriel should initiate dialogue only after Perwell called her.
 -Perwell shouldn't initiate dialogue constantly while being in the mine.
