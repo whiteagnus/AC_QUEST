@@ -1,8 +1,8 @@
 /* @0    = */
-@1    = ~Ascalon's Questpack~
-@2    = ~No valid BG install detected. Installation of Ascalon's Questpack will be aborted.~
-@3    = ~Teach Virginie, the invisible miracle Wonderbunny, a few new tricks~
-@4    = ~Install Virginie, the invisible Wonderbunny~
+//@1    = ~Ascalon's Questpack~
+//@2    = ~No valid BG install detected. Installation of Ascalon's Questpack will be aborted.~
+//@3    = ~Teach Virginie, the invisible miracle Wonderbunny, a few new tricks~
+//@4    = ~Install Virginie, the invisible Wonderbunny~
 
 @6    = ~Agnus~
 @7    = ~Agnus the White~
@@ -10,32 +10,50 @@
 @9    = ~Teliel Meadowsinger~ //fand ich als Nachnahmen schöner
 @10   = ~Udolf~
 @11   = ~Udolf Raukner~
-@12   = ~Mrs. Brunnstein~ 
+@12   = ~Mrs. Brunnstein~
 @13   = ~Aaron~
 @14   = ~Aaron Brunnstein~
 @15   = ~Ghost~
 @16   = ~Barin~
 @17   = ~Ranger Barin~
-@18   = ~Gnoll Boss~
+@18   = ~Gnoll Chieftain~
 @19   = ~Gnoll Bodyguard~
 @20   = ~Aaron's Ring of Protection~
 @21   = ~Aaron's Ring of Protection
 
-This simple ring is provided with a spell to protect the wearer. The engraving within says: 'In love for M., from A.'
+This simple ring is provided with a faint spell to protect the wearer. The engraving within says: "In love for M., from A."
 
 STATISTICS:
 
 Armor Class: +1 bonus
-Saving Throws: +1 bonus~ //"light spell" fand ich missverständlich (Licht- / leicht)
+Saving Throws: +1 bonus 
+
+Weight: 0~
+
 @22   = ~Kessy~
 @23   = ~Ugh~
 @24   = ~Rabbit~
 @25   = ~Rabbit Breeder~
 @26   = ~Rabbit~
 @27   = ~A little, white rabbit. Maybe the fluffiest you have ever seen.~
+
+
+
+
+
 @28   = ~A little, white rabbit. It is not as fluffy as Jumper, but which rabbit ever could be?~
+
+
+
+
+
 @29   = ~Perwell~
-@30   = ~This is the body of Perwell.~
+@30   = ~This is the body of Perwell.
+
+STATISTICS:
+
+Weight: 110~
+
 @31   = ~Elven Longbow~
 @32   = ~Aphriel's Elven Longbow
 
@@ -62,9 +80,14 @@ Not Usable By:
 @35   = ~Werewolf~
 @36   = ~Tonder~
 @37   = ~Tonder's body~
-@38   = ~After death the werewolf has turned back into a human.~
+@38   = ~After death the werewolf has turned back into a human.
+
+STATISTICS:
+
+Weight: 105
+~
 @39   = ~Guril berries~
-@40   = ~Guril berries are traditional remedies in Faerûn, and are used for various applications. They are especially popular to alleviate sufferings of the 'special' type, which is why these berries are often offered by stores in vicinity to courtesans.~ //"floozy" ist sehr umgangssprachlich
+@40   = ~Guril berries are traditional remedies in Faerûn, and are used for various applications. They are especially popular to alleviate sufferings of the "special" type, which is why these berries are often offered by stores in vicinity to courtesans.~
 @41   = ~Aiwell's blood~
 @42   = ~Aiwell has given you a big portion of her blood to save her husband Tonder.~
 @43   = ~Potion against Lycantrophy~
@@ -78,7 +101,7 @@ STATISTICS:
 
 The wearer is protected against all types of petrification and forms of gaze attacks.
 
-Armor Class: +1 bonus
+Armor Class: +2 bonus
 Weight: 7
 Requires: 12 Strength
 
@@ -95,8 +118,8 @@ Not Usable By:
 @53   = ~Karlini~
 @54   = ~Geraldo's key~
 @55   = ~The key opens the door of Geraldo's house in the center of Baldur's Gate.~
-@56   = ~Gibberling's skin~
-@57   = ~This is the skin of a mutant gibberling.~
+@56   = ~Gibberling's fur~
+@57   = ~This is the fur of a mutant gibberling.~
 @58   = ~Armor from Gibberling Leather
 
 One of the byproducts of Geraldo's work with gibberlings was a high leather production. Since the painter only needed the fur for his colors, he sought a different use for the thick skin of the monsters... and found it. Unfortunately, the leather of gibberlings had some unexpected side effects and so Geraldo impatiently waited for a credulous soul to foist his experiment on.
@@ -107,7 +130,7 @@ STATISTICS:
 
 The character turns blue.
 
-Can only be removed by a 'Remove Curse' spell.
+Can only be removed by a "Remove Curse" spell.
 
 Armor Class: 4
 Charisma: -3
@@ -119,9 +142,9 @@ Not Usable By:
 - Mage
 - Monk~
 @59   = ~Elminster the Bird~
-@60   = ~Elminster is Geraldo's tame bird, although even he does not know the exact species. The bird has a wise look and an exceptional aversion to gibberlings. As soon as he senses one he will call a loud 'Kiwitt'.
+@60   = ~Elminster is Geraldo's tame bird, although even he does not know the exact species. The bird has a wise look and an exceptional aversion to gibberlings. As soon as he senses one he will call a loud "Kiwitt".
 
-Without the bird, it would be impossible to track down the gibberlings in the cellars and sewers, so take good care of him.~
+Without the bird, it would be nearly impossible to track down the gibberlings in the cellars and sewers, so take good care of him.~
 @61   = ~Geraldo~
 @62   = ~Geraldo the Magnificent~
 @63   = ~Mandy~
@@ -151,7 +174,7 @@ But you are not alone. Father Abbathor cares for his children. Even after Moradi
 
 To God all glory and all the jewels to the Serpent!~ //"steal you blind" als Idiom kenne ich nicht
 @75   = ~Notes~
-@76   = ~This bundle of wrapped loose pages seems to summarize the approach of the Serpents of Abbathor to a large extent. Apparently, it was their plan from the beginning to capture an ancient dwarfish device, called Gundmagtor, which in common language means something like 'Caller of Black Souls'. The main strike of the cult seems to focus on Nashkel, and the note '<CHARNAME> has killed Mulahey, mines are free' bodes ill indeed.~
+@76   = ~This bundle of wrapped loose pages seems to summarize the approach of the Serpents of Abbathor to a large extent. Apparently, it was their plan from the beginning to capture an ancient dwarfish device, called Gundmagtor, which in common language means something like "Caller of Black Souls". The main strike of the cult seems to focus on Nashkel, and the note "<CHARNAME> has killed Mulahey, mines are free" bodes ill indeed.~
 @77   = ~This <PRO_RACE> <CHARNAME> who works for Wostok is making <PRO_HISHER> way here. Take someone of the Furious, and a Herald. The Herald shall take the Gundmagtor and bring it to us while you two wait for <CHARNAME> and take <PRO_HIMHER> to an end. Then come to us so that we can discuss the next steps.
 
 L~
@@ -167,26 +190,27 @@ The last entries of the book deal with his efforts to get in touch with Mulahey 
 @81   = ~Emerson's Notes~
 @82   = ~Emerson, the foreman of the Nashkel Mines, has written down his calculations and experience in this messed up cluster of papers. For someone who works in the mining industry, this jumble of information is surely a gold mine. For you, however, the notes are useless.~
 @83   = ~Diary~
-@84   = ~This book looks very old and has been through a lot. Some pages are torn and others pierced, some singed, and a large part of the book is smeared with blood. Even if you cannot decipher the name of the priest, it seems the old wanderer has gone through a lot - traveling with a group of adventurers, certain conflicts over the 'true' dwarf existence and finally the banishment from his clan. To the dwarf, to whom his family was above all, this loss made him first lose his mind and then drove him straight into the arms of the Serpents.~
+@84   = ~This book looks very old and has been through a lot. Some pages are torn and others pierced, some singed, and a large part of the book is smeared with blood. Even if you cannot decipher the name of the priest, it seems the old wanderer has gone through a lot - traveling with a group of adventurers, certain conflicts over the "true" dwarf existence and finally the banishment from his clan. To the dwarf, to whom his family was above all, this loss made him first lose his mind and then drove him straight into the arms of the Serpents.~
 @85   = ~Bashrik's Hammer +2~
 @86   = ~The priest of Moradin, Bashrik Sparklehammer, was considered as wise and true and within the community of liberal dwarves. He continued to fight against the secession of the surface dwarves and generally relished a high reputation. This hammer, charged with the thunderbolts of Moradin, was his greatest weapon in the fight against evil.
 
 STATISTICS:
 
-Damange: 1D4 +1 (crushing)
-Weight: 6
-Speed Factor: 4
-Requires: 9 Strength
-Proficiency Type: Warhammer
+Combat Abilities: +1 electricity damage
+THAC0: +2 bonus
+Damage: 1D4 + 3
+Damage type: crushing
+Weight: 5
+Speed Factor: 2
+Proficiency Type: War Hammer
 Type: 1-handed
-
+Requires: 9 Strength
 Not Usable By:
-- Thief
-- Druid
-- Mage
-- Monk~
-@87   = ~Bashrik's Diary~
-@88   = ~The book is written with neat handwriting and reports the last trip of Bashrik Sparklehammer. Bashrik was on the tail of a cult that calls itself 'The Serpents of Abbathor'. For them, Abbathor, the only evil god among the Morndinsamman, is considered the liberator and saint patron of the dwarfkind of the surface.
+ Druid
+ Mage 
+ Thief~
+@87   = ~Bashrik's Journal~
+@88   = ~The book is written with neat handwriting and reports the last trip of Bashrik Sparklehammer. Bashrik was on the tail of a cult that calls itself "The Serpents of Abbathor". For them, Abbathor, the only evil god among the Morndinsamman, is considered the liberator and saint patron of the dwarfkind of the surface.
 
 You cannot learn much more from the book because apparently, the notes of Bashrik were written primarily for the initiated. Only the last entry could offer a clue, should you want to look into the matter:
 
@@ -258,6 +282,9 @@ From what you know about the old dwarves, such an act is the greatest sacrilege 
 @5021 = ~KIWITT!~
 @6000 = ~Don't leave me this way!~
 
+@6001 = ~Mine Entrance~ /* new for v2.01 - AC4400.bcs */
+@6002 = ~Cabin~ /* new for v2.01 - AC4400.bcs */
+
 @10001 = ~Raukner's Ruffian Roughnecks
 
 I've roughed up a militant group of adventurers in Beregost.~
@@ -292,7 +319,7 @@ Some farmers report to have seen a strange figure at night by the waterfall.~
 I could not find Perwell in the mines... I hope that he managed to get out with the other slaves before the water broke in.~
 @10011 = ~The Serpents of Abbathor in Nashkel?
 
-In the headquarters of the Serpents I've learned some bad news: Their initial plan was, apparently, to capture an ancient dwarven device called Gundmagtor, which translated into common language means something like 'Caller of the black souls'. The main stroke of the cult seems to focus on Nashkel.~
+In the headquarters of the Serpents I've learned some bad news: Their initial plan was, apparently, to capture an ancient dwarven device called Gundmagtor, which translated into common language means something like "Caller of the black souls". The main stroke of the cult seems to focus on Nashkel.~
 @10012 = ~The Serpents of Abbathor in Nashkel - Lugosch
 
 Lugosch, the leader of the Serpents of Abbathor from Baldur's Gate, is on site in the Nashkel Mines. There will be no escape for him this time.~
@@ -356,20 +383,53 @@ Aphriel is now searching for her son herself. At least I saved him from the mine
 @10032 = ~The Quest for Perwell
 
 Aphriel and her son are happily reunited.~
+/* rephrased for v4.0 */
 @10033 = ~Of Wolves and Men
 
-The husband of the mage Aiwell seems to have been infected with Lycanthropy. I probably have two options to solve the problem: Either with a potion I can get from Thalantyr, or the old fashioned sword solution.~
+The husband of the mage Aiwell seems to have been infected with Lycanthropy. I probably have two options to solve the problem: Either with a potion I can get from Thalantyr, or the old fashioned sword solution.
+
+Her house is the hut right next to Thalantyr's abode.~
 @10034 = ~Of Wolves and Men
 
 Thalantyr has enumerated several ways. He can mix the potion with Aiwell's blood, which is highly questionable. Or he can use Guril berries that do not always work. The best would be an elixir of belladonna. He also told us that he'll only be able to brew one of the potions.
 
-I could also bring him the corpse of Thonder so that he can better understand the werewolf disease.~
-@10035 = ~Von Wölfen und Männern
+I could also bring him the corpse of Tonder so that he can better understand the werewolf disease.~
+@10035 = ~Of Wolves and Men
 
-Thalantyr hat den Leichnam von Thonder mit einem Flammenschwert erkauft. Auch nicht schlecht.~
+Thalantyr has dearly bought the dead body of Tonder in exchange of a Flaming Sword. Not bad either.~
 @10036 = ~Of Wolves and Men
 
-Aiwell and Thonder were overjoyed that the man was freed from his curse.~
+Aiwell and Tonder were overjoyed that the man was freed from his curse.~
+
+/* new for v2.05 */
+@10037 = ~Of Wolves and Men
+
+A woman shouted at me in front of Thalantyr's abode, but I am not sure what she was referring to. Maybe it had something to do with the werewolf I killed inside the house nearby?~
+
+@10038 = ~Of Wolves and Men
+
+I decided for the healing potion out of Guril berries. Now all that is left to do is to give it to the werewolf somehow.~
+
+@10039 = ~Of Wolves and Men
+
+I decided for the healing potion out of Aiwell's blood. Now all that is left to do is to give it to the werewolf somehow.~
+
+@10040 = ~Of Wolves and Men
+
+I decided for the healing potion out of belladonna. Now all that is left to do is to give it to the werewolf somehow.~
+
+@10041 = ~Of Wolves and Men
+
+Dang, the healing potion did not work, and I had to kill the werewolf. I guess I should tell Aiwell the sad news...~
+
+@10042 = ~Of Wolves and Men
+
+Aiwell was sad indeed when she heard about her husband's death. She went away without leaving a trace...~
+
+@10043 = ~Of Wolves and Men
+
+What a fruitless day. Aiwell lost her husband, the husband is... well, dead, Thalantyr didn't get a werewolf corpse for his research, and I didn't get a reward for my efforts. Next time, I really need to watch where I put my trophies!~
+
 @20001 = ~The Cult of the Unseeing Eye - Bunger Wiesner
 
 The halfling lady Emmi Wiesner has downright begged us to look for her son, who was drawn into the clutches of the Cult.~ //"to look after" kenne ich als "sich kümmern um"
@@ -396,11 +456,11 @@ A messenger has brought me an invitation from his master. Although he will keep 
 //BG:EE Compatibility
 
 //Strings from Original BG2 for Setup-AC_QUEST.tra
-@80001 = ~ Somebody help me!~ [PEASF09] //#61667
+@80001 = ~Somebody help me!~ [PEASF09] //#61667
 @80002 = ~~ [PEASF07] //#61665
 @80003 = ~~ [PEASF08] //#61666
 @80004 = ~I thank the gods every day for the good things in my life.~ [PEASF02] //##61660
-@80005 = ~ Aaahhhh.........run!~ [PEASM09] //#61823
+@80005 = ~Aaahhhh.........run!~ [PEASM09] //#61823
 @80006 = ~~ [PEASM07] //#61821
 @80007 = ~~ [PEASM08] //#61822
 @80008 = ~I'll trade you a few words, sure enough.~ [PEASM03] //#61817
@@ -421,8 +481,8 @@ A messenger has brought me an invitation from his master. Although he will keep 
 @80023 = ~Don't hurt me!~ [CHILM07] //#61567
 @80024 = ~~ [CHILM05] //#61565
 @80025 = ~~ [CHILM06] //#61566
-@80026 = ~Wow!  An adventurer!~ [CHILM03] //#61563
-@80027 = ~You ain't from around here!  I knows it!~ [CHILM02] //#61562
+@80026 = ~Wow! An adventurer!~ [CHILM03] //#61563
+@80027 = ~You ain't from around here! I knows it!~ [CHILM02] //#61562
 @80028 = ~Well, I certainly don't like the look of you.~ [PEASF306] //#61683
 @80029 = ~~ [PEASF307] //#61684
 @80030 = ~~ [PEASF308] //#61685
@@ -437,57 +497,38 @@ A messenger has brought me an invitation from his master. Although he will keep 
 @80039 = ~Orc Leather +3~ //#6365
 @80040 = ~Mutated Gibberling~ //#2286
 @80041 = ~Skeleton Archer~ //#73272
-@80042 = ~These swords are usually referred to as doubled-edged swords, war swords, or military swords.  In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture, and may vary within the same culture depending on the era.  Among the most common characteristics of all long swords is their length, which ranges from 35 inches to 47 inches.  In the latter case, the blade is known to take up 40 inches of the total length.  Most long swords have a double-edged blade and a sharp point at the tip.  Despite the tip, the long sword is designed for slashing, not thrusting. 
 
-STATISTICS:
-
-Damage:  1D8
-Damage type:  slashing
-Weight: 4
-Speed Factor: 5
-Proficiency Type: Long Sword
-Type:  1-handed
-Requires: 6 Strength~ //#6742
-@80043 = ~This blade burns with a magical fire, and a charring blast is released whenever a hit is scored.  "Meta Infernum" is etched on the hilt, though it appears somewhat faded and may not be original to the sword.
-
-STATISTICS:
-
-THAC0: +1 bonus
-Damage:  1D8 +1, +1 fire damage
-Damage type:  slashing
-Weight: 4
-Speed Factor: 5
-Proficiency Type: Long Sword
-Type:  1-handed
-Requires: 6 Strength~ //#4421
+//@80042 = /* description for EE */
+//@80043 = /* description for EE */
 @80044 = ~Long Sword~ //#2893
 @80045 = ~Sword of Flame +1~ //#4422
-@80046 = ~These swords are usually referred to as doubled-edged swords, war swords, or military swords.  In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture, and may vary within the same culture depending on the era.  Among the most common characteristics of all long swords is their length, which ranges from 35 inches to 47 inches.  In the latter case, the blade is known to take up 40 inches of the total length.  Most long swords have a double-edged blade and a sharp point at the tip.  Despite the tip, the long sword is designed for slashing, not thrusting. 
+@80046 = ~These swords are usually referred to as doubled-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture, and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from 35 inches to 47 inches. In the latter case, the blade is known to take up 40 inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting. 
 
 STATISTICS:
 
-Damage:  1D8
-Damage type:  slashing
+Damage: 1D8
+Damage type: slashing
 Weight: 4
-Speed Factor: 5
+Speed Factor: 4
 Proficiency Type: Long Sword
-Type:  1-handed
+Type: 1-handed
 Requires: 6 Strength
 Not Usable By:
  Druid
  Cleric
  Mage~ //#6742
-@80047 = ~This blade burns with a magical fire, and a charring blast is released whenever a hit is scored.  "Meta Infernum" is etched on the hilt, though it appears somewhat faded and may not be original to the sword.
+/* description for BGT */
+@80047 = ~This blade burns with a magical fire, and a charring blast is released whenever a hit is scored. "Meta Infernum" is etched on the hilt, though it appears somewhat faded and may not be original to the sword.
 
 STATISTICS:
 
 THAC0: +1 bonus
-Damage:  1D8 +1, +1 fire damage
-Damage type:  slashing
+Damage: 1D8 +1, +1 fire damage
+Damage type: slashing
 Weight: 4
-Speed Factor: 5
+Speed Factor: 4
 Proficiency Type: Long Sword
-Type:  1-handed
+Type: 1-handed
 Requires: 6 Strength
 Not Usable By:
  Druid
@@ -579,6 +620,8 @@ Requires:
 Weight: 45~ //#66422
 @80060 = ~Umber Hulk~
 
+@80061 = ~Sling +2~
+
 //Journal Titles
 @90001 = ~Raukner's Ruffian Roughnecks~
 //@90002 = ~The Lost Son~
@@ -592,56 +635,11 @@ Weight: 45~ //#66422
 @90010 = ~A Mysterious Offer~
 @90011 = ~A failed Picnic~
 
-//EE Descriptions
-@100032   = ~Aphriel's Elven Longbow
-
-At an early age the elf Aphriel roamed the forests of Faerûn and became one of the greatest Rangers of our time. There was no scent she could not follow, and not one criminal was safe from her bow. It was only when she met a local merchant on a visit to the city of Baldur's Gate and fell passionately in love with him, that her days in the forest had come to an end. Their relationship was blessed with the young half-elf Perwell, and when he was kidnapped by bandits of the Sword Coast, Aphriel set out for one last time into the forests. During this trip the bow came into the hands of <CHARNAME>.
-
-STATISTICS:
-
-Damage: +2 bonus (missile)
-THAC0: +3 bonus
-Weight: 2
-Speed Factor: 5
-Proficiency Type: Long Bow
-Type: 2-handed
-Requires: 6 Strength~
-@100048   = ~This shield is polished to a high gloss and obviously magical. Scratches disappear and blood and dirt simply run off of its reflective surface. It can be presumed that it can even withstand the look of a basilisk.
-
-STATISTICS:
-
-The wearer is protected against all types of petrification and forms of gaze attacks.
-
-Armor Class: +1 bonus
-Weight: 7
-Requires: 12 Strength~
-@100058   = ~Armor from Gibberling Leather
-
-One of the byproducts of Geraldo's work with gibberlings was a high leather production. Since the painter only needed the fur for his colors, he sought a different use for the thick skin of the monsters... and found it. Unfortunately, the leather of gibberlings had some unexpected side effects and so Geraldo impatiently waited for a credulous soul to foist his experiment on.
-
-The chroniclers are assuming that the great Geraldo laughs in his sleeve at the idea that some idiot would find this armor actually useful.
-
-STATISTICS:
-
-The character turns blue.
-
-Can only be removed by a 'Remove Curse' spell.
-
-Armor Class: 4
-Charisma: -3
-Resistance vs. projectile weapons: +10%
-Weight: 7
-Requires: 6 Strength~
-@100086   = ~The priest of Moradin, Bashrik Sparklehammer, was considered as wise and true and within the community of liberal dwarves. He continued to fight against the secession of the surface dwarves and generally relished a high reputation. This hammer, charged with the thunderbolts of Moradin, was his greatest weapon in the fight against evil.
-
-STATISTICS:
-
-Damange: 1D4 +1 (crushing)
-Weight: 6
-Speed Factor: 4
-Requires: 9 Strength
-Proficiency Type: Warhammer
-Type: 1-handed~
+//EE Descriptions, not needed for BGT/BGII
+//@100032
+//@100048
+//@100058
+//@100086
 
 //Karlini Journals
 @2000001   = ~The magnificent Karlini - The spellbook of the magnificent Karlini
@@ -655,15 +653,15 @@ Luckily we found the spellbook of the magnificent Karlini in the Ulcaster Ruins.
 
 @2000003   = ~The magnificent Karlini - The spellbook of the magnificent Karlini
 
-We gave Ygnatius the spellbook of the magnificent Karlini as promissed. After some research he found the fitting spell to track down Karlini and we agreed to oversee his task of casting the spell. For that we will meet with Ygnatius at the stone cirlce at Lion's Way.~
+We gave Ygnatius the spellbook of the magnificent Karlini. After some research he found the last spell used by Karlini before he disappeared. For a profitable endeavour, we suggested him we could be watching him while he will be casting the spell. Ygnatius agreed and told us he will be waiting our arrival at the stone circle in Lion's way.~
 
 @2000004   = ~The magnificent Karlini
 
-We told Ygnatius to not continue working for him.~
+We told Ynatius we will not work anymore for him.~
 
 @2000005   = ~The magnificent Karlini
 
-We gave Ygnatius the spellbook of the magnificent Karlini and received our reward as promissed.~
+We gave Ygnatius the spellbook of the magnificent Karlini and received our reward as promised.~
 
 @2000006   = ~The magnificent Karlini
 
@@ -675,7 +673,7 @@ We oversaw the casting of the spell but surprisingly a balor appeared and Ygnati
 
 @2000008   = ~The magnificent Karlini
 
-We oversaw the casting of the spell but surprisingly a balor appeared and Ygnatius vanished. Unexpectedly the fiend agreed on letting the two gnomes go if we would answer some difficult questions about the Sword Coast correctly. Otherwise my soul would be his reward. By luck and effort I was able to answer all three questions correctly. In return the balor vanished into thin air but stayed true to his word and brought the two gnomes back save and sound. They in return were thankful - more or less- for their rescue. Gnomes ... In retrospect the delivered reward by theese two gnomes was fitting the needed efforts to solve the given tasks.~
+We oversaw the casting of the spell but surprisingly a balor appeared and Ygnatius vanished. Unexpectedly the fiend agreed on letting the two gnomes go if we would answer some difficult questions about the Sword Coast correctly. Otherwise my soul would be his reward. By luck and effort I was able to answer all three questions correctly. In return the balor vanished into thin air but stayed true to his word and brought the two gnomes back save and sound. They in return were thankful - more or less- for their rescue. Gnomes... In retrospect the delivered reward by theese two gnomes was fitting the needed efforts to solve the given tasks.~
 
 @2000009   = ~The magnificent Karlini~
 
@@ -683,7 +681,7 @@ We oversaw the casting of the spell but surprisingly a balor appeared and Ygnati
 
 @3000001   = ~Breeding Gibberlings in Baldur's Gate
 
-Travelling through the streets of Baldur's Gate we met a man who referred to himself as 'Geraldo the Magnificent'. He told us he had planned to create blue colour from the fur of gibberlings but when they started to breed uncontrollably he was forced to imprison them in his own house. He asked us to go to his house and deal with the monsters inside. By now there should be around 20 of the little beasts there.~
+Travelling through the streets of Baldur's Gate we met a man who referred to himself as "Geraldo the Magnificent". He told us he had planned to create blue colour from the fur of gibberlings but when they started to breed uncontrollably he was forced to imprison them in his own house. He asked us to go to his house and deal with the monsters inside. By now there should be around 20 of the little beasts there. His house is the big blue-grey one with the white fence east of Central Baldur's Gate.~
 @3000002   = ~Breeding Gibberlings in Baldur's Gate
 
 There were only two gibberlings in Geraldo’s house. We should return to him and give him the furs anyway.~
@@ -698,3 +696,45 @@ We were able to find all the remaining gibberlings. When we informed Geraldo he 
 We told Geraldo that we quit his little task. He mumbled something about finding his luck somewhere else and left.~
 
 @3000006   = ~Breeding Gibberlings in Baldur's Gate~
+
+@3000007  = ~The Serpents of Abbathor
+
+I witnessed an ambuch at the Coast Way and found a journal from a dwarf named Bashrik. I should bring it to the Temple of Helm in Baldur's Gate.~
+ 
+@3000008  = ~The Serpents of Abbathor
+
+I agreed to confront this Draglon who was mentioned in Bashrik's journal. As far as I know he might be in the Undercellars.~
+
+@3000009  = ~The Serpents of Abbathor
+
+I confronted Draglon, but he escaped. I should return to the temple of Helm and talk to the dwarves.~
+
+@3000010  = ~The Serpents of Abbathor
+
+A mage named Jenna keeps an artifact for the dwarves. She and her companion Jassir reside in the Northwestern District's tavern. I need to go there and tell her "Greetings from Mirjala" for password.~
+
+@3000011  = ~The Serpents of Abbathor
+
+I decided to help the dwarves no further.~
+
+@3000012  = ~The Serpents of Abbathor
+
+Jenna was killed by the Serpent's minions, and the artefact was taken. I should return to Wostock and tell him about it!~
+
+@3000013  = ~The Serpents of Abbathor
+
+I agreed to have a look at a warehouse in the Southeastern District of Baldur's Gate. We believe this to be the hideout from the Serpents of Abbathor. I will need a key to enter.~
+
+
+/* new for v4.0 */
+//@10037 rephrased with location in Beregost
+@3000014 = ~Of Wolves and Men
+
+A woman shouted at me in front of Thalantyr's abode, but I am not sure what she was referring to. Maybe it had something to do with the werewolf I killed inside the house in the southwest of Beregost?~
+
+//@10033 rephrased with location in Beregost
+@3000015  = ~Of Wolves and Men
+
+The husband of the mage Aiwell seems to have been infected with Lycanthropy. I probably have two options to solve the problem: Either with a potion I can get from Thalantyr, or the old fashioned sword solution.
+
+Her home is the small house at the southwest boundary of Beregost.~

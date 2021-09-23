@@ -1,8 +1,8 @@
 /* @0    = */
-@1    = ~Ascalons Questpack~
-@2    = ~Ascalons Questpack findet keine gültige BG-Installation. Die Mod-Installation wird abgebrochen.~
-@3    = ~Bringe Virginie, dem unsichtbaren Wunderbunny, ein paar neue Tricks bei~
-@4    = ~Installiere Virginie, das unsichtbare Wunderbunny~
+//@1    = ~Ascalons Questpack~
+//@2    = ~Ascalons Questpack findet keine gültige BG-Installation. Die Mod-Installation wird abgebrochen.~
+//@3    = ~Bringe Virginie, dem unsichtbaren Wunderbunny, ein paar neue Tricks bei~
+//@4    = ~Installiere Virginie, das unsichtbare Wunderbunny~
 
 @6    = ~Agnus~
 @7    = ~Agnus der Weiße~
@@ -36,7 +36,7 @@ RW-Bonus: -1~
 @28   = ~Ein kleines, weißes Kaninchen. Es ist zwar nicht so flauschig wie Hopsi, aber welches Kaninchen ist das schon?~
 @29   = ~Perwell~
 @30   = ~Dies ist die Leiche von Perwell.~
-@31   = ~Elfenbogen~
+@31   = ~Aphriels Elfenbogen~
 @32   = ~Aphriels Elfenbogen
 
 Schon in jungen Jahren zog die Elfe Aphriel durch die Wälder Faerûns und wurde zu einer der größten Waldläuferinnen der Gegenwart. Keine Fährte, der sie nicht folgen konnte und kein Übeltäter, der vor ihrem Bogen sicher war. Erst als sie bei einem Besuch in der Stadt Baldurs Tor einen ansässigen Menschenhändler traf und sich Hals über Kopf verliebte, hatten ihre Tage im Wald ein Ende. Aus der Liaison wurde der junge Halbelf Perwell geboren, und als dieser von den Räubern der Schwertküste entführt wurde brach Aphriel ein letztes Mal in die Wälder auf. Auf dieser Reise gelangte ihr Bogen in die Hände von <CHARNAME>.
@@ -94,7 +94,7 @@ Kann nicht verwendet werden von:
 @52   = ~Ygnatius Bombastus~
 @53   = ~Karlini~
 @54   = ~Geraldos Schlüssel~
-@55   = ~Der Schlüssel öffnet die Tür von Geraldos Haus im Zemtrum von Baldurs Tor.~
+@55   = ~Der Schlüssel öffnet die Tür von Geraldos Haus im Zentrum von Baldurs Tor.~
 @56   = ~Kreischlingsfell~
 @57   = ~Die ist das Fell eines mutierten Kreischlings.~
 @58   = ~Rüstung aus Kreischlingsleder
@@ -173,9 +173,11 @@ Die letzten Einträge des Buches handeln von den Bemühungen, mit Mulahey in der N
 
 EIGENSCHAFTEN:
 
-Schaden: 1W4 +1 (Wucht)
-Gewicht: 6
-Initiativefaktor: 4
+Schaden: 1W4 +3 (Wucht)
+Schadensbonus: +1 (Elektrizität)
+ETW0-Bonus: -2
+Gewicht: 5
+Initiativefaktor: 2
 Mindeststärke: 9
 Fertigkeit: Kriegshammer
 Typ: 1-händig
@@ -260,6 +262,9 @@ Nach allem, was Ihr über die alten Zwerge wisst, kommt so eine Tat dem größten S
 @5021 = ~KIWITT!~
 @6000 = ~Lasst mich doch nicht einfach stehen!~
 
+@6001 = ~Eingang zur Mine~ /* new for v2.01 - AC4400.bcs */
+@6002 = ~Lagerhaus~ /* new for v2.01 - AC4400.bcs */
+
 
 @10001 = ~Raukners Raufende Rabauken
 
@@ -295,7 +300,7 @@ Einige Bauern wollen in der Nacht eine merkwürdige Gestalt in der Nacht am Wasse
 Ich konnte Perwell in den Minen nicht finden... hoffentlich hat er es zusammen mit den anderen Sklaven nach draußen geschafft, bevor das Wasser einbrach.~
 @10011 = ~Die Schlangen Abbathors in Nashkell?
 
-Im Hauptquartier der Schlangen habe ich ein paar schlechte Neuigkeiten erfahren:  Anscheinend war es von Anfang an Ihr Plan, ein altes zwergisches Gerät namens Gundmagtor zu erobern, was in der Gemeinsprache so viel bedeutet wie "Rufer der schwarzen Seelen". Der Hauptschlag des Kultes scheint sich auf Nashkell zu konzentrieren.~
+Im Hauptquartier der Schlangen habe ich ein paar schlechte Neuigkeiten erfahren:  Anscheinend war es von Anfang an ihr Plan, ein altes zwergisches Gerät namens Gundmagtor zu erobern, was in der Gemeinsprache so viel bedeutet wie "Rufer der schwarzen Seelen". Der Hauptschlag des Kultes scheint sich auf Nashkell zu konzentrieren.~
 @10012 = ~Die Schlangen Abbathors in Nashkell - Lugosch
 
 Lugosch, der Anführer der Schlangen Abbathors aus Baldurs Tor, ist persönlich in den Minen Nashkells. Dieses Mal wird es kein Entkommen für ihn geben.~
@@ -360,20 +365,53 @@ Aphriel sucht nun selbst nach ihrem Sohn. Immerhin habe ich ihn aus der Mine ger
 @10032 = ~Die Suche nach Perwell
 
 Aphriel und ihr Sohn sind wieder glücklich vereint.~
+/* rephrased for v4.0 */
 @10033 = ~Von Wölfen und Männern
 
-Der Mann der Zauberin Aiwell hat sich wohl mit Lycanthropie angesteckt. Ich habe wohl verschiedene Möglichkeiten, das Problem zu lösen: Entweder mit einem Trank, den ich von Thalantyr bekommen kann, oder auf die althergebrachte Tour mit dem Schwert.~
+Der Mann der Zauberin Aiwell hat sich wohl mit Lycanthropie angesteckt. Ich habe wohl verschiedene Möglichkeiten, das Problem zu lösen: Entweder mit einem Trank, den ich von Thalantyr bekommen kann, oder auf die althergebrachte Tour mit dem Schwert.
+
+Ich finde ihr Haus im Wald gleich neben dem Domizil von Thalantyr.~
 @10034 = ~Von Wölfen und Männern
 
 Thalantyr hat uns verschiedene Möglichkeiten aufgezählt. Er kann den Trank mit Aiwells Blut mixen, was äußerst fragwürdig ist. Oder er benutzt Gurilbeeren, die nicht immer wirken. Am besten wäre ein Trank aus Tollkirschen. Er sagte auch, dass er uns nur einen der drei Tränke brauen kann.
 
-Ich kann ihm allerdings auch den Leichnam Thonders bringen, damit er die Werwolfskrankheit besser erforschen kann.~
+Ich kann ihm allerdings auch den Leichnam Tonders bringen, damit er die Werwolfskrankheit besser erforschen kann.~
 @10035 = ~Von Wölfen und Männern
 
-Thalantyr hat den Leichnam von Thonder mit einem Flammenschwert erkauft. Auch nicht schlecht.~
+Thalantyr hat den Leichnam von Tonder mit einem Flammenschwert erkauft. Auch nicht schlecht.~
 @10036 = ~Von Wölfen und Männern
 
-Aiwell und Thonder waren überglücklich, dass der Mann von seinem Fluch erlöst wurde.~
+Aiwell und Tonder waren überglücklich, dass der Mann von seinem Fluch erlöst wurde.~
+
+/* new for v2.05 */
+@10037 = ~Von Wölfen und Männern
+
+Vor Thalantyrs Festung hat mich eine Frau angeschrien, aber ich weiß nicht genau, was sie wollte. Hat es eventuell mit dem Werwolf in dem nahegelegenen Haus zu tun, den ich bekämpft habe?~
+
+@10038 = ~Von Wölfen und Männern
+
+Ich habe mich für das Heilmittel aus Gurilbeeren entschieden. Nun muss ich es dem Werwolf "nur" noch geben!~
+
+@10039 = ~Von Wölfen und Männern
+
+Ich habe mich für das Heilmittel aus Aiwells Blut entschieden. Nun muss ich es dem Werwolf "nur" noch geben!~
+
+@10040 = ~Von Wölfen und Männern
+
+Ich habe mich für das Heilmittel aus Tollkirschen entschieden. Nun muss ich es dem Werwolf "nur" noch geben!~
+
+@10041 = ~Von Wölfen und Männern
+
+Verdammt, das Heilmittel hat nicht gewirkt, und der Werwolf hat mich angegriffen. Ich werde leider Aiwell die schlechte Nachricht überbringen müssen.~
+
+@10042 = ~Von Wölfen und Männern
+
+Aiwell war entsprechend traurig, als wir ihr vom Tod ihres Mannes erzählt haben. Sie ist einfach verschwunden...~
+
+@10043 = ~Von Wölfen und Männern
+
+Leider ist hier heute niemand glücklich geworden. Aiwell hat ihren Mann verloren, ihr Mann ist... nunja, tot, Thalantyr hat keine Werwolfleiche zum forschen, und ich habe keine Belohnung bekommen. Nächstes mal sollte ich besser aufpassen, wo ich meine Trophäen hintue!~
+
 @20001 = ~Der Kult der Augenlosen - Bunger Wiesner
 
 Die Halblingsdame Emmi Wiesner hat uns regelrecht angefleht, nach ihrem Sohn zu sehen, den es in die Fänge ges Kultes gezogen hat.~
@@ -397,6 +435,11 @@ Bunger Wiesner ist zu seiner Mutter zurückgekehrt. Die alte Dame wird uns bestim
 Ein Bote hat mir eine Einladung seines Herrn überbracht. Auch wenn dieser seinen Namen geheimhalten will, so hat er doch aus irgendeinem Grund Interesse an mir. Wenn ich mich auf ein Treffen einlassen will dann finde ich den Boten in der Kupferkrone.~
 
 
+
+
+
+
+
 //BG:EE Compatibility
 
 //Strings from BG2
@@ -404,7 +447,7 @@ Ein Bote hat mir eine Einladung seines Herrn überbracht. Auch wenn dieser seinen
 @80002 = ~~ [PEASF07] //#61665
 @80003 = ~~ [PEASF08] //#61666
 @80004 = ~Ich danke den Göttern jeden Tag für all die guten Dinge in meinem Leben.~ [PEASF02] //##61660
-@80005 = ~Aaah! Lauft!~ [PEASM09] //#61823
+//@80005 = ~Aaah! Lauft!~ [PEASM09] //#61823
 @80006 = ~~ [PEASM07] //#61821
 @80007 = ~~ [PEASM08] //#61822
 @80008 = ~Klar, ich rede gerne ein paar Worte mit Euch.~ [PEASM03] //#61817
@@ -441,28 +484,8 @@ Ein Bote hat mir eine Einladung seines Herrn überbracht. Auch wenn dieser seinen
 @80039 = ~Beschlagenes Lederwams +3~ //#6365
 @80040 = ~Mutierter Kreischling~ //#2286
 @80041 = ~Skelett-Bogenschütze~ //#73272
-@80042 = ~Diese Schwerter werden auch als zweischneidige Schwerter, Kriegsschwerter oder Militärschwerter bezeichnet. Es gibt keine einheitliche Form des Langschwertes. Seine Form und Länge sind von Kultur zu Kultur unterschiedlich und können selbst innerhalb einer Kultur je nach Zeitalter variieren. Das grundlegendste Merkmal aller Langschwerter ist ihre Länge, die zwischen 90 cm und 1,20 m beträgt. Im letzteren Fall nimmt die Klinge 1 m der Gesamtlänge ein. Die meisten Langschwerter besitzen eine zweischneidige Klinge mit einer scharfen Spitze. Trotz dieser Spitze ist das Langschwert nicht zum Stoßen, sondern zum Schwingen vorgesehen.
-
-EIGENSCHAFTEN:
-
-Schaden: 1W8 (Klinge)
-Gewicht: 4
-Initiativefaktor: 5
-Mindeststärke: 6
-Fertigkeit: Langschwert
-Typ: 1-händig~ //#6742
-@80043 = ~Die Klinge brennt mit einem magischen Feuer und bei jedem Schlag wird versengende Hitze freigesetzt. Die Worte "Meta Infernum" sind in den Griff geritzt. Die Inschrift wirkt jedoch leicht verwischt und wurde vielleicht erst später von einem der Besitzer angebracht.
-
-EIGENSCHAFTEN:
-
-Schaden: 1W8 +1 (Klinge)
-Schadensbonus: +1 (Feuer)
-ETW0-Bonus: -1
-Gewicht: 4
-Initiativefaktor: 4
-Mindeststärke: 6
-Fertigkeit: Langschwert
-Typ: 1-händig~ //#4421
+//@80042 = /* description for EE */
+//@80043 = /* description for EE */
 @80044 = ~Langschwert~ //#2893
 @80045 = ~Flammenschwert +1~ //#4422
 @80046 = ~Diese Schwerter werden auch als zweischneidige Schwerter, Kriegsschwerter oder Militärschwerter bezeichnet. Es gibt keine einheitliche Form des Langschwertes. Seine Form und Länge sind von Kultur zu Kultur unterschiedlich und können selbst innerhalb einer Kultur je nach Zeitalter variieren. Das grundlegendste Merkmal aller Langschwerter ist ihre Länge, die zwischen 90 cm und 1,20 m beträgt. Im letzteren Fall nimmt die Klinge 1 m der Gesamtlänge ein. Die meisten Langschwerter besitzen eine zweischneidige Klinge mit einer scharfen Spitze. Trotz dieser Spitze ist das Langschwert nicht zum Stoßen, sondern zum Schwingen vorgesehen.
@@ -471,7 +494,7 @@ EIGENSCHAFTEN:
 
 Schaden: 1W8 (Klinge)
 Gewicht: 4
-Initiativefaktor: 5
+Initiativefaktor: 4
 Mindeststärke: 6
 Fertigkeit: Langschwert
 Typ: 1-händig
@@ -572,6 +595,8 @@ Gewicht: 45
 Mindeststärke: 15~ //#66422
 @80060 = ~Erdkoloss~
 
+@80061 = ~Schleuder +2~
+
 //Journal Titles
 @90001 = ~Raukners Raufende Rabauken~
 //@90002 = ~Der verlorene Sohn~
@@ -585,56 +610,11 @@ Mindeststärke: 15~ //#66422
 @90010 = ~Ein geheimnisvolles Angebot~
 @90011 = ~Ein missglücktes Picknick~
 
-//EE Descriptions
-@100032   = ~Aphriels Elfenbogen
-
-Schon in jungen Jahren zog die Elfe Aphriel durch die Wälder Faerûns und wurde zu einer der größten Waldläuferinnen der Gegenwart. Keine Fährte, der sie nicht folgen konnte und kein Übeltäter, der vor ihrem Bogen sicher war. Erst als sie bei einem Besuch in der Stadt Baldurs Tor einen ansässigen Menschenhändler traf und sich Hals über Kopf verliebte, hatten ihre Tage im Wald ein Ende. Aus der Liaison wurde der junge Halbelf Perwell geboren, und als dieser von den Räubern der Schwertküste entführt wurde brach Aphriel ein letztes Mal in die Wälder auf. Auf dieser Reise gelangte ihr Bogen in die Hände von <CHARNAME>.
-
-EIGENSCHAFTEN:
-
-Schadensbonus: +2 (Geschoß)
-ETW0-Bonus: -3
-Gewicht: 2
-Initiativefaktor: 5
-Mindeststärke: 6
-Fertigkeit: Langbogen
-Typ: 2-händig~ //@32 without "Not useable by"
-@100048   = ~Dieser Schild ist auf Hochglanz poliert und offensichtlich magisch. Kratzer verschwinden und Blut und Schmutz perlt einfach von seiner spiegelnden Oberfläche ab. Es steht zu vermuten, dass er sogar dem Blick eines Basilisken standhalten kann.
-
-EIGENSCHAFTEN:
-
-Der Träger ist vor allen Arten der Versteinerung geschützt, auch vor Blickangriffen.
-
-RK-Bonus: -1
-Gewicht: 7
-Mindeststärke: 12~ //@48 without "Not useable by"
-@100058   = ~Rüstung aus Kreischlingsleder
-
-Eines der Nebenprodukte von Geraldos Arbeit mit Kreischlingen war eine hohe Lederproduktion. Da der Maler für seine Farben nur das Fell benötigte, suchte er für die dicke Haut der Monster eine andere Verwendung... und fand sie. Leider hatte das Kreischlingsleder einige nicht erwartete Nebenwirkungen und so wartete Geraldo ungeduldig darauf, dass er sein Experiment einer leichtgläubigen Seele andrehen konnte.
-
-Die Chronisten gehen davon aus, dass sich der große Geraldo ins Fäustchen lacht bei der Vorstellung, irgendein Idiot könnte seine Rüstung tatsächlich nützlich finden.
-
-EIGENSCHAFTEN:
-
-Der Charakter verfärbt sich blau.
-
-Kann nur durch Fluch brechen wieder abgenommen werden.
-
-Rüstungsklasse: 4
-Charisma: -3
-Widerstand gg. Geschosswaffen: +10%
-Gewicht: 7
-Mindeststärke: 6~ //@58 without "Not useable by"
-@100086   = ~Der Moradinpriester Bashrik Funkenhammer galt in den Kreisen liberal einsteller Zwerge als weise und wahrhaftig. Er setzte sich engagiert gegen die Abspaltung der Oberweltzwerge ein und genoss allgemein ein hohes Ansehen. Dieser Hammer, geladen mit den Blitzen Moradins, war seine größte Waffe im Kampf gegen das Böse.
-
-EIGENSCHAFTEN:
-
-Schaden: 1W4 +1 (Wucht)
-Gewicht: 6
-Initiativefaktor: 4
-Mindeststärke: 9
-Fertigkeit: Kriegshammer
-Typ: 1-händig~ //@86 without "Not useable by"
+//EE Descriptions, in setup-AC_QUEST_ee.tra
+//@100032   
+//@100048   
+//@100058   
+//@100086   
 
 //Karlini Journals
 @2000001   = ~Der große Karlini - Das Buch des großen Karlinis
@@ -682,7 +662,7 @@ Wir haben Ygnatz dabei beobachtet wie er die große Formel gesprochen hat, dabei 
 
 @3000001   = ~Kreischlingszucht in Baldurs Tor
 
-Wir haben auf den Straßen von Baldurs Tor einen Mann namens "Geraldo der Prächtige" getroffen. Er erzählte uns,dass er vorhatte aus dem Fell gefangener Kreischlinge blaue Farbe zu gewinnen, diese pflanzten sich aber innerhalb kürzester Zeit fort und er musste sie in seinem Haus einsperren. Er hat uns gebeten in sein Haus zu gehen, um uns um die Kreischlinge zu kümmern und erwähnte, dass es um die 20 Kreischlinge sein müssten.~
+Wir haben auf den Straßen von Baldurs Tor einen Mann namens "Geraldo der Prächtige" getroffen. Er erzählte uns,dass er vorhatte aus dem Fell gefangener Kreischlinge blaue Farbe zu gewinnen, diese pflanzten sich aber innerhalb kürzester Zeit fort und er musste sie in seinem Haus einsperren. Er hat uns gebeten in sein Haus zu gehen, um uns um die Kreischlinge zu kümmern und erwähnte, dass es um die 20 Kreischlinge sein müssten. Das Haus ist das große blau-graue mit dem weißen Zaun im östlichen Bereich des Zentrums von Baldurs Tor.~
 @3000002   = ~Kreischlingszucht in Baldurs Tor
 
 Wir konnten im Haus leider nur zwei Kreischlinge antreffen, wir sollten mit den Fellen zu Geraldo zurückkehren.~
@@ -696,3 +676,45 @@ Wir haben alle Kreischlinge ausfindig machen können. Geraldo verschwand und murm
 
 Wir haben Geraldo gesagt, dass wir nicht mehr für ihn arbeiten wollen. Geraldo verschwand und murmelte etwas von Glück in der Fremde finden.~
 @3000006   = ~Kreischlingszucht in Baldurs Tor~
+
+@3000007  = ~Die Schlangen Abbathors
+
+Ich bin Zeuge eines Überfalls auf der Küstenstraße geworden. Bei der Leiche befand sich ein Tagebuch eines Zwergen namens Bashrik. Ich sollte es in den Tempel des Helm in Baldurs Tor bringen.~
+ 
+@3000008  = ~Die Schlangen Abbathors
+
+Ich habe zugestimmt, diesem Draglon entgegenzutreten, der in Bashriks Tagebuch erwähnt wurde. Soviel ich weiß, müsste er in den Unterkellern zu finden sein.~
+
+@3000009  = ~Die Schlangen Abbathors
+
+Ich habe Draglon zur Rede stellen wollen, aber er ist geflohen. Ich sollte zum Tempel zurückkehren und mit den Zwergen reden.~
+
+@3000010  = ~Die Schlangen Abbathors
+
+Eine Magierin Jenna bewacht ein Zwergenartefakt. Sie und ihr Begleiter Jassir warten in einer Taverne im nordwestlichen Distrikt von Baldurs Tor. Wenn ich sie aufsuche, lautet das Passwort "Grüße von Mirjala".~
+
+@3000011  = ~Die Schlangen Abbathors
+
+Ich habe beschlossen, den Zwergen nicht weiter zu helfen.~
+
+@3000012  = ~Die Schlangen Abbathors
+
+Jenna wurde von den Schergen der Schlangen getötet, und sie haben das Artefakt mitgenommen! Ich sollte zu Wostock zurückkehren und es ihm mitteilen!~
+
+@3000013  = ~Die Schlangen Abbathors
+
+Ich habe mich bereiterklärt, ein Warenhaus im südöstlichen Distrikt von Baldurs Tor zu untersuchen. Dort befindet sich wohl der Unterschlupf der Schlangen des Abbathors. Um hineinzukommen, brauche ich einen Schlüssel.~
+
+/* new for v4.0 */
+//@10037 rephrased with location in Beregost
+@3000014 = ~Von Wölfen und Männern
+
+Vor Thalantyrs Festung hat mich eine Frau angeschrien, aber ich weiß nicht genau, was sie wollte. Hat es eventuell mit dem Werwolf in dem Haus im Südwesten von Beregost zu tun, den ich bekämpft habe?~
+
+//@10033 rephrased with location in Beregost
+@3000015 = ~Von Wölfen und Männern
+
+Der Mann der Zauberin Aiwell hat sich wohl mit Lycanthropie angesteckt. Ich habe wohl verschiedene Möglichkeiten, das Problem zu lösen: Entweder mit einem Trank, den ich von Thalantyr bekommen kann, oder auf die althergebrachte Tour mit dem Schwert.
+
+Ich finde ihr Haus im Südwesten von Beregost.~
+

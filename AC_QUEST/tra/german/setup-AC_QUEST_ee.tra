@@ -1,0 +1,138 @@
+//#6742 BGII
+@80042 = ~Diese Schwerter werden auch als zweischneidige Schwerter, Kriegsschwerter oder Militärschwerter bezeichnet. Es gibt keine einheitliche Form des Langschwertes. Seine Form und Länge sind von Kultur zu Kultur unterschiedlich und können selbst innerhalb einer Kultur je nach Zeitalter variieren. Das grundlegendste Merkmal aller Langschwerter ist ihre Länge, die zwischen 90 cm und 1,20 m beträgt. Im letzteren Fall nimmt die Klinge 1 m der Gesamtlänge ein. Die meisten Langschwerter besitzen eine zweischneidige Klinge mit einer scharfen Spitze. Trotz dieser Spitze ist das Langschwert nicht zum Stoßen, sondern zum Schwingen vorgesehen.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W8 (Klinge)
+Gewicht: 4
+Initiativefaktor: 4
+Mindeststärke: 6
+Fertigkeit: Langschwert
+Typ: 1-händig
+~
+//#4421 BGII
+@80043 = ~Die Klinge brennt mit einem magischen Feuer und bei jedem Schlag wird versengende Hitze freigesetzt. Die Worte „Meta Infernum“ sind in den Griff geritzt. Die Inschrift wirkt jedoch leicht verwischt und wurde vielleicht erst später von einem der Besitzer angebracht.
+
+EIGENSCHAFTEN:
+
+ETW0-Bonus: -1
+Schaden: 1W8 +1 (Klinge)
+Schadensbonus: +1 (Feuer)
+Initiativefaktor: 4
+Fertigkeit: Langschwert
+Typ: 1-händig
+Mindeststärke: 6
+
+Gewicht: 4
+~
+
+//#6742 BGII same as @80042
+//@80046 = only needed for BGT+Tutu
+
+//#4421 BGII same as @80043
+//@80047 = only needed for BGT+Tutu
+
+//#39444 BGII
+@80053 = ~Ein Zwergenschmied namens Silberklinge fertigte sowohl diesen Hammer als auch zwei andere mächtige magische Gegenstände – einen Gürtel der Frostriesenstärke und ein Paar Ogerkrafthandschuhe. Er wollte sie seinem Sohn zum Geschenk machen, der zu diesem Zeitpunkt ein wichtiger Offizier in der Zwergenarmee war und gegen die Riesen- und Ogerstämme in der Gegend kämpfte. Dummerweise starb Silberklinges Sohn, kurz nachdem die Gegenstände fertiggestellt waren. Der Vater kam nicht mehr dazu, sie seinem Sohn zu überreichen. In tiefer Trauer legte er die Handschuhe und den Gürtel an, schnappte sich den Hammer und zog gegen die Riesen in den Kampf. Er starb den Tod eines Helden.
+
+Für sich allein ist der Hammer der Blitze schon ein mächtiger magischer Gegenstand. Wird er jedoch mit den Ogerkrafthandschuhen und dem Gürtel der Frostriesenstärke vereint, durchläuft er eine Verwandlung. Diese Verwandlung muss durch ein entsprechendes magisches Ritual unterstützt werden. Nachdem die Verwandlung abgeschlossen ist, verursacht der Hammer zusätzlich +8 Schadenspunkte und ist in der Lage, Riesen und Oger mit einem Schlag niederzustrecken.
+
+EIGENSCHAFTEN:
+
+ETW0-Bonus: -3
+Schaden: 2W4 +3 (Wucht)
+Initiativefaktor: 1
+Fertigkeit: Kriegshammer
+Typ: 1-händig
+Mindeststärke: 18
+
+Gewicht: 4
+~
+//#39548 BGII
+@80057 = ~Die Rüstung wurde einst von Shar gesegnet und hat eine lange und interessante Geschichte. Nur die besten aller Diebe waren je im Besitz dieser extrem stark verzauberten Rüstung. Die Essenz der Nacht wurde in die dunkle Rüstung verwoben. Sie fühlt sich wie eine normale Rüstung an, hüllt den Träger aber in einen schützenden Mantel aus sich windenden Schatten.
+
+EIGENSCHAFTEN:
+
+Im Schatten verstecken: +20 %
+
+Rüstungsklasse: 3
+RK-Malus:
+ +2 gg. Geschosswaffen
+ +2 gg. Stichwaffen
+Mindeststärke: 3
+
+Gewicht: 5
+~
+//#66422 BGII
+@80059 = ~Die Rüstung wurde für Enkidu, einen berühmten Krieger aus Kara-Tur, hergestellt. Niemand wagte es, ihn in einem fairen Kampf herauszufordern, aber zahlreiche Meuchelmörder, Ninjas und Wu-Jen versuchten Enkidu hinterrücks und feige zu ermorden.
+
+EIGENSCHAFTEN:
+
+Der Träger ist immun gegen hinterhältige Angriffe.
+
+Magiewiderstand: +5 %
+
+Rüstungsklasse: -2
+RK-Bonus:
+ -3 gg. Geschosswaffen
+ -3 gg. Stichwaffen
+ -4 gg. Klingenwaffen
+Mindeststärke: 15
+
+Gewicht: 45
+~
+//@32 without "Not useable by"
+@100032   = ~Aphriels Elfenbogen
+
+Schon in jungen Jahren zog die Elfe Aphriel durch die Wälder Faerûns und wurde zu einer der größten Waldläuferinnen der Gegenwart. Keine Fährte, der sie nicht folgen konnte und kein Übeltäter, der vor ihrem Bogen sicher war. Erst als sie bei einem Besuch in der Stadt Baldurs Tor einen ansässigen Menschenhändler traf und sich Hals über Kopf verliebte, hatten ihre Tage im Wald ein Ende. Aus der Liaison wurde der junge Halbelf Perwell geboren, und als dieser von den Räubern der Schwertküste entführt wurde brach Aphriel ein letztes Mal in die Wälder auf. Auf dieser Reise gelangte ihr Bogen in die Hände von <CHARNAME>.
+
+EIGENSCHAFTEN:
+
+Schadensbonus: +2 (Geschoß)
+ETW0-Bonus: -3
+Gewicht: 2
+Initiativefaktor: 5
+Mindeststärke: 6
+Fertigkeit: Langbogen
+Typ: 2-händig~
+//@48 without "Not useable by"
+@100048   = ~Dieser Schild ist auf Hochglanz poliert und offensichtlich magisch. Kratzer verschwinden und Blut und Schmutz perlt einfach von seiner spiegelnden Oberfläche ab. Es steht zu vermuten, dass er sogar dem Blick eines Basilisken standhalten kann.
+
+EIGENSCHAFTEN:
+
+Der Träger ist vor allen Arten der Versteinerung geschützt, auch vor Blickangriffen.
+
+RK-Bonus: -1
+Gewicht: 7
+Mindeststärke: 12~
+//@58 without "Not useable by"
+@100058   = ~Rüstung aus Kreischlingsleder
+
+Eines der Nebenprodukte von Geraldos Arbeit mit Kreischlingen war eine hohe Lederproduktion. Da der Maler für seine Farben nur das Fell benötigte, suchte er für die dicke Haut der Monster eine andere Verwendung... und fand sie. Leider hatte das Kreischlingsleder einige nicht erwartete Nebenwirkungen und so wartete Geraldo ungeduldig darauf, dass er sein Experiment einer leichtgläubigen Seele andrehen konnte.
+
+Die Chronisten gehen davon aus, dass sich der große Geraldo ins Fäustchen lacht bei der Vorstellung, irgendein Idiot könnte seine Rüstung tatsächlich nützlich finden.
+
+EIGENSCHAFTEN:
+
+Der Charakter verfärbt sich blau.
+
+Kann nur durch Fluch brechen wieder abgenommen werden.
+
+Rüstungsklasse: 4
+Charisma: -3
+Widerstand gg. Geschosswaffen: +10%
+Gewicht: 7
+Mindeststärke: 6~
+//@86 for EE without "Not useable by"
+@100086   = ~Der Moradinpriester Bashrik Funkenhammer galt in den Kreisen liberal einsteller Zwerge als weise und wahrhaftig. Er setzte sich engagiert gegen die Abspaltung der Oberweltzwerge ein und genoss allgemein ein hohes Ansehen. Dieser Hammer, geladen mit den Blitzen Moradins, war seine größte Waffe im Kampf gegen das Böse.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W4 +3 (Wucht)
+Schadensbonus: +1 (Elektrizität)
+ETW0-Bonus: -2
+Gewicht: 5
+Initiativefaktor: 2
+Mindeststärke: 9
+Fertigkeit: Kriegshammer
+Typ: 1-händig~

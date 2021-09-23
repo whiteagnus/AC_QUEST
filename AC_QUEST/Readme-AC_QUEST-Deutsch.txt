@@ -1,10 +1,10 @@
-            *  Ascalons Questpack I: Die Schlangen Abbathors Teil 1 und andere Geschichten  *
-                              Eine Modifikation für BGT-WeiDU
+    *  Ascalons Questpack I: Die Schlangen Abbathors Teil 1 und andere Geschichten  *
+      Eine Modifikation für BG:EE, BGT-WeiDU, Tutu (w TotSC), BGII:EE, BGII und EET
                             Ascalon (geheimer.herrscher@gmx.de)
 
-Derzeitiger Support: White Agnus (whiteagnus@baldursgatemods.de)
+Derzeitiger Support: jastey 
 
-                                      Version: 2.00 (Beta)
+
 
 ***************************************************************************************************************
 
@@ -13,7 +13,7 @@ Inhalt:
 
 I. Beschreibung
 II. Installation
-III. Hinweise (wichtig!)
+III. Hinweise 
 IV. Kompatibilität
 V. Kontakt
 VI. Komponenten
@@ -27,7 +27,8 @@ X. Letzte Worte
 
 I. Beschreibung:
 
-Im Laufe des Spiels kommen einem immer wieder kleinere und größere Ideen für Nebenhabdlungen und Geschichten, die sich außerhalb der Story um die Bhaalsbrut drehen. In dieser Modifikation sind nun meine Ideen gesammelt: Drei Questen von verschieden großen Ausmaßen. Einige sind humorvoll, andere etwas tragischer. Einige sind Rätsel, andere sind kampfbetont. Einige erfordern diplomatisches Geschick, andere sind nur von bestimmten Rassen oder Klassen lösbar.
+Im Laufe des Spiels kommen einem immer wieder kleinere und größere Ideen für Nebenhandlungen und Geschichten, die sich außerhalb der Story um die Bhaalsbrut drehen. In dieser Modifikation sind nun meine Ideen gesammelt: 10 Questen von verschieden großen Ausmaßen. Einige sind humorvoll, andere etwas tragischer. Einige sind Rätsel, andere sind kampfbetont. Einige erfordern diplomatisches Geschick, andere sind nur von bestimmten Rassen oder Klassen lösbar.
+Die Modifikation fügt Quests für sowohl BG1 als auch BGII ein. Sie kann direkt auf BG:EE, BGT-WeiDU, Tutu (w TotSC), BGII:EE, BGII und EET installiert werden, die richtigen Komponenten werden dann installiert.
 
 
 ***************************************************************************************************************
@@ -41,9 +42,7 @@ II. Installation:
 
 ***************************************************************************************************************
 
-III. Hinweise (wichtig!)
-
-- Baldurs Gate Trilogy muss installiert und auf der neusten Version sein! Ascalons Questpack ist eine REINE BGT-MODIFIKATION und funktioniert nicht mit TUTU oder einer einfachen SoA-Installation. Wenn ihr versucht, Ascalons Questpack mit diesen Programmen zu benutzen, ruiniert ihr euch unter Umständen die komplette Installation!
+III. Hinweise 
 
 - Um in den vollen Genuss der Komponente "der verschwundene Sohn" zu kommen sollte der Blutpatch aktiviert sein: Macht ein Backup der Datei baldur.ini und tragt unter der Überschrift [Game Options] die Zeile "Memory Access=100" (ohne "") ein. Anschließend könnt Ihr im Spiel im Konfiguationsmenü den Button "Blut" anschalten. Die Komponente funktioniert auch ohne den Patch, macht aber längst nicht so viel Freude.
 
@@ -53,6 +52,8 @@ III. Hinweise (wichtig!)
 IV. Kompatibilität:
 
 Ascalons Questpack wurde mit WeiDU Vers. 2.10 und 2.11 programmiert und sollte daher mit allen anderen Modifikationen auf WeiDU-Basis kompatibel sein. Das Questpack wurde mit Blick auf das Big World Projekt von Leonardo Watson programmiert und sollte in jeder beliebigen Konstellation, in der BGT installiert ist, funktionieren.
+
+Ab Version 2.00 ist die Mod für die Spiele Tutu (w TotSC), BG:EE, BGII:EE, BGII, BGT und EET geeignet.
 
 
 ***************************************************************************************************************
@@ -68,48 +69,52 @@ VI: Komponenten:
 
 	Baldur's Gate I:
 
-- Der Lohn für die Mühe
+1. Der Lohn für die Mühe
+-------------------------
 Was passiert, wenn man über alle Maßen erfreut ist über das viele Geld, das man auf seiner ersten Abenteuertour verdient hat? Besucht Beregost und findet es heraus.
 
-- Ein Fressen für die Gnolle
+2. Ein Fressen für die Gnolle
+-------------------------
 Ein romantisches Picknick sollte es werden, doch dann kam alles ganz anders. Sucht Frau Brunnstein in Nashkell und helft der Ärmsten, ihren Sohn wieder zu finden.
 
-- Der große Karlini
-Wenn ein Gnom erstmal seine wissenschaftliche Neugier geweckt hat, dann hält ihn nichts auf. Sogar ein Zauber, der den großen Karlini einst das Leben kostete, nicht. Sucht Ygnatius im Freundlichen Arm (er sollte nicht zu übersehen sein).
+3. Hopsi
+-------------------------
+Eine epische Queste um Ehre, Freundschaft und Kaninchen.
 
-- Echte Fans
-Echte Fans halten ihren Idolen die Treue, so wie Cindy, Mandy und Ashley im Nordwestviertel von Baldur's Tor...
+4. Der verschwundene Sohn
+-------------------------
+Die Halbelfe Aphriel wollte eigentlich ihren Bogen für immer an die Wand hängen - doch dann kam alles ganz anders. Ihr trefft sie im Gebiet der Mantelwald Lodge.
 
-- Die Kreischlingszucht
-Was macht ein Künstler, dem die Ideen ausgehen? Probleme, jede Menge Probleme, wie Geraldo der Prächtige im Zentrumsviertel von Baldur's Tor beweist.
-
-- Der verschwundene Sohn
-Die Halbelfe Aphriel wollte eigentlich ihren Bogen für immer an die Wand hängen - doch dann kam alles ganz anders. Ihr trefft sie im Banditenlager nachdem das Chefzelt ausgeräumt wurde.
-
-- Ein haariges Problem
+5. Von Wölfen und Männern
+-------------------------
 Aivell, die junge Magierin, hält die Tür zu ihrem Haus verschlossen - von außen. Warum nur? Besucht sie an ihrem Haus in der Nähe der hohen Hecke und findet es heraus.
 
-- Hopsi
-Eine epische Queste um Ehre, Freundschaft und Kaninchen.
+6. Der große Karlini
+-------------------------
+Wenn ein Gnom erstmal seine wissenschaftliche Neugier geweckt hat, dann hält ihn nichts auf. Sogar ein Zauber, der den großen Karlini einst das Leben kostete, nicht. Sucht Ygnatius im Freundlichen Arm (er sollte nicht zu übersehen sein).
+
+7. Die Kreischlingszucht
+-------------------------
+Was macht ein Künstler, dem die Ideen ausgehen? Probleme, jede Menge Probleme, wie Geraldo der Prächtige im Zentrumsviertel von Baldur's Tor beweist.
+
+8. Echte Fans
+-------------------------
+Echte Fans halten ihren Idolen die Treue, so wie Cindy, Mandy und Ashley im Nordwestviertel von Baldur's Tor...
+
+9. Die Schlangen Abbathors
+-------------------------
+Ein mysteriöser Zwergenkult macht sich an der Schwertküste breit. Es werden Helden gesucht! Z.Z. ist der BGI-Part spielbar. Durchsucht Mulaheys Leiche oder begebt Euch in den Südwesten von Baldur's Tor.
 
 
 	Baldur's Gate II:
 
-- Ein Halbling unter Augenlosen
-
+10. Ein Halbling unter Augenlosen
+-------------------------
 Wer hilft der armen Frau Wiesner, ihren Sohn wieder zu finden?
 
 
-	Throne of Bhaal:
-
-t.b.a.
 
 
-Baldur's Gate Trilogy:
-
-- Die Schlangen Abbathors
-
-Ein mysteriöser Zwergenkult macht sich an der Schwertküste breit. Es werden Helden gesucht! Z.Z. ist der BGI-Part spielbar. Durchsucht Mulaheys Leiche oder begebt Euch in den Südwesten von Baldur's Tor.
 
 
 ***************************************************************************************************************
@@ -132,6 +137,94 @@ VII. Versions-History:
 - Kompatiblität für Tutu (mit LdSK), BG:EE, BG2 TdB, BG2:EE und EET hergestellt
 - mehrere kleine Bugfixes
 - Englische Übersetzung von Bloodtitan hinzugefügt
+2.01
+-changed path(s) for LANGUAGE definition to get rid of the doubled setup.tra
+-added Roxanne's fix to ACQ15002.BAF for Perwell not following the PC after being freed 
+-added another interjection point into CSGAAL's dialogue in ACQ22000.D to enable compatibility with NPC Stronghold Mod (G3)
+-english setup.tra: translated @10035 (fix from BWPTextpack / BWFixpack)
+-changed path to EET cpmvars to universal EET/other/cpmvars/eet_cpmvars.tpa
+-changed %xxxx_BANTER% to %xxxx_JOINED% in all instances (hoping it will fix the EET "dialogue ends abruptly" bug)
+-changed IMOEN2 to %IMOEN_DV% in ACQ19000.d
+-in ACQ12000.D changed transition to missing state "5" to "4"
+-@49 in ACQ18000.tra: Geraldo's wrong destination for his house "West" corrected to "east"
+-(all fixes from BWPFixpack integrated)
+-deleted ACQ12CUT2.baf - ACQ12CUT.baf is the correct cutscene for both cases
+-fixed bug where Aaron gives the PC a ring although it is already in the PC's possession
+-fixed CtD in AC4400 area when moving to southern part removed faulty spawn points
+-fixed wrong map notes in quest areas AC4400.are and AC4401.are
+-update to weiDU v242
+ 
+2.02
+-more journal entries for the quest "The Serpents of Abbathor"
+-Bashrik's hammer now has the correct statistics description
+-after setting Melina's ghost to rest there is one "I did it" dialogue with Aaron.
+-werewolfquest: if Thalantyr mixes the antidote the cutscene now fades to blayck instead of displaying that the "Antichickenator" spell is used.
+-journal entry in Emerson's dialogue now appear directly with the according dialogue lines.
+-updated readme so description matches the compatible games
+-update to weiDU v244
+
+2.03 - 2018-05-04
+-"Schlangen des Abbathor": Tagebucheintrag für Questende freigeschaltet (wurde nicht verwendet); der Zwerg, der die Flugblätter austeilt, ist nun nach dem Ende des Kults nicht mehr da.
+-"Kreischlingszucht" Geraldo sollte nun nach Questende seinen Vogel Elminster wieder mitnehmen; Tagebucheintrag über die zwei Kreischling in Geraldos Haus sollte nun erscheinen, wenn man die beiden Kreischlinge eingesammelt hat
+-Tagebucheintrag "Die Schlangen Abbathors in Nashkell?" erscheint nur noch einmal beim Betreten des Gebietes im Tagebuch
+-"Ein Halbling auf Abwegen": Questerweiterung aktiviert. Die Mutter reagiert nun auch auf den Tod ihres Sohnes
+-Copyrighthinweis nach Vorlage der Fan Content Policy von Wizards of the Coast eingefügt
+
+2.04 - 2018-06-12
+-"Ein Halbling unter Augenlosen" Bunger should walk to exit without being interrupted (moved the action into the areascript)
+
+2.05 - 2019-02-09
+-"The Serpents of Abbathor": journal entry should not be set upon entering the Undercellar if quest is finished; shadows in the mines now give XP;
+-"The Lost Son": in case the son was saved before talking to the mother the first time, she will recognise his presence and the quest will not be given first; the son should leave with the mother and not remain at the Friendly Arm Inn 
+-"Of Wolves and Men": quest should now be solvable regardless of whom the PC meets first; quest can still have happy end if werewolf was killed before talking to Aiwell; corrected misspelled name "Tonder" in Setup-AC_QUEST.tra; more journal entries added; PC can offer the werewolf's corpse to Thalantyr regardless of quest status; sword in the chest will have the correct description text.
+-description for SLNG04.ITM corrected, 
+-items will only be installed if not present (instead of checking for BG:EE)
+-adding ac_quest.ini
+-renaming setup-ac_quest.ini to ac_quest.ini
+-update to weiDU v246
+
+3.0 - 2020-07-29
+-Russian version added, by Arkie
+-Gnolls should not spawn BGII loot.
+-corrected class checks in ACUITM.baf
+-Torben should go to Aiwell after he is cured (changed EscapeAreaMove() to SetGlobal+EscapeAreaDestroy(5) und CreateCreature im Areascript)
+-typo corrections
+-"A Home for the Gibberlings": journal entry gives better info about where Geraldo's house is
+-"A Lost Son": corrected readme (Aphriel is in CloakwoodLodge area, not Bandit Camp)
+-"A Halfling among the Eyeless": Bunger should not loop his dialogue at the exit of the Unseeing Eye Area but go to his mother if talked to.
+-"The Serpents of Abbathor": journal entry in Mulahey's Cave when taking the letter should be set for all games.
+-added folder libiconv-1.9.2-1-src.7z with iconv licence info
+-infer_charset corrected to infer_charsets
+-corrected download link in ac_quest.ini
+-removed empty file ACQCUT04.baf
+
+4.0 - 2021-09-08
+-split mod into optional components.
+-"Of Wolves and men" offers second install choice where house ("9" of Dudleyville Walkthrough) in Beregost is used instead of hut in High Hedge for compatibility with Glam's NPC Pack.
+-French version added, by deratiseur & jazira (proofreading by tonton-thon)
+-Italian translation, by Coland
+-Russian version updates by Arkie
+-typo corrections by jazira
+-changed name of Gnoll "Boss" to "Gnoll Chieftain" to match the ingame names and Aaron's dialogue (English version).
+-Aaron will only say that the Gnolls took the ring, not a Gnoll Chieftain to prevent confusion with the existing Gnoll Chieftain near where Dynaheir is held.
+-Aaron should really stay at the Old Mill after the PC rested and not return to the Inn.
+-Aaron's ring should not contain comments in the description.
+-Aaron shouldn't initiate dialogue constantly while being in the pit.
+-Inserted unused journal entries for "A Job Well-Paid".
+-Journal entry about Emerson's notes should always be set correctly.
+-Dwarven artefact should not be accessible inside hidden wand safe before PC has key to it.
+-Aphriel should react to dead Perwell's body upon first meeting.
+-Aphriel should initiate dialogue only after Perwell called her.
+-Perwell shouldn't initiate dialogue constantly while being in the mine.
+-Ygnazius should not be at the FAI if quest is finished.
+-Cutscenes to receive Werwolf cure from Thalantyr should work if PC is not inside his abode as well.
+-Guril berries and Belladonna from original games (BGII/SoD) can also be used for werewolf cure. Also, guril berries from Ascalon's Questpack can be used for tanner quest in BGII.
+-use correct area variable in AC4402.baf.
+-more item descriptions in EE style by Cahir (English EE version).
+-All journal entries should be deleted upon transition to BGII in BGT. Journal entries for BG1 will not be deleted for EET.
+-split lines for install only into separate setup-install.tra. 
+-Added Dynamic Install Order categories and globally unique LABELs to support Project Infinity.
+-corrected entry in cpmvars.tpa
 
 
 ***************************************************************************************************************
@@ -144,6 +237,9 @@ VIII. Danksagungen
 - Jastey für großartige Hilfestellungen (was fürde ich nur ohne deine Tagebucheintragsbeispiele machen)
 - Leomar und Leonardo Watson für ihre Arbeit am BWP
 - Bloodtitan für die englische Übersetzung
+- Arkie für die russische Übersetzung
+- deratiseur & jazira für die französische Übersetzung, korrekturgelesen von tonton-thon
+- Coland für die italienische Übersetzung
 - Fridtjof und Hedian und allen anderen von www.rosenranken.org, die dem Questpack ein feines zu Hause bieten
 - vorlast but not vorleast den motivierten und begeisterten Spielern des BWP, die das beste Spiel aller Zeiten am Leben erhalten
 - Und zu guter Letzt meiner Lieblingsschweizerin Revianêl, die jede einzelne Quest, jede Anspielung, jeden Gag und jede versteckte Kleinigkeit auf Herz und Nieren geprüft und durchgewunken bzw. ausgebremst hat - Ohne jemals selbst über Kerzenburg hinausgekommen zu sein.
@@ -178,3 +274,8 @@ Viel Spaß beim Spielen! Buzzurk!
 Moers, im September 2009
 
 Ascalon
+
+
+=================================================================================Ascalon's Questpack is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.
+This mod is also not developed, supported, or endorsed by BioWare, Black Isle Studios, Interplay Entertainment Corp., Overhaul Games or Beamdog. All other trademarks and copyrights are property of their respective owners.
+=================================================================================

@@ -115,6 +115,12 @@ INTERJECT_COPY_TRANS CSGAAL 10 ACQ22
 == CSGAAL @41
 END
 
+
+INTERJECT_COPY_TRANS CSGAAL 11 ACQ22
+== ACQ22001 @40
+== CSGAAL @41
+END
+
 BEGIN ACQ22002
 IF ~GlobalLT("ACQ22","GLOBAL",4)!Dead("BHEYE")NumTimesTalkedTo(1)Global("UnseeingEye","GLOBAL",0)~ THEN BEGIN 0
 SAY @42
@@ -259,12 +265,14 @@ END
 
 IF ~~ THEN BEGIN 22
 SAY @91
-IF ~~ THEN DO ~EraseJournalEntry(@20001)AddJournalEntry(@20003,QUEST)SetGlobal("UnseeingEye","GLOBAL",1)SetNumTimesTalkedTo(3)ChangeEnemyAlly(MYSELF,GOODBUTBLUE)MoveToPointNoInterrupt([3363.180])~ EXIT
+IF ~~ THEN DO ~EraseJournalEntry(@20001)AddJournalEntry(@20003,QUEST)SetGlobal("UnseeingEye","GLOBAL",1)SetNumTimesTalkedTo(3)ChangeEnemyAlly(MYSELF,GOODBUTBLUE)
+SetGlobal("ACQ_BungarRuns","MYAREA",1) EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 22a
 SAY @91
-IF ~~ THEN DO ~EraseJournalEntry(@20001)AddJournalEntry(@20003,QUEST)SetNumTimesTalkedTo(3)ChangeEnemyAlly(MYSELF,GOODBUTBLUE)MoveToPointNoInterrupt([3363.180])~ EXIT
+IF ~~ THEN DO ~EraseJournalEntry(@20001)AddJournalEntry(@20003,QUEST)SetNumTimesTalkedTo(3)ChangeEnemyAlly(MYSELF,GOODBUTBLUE)
+SetGlobal("ACQ_BungarRuns","MYAREA",1) EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 23
@@ -272,14 +280,16 @@ SAY @92
 IF ~~ THEN DO ~EraseJournalEntry(@20001)AddJournalEntry(@20004,QUEST)SetGlobal("UnseeingEye","GLOBAL",1)Enemy()~ EXIT
 END
 
-IF ~GlobalLT("ACQ22","GLOBAL",4)Dead("UnseeingEye")NumTimesTalkedToLT(3)~ THEN BEGIN 24
+IF ~GlobalLT("ACQ22","GLOBAL",4)Dead("UnseeingEye")NumTimesTalkedToLT(3)
+!Global("ACQ_BungarRuns","MYAREA",2)~ THEN BEGIN 24
 SAY @93
 IF ~NumTimesTalkedTo(0)~ THEN REPLY @94 + 25
 IF ~NumTimesTalkedTo(1)~ THEN REPLY @94 + 26
 IF ~NumTimesTalkedTo(2)~ THEN REPLY @94 + 27
 END
 
-IF ~GlobalLT("ACQ22","GLOBAL",4)NumTimesTalkedTo(3)~ THEN BEGIN 25a
+IF ~GlobalLT("ACQ22","GLOBAL",4)//NumTimesTalkedTo(3)
+Global("ACQ_BungarRuns","MYAREA",2)~ THEN BEGIN 25a
 SAY @95
 IF ~~ THEN DO ~SetGlobal("ACQ22","GLOBAL",4)AddexperienceParty(12000)EraseJournalEntry(@20001)EraseJournalEntry(@20002)EraseJournalEntry(@20003)EraseJournalEntry(@20004)AddJournalEntry(@20006,QUEST_DONE)EscapeAreaDestroy(10)~ EXIT
 END
